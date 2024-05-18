@@ -178,9 +178,6 @@ let selectedQuestions;
 let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
-let userAnswers = [];
-
-const numberOfQuestions = 20;
 
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
@@ -199,15 +196,23 @@ function displayCategories() {
         console.log("Categories element not found.");
     }
 }
-
-function startQuiz(selectedCategories) {
+document.getElementById("startButton").addEventListener("click", function() {
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    if (selectedCategories.length === 0) {
+        alert("Veuillez sélectionner au moins une catégorie.");
+        return;
+    }
+    startQuiz(selectedCategories);
+});
+function startQuiz() {
     console.log("Starting quiz...");
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    console.log("Selected categories:", selectedCategories);
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
-    document.getElementById("submitButton").style.display = "block";
     document.getElementById("quiz").style.display = "block";
     displayQuestion();
 }
@@ -230,36 +235,28 @@ function shuffleQuestions() {
     usedQuestions = usedQuestions.concat(questions);
 }
 
+const numberOfQuestions = 20;
+
 function displayQuestion() {
     console.log("Displaying question...");
-    const questionElement = document.getElementById("question");
-    const choicesElement = document.getElementById("choices");
+    const quizElement = document.getElementById("quiz");
 
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
-        questionElement.innerHTML = `Question ${currentQuestion + 1}: ${questions[currentQuestion].question}`;
         let choicesHTML = "";
-        questions[currentQuestion].choices.forEach((choice, index) => {
-            choicesHTML += `<label><input type="radio" name="choice" value="${choice}"> ${choice}</label><br>`;
-        });
-        choicesElement.innerHTML = choicesHTML;
+        choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
 
-        document.getElementById("nextButton").style.display = "none";
+        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
+        document.getElementById("nextButton").disabled = true;
     }
 }
 
 function showResult(isCorrect, selectedChoice) {
     const choices = document.querySelectorAll("input[type='radio']");
     const correctChoice = questions[currentQuestion].correctAnswer;
-
-    const userAnswer = selectedChoice.value;
-    userAnswers.push({
-        question: questions[currentQuestion].question,
-        choices: questions[currentQuestion].choices,
-        correctAnswer: correctChoice,
-        userAnswer: userAnswer
-    });
 
     choices.forEach((choice) => {
         choice.disabled = true;
@@ -279,8 +276,6 @@ function showResult(isCorrect, selectedChoice) {
     } else {
         displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
     }
-
-    document.getElementById("nextButton").style.display = "block";
 }
 
 function displayMessage(message, color) {
@@ -301,6 +296,12 @@ function checkAnswer() {
 
         const isCorrect = selectedValue === correctAnswer;
         showResult(isCorrect, selectedChoice);
+
+        const choices = document.querySelectorAll("input[name='choice']");
+        choices.forEach((choice) => {
+            choice.disabled = true;
+            document.getElementById("nextButton").disabled = false;
+        });
 
         clearTimeout(timer);
         startTimer();
@@ -326,4 +327,16 @@ function displayFinalResult() {
     quizElement.innerHTML = finalResult;
 
     if (percentage >= 75) {
-        quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de ré
+        quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
+    }
+    quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
+}
+
+function restartQuiz() {
+    console.log("Restarting quiz...");
+    window.location.reload();
+}
+
+document.getElementById("startButton").addEventListener("click", startQuiz);
+
+displayCategories();
