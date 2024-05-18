@@ -314,28 +314,7 @@ function displayFinalResult() {
 }
 function restartQuiz() {
   console.log("Restarting quiz...");
-  currentQuestion = 0;
-  score = 0;
-  usedQuestions = [];
-  allQuestionsCopy = [...allQuestions];
-  clearTimeout(timer);
-
-  const startButton = document.getElementById("startButton");
-  if (startButton) {
-    startButton.style.display = "block";
-  }
-
-  const quizElement = document.getElementById("quiz");
-  if (quizElement) {
-    quizElement.style.display = "none";
-  }
-
-  const categoriesElement = document.getElementById("categories");
-  if (categoriesElement) {
-    categoriesElement.style.display = "block"; 
-  }
-
-  displayCategories(); // Réafficher les éléments de sélection des catégories
+  window.location.reload();
 }
 
 document.getElementById("startButton").addEventListener("click", startQuiz);
