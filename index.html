@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +15,14 @@
         <button id="startButton">Commencer le quiz</button>
         <div id="question"></div>
         <div id="choices"></div>
+        <button id="submitButton" style="display: none;">Soumettre</button>
         <button id="nextButton" style="display: none;">Question suivante</button>
         <button id="restartButton" style="display: none;">Recommencer</button>
     </div>
-    <script src="quiz.js"></script> 
+    <script src="quiz.js"></script>
     <script>
-    // Fonction pour démarrer le quiz
-    function startQuiz(selectedCategories) {
-        console.log("Starting quiz...");
-        selectedQuestions = filterQuestionsByCategory(selectedCategories);
-        console.log("Selected questions:", selectedQuestions);
-        allQuestionsCopy = [...selectedQuestions];
-        shuffleQuestions();
-        document.getElementById("startButton").style.display = "none";
-        document.getElementById("quiz").style.display = "block";
-        displayQuestion();
-    }
-
-    // Gérer les événements pour les boutons "Question suivante" et "Recommencer"
-    document.getElementById("nextButton").addEventListener("click", nextQuestion);
-    document.getElementById("restartButton").addEventListener("click", restartQuiz);
+    // Afficher les catégories dès le chargement de la page
+    displayCategories();
 
     // Gérer l'événement pour le bouton "Commencer le quiz"
     document.getElementById("startButton").addEventListener("click", function() {
@@ -46,8 +34,10 @@
         startQuiz(selectedCategories);
     });
 
-    // Afficher les catégories dès le chargement de la page
-    displayCategories();
+    // Gérer les événements pour les boutons "Soumettre", "Question suivante" et "Recommencer"
+    document.getElementById("submitButton").addEventListener("click", checkAnswer);
+    document.getElementById("nextButton").addEventListener("click", nextQuestion);
+    document.getElementById("restartButton").addEventListener("click", restartQuiz);
     </script>
 </body>
 </html>
