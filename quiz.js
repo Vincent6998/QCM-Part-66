@@ -178,9 +178,9 @@ let selectedQuestions;
 let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
-
-// Stocke les réponses de l'utilisateur pour chaque question
 let userAnswers = [];
+
+const numberOfQuestions = 20;
 
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
@@ -199,15 +199,6 @@ function displayCategories() {
         console.log("Categories element not found.");
     }
 }
-
-document.getElementById("startButton").addEventListener("click", function() {
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
-    if (selectedCategories.length === 0) {
-        alert("Veuillez sélectionner au moins une catégorie.");
-        return;
-    }
-    startQuiz(selectedCategories);
-});
 
 function startQuiz(selectedCategories) {
     console.log("Starting quiz...");
@@ -238,8 +229,6 @@ function shuffleQuestions() {
     usedQuestions = usedQuestions.concat(questions);
 }
 
-const numberOfQuestions = 20;
-
 function displayQuestion() {
     console.log("Displaying question...");
     const quizElement = document.getElementById("quiz");
@@ -247,22 +236,25 @@ function displayQuestion() {
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
-        let choicesHTML = "";
-        choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
+        const questionElement = document.getElementById("question");
+        const choicesElement = document.getElementById("choices");
 
-        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
-        document.getElementById("nextButton").disabled = true;
+        questionElement.innerHTML = `Question ${currentQuestion + 1}: ${questions[currentQuestion].question}`;
+        let choicesHTML = "";
+        questions[currentQuestion].choices.forEach((choice, index) => {
+            choicesHTML += `<label><input type="radio" name="choice" value="${choice}"> ${choice}</label><br>`;
+        });
+        choicesElement.innerHTML = choicesHTML;
+
+        document.getElementById("nextButton").style.display = "none";
     }
 }
 
 function showResult(isCorrect, selectedChoice) {
     const choices = document.querySelectorAll("input[type='radio']");
     const correctChoice = questions[currentQuestion].correctAnswer;
-    
-    const userAnswer = selectedChoice.value;
 
+    const userAnswer = selectedChoice.value;
     userAnswers.push({
         question: questions[currentQuestion].question,
         choices: questions[currentQuestion].choices,
@@ -288,6 +280,8 @@ function showResult(isCorrect, selectedChoice) {
     } else {
         displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
     }
+
+    document.getElementById("nextButton").style.display = "block";
 }
 
 function displayMessage(message, color) {
@@ -308,12 +302,6 @@ function checkAnswer() {
 
         const isCorrect = selectedValue === correctAnswer;
         showResult(isCorrect, selectedChoice);
-
-        const choices = document.querySelectorAll("input[name='choice']");
-        choices.forEach((choice) => {
-            choice.disabled = true;
-            document.getElementById("nextButton").disabled = false;
-        });
 
         clearTimeout(timer);
         startTimer();
@@ -352,7 +340,7 @@ function displayQuestionRecap() {
     userAnswers.forEach((answer, index) => {
         const questionHTML = `<p>Question ${index + 1}: ${answer.question}</p>`;
         let choicesHTML = "";
-        answer.choices.forEach((choice, choiceIndex) => {
+        answer.choices.forEach((choice) => {
             if (choice === answer.correctAnswer) {
                 choicesHTML += `<p style="color: green;">${choice} (Bonne réponse)</p>`;
             } else {
@@ -374,6 +362,5 @@ function restartQuiz() {
     window.location.reload();
 }
 
-document.getElementById("startButton").addEventListener("click", startQuiz);
-
 displayCategories(); // Afficher les catégories dès le chargement de la page
+
