@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +15,8 @@
         <button id="startButton">Commencer le quiz</button>
         <div id="question"></div>
         <div id="choices"></div>
-        <button id="submitButton" style="display: none;">Soumettre</button>
         <button id="nextButton" style="display: none;">Question suivante</button>
         <button id="restartButton" style="display: none;">Recommencer</button>
-        <div id="recap" style="display: none;">
-            <!-- Le récapitulatif sera ajouté ici -->
-        </div>
     </div>
     <script src="quiz.js"></script> 
     <script>
@@ -40,9 +36,6 @@
     document.getElementById("nextButton").addEventListener("click", nextQuestion);
     document.getElementById("restartButton").addEventListener("click", restartQuiz);
 
-    // Gérer l'événement pour le bouton "Soumettre"
-    document.getElementById("submitButton").addEventListener("click", checkAnswer);
-
     // Gérer l'événement pour le bouton "Commencer le quiz"
     document.getElementById("startButton").addEventListener("click", function() {
         let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
@@ -58,3 +51,7 @@
     </script>
 </body>
 </html>
+
+
+
+
