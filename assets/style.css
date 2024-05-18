@@ -28,6 +28,17 @@ button {
   align-items: center;
   text-align: center;
 }
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajoute une hauteur pour centrer verticalement */
+}
+
+#quiz p, #quiz button {
+    font-size: 18px; /* ou une taille appropriée */
+}
 #restartButton {
     display: block;
     margin: 20px auto;
