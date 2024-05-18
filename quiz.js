@@ -178,25 +178,18 @@ let selectedQuestions;
 let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
-let userAnswers = [];
-
-const numberOfQuestions = 20;
+let recap = [];
 
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
 }
 
 function displayCategories() {
-    console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
     let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
     let categoriesElement = document.getElementById("categories");
-    console.log(categoriesElement); // Vérifier si l'élément existe
     if (categoriesElement) {
-        console.log("Categories element found.");
         categoriesElement.innerHTML = categoriesHTML;
-    } else {
-        console.log("Categories element not found.");
     }
 }
 
@@ -209,12 +202,8 @@ document.getElementById("startButton").addEventListener("click", function() {
     startQuiz(selectedCategories);
 });
 
-function startQuiz() {
-    console.log("Starting quiz...");
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
-    console.log("Selected categories:", selectedCategories);
+function startQuiz(selectedCategories) {
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
-    console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
@@ -240,33 +229,27 @@ function shuffleQuestions() {
     usedQuestions = usedQuestions.concat(questions);
 }
 
+const numberOfQuestions = 20;
+
 function displayQuestion() {
-    console.log("Displaying question...");
     const quizElement = document.getElementById("quiz");
 
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
         let choicesHTML = "";
-        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[0]}"> ${questions[currentQuestion].choices[0]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[1]}"> ${questions[currentQuestion].choices[1]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[2]}"> ${questions[currentQuestion].choices[2]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
 
-        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()" disabled>Question suivante</button>`;
+        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
+        document.getElementById("nextButton").disabled = true;
     }
 }
 
 function showResult(isCorrect, selectedChoice) {
     const choices = document.querySelectorAll("input[type='radio']");
     const correctChoice = questions[currentQuestion].correctAnswer;
-
-    const userAnswer = selectedChoice.value;
-    userAnswers.push({
-        question: questions[currentQuestion].question,
-        choices: questions[currentQuestion].choices,
-        correctAnswer: correctChoice,
-        userAnswer: userAnswer
-    });
 
     choices.forEach((choice) => {
         choice.disabled = true;
@@ -287,7 +270,12 @@ function showResult(isCorrect, selectedChoice) {
         displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
     }
 
-    document.getElementById("nextButton").disabled = false;
+    recap.push({
+        question: questions[currentQuestion].question,
+        choices: questions[currentQuestion].choices,
+        correctAnswer: questions[currentQuestion].correctAnswer,
+        selectedChoice: selectedChoice.value
+    });
 }
 
 function displayMessage(message, color) {
@@ -299,12 +287,11 @@ function displayMessage(message, color) {
 }
 
 function checkAnswer() {
-    console.log("Checking answer...");
     const selectedChoice = document.querySelector("input[name='choice']:checked");
 
     if (selectedChoice) {
-        const selectedValue = selectedChoice.value.trim().toLowerCase();
-        const correctAnswer = questions[currentQuestion].correctAnswer.trim().toLowerCase();
+        const selectedValue = selectedChoice.value.trim().toUpperCase();
+        const correctAnswer = questions[currentQuestion].correctAnswer.trim().toUpperCase();
 
         const isCorrect = selectedValue === correctAnswer;
         showResult(isCorrect, selectedChoice);
@@ -312,6 +299,7 @@ function checkAnswer() {
         const choices = document.querySelectorAll("input[name='choice']");
         choices.forEach((choice) => {
             choice.disabled = true;
+            document.getElementById("nextButton").disabled = false;
         });
 
         clearTimeout(timer);
@@ -340,38 +328,38 @@ function displayFinalResult() {
     if (percentage >= 75) {
         quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
     }
-    
-    displayQuestionRecap(); // Afficher le récapitulatif des questions
+    quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
+
+    displayQuestionRecap();
 }
 
 function displayQuestionRecap() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML += "<h2>Récapitulatif des questions</h2>";
+    const recapElement = document.getElementById("recap");
+    recapElement.innerHTML = "<h2>Récapitulatif des questions</h2>";
 
-    userAnswers.forEach((answer, index) => {
-        const questionHTML = `<p>Question ${index + 1}: ${answer.question}</p>`;
-        let choicesHTML = "";
-        answer.choices.forEach((choice) => {
-            if (choice === answer.correctAnswer) {
-                choicesHTML += `<p style="color: green;">${choice} (Bonne réponse)</p>`;
+    recap.forEach((item, index) => {
+        let recapHTML = `<p>Question ${index + 1}: ${item.question}</p>`;
+        item.choices.forEach((choice, i) => {
+            let choiceLabel = String.fromCharCode(65 + i);
+            if (choiceLabel === item.correctAnswer) {
+                recapHTML += `<p style="color: green;">${choiceLabel}: ${choice} &#9989;</p>`;
+            } else if (choiceLabel === item.selectedChoice) {
+                recapHTML += `<p style="color: red;">${choiceLabel}: ${choice} &#10060;</p>`;
             } else {
-                if (choice === answer.userAnswer) {
-                    choicesHTML += `<p style="color: red;">${choice} (Votre réponse)</p>`;
-                } else {
-                    choicesHTML += `<p>${choice}</p>`;
-                }
+                recapHTML += `<p>${choiceLabel}: ${choice}</p>`;
             }
         });
-        quizElement.innerHTML += questionHTML + choicesHTML;
+        recapElement.innerHTML += recapHTML;
     });
 
-    quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
+    recapElement.style.display = "block";
 }
 
 function restartQuiz() {
-    console.log("Restarting quiz...");
     window.location.reload();
 }
 
-displayCategories(); // Afficher les catégories dès le chargement de la page
+document.getElementById("startButton").addEventListener("click", startQuiz);
+displayCategories();
+
 
