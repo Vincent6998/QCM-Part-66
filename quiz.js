@@ -179,6 +179,9 @@ let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
 
+// Stocke les réponses de l'utilisateur pour chaque question
+let userAnswers = [];
+
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
 }
@@ -196,6 +199,7 @@ function displayCategories() {
         console.log("Categories element not found.");
     }
 }
+
 document.getElementById("startButton").addEventListener("click", function() {
     let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
     if (selectedCategories.length === 0) {
@@ -204,10 +208,9 @@ document.getElementById("startButton").addEventListener("click", function() {
     }
     startQuiz(selectedCategories);
 });
-function startQuiz() {
+
+function startQuiz(selectedCategories) {
     console.log("Starting quiz...");
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
-    console.log("Selected categories:", selectedCategories);
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
@@ -257,6 +260,15 @@ function displayQuestion() {
 function showResult(isCorrect, selectedChoice) {
     const choices = document.querySelectorAll("input[type='radio']");
     const correctChoice = questions[currentQuestion].correctAnswer;
+    
+    const userAnswer = selectedChoice.value;
+
+    userAnswers.push({
+        question: questions[currentQuestion].question,
+        choices: questions[currentQuestion].choices,
+        correctAnswer: correctChoice,
+        userAnswer: userAnswer
+    });
 
     choices.forEach((choice) => {
         choice.disabled = true;
@@ -329,6 +341,31 @@ function displayFinalResult() {
     if (percentage >= 75) {
         quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
     }
+
+    displayQuestionRecap(); // Afficher le récapitulatif des questions
+}
+
+function displayQuestionRecap() {
+    const quizElement = document.getElementById("quiz");
+    quizElement.innerHTML = "<h2>Récapitulatif des questions</h2>";
+
+    userAnswers.forEach((answer, index) => {
+        const questionHTML = `<p>Question ${index + 1}: ${answer.question}</p>`;
+        let choicesHTML = "";
+        answer.choices.forEach((choice, choiceIndex) => {
+            if (choice === answer.correctAnswer) {
+                choicesHTML += `<p style="color: green;">${choice} (Bonne réponse)</p>`;
+            } else {
+                if (choice === answer.userAnswer) {
+                    choicesHTML += `<p style="color: red;">${choice} (Votre réponse)</p>`;
+                } else {
+                    choicesHTML += `<p>${choice}</p>`;
+                }
+            }
+        });
+        quizElement.innerHTML += questionHTML + choicesHTML;
+    });
+
     quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
 }
 
