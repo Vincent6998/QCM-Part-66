@@ -171,207 +171,173 @@ const allQuestions = [
   "category": "ATA 45"
 },
   ];
+
 let currentQuestion = 0;
 let score = 0;
 let timer;
 let selectedQuestions;
 let usedQuestions = [];
-let allQuestionsCopy = [...allQuestions]; 
+let allQuestionsCopy = [...allQuestions];
 let questions = [];
 
 function filterQuestionsByCategory(categories) {
-  return allQuestions.filter(question => categories.includes(question.category));
+    return allQuestions.filter(question => categories.includes(question.category));
 }
+
 function displayCategories() {
-  console.log("Displaying categories...");
-  let categories = [...new Set(allQuestions.map(question => question.category))];
-  let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
-  let categoriesElement = document.getElementById("categories");
-  console.log(categoriesElement); // Vérifier si l'élément existe
-  if (categoriesElement) {
-    console.log("Categories element found.");
-    categoriesElement.innerHTML = categoriesHTML;
-  } else {
-    console.log("Categories element not found.");
-  }
-}
-function startQuiz() {
-  console.log("Starting quiz...");
-  let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
-  console.log("Selected categories:", selectedCategories);
-  selectedQuestions = filterQuestionsByCategory(selectedCategories);
-  console.log("Selected questions:", selectedQuestions);
-  allQuestionsCopy = [...selectedQuestions];
-  shuffleQuestions();
-  document.getElementById("startButton").style.display = "none";
-  document.getElementById("quiz").style.display = "block";
-  displayQuestion();
-}
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
-function shuffleQuestions() {
-  if (allQuestionsCopy.length === 0) {
-    allQuestionsCopy = [...usedQuestions];
-    usedQuestions = [];
-  }
-  let remainingQuestions = allQuestionsCopy.filter(question => !usedQuestions.includes(question)); 
-  shuffleArray(remainingQuestions);
-  questions = remainingQuestions.slice(0, numberOfQuestions);
-  usedQuestions = usedQuestions.concat(questions);
-}
-const numberOfQuestions = 20;
-function displayQuestion() {
-  console.log("Displaying question...");
-  const quizElement = document.getElementById("quiz");
-
-  if (currentQuestion >= questions.length) {
-    displayFinalResult();
-  } else {
-    let choicesHTML = "";
-    choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
-    choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
-    choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
-
-    quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
-    document.getElementById("nextButton").disabled = true;
-  }
-}
-function showResult(isCorrect, selectedChoice) {
-  const choices = document.querySelectorAll("input[type='radio']");
-  const correctChoice = questions[currentQuestion].correctAnswer;
-
-  choices.forEach((choice) => {
-    choice.disabled = true;
-    const label = choice.parentNode;
-    if (choice.value === correctChoice) {
-      label.style.color = "green";
-      label.innerHTML += "  <span>&#9989;</span>";
-    } else if (choice.checked) {
-      label.style.color = "red";
-      label.innerHTML += "  <span>&#10060;</span>";
+    console.log("Displaying categories...");
+    let categories = [...new Set(allQuestions.map(question => question.category))];
+    let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
+    let categoriesElement = document.getElementById("categories");
+    console.log(categoriesElement); // Vérifier si l'élément existe
+    if (categoriesElement) {
+        console.log("Categories element found.");
+        categoriesElement.innerHTML = categoriesHTML;
+    } else {
+        console.log("Categories element not found.");
     }
-  });
-
-  if (isCorrect) {
-    score++;
-    displayMessage("Bonne réponse!", "green");
-  } else {
-    displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
-  }
 }
-function displayMessage(message, color) {
-  const messageElement = document.createElement("p");
-  messageElement.style.color = color;
-  messageElement.textContent = message;
-  const quizElement = document.getElementById("quiz");
-  quizElement.appendChild(messageElement);
+document.getElementById("startButton").addEventListener("click", function() {
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    if (selectedCategories.length === 0) {
+        alert("Veuillez sélectionner au moins une catégorie.");
+        return;
+    }
+    startQuiz(selectedCategories);
+});
+function startQuiz() {
+    console.log("Starting quiz...");
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    console.log("Selected categories:", selectedCategories);
+    selectedQuestions = filterQuestionsByCategory(selectedCategories);
+    console.log("Selected questions:", selectedQuestions);
+    allQuestionsCopy = [...selectedQuestions];
+    shuffleQuestions();
+    document.getElementById("startButton").style.display = "none";
+    document.getElementById("quiz").style.display = "block";
+    displayQuestion();
 }
-function checkAnswer() {
-  console.log("Checking answer...");
-  const selectedChoice = document.querySelector("input[name='choice']:checked");
 
-  if (selectedChoice) {
-    const selectedValue = selectedChoice.value.trim().toLowerCase();
-    const correctAnswer = questions[currentQuestion].correctAnswer.trim().toLowerCase();
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
-    const isCorrect = selectedValue === correctAnswer;
-    showResult(isCorrect, selectedChoice);
+function shuffleQuestions() {
+    if (allQuestionsCopy.length === 0) {
+        allQuestionsCopy = [...usedQuestions];
+        usedQuestions = [];
+    }
+    let remainingQuestions = allQuestionsCopy.filter(question => !usedQuestions.includes(question));
+    shuffleArray(remainingQuestions);
+    questions = remainingQuestions.slice(0, numberOfQuestions);
+    usedQuestions = usedQuestions.concat(questions);
+}
 
-    const choices = document.querySelectorAll("input[name='choice']");
+const numberOfQuestions = 20;
+
+function displayQuestion() {
+    console.log("Displaying question...");
+    const quizElement = document.getElementById("quiz");
+
+    if (currentQuestion >= questions.length) {
+        displayFinalResult();
+    } else {
+        let choicesHTML = "";
+        choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
+
+        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
+        document.getElementById("nextButton").disabled = true;
+    }
+}
+
+function showResult(isCorrect, selectedChoice) {
+    const choices = document.querySelectorAll("input[type='radio']");
+    const correctChoice = questions[currentQuestion].correctAnswer;
+
     choices.forEach((choice) => {
-      choice.disabled = true;
-      document.getElementById("nextButton").disabled = false;
+        choice.disabled = true;
+        const label = choice.parentNode;
+        if (choice.value === correctChoice) {
+            label.style.color = "green";
+            label.innerHTML += "  <span>&#9989;</span>";
+        } else if (choice.checked) {
+            label.style.color = "red";
+            label.innerHTML += "  <span>&#10060;</span>";
+        }
     });
 
-    clearTimeout(timer);
-    startTimer();
-  } else {
-    alert("Veuillez sélectionner une réponse.");
-  }
-}
-function startTimer() {
-  timer = setTimeout(nextQuestion, 5000);
-}
-function nextQuestion() {
-  clearTimeout(timer);
-  currentQuestion++;
-  displayQuestion();
-}
-function displayFinalResult() {
-  const quizElement = document.getElementById("quiz");
-  const percentage = (score / questions.length) * 100;
-  const finalResult = `Quiz terminé ! Votre score est : ${score} / ${questions.length} (${percentage.toFixed(2)} %)`;
-  quizElement.innerHTML = finalResult;
-
-  if (percentage >= 75) {
-    quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
-  }
-  quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
-}
-
- displayQuestionRecap();
-
-function displayQuestionRecap() {
-    const quizRecapElement = document.createElement("div");
-    quizRecapElement.setAttribute("id", "quizRecap");
-
-    const recapTitle = document.createElement("h2");
-    recapTitle.textContent = "Récapitulatif des questions posées :";
-
-    // Boucle à travers les questions posées
-    for (let i = 0; i < questions.length; i++) {
-        const questionRecap = document.createElement("p");
-        questionRecap.textContent = `Question ${i + 1}: ${questions[i].question}`;
-
-        // Ajout des choix avec la bonne réponse en vert et la réponse de l'utilisateur en rouge si incorrecte
-        const choicesRecap = document.createElement("ul");
-        for (let j = 0; j < questions[i].choices.length; j++) {
-            const choiceRecap = document.createElement("li");
-            if (questions[i].choices[j] === questions[i].correctAnswer) {
-                choiceRecap.style.color = "green";
-            } else if (questions[i].userAnswer === questions[i].choices[j]) {
-                choiceRecap.style.color = "red";
-            }
-            choiceRecap.textContent = questions[i].choices[j];
-            choicesRecap.appendChild(choiceRecap);
-        }
-
-        // Ajouter les choix à la question récapitulative
-        questionRecap.appendChild(choicesRecap);
-        quizRecapElement.appendChild(questionRecap);
+    if (isCorrect) {
+        score++;
+        displayMessage("Bonne réponse!", "green");
+    } else {
+        displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
     }
+}
 
-    // Ajouter le récapitulatif au document
-    document.getElementById("quiz").appendChild(recapTitle);
-    document.getElementById("quiz").appendChild(quizRecapElement);
+function displayMessage(message, color) {
+    const messageElement = document.createElement("p");
+    messageElement.style.color = color;
+    messageElement.textContent = message;
+    const quizElement = document.getElementById("quiz");
+    quizElement.appendChild(messageElement);
+}
+
+function checkAnswer() {
+    console.log("Checking answer...");
+    const selectedChoice = document.querySelector("input[name='choice']:checked");
+
+    if (selectedChoice) {
+        const selectedValue = selectedChoice.value.trim().toLowerCase();
+        const correctAnswer = questions[currentQuestion].correctAnswer.trim().toLowerCase();
+
+        const isCorrect = selectedValue === correctAnswer;
+        showResult(isCorrect, selectedChoice);
+
+        const choices = document.querySelectorAll("input[name='choice']");
+        choices.forEach((choice) => {
+            choice.disabled = true;
+            document.getElementById("nextButton").disabled = false;
+        });
+
+        clearTimeout(timer);
+        startTimer();
+    } else {
+        alert("Veuillez sélectionner une réponse.");
+    }
+}
+
+function startTimer() {
+    timer = setTimeout(nextQuestion, 5000);
+}
+
+function nextQuestion() {
+    clearTimeout(timer);
+    currentQuestion++;
+    displayQuestion();
+}
+
+function displayFinalResult() {
+    const quizElement = document.getElementById("quiz");
+    const percentage = (score / questions.length) * 100;
+    const finalResult = `Quiz terminé ! Votre score est : ${score} / ${questions.length} (${percentage.toFixed(2)} %)`;
+    quizElement.innerHTML = finalResult;
+
+    if (percentage >= 75) {
+        quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
+    }
+    quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
 }
 
 function restartQuiz() {
-  console.log("Restarting quiz...");
-  currentQuestion = 0;
-  score = 0;
-  usedQuestions = [];
-  allQuestionsCopy = [...allQuestions];
-  clearTimeout(timer);
-
-  const startButton = document.getElementById("startButton");
-  if (startButton) {
-    startButton.style.display = "block";
-  }
-  const quizElement = document.getElementById("quiz");
-  if (quizElement) {
-    quizElement.style.display = "none";
-  }
-  const categoriesElement = document.getElementById("categories");
-  if (categoriesElement) {
-    categoriesElement.style.display = "block"; 
-  }
+    console.log("Restarting quiz...");
+    window.location.reload();
 }
 
 document.getElementById("startButton").addEventListener("click", startQuiz);
-document.getElementById("restartButton").addEventListener("click", restartQuiz);
+
 displayCategories();
