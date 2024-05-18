@@ -200,14 +200,24 @@ function displayCategories() {
     }
 }
 
-function startQuiz(selectedCategories) {
+document.getElementById("startButton").addEventListener("click", function() {
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    if (selectedCategories.length === 0) {
+        alert("Veuillez sélectionner au moins une catégorie.");
+        return;
+    }
+    startQuiz(selectedCategories);
+});
+
+function startQuiz() {
     console.log("Starting quiz...");
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    console.log("Selected categories:", selectedCategories);
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
-    document.getElementById("submitButton").style.display = "block";
     document.getElementById("quiz").style.display = "block";
     displayQuestion();
 }
@@ -232,21 +242,17 @@ function shuffleQuestions() {
 
 function displayQuestion() {
     console.log("Displaying question...");
-    const questionElement = document.getElementById("question");
-    const choicesElement = document.getElementById("choices");
+    const quizElement = document.getElementById("quiz");
 
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
-        questionElement.innerHTML = `Question ${currentQuestion + 1}: ${questions[currentQuestion].question}`;
         let choicesHTML = "";
-        questions[currentQuestion].choices.forEach((choice) => {
-            choicesHTML += `<label><input type="radio" name="choice" value="${choice}"> ${choice}</label><br>`;
-        });
-        choicesElement.innerHTML = choicesHTML;
+        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[0]}"> ${questions[currentQuestion].choices[0]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[1]}"> ${questions[currentQuestion].choices[1]}</label><br>`;
+        choicesHTML += `<label><input type="radio" name="choice" value="${questions[currentQuestion].choices[2]}"> ${questions[currentQuestion].choices[2]}</label><br>`;
 
-        document.getElementById("submitButton").style.display = "block";
-        document.getElementById("nextButton").style.display = "none";
+        quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()" disabled>Question suivante</button>`;
     }
 }
 
@@ -281,8 +287,7 @@ function showResult(isCorrect, selectedChoice) {
         displayMessage(`Mauvaise réponse. La bonne réponse est la réponse ${correctChoice}.`, "red");
     }
 
-    document.getElementById("submitButton").style.display = "none";
-    document.getElementById("nextButton").style.display = "block";
+    document.getElementById("nextButton").disabled = false;
 }
 
 function displayMessage(message, color) {
@@ -303,6 +308,11 @@ function checkAnswer() {
 
         const isCorrect = selectedValue === correctAnswer;
         showResult(isCorrect, selectedChoice);
+
+        const choices = document.querySelectorAll("input[name='choice']");
+        choices.forEach((choice) => {
+            choice.disabled = true;
+        });
 
         clearTimeout(timer);
         startTimer();
@@ -330,7 +340,7 @@ function displayFinalResult() {
     if (percentage >= 75) {
         quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
     }
-
+    
     displayQuestionRecap(); // Afficher le récapitulatif des questions
 }
 
@@ -364,3 +374,4 @@ function restartQuiz() {
 }
 
 displayCategories(); // Afficher les catégories dès le chargement de la page
+
