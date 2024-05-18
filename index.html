@@ -15,10 +15,11 @@
         <button id="startButton">Commencer le quiz</button>
         <div id="question"></div>
         <div id="choices"></div>
+        <button id="submitButton" style="display: none;">Soumettre</button>
         <button id="nextButton" style="display: none;">Question suivante</button>
         <button id="restartButton" style="display: none;">Recommencer</button>
     </div>
-    <script src="quiz.js"></script> 
+    <script src="quiz.js"></script>
     <script>
     // Afficher les catégories dès le chargement de la page
     displayCategories();
@@ -33,7 +34,8 @@
         startQuiz(selectedCategories);
     });
 
-    // Gérer les événements pour les boutons "Question suivante" et "Recommencer"
+    // Gérer les événements pour les boutons "Soumettre", "Question suivante" et "Recommencer"
+    document.getElementById("submitButton").addEventListener("click", checkAnswer);
     document.getElementById("nextButton").addEventListener("click", nextQuestion);
     document.getElementById("restartButton").addEventListener("click", restartQuiz);
     </script>
