@@ -196,7 +196,14 @@ function displayCategories() {
         console.log("Categories element not found.");
     }
 }
-
+document.getElementById("startButton").addEventListener("click", function() {
+    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    if (selectedCategories.length === 0) {
+        alert("Veuillez sélectionner au moins une catégorie.");
+        return;
+    }
+    startQuiz(selectedCategories);
+});
 function startQuiz() {
     console.log("Starting quiz...");
     let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
