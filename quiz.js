@@ -207,6 +207,7 @@ function startQuiz(selectedCategories) {
     allQuestionsCopy = [...selectedQuestions];
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
+    document.getElementById("submitButton").style.display = "block";
     document.getElementById("quiz").style.display = "block";
     displayQuestion();
 }
@@ -231,14 +232,12 @@ function shuffleQuestions() {
 
 function displayQuestion() {
     console.log("Displaying question...");
-    const quizElement = document.getElementById("quiz");
+    const questionElement = document.getElementById("question");
+    const choicesElement = document.getElementById("choices");
 
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
-        const questionElement = document.getElementById("question");
-        const choicesElement = document.getElementById("choices");
-
         questionElement.innerHTML = `Question ${currentQuestion + 1}: ${questions[currentQuestion].question}`;
         let choicesHTML = "";
         questions[currentQuestion].choices.forEach((choice, index) => {
@@ -327,40 +326,4 @@ function displayFinalResult() {
     quizElement.innerHTML = finalResult;
 
     if (percentage >= 75) {
-        quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de réussite de ${percentage.toFixed(2)} %.</p>`;
-    }
-
-    displayQuestionRecap(); // Afficher le récapitulatif des questions
-}
-
-function displayQuestionRecap() {
-    const quizElement = document.getElementById("quiz");
-    quizElement.innerHTML = "<h2>Récapitulatif des questions</h2>";
-
-    userAnswers.forEach((answer, index) => {
-        const questionHTML = `<p>Question ${index + 1}: ${answer.question}</p>`;
-        let choicesHTML = "";
-        answer.choices.forEach((choice) => {
-            if (choice === answer.correctAnswer) {
-                choicesHTML += `<p style="color: green;">${choice} (Bonne réponse)</p>`;
-            } else {
-                if (choice === answer.userAnswer) {
-                    choicesHTML += `<p style="color: red;">${choice} (Votre réponse)</p>`;
-                } else {
-                    choicesHTML += `<p>${choice}</p>`;
-                }
-            }
-        });
-        quizElement.innerHTML += questionHTML + choicesHTML;
-    });
-
-    quizElement.innerHTML += "<button onclick='restartQuiz()'>Recommencer</button>";
-}
-
-function restartQuiz() {
-    console.log("Restarting quiz...");
-    window.location.reload();
-}
-
-displayCategories(); // Afficher les catégories dès le chargement de la page
-
+        quizElement.innerHTML += `<p>BRAVO ! Vous avez réussi le test avec un score de ré
