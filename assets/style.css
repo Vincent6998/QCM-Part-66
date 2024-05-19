@@ -40,5 +40,6 @@ button {
     margin-top: 20px; /* Ajout de marge au-dessus du bouton "Question suivante" */
 }
 #choices label {
+    display: block; /* Afficher les balises <label> en tant que blocs */
     margin-bottom: 10px; /* Ajouter de l'espace vertical entre les propositions de réponse */
 }
