@@ -39,3 +39,6 @@ button {
 #nextButton {
     margin-top: 20px; /* Ajout de marge au-dessus du bouton "Question suivante" */
 }
+#choices label {
+    margin-bottom: 10px; /* Ajouter de l'espace vertical entre les propositions de réponse */
+}
