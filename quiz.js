@@ -1687,18 +1687,24 @@ function filterQuestionsByCategory(categories) {
 function displayCategories() {
     console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
-    let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
-    let categoriesElement = document.getElementById("categories");
-    console.log(categoriesElement); // Vérifier si l'élément existe
-    if (categoriesElement) {
-        console.log("Categories element found.");
-        categoriesElement.innerHTML = categoriesHTML;
+    let categorySelect = document.getElementById("categorySelect");
+    if (categorySelect) {
+        console.log("Category select element found.");
+        categories.forEach(category => {
+            let option = document.createElement("option");
+            option.value = category;
+            option.text = category;
+            categorySelect.add(option);
+        });
     } else {
-        console.log("Categories element not found.");
+        console.log("Category select element not found.");
     }
 }
 document.getElementById("startButton").addEventListener("click", function() {
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    let selectedCategories = Array.from(document.querySelectorAll("#categorySelect option:checked")).map(option => option.value);
+    if (selectedCategories.includes("all")) {
+        selectedCategories = [...new Set(allQuestions.map(question => question.category))];
+    }
     if (selectedCategories.length === 0) {
         alert("Veuillez sélectionner au moins une catégorie.");
         return;
@@ -1707,8 +1713,11 @@ document.getElementById("startButton").addEventListener("click", function() {
 });
 function startQuiz() {
     console.log("Starting quiz...");
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
+    let selectedCategories = Array.from(document.querySelectorAll("#categorySelect option:checked")).map(option => option.value);
     console.log("Selected categories:", selectedCategories);
+    if (selectedCategories.includes("all")) {
+        selectedCategories = [...new Set(allQuestions.map(question => question.category))];
+    }
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
