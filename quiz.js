@@ -1687,37 +1687,33 @@ function filterQuestionsByCategory(categories) {
 function displayCategories() {
     console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
-    let categorySelect = document.getElementById("categorySelect");
-    if (categorySelect) {
-        console.log("Category select element found.");
-        categories.forEach(category => {
-            let option = document.createElement("option");
-            option.value = category;
-            option.text = category;
-            categorySelect.add(option);
+    let categoryDropdown = document.getElementById("categoryDropdown");
+    if (categoryDropdown) {
+        console.log("Category dropdown element found.");
+        let allCategoriesOption = '<label><input type="checkbox" id="selectAll"> Tout sélectionner</label>';
+        let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
+        categoryDropdown.innerHTML = allCategoriesOption + categoriesHTML;
+
+        document.getElementById("selectAll").addEventListener("change", function() {
+            let checkboxes = categoryDropdown.querySelectorAll("input[type='checkbox']");
+            checkboxes.forEach(checkbox => checkbox.checked = this.checked);
         });
     } else {
-        console.log("Category select element not found.");
+        console.log("Category dropdown element not found.");
     }
 }
+
 document.getElementById("startButton").addEventListener("click", function() {
-    let selectedCategories = Array.from(document.querySelectorAll("#categorySelect option:checked")).map(option => option.value);
-    if (selectedCategories.includes("all")) {
-        selectedCategories = [...new Set(allQuestions.map(question => question.category))];
-    }
+    let selectedCategories = Array.from(document.querySelectorAll("#categoryDropdown input:checked")).map(input => input.value);
     if (selectedCategories.length === 0) {
         alert("Veuillez sélectionner au moins une catégorie.");
         return;
     }
     startQuiz(selectedCategories);
 });
-function startQuiz() {
+
+function startQuiz(selectedCategories) {
     console.log("Starting quiz...");
-    let selectedCategories = Array.from(document.querySelectorAll("#categorySelect option:checked")).map(option => option.value);
-    console.log("Selected categories:", selectedCategories);
-    if (selectedCategories.includes("all")) {
-        selectedCategories = [...new Set(allQuestions.map(question => question.category))];
-    }
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
@@ -1847,7 +1843,10 @@ function restartQuiz() {
     window.location.reload();
 }
 
-document.getElementById("startButton").addEventListener("click", startQuiz);
+document.getElementById("categoryButton").addEventListener("click", function() {
+    const dropdown = document.getElementById("categoryDropdown");
+    dropdown.style.display = dropdown.style.display === "none" || dropdown.style.display === "" ? "block" : "none";
+});
 
 displayCategories();
 
