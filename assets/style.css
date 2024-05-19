@@ -39,14 +39,22 @@ button {
 #nextButton {
     margin-top: 20px; /* Ajout de marge au-dessus du bouton "Question suivante" */
 }
+
 #choices label {
     display: block; /* Afficher les balises <label> en tant que blocs */
     margin-bottom: 20px; /* Ajouter de l'espace vertical entre les propositions de réponse */
 }
+
 .choice {
     margin-bottom: 20px; /* Ajouter de l'espace vertical entre chaque choix */
 }
 
 .question {
     font-weight: bold; /* Mettre les questions en gras */
+}
+
+#categorySelect {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
 }
