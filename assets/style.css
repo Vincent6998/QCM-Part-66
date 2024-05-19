@@ -41,5 +41,5 @@ button {
 }
 #choices label {
     display: block; /* Afficher les balises <label> en tant que blocs */
-    margin-bottom: 10px; /* Ajouter de l'espace vertical entre les propositions de réponse */
+    margin-bottom: 20px; /* Ajouter de l'espace vertical entre les propositions de réponse */
 }
