@@ -1746,9 +1746,9 @@ function displayQuestion() {
         displayFinalResult();
     } else {
         let choicesHTML = "";
-        choicesHTML += `<label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label><br>`;
-        choicesHTML += `<label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label><br>`;
+        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label></div>`;
+        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label></div>`;
+        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label></div>`;
 
         quizElement.innerHTML = `<p>Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
         document.getElementById("nextButton").disabled = true;
