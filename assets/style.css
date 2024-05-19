@@ -39,51 +39,14 @@ button {
 #nextButton {
     margin-top: 20px; /* Ajout de marge au-dessus du bouton "Question suivante" */
 }
-
 #choices label {
     display: block; /* Afficher les balises <label> en tant que blocs */
     margin-bottom: 20px; /* Ajouter de l'espace vertical entre les propositions de réponse */
 }
-
 .choice {
     margin-bottom: 20px; /* Ajouter de l'espace vertical entre chaque choix */
 }
 
 .question {
     font-weight: bold; /* Mettre les questions en gras */
-}
-
-#categories {
-    position: relative;
-}
-
-#categoryButton {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#categoryDropdown {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px;
-    z-index: 1;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-#categoryDropdown label {
-    display: block;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-#categoryDropdown label:hover {
-    background-color: #ddd;
 }
