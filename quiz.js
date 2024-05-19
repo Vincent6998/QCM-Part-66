@@ -1812,7 +1812,7 @@ function checkAnswer() {
 }
 
 function startTimer() {
-    timer = setTimeout(nextQuestion, 60000);
+    timer = setTimeout(nextQuestion, 120000);
 }
 
 function nextQuestion() {
