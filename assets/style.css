@@ -27,7 +27,7 @@ h1 {
 }
 
 button {
-    margin: 20px 0; /* Espacement entre les boutons */
+    margin: 20px; /* Espacement entre les boutons */
     padding: 10px 20px;
     background-color: transparent;;
     color:  #007BFF;
