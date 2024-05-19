@@ -7,13 +7,10 @@
     <link rel="stylesheet" href="assets/style.css"> <!-- Assurez-vous d'inclure votre fichier CSS ici -->
 </head>
 <body>
-    <div id="quiz" class="container centered">
+    <div id="quiz" class=""container centered"">
         <h1>Quiz Aéronautique</h1>
         <div id="categories">
-            <button id="categoryButton">Sélectionner l'ATA</button>
-            <div id="categoryDropdown" class="dropdown-content">
-                <!-- Les catégories seront ajoutées ici dynamiquement -->
-            </div>
+            <!-- Les catégories seront ajoutées ici dynamiquement -->
         </div>
         <button id="startButton">Commencer le quiz</button>
         <div id="question"></div>
@@ -41,7 +38,7 @@
 
     // Gérer l'événement pour le bouton "Commencer le quiz"
     document.getElementById("startButton").addEventListener("click", function() {
-        let selectedCategories = Array.from(document.querySelectorAll("#categoryDropdown input:checked")).map(input => input.value);
+        let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
         if (selectedCategories.length === 0) {
             alert("Veuillez sélectionner au moins une catégorie.");
             return;
@@ -51,13 +48,6 @@
 
     // Afficher les catégories dès le chargement de la page
     displayCategories();
-
-    // Fonction pour afficher/masquer les catégories
-    document.getElementById("categoryButton").addEventListener("click", function() {
-        const dropdown = document.getElementById("categoryDropdown");
-        dropdown.style.display = dropdown.style.display === "none" || dropdown.style.display === "" ? "block" : "none";
-    });
     </script>
 </body>
 </html>
-
