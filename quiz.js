@@ -1750,7 +1750,7 @@ function displayQuestion() {
         choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label></div>`;
         choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label></div>`;
 
-        quizElement.innerHTML = `<p><strong>Question ${currentQuestion + 1}:</strong> ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
+       quizElement.innerHTML = `<p class="question">Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
         document.getElementById("nextButton").disabled = true;
     }
 }
