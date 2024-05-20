@@ -1829,7 +1829,13 @@ function displayFinalResult() {
 
 function restartQuiz() {
     console.log("Restarting quiz...");
-    window.location.reload();
+    currentQuestion = 0;
+    score = 0;
+    document.getElementById("quiz").innerHTML = "";
+    displayCategories();
+    document.getElementById("startButton").style.display = "block";
+    document.getElementById("quiz").style.display = "none";
+}
 }
 
 displayCategories();
