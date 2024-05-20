@@ -1806,7 +1806,7 @@ function displayMessage(message, color) {
 }
 
 function startTimer() {
-    timer = setTimeout(nextQuestion, 5000);
+    timer = setTimeout(nextQuestion, 120000);
 }
 
 function nextQuestion() {
