@@ -831,16 +831,6 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "Concerning the Display Units on the B777-300 (Without any lost of any function):",
-	"choices": [
-		"A) All six DUs are identical .",
-		"B) A PFD DU is interchangeable with a ND DU.",
-		"C) PFDs and upper central DU are interchangeable ."
-	],
-	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
 	"question": "Each graphic separator sends data to ?",
 	"choices": [
 		"A) 2 DUs .",
@@ -863,7 +853,7 @@ const allQuestions = [
 {
 	"question": "AIMS - 1: To load the FMCF (Flight Management Computing Function) of the right cabinet with the navigation data base , you must select the following destination:",
 	"choices": [
-		"A) CPM Basic .",
+		"A) CPM STD .",
 		"B) CPM Com",
 		"C) CPM FM ."
 	],
@@ -938,16 +928,6 @@ const allQuestions = [
 		"C) The maximum operating speed or mach is decreased."
 	],
 	"correctAnswer": "C",
-	"category": "ATA 31"
-},
-{
-	"question": "On the 777-200 , The airplane condition monitoring function ACMF is implemented in the following module ?",
-	"choices": [
-		"A) Left cabinet, CPM/ACMF.",
-		"B) Right cabinet, CPM/ACMF.",
-		"C) Left and right cabinets."
-	],
-	"correctAnswer": "A",
 	"category": "ATA 31"
 },
 {
@@ -1051,26 +1031,6 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "On the B777-200 , The loss of two power inputs from the same side of an AIMS cabinet will cause:",
-	"choices": [
-		"A) The loss of function in 4 LRMs .",
-		"B) The loss of function of all the LRMs .",
-		"C) No effect on the function of the LRMs ."
-	],
-	"correctAnswer": "C",
-	"category": "ATA 31"
-},
-{
-	"question": "On the B777-200 , For proper operation an AIMS LRM must have one MAIN and one MONITOR power input , therefore ?",
-	"choices": [
-		"A) Within the four 28 v DC bus inputs , any two input are sufficient .",
-		"B) Within the four 28 v DC bus inputs , any two inputs from the same side of the cabinet are sufficient .",
-		"C) Within the four 28 v DC bus inputs , it is sufficient to have one input from each side of the cabinet ."
-	],
-	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
 	"question": "These are AIMS functions ?",
 	"choices": [
 		"A) Autopilot , flight management Primary display function .",
@@ -1078,16 +1038,6 @@ const allQuestions = [
 		"C) Environmental control function  , primary display function , autopilot  ."
 	],
 	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
-	"question": "On the B777-200 , The AIMS cabinet receive and transmit data only on these \" ARINC 629 buses \" ?",
-	"choices": [
-		"A) Intercabinet buses .",
-		"B) Intercabinet buses and flight control buses .",
-		"C) Intercabinet buses , flight control buses and system buses ."
-	],
-	"correctAnswer": "C",
 	"category": "ATA 31"
 },
 {
@@ -1138,16 +1088,6 @@ const allQuestions = [
 		"C) the QAR"
 	],
 	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
-	"question": "On the B777-200 , You want to load the flight management computing function (FMCF) navigation database in the left AIMS cabinet. What line replaceable module (LRM) do you select as the destination LRM ?",
-	"choices" :[
-		"A) The core processor modules/communications (CPM/Comm).",
-		"B) The input/output module (IOM) (M003) and IOM (M004).",
-		"C) The core processor module. airplane condition monitoring function (CPM/ACMF)."
-	],
-	"correctAnswer": "C",
 	"category": "ATA 31"
 },
 {
@@ -1226,16 +1166,6 @@ const allQuestions = [
 		"A) Move the control column.",
 		"B) Turn the display unit 180 degrees.",
 		"C) Remove the center upper display unit first."
-	],
-	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
-	"question": "On the B777-200 , The core processor module/airplane condition monitoring function (CPM/ACMF) module is in the  ?",
-	"choices" :[
-		"A) Right AIMS cabinet.",
-		"B) Left AIMS cabinet.",
-		"C) Left and right AIMS cabinets."
 	],
 	"correctAnswer": "B",
 	"category": "ATA 31"
@@ -1381,7 +1311,7 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "The 7 power control switches give a grounf to:",
+	"question": "The 7 power control switches give a ground to:",
 	"choices" :[
 		"A) The Linear Output Monitor/Control circuit",
 		"B) The 7 Linear Regulator",
@@ -1391,7 +1321,7 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "The Preregulator of the System Card Files are powered by:",
+	"question": "The Preregulator 1 of the System Card Files are powered by:",
 	"choices" :[
 		"A) The Bat bus section 2",
 		"B) The hot bat bus",
@@ -1411,7 +1341,7 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "Both SCF Linear Monitor CArds are normally powered by:",
+	"question": "Both SCF Linear Monitor Cards are normally powered by:",
 	"choices" :[
 		"A) Preregulator 1",
 		"B) Preregulator 2",
