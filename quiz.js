@@ -1164,7 +1164,7 @@ const allQuestions = [
 	"question": "The central maintenance computing function software is in which of these AIMS cabinet line replaceable modules (LRMs) ?",
 	"choices" :[
 		"A) Maintenance access terminal (MAT) and portable maintenance access terminal (PMATs).",
-		"B) Core processor modules/communications (CPM/Comm).",
+		"B) IOM 3.",
 		"C) Core processor modules/graphics generators (CPM/GGs)."
 	],
 	"correctAnswer": "B",
