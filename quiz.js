@@ -1675,10 +1675,11 @@ const allQuestions = [
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let selectedQuestions;
+let selectedQuestions = [];
 let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
+const numberOfQuestions = 20;
 
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
@@ -1689,14 +1690,11 @@ function displayCategories() {
     let categories = [...new Set(allQuestions.map(question => question.category))];
     let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
     let categoriesElement = document.getElementById("categories");
-    console.log(categoriesElement); // Vérifier si l'élément existe
     if (categoriesElement) {
-        console.log("Categories element found.");
         categoriesElement.innerHTML = categoriesHTML;
-    } else {
-        console.log("Categories element not found.");
     }
 }
+
 document.getElementById("startButton").addEventListener("click", function() {
     let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
     if (selectedCategories.length === 0) {
@@ -1705,13 +1703,13 @@ document.getElementById("startButton").addEventListener("click", function() {
     }
     startQuiz(selectedCategories);
 });
-function startQuiz() {
+
+function startQuiz(selectedCategories) {
     console.log("Starting quiz...");
-    let selectedCategories = Array.from(document.querySelectorAll("#categories input:checked")).map(input => input.value);
-    console.log("Selected categories:", selectedCategories);
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
     console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
+    usedQuestions = [];
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
     document.getElementById("quiz").style.display = "block";
@@ -1730,28 +1728,48 @@ function shuffleQuestions() {
         allQuestionsCopy = [...usedQuestions];
         usedQuestions = [];
     }
-    let remainingQuestions = allQuestionsCopy.filter(question => !usedQuestions.includes(question));
-    shuffleArray(remainingQuestions);
-    questions = remainingQuestions.slice(0, numberOfQuestions);
-    usedQuestions = usedQuestions.concat(questions);
+    shuffleArray(allQuestionsCopy);
+    questions = allQuestionsCopy.slice(0, numberOfQuestions);
 }
-
-const numberOfQuestions = 20;
 
 function displayQuestion() {
     console.log("Displaying question...");
-    const quizElement = document.getElementById("quiz");
-
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
+        const quizElement = document.getElementById("quiz");
+        const question = questions[currentQuestion];
         let choicesHTML = "";
-        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="A"> ${questions[currentQuestion].choices[0]}</label></div>`;
-        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="B"> ${questions[currentQuestion].choices[1]}</label></div>`;
-        choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="C"> ${questions[currentQuestion].choices[2]}</label></div>`;
 
-       quizElement.innerHTML = `<p class="question">Question ${currentQuestion + 1}: ${questions[currentQuestion].question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()">Question suivante</button>`;
-        document.getElementById("nextButton").disabled = true;
+        question.choices.forEach((choice, index) => {
+            choicesHTML += `<div class="choice"><label><input type="radio" name="choice" value="${String.fromCharCode(65 + index)}"> ${choice}</label></div>`;
+        });
+
+        quizElement.innerHTML = `<p class="question">Question ${currentQuestion + 1}: ${question.question}</p>${choicesHTML}<button onclick="checkAnswer()">Soumettre</button><button id="nextButton" onclick="nextQuestion()" disabled>Question suivante</button>`;
+    }
+}
+
+function checkAnswer() {
+    console.log("Checking answer...");
+    const selectedChoice = document.querySelector("input[name='choice']:checked");
+
+    if (selectedChoice) {
+        const selectedValue = selectedChoice.value.trim();
+        const correctAnswer = questions[currentQuestion].correctAnswer.trim();
+
+        const isCorrect = selectedValue === correctAnswer;
+        showResult(isCorrect, selectedChoice);
+
+        const choices = document.querySelectorAll("input[name='choice']");
+        choices.forEach((choice) => {
+            choice.disabled = true;
+        });
+        document.getElementById("nextButton").disabled = false;
+
+        clearTimeout(timer);
+        startTimer();
+    } else {
+        alert("Veuillez sélectionner une réponse.");
     }
 }
 
@@ -1787,32 +1805,8 @@ function displayMessage(message, color) {
     quizElement.appendChild(messageElement);
 }
 
-function checkAnswer() {
-    console.log("Checking answer...");
-    const selectedChoice = document.querySelector("input[name='choice']:checked");
-
-    if (selectedChoice) {
-        const selectedValue = selectedChoice.value.trim().toLowerCase();
-        const correctAnswer = questions[currentQuestion].correctAnswer.trim().toLowerCase();
-
-        const isCorrect = selectedValue === correctAnswer;
-        showResult(isCorrect, selectedChoice);
-
-        const choices = document.querySelectorAll("input[name='choice']");
-        choices.forEach((choice) => {
-            choice.disabled = true;
-            document.getElementById("nextButton").disabled = false;
-        });
-
-        clearTimeout(timer);
-        startTimer();
-    } else {
-        alert("Veuillez sélectionner une réponse.");
-    }
-}
-
 function startTimer() {
-    timer = setTimeout(nextQuestion, 120000);
+    timer = setTimeout(nextQuestion, 5000);
 }
 
 function nextQuestion() {
@@ -1838,6 +1832,5 @@ function restartQuiz() {
     window.location.reload();
 }
 
-document.getElementById("startButton").addEventListener("click", startQuiz);
-
 displayCategories();
+
