@@ -507,7 +507,7 @@ const allQuestions = [
 		"B) Seven.",
 		"C) Eleven."
 	],
-	"correctAnswer": "C",
+	"correctAnswer": "B",
 	"category": "ATA 31"
 },
 {
