@@ -1676,7 +1676,7 @@ let currentQuestion = 0;
 let score = 0;
 let timer;
 let selectedQuestions = [];
-let usedQuestions = [];
+let usedQuestions = JSON.parse(localStorage.getItem('usedQuestions')) || [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
 const numberOfQuestions = 20;
@@ -1686,7 +1686,6 @@ function filterQuestionsByCategory(categories) {
 }
 
 function displayCategories() {
-    console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
     let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
     let categoriesElement = document.getElementById("categories");
@@ -1705,11 +1704,10 @@ document.getElementById("startButton").addEventListener("click", function() {
 });
 
 function startQuiz(selectedCategories) {
-    console.log("Starting quiz...");
     selectedQuestions = filterQuestionsByCategory(selectedCategories);
-    console.log("Selected questions:", selectedQuestions);
     allQuestionsCopy = [...selectedQuestions];
-    usedQuestions = [];
+    currentQuestion = 0;
+    score = 0;
     shuffleQuestions();
     document.getElementById("startButton").style.display = "none";
     document.getElementById("quiz").style.display = "block";
@@ -1730,10 +1728,11 @@ function shuffleQuestions() {
     }
     shuffleArray(allQuestionsCopy);
     questions = allQuestionsCopy.slice(0, numberOfQuestions);
+    usedQuestions = usedQuestions.concat(questions);
+    localStorage.setItem('usedQuestions', JSON.stringify(usedQuestions));
 }
 
 function displayQuestion() {
-    console.log("Displaying question...");
     if (currentQuestion >= questions.length) {
         displayFinalResult();
     } else {
@@ -1750,7 +1749,6 @@ function displayQuestion() {
 }
 
 function checkAnswer() {
-    console.log("Checking answer...");
     const selectedChoice = document.querySelector("input[name='choice']:checked");
 
     if (selectedChoice) {
@@ -1806,7 +1804,7 @@ function displayMessage(message, color) {
 }
 
 function startTimer() {
-    timer = setTimeout(nextQuestion, 120000);
+    timer = setTimeout(nextQuestion, 5000);
 }
 
 function nextQuestion() {
@@ -1835,7 +1833,6 @@ function restartQuiz() {
     displayCategories();
     document.getElementById("startButton").style.display = "block";
     document.getElementById("quiz").style.display = "none";
-}
 }
 
 displayCategories();
