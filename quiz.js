@@ -11,7 +11,7 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "The CMS:",
+	"question": "The CMCS:",
 	"choices": [
 		"A) Generates long term reports for trend monitoring",
 		"B) Provides detailed fault information to help in troubleshooting",
