@@ -467,7 +467,7 @@ const allQuestions = [
 		"B) To the left system and left flight control ARINC 629 bus.",
 		"C) To the left and right systems ARINC 629 bus."
 	],
-	"correctAnswer": "A",
+	"correctAnswer": "C",
 	"category": "ATA 31"
 },
 {
@@ -1806,7 +1806,7 @@ function displayMessage(message, color) {
 }
 
 function startTimer() {
-    timer = setTimeout(nextQuestion, 5000);
+    timer = setTimeout(nextQuestion, 120000);
 }
 
 function nextQuestion() {
