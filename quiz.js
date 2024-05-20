@@ -1609,7 +1609,7 @@ let selectedQuestions = [];
 let usedQuestions = [];
 let allQuestionsCopy = [...allQuestions];
 let questions = [];
-const numberOfQuestions = 20;
+const numberOfQuestions = 40;
 
 function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
