@@ -1836,4 +1836,3 @@ function restartQuiz() {
 }
 
 displayCategories();
-
