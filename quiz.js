@@ -1,6 +1,486 @@
 const allQuestions = [
 
 {
+  "question": "What controls the electrical load shedding?",
+  "choices": [
+    "A) BPCU (bus power control unit).",
+    "B) ELMS (electrical load management unit).",
+    "C) GCUs (generator control unit)."
+  ],
+  "correctAnswer": "B",
+  "category": "ATA 24"
+},
+    {
+        "question": "Where is the backup generator?",
+        "choices": [
+            "A) On the engine main gearbox.",
+            "B) In the main equipment center (MEC).",
+            "C) On the APU gearbox."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "If a backup generator has too much oil (over-serviced), the electrical maintenance page OIL LEVEL indication shows?",
+        "choices": [
+            "A) OVERFILL.",
+            "B) NORMAL.",
+            "C) SERVICE."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The left and right IDGs are the only power sources operating. What happens when the right IDG fails?",
+        "choices": [
+            "A) The standby system supplies power to the right main ac bus.",
+            "B) The two backup generators supply power to the right main ac bus.",
+            "C) The left main ac bus supplies power to the right main ac bus."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "What component controls the backup generators?",
+        "choices": [
+            "A) Backup generator converter.",
+            "B) ELMS electronics unit.",
+            "C) BPCU (Bus Power Control Unit)."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The backup generator converter automatically does a test of the backup generators immediately after?",
+        "choices": [
+            "A) Engine starts.",
+            "B) DC/standby self-tests.",
+            "C) Engine shutdowns."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The airplane is on the ground and has no electrical power. When you push the battery switch ON, what receives power?",
+        "choices": [
+            "A) Battery bus.",
+            "B) Battery No. 2 bus.",
+            "C) Captain's flight instrument bus."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The PMGs that supply power to the flight controls dc (FCDC) power supply assembly (PSA) are in the?",
+        "choices": [
+            "A) Backup generators.",
+            "B) IDGs.",
+            "C) APU generator."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "What controls the relay that sends power to the ground handling bus?",
+        "choices": [
+            "A) BPCU (Bus Power Control Unit).",
+            "B) APU GCU (Generator Control Unit).",
+            "C) Flight GCU."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The engine is running and the IDG oil becomes too hot. What protects the IDG?",
+        "choices": [
+            "A) The ELMS sheds IDG loads.",
+            "B) A thermal plug in the IDG melts and the drive disconnects.",
+            "C) The GCU automatically energizes the disconnect solenoid."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "What cools the APU generator?",
+        "choices": [
+            "A) APU oil.",
+            "B) APU fuel.",
+            "C) APU bleed air."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The supplement cooling fan supplies cooling air to the?",
+        "choices": [
+            "A) Backup generator converter.",
+            "B) Backup generator air/oil heat exchanger.",
+            "C) Main battery charger."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Primary external power always does a break-power transfer with the?",
+        "choices": [
+            "A) APU generator.",
+            "B) Secondary external power.",
+            "C) Left IDG."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "What ELMS panels contain the EEUs?",
+        "choices": [
+            "A) P110, P210, P310.",
+            "B) P100, P200, P300.",
+            "C) P110, P210, P310, P320."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The BPCU has these power sources?",
+        "choices": [
+            "A) Primary external power, Hot bat bus, Right DC bus.",
+            "B) Batt bus section 2, Right DC bus.",
+            "C) Primary external power, Batt bus section 2, Right DC bus."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "When the primary external power supply power only to the ground handling bus, the two indication lights are as follow?",
+        "choices": [
+            "A) CONNECTED and NOT IN USE lights are off.",
+            "B) CONNECTED light is on and NOT IN USE light is off.",
+            "C) CONNECTED and NOT IN USE lights are on."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "If two power sources supply power to the airplane?",
+        "choices": [
+            "A) The P310 power management panel controls the loads shedding in interpanel operation mode.",
+            "B) The ELMS controls independently the left side (P110) shedding, and the right side (P210) shedding (independent operation).",
+            "C) The P310 power management panel controls the loads shedding in independent operation mode."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Electrical Power System operates normally?",
+        "choices": [
+            "A) As one channel powered by the left or right IDG source.",
+            "B) As two left and right power channels always coupled.",
+            "C) As two independent left and right power channels."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Which bus operates only on the ground?",
+        "choices": [
+            "A) The Ground Service Bus.",
+            "B) The Ground Handling Bus.",
+            "C) The Left Main AC Bus."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "On the B777-300, the ELMS uses what component for digital control?",
+        "choices": [
+            "A) Signal interface unit.",
+            "B) Power panel controller.",
+            "C) Control and communication unit."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "On the B777-300, what is the purpose of the ELMS signal interface unit?",
+        "choices": [
+            "A) Provides all digital interfaces in and out of ELMS.",
+            "B) Provides all analog interfaces in and out of ELMS.",
+            "C) Interfaces AIMS with ELMS."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "On the B777-300, how many signal interface units are in a power management panel?",
+        "choices": [
+            "A) 1.",
+            "B) 2.",
+            "C) 3."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "At initial power application, battery switch in 'ON' position. The Hot Bat Bus supply?",
+        "choices": [
+            "A) Stand By Bus.",
+            "B) Bat Bus n°2.",
+            "C) Capt Flight Inst Bus."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The towing power buses are supplied by the?",
+        "choices": [
+            "A) Ground Handling Bus.",
+            "B) Standby Power.",
+            "C) Hot Bat Bus."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The Backup Generator Converter turns the supplement cooling fan on, during which condition?",
+        "choices": [
+            "A) Backup system supplies power to both transfer bus.",
+            "B) Engine shutdown.",
+            "C) Inlet air temperature is greater than 98°C."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The RAT (Ram Air Turbine) makes three phases 115vac, the frequency is regulated by?",
+        "choices": [
+            "A) The RAT GCU.",
+            "B) The RAT propeller/governor unit.",
+            "C) Nothing, the TRU (Transfo Rectifier Unit) can use any frequency."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The PSA (Power Supply Assembly) has three modes of operation: primary, secondary and back-up; in which case it operates in secondary mode?",
+        "choices": [
+            "A) With engine running and IDG failed",
+            "B) When the pink battery is low.",
+            "C) When there is no power from either PMG."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The Power Management Panels P110 and P210 control load shedding, they work together (Inter-panel operation) when the supply power is?",
+        "choices": [
+            "A) 240kva",
+            "B) 210kva",
+            "C) 120kva"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "For the NBPT (No Break Power Transfer) function, between external power and APU generator, the BPCU (Bus Power Control Unit) sends a request to the:",
+        "choices": [
+            "A) APU Generator Control Unit",
+            "B) APU Controller",
+            "C) Ground power source through the contacts 'E and F' of the external power receptacle."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "During a normal autoland bus isolation, the right critical autoland components get power from",
+        "choices": [
+            "A) Right B/U Generator",
+            "B) Right IDG",
+            "C) Battery bus."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "On the maintenance page, at what moment can we read the status of the oil filter of the IDG?",
+        "choices": [
+            "A) Immediately after engine running",
+            "B) Engine shutdown and oil temperature greater than 62°C",
+            "C) Engine running and oil temperature smaller than 62°C"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The PPC (Power Panel Controller) receives signal from which unit?",
+        "choices": [
+            "A) CPU (Control Processor Unit) card",
+            "B) SIU (Signal Interface Unit)",
+            "C) CCU (Computing and Communications Unit)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The primary sources of electrical power are:",
+        "choices": [
+            "A) The integrated drive generators IDG’s only",
+            "B) The integrated drive generators IDG’s and the APU generator",
+            "C) The integrated drive generators IDG’s, the APU generator and external ground power"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "IDG can not be reconnected at the line maintenance if disconnected:",
+        "choices": [
+            "A) Accidentally by flight or ground crew",
+            "B) Automatically due the IDG oil gets too hot",
+            "C) Manually due to low oil pressure"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The IDG oil level data on the electrical maintenance page and the sighglass is not occurate until you wait a minimum of:",
+        "choices": [
+            "A) 5 minutes after engine shutdown",
+            "B) 10 minutes after engine shutdown",
+            "C) 30 minutes after engine shutdown"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The primary power source for the backup converter is:",
+        "choices": [
+            "A) The left backup generator",
+            "B) The right backup generator",
+            "C) Alternatively between two backup generators at next power up"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The OFF light on the BACKUP GEN switch comes on when:",
+        "choices": [
+            "A) Engine fire switch is pulled out",
+            "B) Backup generator converter is faulty",
+            "C) GCU is faulty"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The maintenance page will show NORMAL when the backup generator is shutdown, if:",
+        "choices": [
+            "A) The backup generator oil level is too low (if oil does not cover the underfill sensor)",
+            "B) The backup generator oil level is too high (if oil covers the two - underfill and overfill - sensors)",
+            "C) Oil covers the underfill sensor, but not the overfill sensor of the backup generator"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "For fiber nickel – cadmium (FNC) batteries:",
+        "choices": [
+            "A) Maintenance is required at A check interval",
+            "B) Maintenance is required at C check interval",
+            "C) No maintenance is necessary"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Standby DC power comes from:",
+        "choices": [
+            "A) Either the RAT generator or the main battery",
+            "B) Either the backup generators or the main battery",
+            "C) Either the hot battery bus or main battery"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The RAT can be deployed automatically when:",
+        "choices": [
+            "A) The airplane is in the air and all hydraulic power systems unpressurised for more than seconds",
+            "B) The airplane is in the air and the two transfer buses do not have power for more than 15 seconds",
+            "C) The airplane is in the air and the AC standby bus does not have power for more than 15 seconds"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The ground handling AC bus cannot be supplied from:",
+        "choices": [
+            "A) The APU generator",
+            "B) Primary external power",
+            "C) Secondary external power"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "No break Power Transfers between the external power sources and the IDG’s or APU generator is coordinated by:",
+        "choices": [
+            "A) The related GCU",
+            "B) The APU controller",
+            "C) The BPCU"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "The CONNECTED light above each receptacle in external power panel indicates that:",
+        "choices": [
+            "A) The related external power is selected in the flight deck",
+            "B) Ground service bus is connected",
+            "C) The power quality is good"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "To use secondary external power, you must:",
+        "choices": [
+            "A) Connect the primary external power",
+            "B) Push the battery switch on",
+            "C) Connect the primary external power or push the battery switch on"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "When there are only two IDG operating, what happens if right IDG fails?",
+        "choices": [
+            "A) BU converter will power AC right bus",
+            "B) AC left bus will power AC right bus",
+            "C) STBY system will power AC right bus"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Backup generator BUG Converter will automatically check the BUG",
+        "choices": [
+            "A) Right after engine shut down",
+            "B) When DC STBY self test",
+            "C) Right after the engine is started"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 24"
+    },
+    {
+        "question": "Which External Power Source will automatically power Ground Handling bus without selecting BAT switch to ON",
+        "choices": [
+            "A) Primary",
+            "B) Secondary",
+            "C) Primary and Secondary"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 24"
+    },	
+{
 	"question": "Speed tape parameters (VMP/MMO/VMAX/VMIN) are calculated by:",
 	"choices": [
 		"A) The FMCF",
