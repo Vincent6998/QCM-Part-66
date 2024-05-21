@@ -1,6 +1,6 @@
 const allQuestions = [
 
-	{
+{
     "question": "The Emergency Locator Transmitter (ELT) uses power from:",
     "choices": [
       "A) airplane power.",
@@ -1059,7 +1059,7 @@ const allQuestions = [
         "correctAnswer": "C",
         "category": "ATA 23
     },
-{
+    {
         "question": "The IFE system provides entertainment in which classes?",
         "choices": [
             "A) First class only.",
