@@ -1156,7 +1156,7 @@ const allQuestions = [
 	"B) operate as a TRU",
 	"C) charge the FCDC batteries"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1166,7 +1166,7 @@ const allQuestions = [
 	"B) is converted to 28v dc by the PSA Power Converters",
 	"C) is regulated to 28v ac by a governor unit"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1176,7 +1176,7 @@ const allQuestions = [
 	"B) will power down",
 	"C) goes to the Backup mode"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1186,7 +1186,7 @@ const allQuestions = [
 	"B) Normal",
 	"C) Service"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1196,7 +1196,7 @@ const allQuestions = [
 	"B) Primary",
 	"C) Secondary"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1206,7 +1206,7 @@ const allQuestions = [
 	"B) there is no power from the BUG PMG",
 	"C) never"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1216,7 +1216,7 @@ const allQuestions = [
 	"B) the onside 28 VDC bus is not powered",
 	"C) the FCDC Battery is low"
 	],
-	"correctAnswer": "A"
+	"correctAnswer": "A",
         "category": "24"
 },
 {
@@ -1226,7 +1226,7 @@ const allQuestions = [
 	"B) when a Backup Generator supplies power to a XFR Bus",
 	"C) when the OAT is above 26°c"
 	],
-	"correctAnswer": "A"
+	"correctAnswer": "A",
         "category": "24"
 },
 {
@@ -1236,7 +1236,7 @@ const allQuestions = [
 	"B) the Forward Equipment Cooling System",
 	"C) the Backup Generator Converter"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1246,7 +1246,7 @@ const allQuestions = [
 	"B) P110 and 210 in Independent Operation mode",
 	"C) P110, P210 and P310 in Interpanel Operation mode"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1256,7 +1256,7 @@ const allQuestions = [
 	"B) the GCU which disconnects the IDG",
 	"C) the ELMS which sheds the IDG loads"
 	],
-	"correctAnswer": "A"
+	"correctAnswer": "A",
         "category": "24"
 },
 {
@@ -1266,7 +1266,7 @@ const allQuestions = [
 	"B) open the Battery Interlock Circuit Breaker on the FCDC PSA",
 	"C) do an ATA 24 Ground Test"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1276,7 +1276,7 @@ const allQuestions = [
 	"B) on the ground or during an Autoland Bus",
 	"C) only on the ground"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1286,7 +1286,7 @@ const allQuestions = [
 	"B) the Signal Interface Unit",
 	"C) the Computing and Communication Unit"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1296,7 +1296,7 @@ const allQuestions = [
 	"B) the Backup Generators",
 	"C) the IDGS"
 	],
-	"correctAnswer": "B"
+	"correctAnswer": "B",
         "category": "24"
 },
 {
@@ -1306,7 +1306,7 @@ const allQuestions = [
 	"B) the left IDG",
 	"C) the right IDG"
 	],
-	"correctAnswer": "C"
+	"correctAnswer": "C",
         "category": "24"
 },
 {
@@ -1316,7 +1316,7 @@ const allQuestions = [
 	"B) engine running and IDG oil temperature below 62°c",
 	"C) no power to the EEC and engine shutdown for less than 1 minute"
 	],
-	"correctAnswer": "A"
+	"correctAnswer": "A",
         "category": "24"
 },
   {
