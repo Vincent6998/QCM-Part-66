@@ -1149,6 +1149,176 @@ const allQuestions = [
         "correctAnswer": "A",
         "category": "ATA 23"
     },
+{
+	"question": "The Main Battery Charger can::",
+	"choices" :[
+	"A) charge the APU battery",
+	"B) operate as a TRU",
+	"C) charge the FCDC batteries"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "PMGs power:",
+	"choices" :[
+	"A) is regulated to 28v dc by the BUG CSD and a TRU",
+	"B) is converted to 28v dc by the PSA Power Converters",
+	"C) is regulated to 28v ac by a governor unit"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "In Secondary mode and if the voltage on the FCDC bus drops below 21.0v dc with the airplane on the ground, the PSA:",
+	"choices" :[
+	"A) reverts to the primary mode",
+	"B) will power down",
+	"C) goes to the Backup mode"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "If a BUG has too much oil, the electrical maintenance page OIL LEVEL indication is",
+	"choices" :[
+	"A) Overfull",
+	"B) Normal",
+	"C) Service"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "which mode of operation are the FCDC PSAs when the airplane is on the ground with the engines off",
+	"choices" :[
+	"A) Backup",
+	"B) Primary",
+	"C) Secondary"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "The right FCDC PSA operates in the Backup Mode",
+	"choices" :[
+	"A) the FCDC Battery is low",
+	"B) there is no power from the BUG PMG",
+	"C) never"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "The FCDC PSAs operate in the Secondary Mode when",
+	"choices" :[
+	"A) there is no power from the BUGS PMGS",
+	"B) the onside 28 VDC bus is not powered",
+	"C) the FCDC Battery is low"
+	],
+	"correctAnswer": "A"
+        "category": "24"
+},
+{
+	"question": "The supplemental cooling fan operates:",
+	"choices" :[
+	"A) when a Backup Generator supplies power to the 2 XFR Buses",
+	"B) when a Backup Generator supplies power to a XFR Bus",
+	"C) when the OAT is above 26°c"
+	],
+	"correctAnswer": "A"
+        "category": "24"
+},
+{
+	"question": "The Supplemental Cooling Fan is turned on by:",
+	"choices" :[
+	"A) the Backup Generator GCU",
+	"B) the Forward Equipment Cooling System",
+	"C) the Backup Generator Converter"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "When two 90 KVA GPUs give power to the airplane load shedding is controlled by",
+	"choices" :[
+	"A) P110, P210 and P310 in Independent Operation mode",
+	"B) P110 and 210 in Independent Operation mode",
+	"C) P110, P210 and P310 in Interpanel Operation mode"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "In case of oil overheat an IDG is protected by:",
+	"choices" :[
+	"A) a thermal operated mechanism that melts and disconnects the IDG",
+	"B) the GCU which disconnects the IDG",
+	"C) the ELMS which sheds the IDG loads"
+	],
+	"correctAnswer": "A"
+        "category": "24"
+},
+{
+	"question": "To prevent the FCDC Batteries from draining when the PFCs are removed",
+	"choices" :[
+	"A) disconnect the main battery from the Hot Bat Bus",
+	"B) open the Battery Interlock Circuit Breaker on the FCDC PSA",
+	"C) do an ATA 24 Ground Test"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "No Break Power Transfers occur:",
+	"choices" :[
+	"A) in case of an IDG failure",
+	"B) on the ground or during an Autoland Bus",
+	"C) only on the ground"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "The Power Panel Controller receives digital commands from:",
+	"choices" :[
+	"A) the BPCU",
+	"B) the Signal Interface Unit",
+	"C) the Computing and Communication Unit"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "The PMGs supplying power to the FCDC PSAs are located in:",
+	"choices" :[
+	"A) the APU generators",
+	"B) the Backup Generators",
+	"C) the IDGS"
+	],
+	"correctAnswer": "B"
+        "category": "24"
+},
+{
+	"question": "During autoland, with all power sources available, the center critical autoland components are powered by:",
+	"choices" :[
+	"A) the right Backup Generator",
+	"B) the left IDG",
+	"C) the right IDG"
+	],
+	"correctAnswer": "C"
+        "category": "24"
+},
+{
+	"question": "To monitor the clogging of an IDG oil filter there must be::",
+	"choices" :[
+	"A) engine running and IDG oil temperature above 62°c",
+	"B) engine running and IDG oil temperature below 62°c",
+	"C) no power to the EEC and engine shutdown for less than 1 minute"
+	],
+	"correctAnswer": "A"
+        "category": "24"
+},
   {
     "question": "Where are the electrical power system control switches located in the flight compartment?",
     "choices": [
