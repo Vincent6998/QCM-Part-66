@@ -1,6 +1,227 @@
 const allQuestions = [
 
 
+  {
+    "question": "Where are the electrical power system control switches located in the flight compartment?",
+    "choices": [
+      "A) P200 right power panel and P61 overhead maintenance panel",
+      "B) P5 overhead panel and P61 overhead maintenance panel",
+      "C) P300 auxiliary power panel and P110 left power management panel"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Where is the RAT generator located?",
+    "choices": [
+      "A) P200 right power panel",
+      "B) E4 rack",
+      "C) Wing-to-body fairing aft of the right main gear"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What components are in the E5 rack?",
+    "choices": [
+      "A) ELMS panels",
+      "B) Backup generator and IDG fuel/oil heat exchanger",
+      "C) FCDC components"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Where is the APU generator attached?",
+    "choices": [
+      "A) Main equipment center",
+      "B) APU gearbox",
+      "C) Engine accessory gearbox"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What components are in the E10 rack?",
+    "choices": [
+      "A) Backup generator and IDG fuel/oil heat exchanger",
+      "B) FCDC components",
+      "C) APU battery and battery charger"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Where does the IDG attach to on each engine?",
+    "choices": [
+      "A) Aft side of the main gearbox",
+      "B) Wing-to-body fairing",
+      "C) E10 rack"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Where is the ground service switch located?",
+    "choices": [
+      "A) P300 auxiliary power panel",
+      "B) Flight attendant panel by door 1 left",
+      "C) P310 standby power management panel"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What racks in the main equipment center contain electrical system components?",
+    "choices": [
+      "A) E1, E2, E3, and E4",
+      "B) E5, E10, and E20",
+      "C) E50, E60, and E70"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 24"
+  },
+  {
+    "question": "How many momentary-action switches are on the electrical panel?",
+    "choices": [
+      "A) Two",
+      "B) Four",
+      "C) Six"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Which switch connects the hot battery bus to the battery bus 2?",
+    "choices": [
+      "A) APU Generator Switch",
+      "B) Bus Tie Switches",
+      "C) Battery Switch"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Which switch controls the operation of its related BTB?",
+    "choices": [
+      "A) External Power Switches",
+      "B) Backup Generator Switches",
+      "C) Bus Tie Switches"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What does the AVAIL light indicate for the external power switches?",
+    "choices": [
+      "A) A closed EPC",
+      "B) An open EPC",
+      "C) Good power quality of the ground power source"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What does the ISLN light indicate for the bus tie switches?",
+    "choices": [
+      "A) A closed BTB",
+      "B) An open BTB",
+      "C) Good power quality of the ground power source"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What is the order of power source selection for the ground service bus?",
+    "choices": [
+      "A) APU generator, Primary external, Right main ac bus",
+      "B) Primary external, Right main ac bus, APU generator",
+      "C) Right main ac bus, Primary external, APU generator"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "When both primary external power and the APU generator are available, which power source is selected for the ground handling ac bus?",
+    "choices": [
+      "A) APU generator",
+      "B) Secondary external power",
+      "C) Primary external power"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Which of the following connects power between the main ac buses?",
+    "choices": [
+      "A) Ground handling relay",
+      "B) GSSR",
+      "C) BTBs"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Which of the following is not a component of the external power system?",
+    "choices": [
+      "A) Primary EPC",
+      "B) Ground handling TRU",
+      "C) APU generator"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What does the BPCU control on the airplane?",
+    "choices": [
+      "A) External power only",
+      "B) Ground handling and ground service power",
+      "C) Both external power and ground service power"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What happens to the ground handling bus if the engines are running or if the airplane is in the air?",
+    "choices": [
+      "A) It has power",
+      "B) It does not have power",
+      "C) It is disconnected"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "Which receptacle should you always use when connecting to external power?",
+    "choices": [
+      "A) Secondary receptacle",
+      "B) Primary receptacle",
+      "C) Either a or b"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "What are the steps to apply external power to the airplane electrical system?",
+    "choices": [
+      "A) Observe indications, operate control switches, connect ground power plugs",
+      "B) Connect ground power plugs, observe indications, operate control switches",
+      "C) Operate control switches, connect ground power plugs, observe indications"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 24"
+  },
+  {
+    "question": "When do the two lights above the primary receptacle come on?",
+    "choices": [
+      "A) When the ground service bus is switched on",
+      "B) When the EPC is closed",
+      "C) When power quality is good"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 24"
+  },
+
 {
   "question": "What controls the electrical load shedding?",
   "choices": [
