@@ -158,7 +158,7 @@ const allQuestions = [
             "B) CONNECTED light is on and NOT IN USE light is off.",
             "C) CONNECTED and NOT IN USE lights are on."
         ],
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "category": "ATA 24"
     },
     {
