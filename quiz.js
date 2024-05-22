@@ -1057,7 +1057,7 @@ const allQuestions = [
             "C) The PAT (Primary Access Terminal)."
         ],
         "correctAnswer": "C",
-        "category": "ATA 23
+        "category": "ATA 23"
     },
 {
         "question": "The IFE system provides entertainment in which classes?",
