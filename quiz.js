@@ -1157,7 +1157,7 @@ const allQuestions = [
 	"C) charge the FCDC batteries"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "PMGs power:",
@@ -1167,7 +1167,7 @@ const allQuestions = [
 	"C) is regulated to 28v ac by a governor unit"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "In Secondary mode and if the voltage on the FCDC bus drops below 21.0v dc with the airplane on the ground, the PSA:",
@@ -1177,7 +1177,7 @@ const allQuestions = [
 	"C) goes to the Backup mode"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "If a BUG has too much oil, the electrical maintenance page OIL LEVEL indication is",
@@ -1187,7 +1187,7 @@ const allQuestions = [
 	"C) Service"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "which mode of operation are the FCDC PSAs when the airplane is on the ground with the engines off",
@@ -1197,7 +1197,7 @@ const allQuestions = [
 	"C) Secondary"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The right FCDC PSA operates in the Backup Mode",
@@ -1207,7 +1207,7 @@ const allQuestions = [
 	"C) never"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The FCDC PSAs operate in the Secondary Mode when",
@@ -1217,7 +1217,7 @@ const allQuestions = [
 	"C) the FCDC Battery is low"
 	],
 	"correctAnswer": "A",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The supplemental cooling fan operates:",
@@ -1227,7 +1227,7 @@ const allQuestions = [
 	"C) when the OAT is above 26°c"
 	],
 	"correctAnswer": "A",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The Supplemental Cooling Fan is turned on by:",
@@ -1237,7 +1237,7 @@ const allQuestions = [
 	"C) the Backup Generator Converter"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "When two 90 KVA GPUs give power to the airplane load shedding is controlled by",
@@ -1247,7 +1247,7 @@ const allQuestions = [
 	"C) P110, P210 and P310 in Interpanel Operation mode"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "In case of oil overheat an IDG is protected by:",
@@ -1257,7 +1257,7 @@ const allQuestions = [
 	"C) the ELMS which sheds the IDG loads"
 	],
 	"correctAnswer": "A",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "To prevent the FCDC Batteries from draining when the PFCs are removed",
@@ -1267,7 +1267,7 @@ const allQuestions = [
 	"C) do an ATA 24 Ground Test"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "No Break Power Transfers occur:",
@@ -1277,7 +1277,7 @@ const allQuestions = [
 	"C) only on the ground"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The Power Panel Controller receives digital commands from:",
@@ -1287,7 +1287,7 @@ const allQuestions = [
 	"C) the Computing and Communication Unit"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "The PMGs supplying power to the FCDC PSAs are located in:",
@@ -1297,7 +1297,7 @@ const allQuestions = [
 	"C) the IDGS"
 	],
 	"correctAnswer": "B",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "During autoland, with all power sources available, the center critical autoland components are powered by:",
@@ -1307,7 +1307,7 @@ const allQuestions = [
 	"C) the right IDG"
 	],
 	"correctAnswer": "C",
-        "category": "24"
+        "category": "ATA 24"
 },
 {
 	"question": "To monitor the clogging of an IDG oil filter there must be::",
@@ -1317,7 +1317,7 @@ const allQuestions = [
 	"C) no power to the EEC and engine shutdown for less than 1 minute"
 	],
 	"correctAnswer": "A",
-        "category": "24"
+        "category": "ATA 24"
 },
   {
     "question": "Where are the electrical power system control switches located in the flight compartment?",
