@@ -1671,16 +1671,6 @@ const allQuestions = [
         "category": "ATA 24"
     },
     {
-        "question": "What ELMS panels contain the EEUs?",
-        "choices": [
-            "A) P110, P210, P310.",
-            "B) P100, P200, P300.",
-            "C) P110, P210, P310, P320."
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 24"
-    },
-    {
         "question": "The BPCU has these power sources?",
         "choices": [
             "A) Primary external power, Hot bat bus, Right DC bus.",
