@@ -1719,17 +1719,6 @@ const allQuestions = [
     "correctAnswer": "B",
     "category": "ATA 24"
   },
-  {
-    "question": "When do the two lights above the primary receptacle come on?",
-    "choices": [
-      "A) When the ground service bus is switched on",
-      "B) When the EPC is closed",
-      "C) When power quality is good"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 24"
-  },
-
 {
   "question": "What controls the electrical load shedding?",
   "choices": [
@@ -2146,16 +2135,6 @@ const allQuestions = [
             "A) The related GCU",
             "B) The APU controller",
             "C) The BPCU"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 24"
-    },
-    {
-        "question": "The CONNECTED light above each receptacle in external power panel indicates that:",
-        "choices": [
-            "A) The related external power is selected in the flight deck",
-            "B) Ground service bus is connected",
-            "C) The power quality is good"
         ],
         "correctAnswer": "C",
         "category": "ATA 24"
