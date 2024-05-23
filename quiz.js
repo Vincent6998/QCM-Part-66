@@ -1,5 +1,125 @@
 const allQuestions = [
 
+{
+    "question": "On a B777 an Arinc 629 bus can connect to a maximum of:",
+    "choices": [
+      "A) 7 LRUS",
+      "B) 11 LRUS",
+      "C) 46 LRUS"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 23"
+  },
+  {
+    "question": "An Arinc 629 Current Mode Coupler connects:",
+    "choices": [
+      "A) a computer to an Arinc 629 bus",
+      "B) an Arinc 429 bus to an Arinc 629 bus",
+      "C) a fiber optic bus to an Arinc 629 bus"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The OPAS connects the Overhead panel to:",
+    "choices": [
+      "A) Fiber optic buses",
+      "B) Arinc 429 buses",
+      "C) Arinc 629 buses"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The OPAS:",
+    "choices": [
+      "A) multiplexes O/Head Panel switches signals to send them to A629 buses",
+      "B) multiplexes A629 signals to turn on O/ Head panel lights",
+      "C) demultiplexes O/Head Panel switches signals to send them to A629 buses"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The components of the OPAS are:",
+    "choices": [
+      "A) OPCF, 1 PDCU and 1 OPBC",
+      "B) OPCFS, 2 PDCUs and 2 OPBCS",
+      "C) OPCF, 1 PDCU and 2 OPBCS"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The OPAS:",
+    "choices": [
+      "A) Changes A629 to A429 and vice versa",
+      "B) Connects O/Head Panel switches and lights to A629 buses",
+      "C) Connects computers to the A629 buses"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 23"
+  },
+  {
+    "question": "Current Mode Couplers of different brands (SCI and Amphenol):",
+    "choices": [
+      "A) cannot be installed on the same bus",
+      "B) cannot be mixed on a B777",
+      "C) are interchangeable"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The ARINC 629 buses are checked through:",
+    "choices": [
+      "A) a software configuration check of one LRU on each bus.",
+      "B) an ARINC 629 system test from the MAT",
+      "C) an ARINC 629 operational test from"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 23"
+  },
+  {
+    "question": "In the periodic mode, the timer that allows an LRU to transmit again on an A629 bus is:",
+    "choices": [
+      "A) the Terminal Gap timer",
+      "B) the Synchronisation Gap timer",
+      "C) the Transmit Interval timer"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The System test of the Right OPAS tests:",
+    "choices": [
+      "A) the right OPBC, 1 port of each PDCU and 1 card of each OPCF",
+      "B) the right OPBC, the right PDCU and the right OPCF",
+      "C) the right and left OPBCs, 1 port of each PDCU and 1 card of each OPCF"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 23"
+  },
+  {
+    "question": "The rectifier in the Current Mode Coupler:",
+    "choices": [
+      "A) Changes Voltage data into Current data",
+      "B) Provides power to the coupler",
+      "C) Corrects faults in the data strings"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 23"
+  },
+  {
+    "question": "Discretes from the switches connected to the OPAS are:",
+    "choices": [
+      "A) multiplexed by the OPAS",
+      "B) demultiplexed by the OPAS",
+      "C) changed into Arinc 429."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 23"
+  },
  {
     "question": "The Emergency Locator Transmitter (ELT) uses power from:",
     "choices": [
