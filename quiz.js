@@ -2571,66 +2571,6 @@ const allQuestions = [
 	"category": "ATA 45"
 },
 {
-	"question": "The ARINC 629 coupler allows?",
-	"choices": [
-		"A) To connect a computer to the bus.",
-		"B) To connect a bus to another bus of the same type.",
-		"C) To connect an ARINC 429 bus to an ARINC 629 bus."
-	],
-	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
-	"question": "Switches data going to the OPAS shall be first?",
-	"choices": [
-		"A) Multiplexed.",
-		"B) Demultiplexed.",
-		"C) Demultiplexed, then multiplexed at destination."
-	],
-	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
-	"question": "The major OPAS components are?",
-	"choices": [
-		"A) 1 OPCF, 1 PDCU and 2 OPBC.",
-		"B) 1 OPCF, 1 PDCU AND 1 OPBC.",
-		"C) 2 OPCF, 2 PDCU and 2 OPBC."
-	],
-	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
-	"question": "OPAS abbreviation means?",
-	"choices": [
-		"A) Overhead panel ARINC 629 system.",
-		"B) Onboard panel ARINC system.",
-		"C) Onboard panel ARINC six two nine."
-	],
-	"correctAnswer": "A",
-	"category": "ATA 31"
-},
-{
-	"question": "OPAS inputs and outputs are as follows?",
-	"choices": [
-		"A) Switches and lights are simultaneously inputs and lights are outputs.",
-		"B) Switches are inputs and lights are outputs.",
-		"C) Switches and light could be both inputs and outputs."
-	],
-	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
-	"question": "The OPAS is linked to?",
-	"choices": [
-		"A) Fiber optic buses.",
-		"B) ARINC 429 buses.",
-		"C) ARINC 629 buses."
-	],
-	"correctAnswer": "C",
-	"category": "ATA 31"
-},
-{
 	"question": "The power regulation in the SCF is as follows?",
 	"choices": [
 		"A) The linear regulator output power is sensed by the linear output \" monitor / control \".",
@@ -2661,16 +2601,6 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "The left system card file chassis (P85) provide data to?",
-	"choices": [
-		"A) To the left system ARINC 629 bus.",
-		"B) To the left system and left flight control ARINC 629 bus.",
-		"C) To the left and right systems ARINC 629 bus."
-	],
-	"correctAnswer": "C",
-	"category": "ATA 31"
-},
-{
 	"question": "Concerning the SCF, there are?",
 	"choices": [
 		"A) One SCF chassis",
@@ -2678,16 +2608,6 @@ const allQuestions = [
 		"C) Four SCF chassis"
 	],
 	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
-	"question": "The output data of an SCF chassis is transmitted on:",
-	"choices": [
-		"A) Optical bus.",
-		"B) ARINC 429 buses.",
-		"C) ARINC 629 buses."
-	],
-	"correctAnswer": "C",
 	"category": "ATA 31"
 },
 {
@@ -2701,26 +2621,6 @@ const allQuestions = [
 	"category": "ATA 31"
 },
 {
-	"question": "How many ARINC 629 buses are there on the B777-300?",
-	"choices": [
-		"A) Three.",
-		"B) Seven.",
-		"C) Eleven."
-	],
-	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
-	"question": "The AIMS sends ACARS data to the VHF Comm transceiver on?",
-	"choices": [
-		"A) ARINC 629.",
-		"B) ARINC 429.",
-		"C) ARINC 618."
-	],
-	"correctAnswer": "B",
-	"category": "ATA 31"
-},
-{
 	"question": "The flight deck communication function (FDCF) is in?",
 	"choices": [
 		"A) CPM / GG.",
@@ -2728,16 +2628,6 @@ const allQuestions = [
 		"C) CPM / Comm."
 	],
 	"correctAnswer": "C",
-	"category": "ATA 31"
-},
-{
-	"question": "The purpose of the overhead panel ARINC 629 system (OPAS) is to:",
-	"choices": [
-		"A) Connect flight deck switches and lights to the ARINC 629 system.",
-		"B) Change ARINC 429 data to ARINC 629 data.",
-		"C) Connect the flight deck to the fiber optic network."
-	],
-	"correctAnswer": "A",
 	"category": "ATA 31"
 },
 {
