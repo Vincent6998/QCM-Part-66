@@ -1280,16 +1280,6 @@ const allQuestions = [
         "category": "ATA 24"
 },
 {
-	"question": "The PPC receive digital commandes from",
-	"choices" :[
-	"A) The BPCU",
-	"B) The SIU",
-	"C) The CCU"
-	],
-	"correctAnswer": "A",
-        "category": "ATA 24"
-},	
-{
 	"question": "The Signal Interface Unit is",
 	"choices" :[
 	"A) an analog interface to the ELMS",
