@@ -767,7 +767,7 @@ const allQuestions = [
             "B) 1 OPCF, 1PDCU AND 1 OPBC.",
             "C) 2 OPCF , 2 PDCU and 2 OPBC."
         ],
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "category": "ATA 23"
     },
     {
