@@ -1270,6 +1270,76 @@ const allQuestions = [
         "category": "ATA 23"
     },
 {
+	"question": "The FDCD PSA operate in secondary Mode when",
+	"choices" :[
+	"A) There is no power from the BUG PMG",
+	"B) The FCDC BAttery is low",
+	"C) an IDG is failed"
+	],
+	"correctAnswer": "A",
+        "category": "ATA 24"
+},
+{
+	"question": "The PPC receive digital commandes from",
+	"choices" :[
+	"A) The BPCU",
+	"B) The SIU",
+	"C) The CCU"
+	],
+	"correctAnswer": "A",
+        "category": "ATA 24"
+},	
+{
+	"question": "The Signal Interface Unit is",
+	"choices" :[
+	"A) an analog interface to the ELMS",
+	"B) a digital interface to the ELMS",
+	"C) an interface between AIMS and ELMS"
+	],
+	"correctAnswer": "A",
+        "category": "ATA 24"
+},
+{
+	"question": "The ELMS LRU digitally controlling load shedding is",
+	"choices" :[
+	"A) the SIU",
+	"B) the Computing and Communication Unit",
+	"C) the Power Panel COntroller"
+	],
+	"correctAnswer": "B",
+        "category": "ATA 24"
+},	
+{
+	"question": "The main battery and APU battery chargers are powered by",
+	"choices" :[
+	"A) the ground service bus",
+	"B) the ground handling bus",
+	"C) the LH and RH DC buses"
+	],
+	"correctAnswer": "A",
+        "category": "ATA 24"
+},	
+{
+	"question": "On ground with no External Power, the bus getting power when you press the BAT switch is",
+	"choices" :[
+	"A) the BAT Bus",
+	"B) the HOT BAT Bus",
+	"C) the BAT bus sect. 2"
+	],
+	"correctAnswer": "C",
+        "category": "ATA 24"
+},
+{
+	"question": "The RAT generatorsupplies power to",
+	"choices" :[
+	"A) the captain and F/O FLT INST Buses",
+	"B) The left and right main AC buses",
+	"C) The Left and right WFR buses"
+	],
+	"correctAnswer": "A",
+        "category": "ATA 24"
+},	
+{
 	"question": "The Main Battery Charger can::",
 	"choices" :[
 	"A) charge the APU battery",
