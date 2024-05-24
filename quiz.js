@@ -281,16 +281,6 @@ const allQuestions = [
         "category": "23"
 },
 {
-	"question": "The Left AIMS cabinet sends ACARS Data to ::",
-	"choices" :[
-	"A) the left VHF transceiver",
-	"B) the center VHF transceiver",
-	"C) the right VHF transceiver"
-	],
-	"correctAnswer": "B",
-        "category": "23"
-},
-{
 	"question": "Chimes related to Passenger to attendant calls can be disabled by:",
 	"choices" :[
 	"A) the CSCP and the CACP",
@@ -741,6 +731,12 @@ const allQuestions = [
     "correctAnswer": "B",
     "category": "ATA 23"
   },
+
+
+
+
+
+	
   {
     "question": "The Cabin File Server (CFS) battery back up ensures?",
     "choices": [
@@ -1422,16 +1418,6 @@ const allQuestions = [
         "category": "ATA 23"
     },
     {
-        "question": "How many ARINC 629 buses are there on the B777-300?",
-        "choices": [
-            "A) Three.",
-            "B) Seven.",
-            "C) Eleven."
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 23"
-    },
-    {
         "question": "The HF and VHF transceivers receive the port select discret from?",
         "choices": [
             "A) All RTPs (Radio Tuning Panel).",
@@ -1668,16 +1654,6 @@ const allQuestions = [
             "C) CSCP (Cabin Service Control Panel) memory."
         ],
         "correctAnswer": "C",
-        "category": "ATA 23"
-    },
-    {
-        "question": "The purpose of the overhead panel ARINC 629 system (OPAS) is to:",
-        "choices": [
-            "A) Connect flight deck switches and lights to the ARINC 629 system.",
-            "B) Change ARINC 429 data to ARINC 629 data.",
-            "C) Connect the flight deck to the fiber optic network."
-        ],
-        "correctAnswer": "A",
         "category": "ATA 23"
     },
 {
