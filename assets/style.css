@@ -51,11 +51,3 @@ button {
 .question {
     font-weight: bold; /* Mettre les questions en gras */
 }
-#lastUpdated {
-    position: absolute;
-    bottom: 10px; /* Ajout de la distance du bas */
-    right: 10px; /* Ajout de la distance de droite */
-    font-size: 12px;
-    color: #555;
-}
-
