@@ -8,7 +8,7 @@ const allQuestions = [
 	"C) OEUS always fail by pair"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The center VHF transceiver receives a port select discrete from:",
@@ -18,7 +18,7 @@ const allQuestions = [
 	"C) the right VHF transceiver"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The SELCAL coding switch is:",
@@ -28,7 +28,7 @@ const allQuestions = [
 	"C) on the front panel of the decoder"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The audio signals sent by the AMU to the CVR are:",
@@ -38,7 +38,7 @@ const allQuestions = [
 	"C) Captain, First Officer and first observer"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The ACP gets digital data from:",
@@ -48,7 +48,7 @@ const allQuestions = [
 	"C) the AMU to route audio data"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The SATCOM High Power Amplifier:",
@@ -58,7 +58,7 @@ const allQuestions = [
 	"C) amplifies the Beam Steering Unit signals"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "When the left and right RTPs fail:",
@@ -68,7 +68,7 @@ const allQuestions = [
 	"C) the VHF transceivers are lost"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "It is safe to transmit on the HF system when:",
@@ -78,7 +78,7 @@ const allQuestions = [
 	"C) There is a fuel spillage under the airplane"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The HF SENS selector on the RTP sets the sensitivity of:",
@@ -88,7 +88,7 @@ const allQuestions = [
 	"C) the left and right transceivers at the same time"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "Ground crew call system signals between the flight crew and the ground crew are sent via:",
@@ -98,7 +98,7 @@ const allQuestions = [
 	"C) "
 	],
 	"correctAnswer": "",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": ":",
@@ -108,7 +108,7 @@ const allQuestions = [
 	"C) the center CDU"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "AIMS sends ACARS data to the VHF transceivers on::",
@@ -118,7 +118,7 @@ const allQuestions = [
 	"C) ARINC 618"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Beam Steering Unit in the satcom SYSTEM:",
@@ -128,7 +128,7 @@ const allQuestions = [
 	"C) adjusts the Radio Frequency signal level before transmission"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The center Radio Tuning Panel sends its tuning bus output::",
@@ -138,7 +138,7 @@ const allQuestions = [
 	"C) to the right and center transceivers only "
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Digital Control Audio System test does a test of:",
@@ -148,7 +148,7 @@ const allQuestions = [
 	"C) the Service Interphone"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The AMU gets DME pairing data from:",
@@ -158,7 +158,7 @@ const allQuestions = [
 	"C) the Multi Mode Receivers"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Observer audio selector switch lets:",
@@ -168,7 +168,7 @@ const allQuestions = [
 	"C) the FO use the CAPT's station card in the AMU"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The HF system has::",
@@ -178,7 +178,7 @@ const allQuestions = [
 	"C) 1 antenna and 1 coupler for the 2 transceivers"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Left AIMS cabinet sends ACARS Data to::",
@@ -188,7 +188,7 @@ const allQuestions = [
 	"C) the center VHF transceiver"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "How many columns of OEUS does the PACI drive?:",
@@ -198,7 +198,7 @@ const allQuestions = [
 	"C) 0"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "If a Cabin Interphone Controller fails:",
@@ -208,7 +208,7 @@ const allQuestions = [
 	"C) cabin interphone is inop"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "If an OEU fails:",
@@ -218,7 +218,7 @@ const allQuestions = [
 	"C) Passenger address on 2 speakers is inop"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "A ZMU receives:",
@@ -228,7 +228,7 @@ const allQuestions = [
 	"C) Analog audio signals only"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "When a Passenger pushes the attendant call button:",
@@ -238,7 +238,7 @@ const allQuestions = [
 	"C) an OEU turns on a Master Call Light"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "To quickly determine if a Cabin Interphone problem comes from the PA/CI you can:",
@@ -248,7 +248,7 @@ const allQuestions = [
 	"C) do an All test"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "How many columns of SDMs does a ZMU drive?:",
@@ -258,7 +258,7 @@ const allQuestions = [
 	"C) 2"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The FDH sends mic, PTT, and dial codes to:",
@@ -268,7 +268,7 @@ const allQuestions = [
 	"C) ZMU 1"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Cabin Services System combines::",
@@ -278,7 +278,7 @@ const allQuestions = [
 	"C) Passenger Address and Cabin Lighting"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "Chimes related to Passenger to attendant calls can be disabled by:",
@@ -288,7 +288,7 @@ const allQuestions = [
 	"C) CACPs only"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Passenger Service System cannot control:",
@@ -298,7 +298,7 @@ const allQuestions = [
 	"C) the cabin lights"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The CIS LRU connecting the handsets together is:",
@@ -308,7 +308,7 @@ const allQuestions = [
 	"C) the CSMU"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "PA/CI volume is adjusted according to",
@@ -318,7 +318,7 @@ const allQuestions = [
 	"C) an air/ground signal only"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "With which system does the PA/CI interface to generate chimes?",
@@ -328,7 +328,7 @@ const allQuestions = [
 	"C) The Overhead Panel Arinc 629 System"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "DCMF controls communications between AIMS and:",
@@ -338,7 +338,7 @@ const allQuestions = [
 	"C) the OPAS, the printer and the CTR VHF"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "To select the Flight Deck Communication Function you use:",
@@ -348,7 +348,7 @@ const allQuestions = [
 	"C) the DSP"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "To reset a DCMF modem:",
@@ -358,7 +358,7 @@ const allQuestions = [
 	"C) use the 'MANAGER' menu on the MFD"
 	],
 	"correctAnswer": "A",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "To enter text on a MFD you use:",
@@ -368,7 +368,7 @@ const allQuestions = [
 	"C) a CDU and the CCDG"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The Flight Deck Communication Function supplies an operator's interface to:",
@@ -378,7 +378,7 @@ const allQuestions = [
 	"C) the PLANENET"
 	],
 	"correctAnswer": "B",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "To connect to the ATC the flight crew uses the FCDF ATC:",
@@ -388,7 +388,7 @@ const allQuestions = [
 	"C) Logon/ Status page"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },
 {
 	"question": "The CSS interfaces with other systems to provide:",
@@ -398,7 +398,7 @@ const allQuestions = [
 	"C) Cabin temperature selection"
 	],
 	"correctAnswer": "C",
-        "category": "23"
+        "category": "ATA 23"
 },	
 {
     "question": "On a B777 an Arinc 629 bus can connect to a maximum of:",
