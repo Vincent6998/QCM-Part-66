@@ -273,7 +273,7 @@ const allQuestions = [
 {
 	"question": "The Cabin Services System combines::",
 	"choices" :[
-	"A) Cabin Lighting and Emergency Lighting,
+	"A) Cabin Lighting and Emergency Lighting",
 	"B) Service Interphone and Cabin Lighting",
 	"C) Passenger Address and Cabin Lighting"
 	],
@@ -355,7 +355,7 @@ const allQuestions = [
 	"choices" :[
 	"A) there is an operational test in the CMCF",
 	"B) open then close the related VHF circuit breaker",
-	"C) use the "MANAGER" menu on the MFD"
+	"C) use the 'MANAGER' menu on the MFD"
 	],
 	"correctAnswer": "A",
         "category": "23"
@@ -365,8 +365,7 @@ const allQuestions = [
 	"choices" :[
 	"A) the MAT keyboard and a CCD",
 	"B) the EFB scratchpad and a CCD to transfer the text to the MFD",
-	"C) a CDU and the CCDG
-"
+	"C) a CDU and the CCDG"
 	],
 	"correctAnswer": "C",
         "category": "23"
@@ -730,13 +729,7 @@ const allQuestions = [
     ],
     "correctAnswer": "B",
     "category": "ATA 23"
-  },
-
-
-
-
-
-	
+  },	
   {
     "question": "The Cabin File Server (CFS) battery back up ensures?",
     "choices": [
