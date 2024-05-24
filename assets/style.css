@@ -19,6 +19,7 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 20px; /* Ajout de marge autour du quiz */
+    position: relative;
 }
 
 h1 {
@@ -50,3 +51,11 @@ button {
 .question {
     font-weight: bold; /* Mettre les questions en gras */
 }
+#lastUpdated {
+    position: absolute;
+    bottom: 10px; /* Ajout de la distance du bas */
+    right: 10px; /* Ajout de la distance de droite */
+    font-size: 12px;
+    color: #555;
+}
+
