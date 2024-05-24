@@ -1,6 +1,417 @@
 const allQuestions = [
 
 {
+	"question": "The CDB installation fault results tell you that the possible causes of the fault are OEU 1-2-4 and OEU 1-2-5 because:",
+	"choices" :[
+	"A) One of the 2 OEUS didn't transmit or receive the token",
+	"B) these 2 OEUS operate in parallel",
+	"C) OEUS always fail by pair"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The center VHF transceiver receives a port select discrete from:",
+	"choices" :[
+	"A) the left VHF transceive",
+	"B) the left Radio Tuning Panel",
+	"C) the right VHF transceiver"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "The SELCAL coding switch is:",
+	"choices" :[
+	"A) part of the SELCAL decoder",
+	"B) on the rack behind the decoder",
+	"C) on the front panel of the decoder"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "The audio signals sent by the AMU to the CVR are:",
+	"choices" :[
+	"A) Captain, First Officer and area microphone",
+	"B) Captain, first observer and second observer",
+	"C) Captain, First Officer and first observer"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The ACP gets digital data from:",
+	"choices" :[
+	"A) the AMU to control ACP lights",
+	"B) the DCMF in AIMS",
+	"C) the AMU to route audio data"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The SATCOM High Power Amplifier:",
+	"choices" :[
+	"A) amplifies the received signals",
+	"B) adjusts the output of the transmit signal",
+	"C) amplifies the Beam Steering Unit signals"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "When the left and right RTPs fail:",
+	"choices" :[
+	"A) all transceivers remain operating",
+	"B) the HF transceivers are lost",
+	"C) the VHF transceivers are lost"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "It is safe to transmit on the HF system when:",
+	"choices" :[
+	"A) There are personnel at less than 50 feet from the nose of the airplane",
+	"B) There are personnel within 10 feet of the vertical stabilizer",
+	"C) There is a fuel spillage under the airplane"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The HF SENS selector on the RTP sets the sensitivity of:",
+	"choices" :[
+	"A) the onside HF transceiver",
+	"B) the HF transceiver selected on the RTP",
+	"C) the left and right transceivers at the same time"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "Ground crew call system signals between the flight crew and the ground crew are sent via:",
+	"choices" :[
+	"A) ",
+	"B) ",
+	"C) "
+	],
+	"correctAnswer": "",
+        "category": "23"
+},
+{
+	"question": ":",
+	"choices" :[
+	"A) the Audio Management unit",
+	"B) PA/CI Controller",
+	"C) the center CDU"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "AIMS sends ACARS data to the VHF transceivers on::",
+	"choices" :[
+	"A) ARINC 629",
+	"B) ARINC 429",
+	"C) ARINC 618"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The Beam Steering Unit in the satcom SYSTEM:",
+	"choices" :[
+	"A) increases the strength of received signals",
+	"B) provides beam alignment data to the phase shift elements of the antenna",
+	"C) adjusts the Radio Frequency signal level before transmission"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "The center Radio Tuning Panel sends its tuning bus output::",
+	"choices" :[
+	"A) directly to any radio transceiver",
+	"B) to the left and right RTPs in case of failure",
+	"C) to the right and center transceivers only "
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "The Digital Control Audio System test does a test of:",
+	"choices" :[
+	"A) the Digital Flight Data Recorder",
+	"B) the Cockpit Voice Recorder",
+	"C) the Service Interphone"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The AMU gets DME pairing data from:",
+	"choices" :[
+	"A) the AIMS cabinets",
+	"B) the DMES",
+	"C) the Multi Mode Receivers"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The Observer audio selector switch lets:",
+	"choices" :[
+	"A) the CAPT or FO use the first OBS's station card in the AMU",
+	"B) the CAPT use the FO's station card in the AMU",
+	"C) the FO use the CAPT's station card in the AMU"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The HF system has::",
+	"choices" :[
+	"A) 1 antenna and 1 coupler for each transceive",
+	"B) 1 antenna and 2 couplers for the 2 transceivers",
+	"C) 1 antenna and 1 coupler for the 2 transceivers"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "The Left AIMS cabinet sends ACARS Data to::",
+	"choices" :[
+	"A) the right and center VHF transceivers",
+	"B) the left VHF transceiver",
+	"C) the center VHF transceiver"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "How many columns of OEUS does the PACI drive?:",
+	"choices" :[
+	"A) 1",
+	"B) 3",
+	"C) 0"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "If a Cabin Interphone Controller fails:",
+	"choices" :[
+	"A) Passenger address is inop",
+	"B) there is an automatic switching to the Alternate CIC",
+	"C) cabin interphone is inop"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "If an OEU fails:",
+	"choices" :[
+	"A) lighting control for the OEU related lights is inop",
+	"B) Cabin lighting control in the zone of the OEU is inop",
+	"C) Passenger address on 2 speakers is inop"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "A ZMU receives:",
+	"choices" :[
+	"A) Analog audio signals only",
+	"B) Analog and digital audio signals",
+	"C) Analog audio signals only"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "When a Passenger pushes the attendant call button:",
+	"choices" :[
+	"A) a ZMU turns on the Row Call Light",
+	"B) the Passenger Address System generates a chime",
+	"C) an OEU turns on a Master Call Light"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "To quickly determine if a Cabin Interphone problem comes from the PA/CI you can:",
+	"choices" :[
+	"A) push the PA Norm/ALTN switch",
+	"B) push the CI Norm/ALTN switch",
+	"C) do an All test"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "How many columns of SDMs does a ZMU drive?:",
+	"choices" :[
+	"A) 0",
+	"B) 1",
+	"C) 2"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The FDH sends mic, PTT, and dial codes to:",
+	"choices" :[
+	"A) the PA/CI controlle",
+	"B) all the ZMUS",
+	"C) ZMU 1"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The Cabin Services System combines::",
+	"choices" :[
+	"A) Cabin Lighting and Emergency Lighting,
+	"B) Service Interphone and Cabin Lighting",
+	"C) Passenger Address and Cabin Lighting"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The Left AIMS cabinet sends ACARS Data to ::",
+	"choices" :[
+	"A) the left VHF transceiver",
+	"B) the center VHF transceiver",
+	"C) the right VHF transceiver"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "Chimes related to Passenger to attendant calls can be disabled by:",
+	"choices" :[
+	"A) the CSCP and the CACP",
+	"B) the CSCP only",
+	"C) CACPs only"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "The Passenger Service System cannot control:",
+	"choices" :[
+	"A) the reading lights",
+	"B) the Passenger information signs",
+	"C) the cabin lights"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The CIS LRU connecting the handsets together is:",
+	"choices" :[
+	"A) the PA/Cl controller",
+	"B) the ZMU",
+	"C) the CSMU"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "PA/CI volume is adjusted according to",
+	"choices" :[
+	"A) FMF flight phases",
+	"B)  Airplane system data (from AIMS, WES, FSEU...)",
+	"C) an air/ground signal only"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "With which system does the PA/CI interface to generate chimes?",
+	"choices" :[
+	"A) The Data Communication Management System",
+	"B) The Flight Management System",
+	"C) The Overhead Panel Arinc 629 System"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "DCMF controls communications between AIMS and:",
+	"choices" :[
+	"A) the AVLAN, the QAR and the DFDR",
+	"B) the AVLAN, the right and CTR VHF and the SATCOM",
+	"C) the OPAS, the printer and the CTR VHF"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "To select the Flight Deck Communication Function you use:",
+	"choices" :[
+	"A) any CDU",
+	"B) any EFIS control panel",
+	"C) the DSP"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "To reset a DCMF modem:",
+	"choices" :[
+	"A) there is an operational test in the CMCF",
+	"B) open then close the related VHF circuit breaker",
+	"C) use the "MANAGER" menu on the MFD"
+	],
+	"correctAnswer": "A",
+        "category": "23"
+},
+{
+	"question": "To enter text on a MFD you use:",
+	"choices" :[
+	"A) the MAT keyboard and a CCD",
+	"B) the EFB scratchpad and a CCD to transfer the text to the MFD",
+	"C) a CDU and the CCDG
+"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The Flight Deck Communication Function supplies an operator's interface to:",
+	"choices" :[
+	"A) the EFB",
+	"B) the Data Communication Management System",
+	"C) the PLANENET"
+	],
+	"correctAnswer": "B",
+        "category": "23"
+},
+{
+	"question": "To connect to the ATC the flight crew uses the FCDF ATC:",
+	"choices" :[
+	"A) ATC requested reports page",
+	"B) Voice contact request page",
+	"C) Logon/ Status page"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},
+{
+	"question": "The CSS interfaces with other systems to provide:",
+	"choices" :[
+	"A) Cargo loading monitoring",
+	"B) Inflight Entertainment",
+	"C) Cabin temperature selection"
+	],
+	"correctAnswer": "C",
+        "category": "23"
+},	
+{
     "question": "On a B777 an Arinc 629 bus can connect to a maximum of:",
     "choices": [
       "A) 7 LRUS",
