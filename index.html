@@ -12,7 +12,6 @@
         <div id="categories">
             <!-- Les catégories seront ajoutées ici dynamiquement -->
         </div>
-        <div id="date"></div> <!-- C'est là que la date sera affichée -->
         <button id="startButton">Commencer le quiz</button>
         <div id="question"></div>
         <div id="choices"></div>
@@ -21,12 +20,6 @@
     </div>
     <script src="quiz.js"></script> 
     <script>
-        // Fonction pour mettre à jour la date
-    function updateLastUpdatedDate() {
-        const updateDateSpan = document.getElementById("date");
-        const customDate = new Date("2024-05-02"); // Mettez la date désirée ici au format "AAAA-MM-JJ"
-        const formattedDate = customDate.toLocaleDateString("fr-FR");
-        updateDateSpan.textContent = formattedDate;
     }
     // Fonction pour démarrer le quiz
     function startQuiz(selectedCategories) {
@@ -53,7 +46,6 @@
         }
         startQuiz(selectedCategories);
     });
-updateLastUpdatedDate();
     // Afficher les catégories dès le chargement de la page
     displayCategories();
     </script>
