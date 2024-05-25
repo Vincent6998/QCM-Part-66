@@ -2380,16 +2380,6 @@ const allQuestions = [
         "category": "ATA 24"
     },
     {
-        "question": "On the maintenance page, at what moment can we read the status of the oil filter of the IDG?",
-        "choices": [
-            "A) Immediately after engine running",
-            "B) Engine shutdown and oil temperature greater than 62°C",
-            "C) Engine running and oil temperature smaller than 62°C"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 24"
-    },
-    {
         "question": "The PPC (Power Panel Controller) receives signal from which unit?",
         "choices": [
             "A) CPU (Control Processor Unit) card",
