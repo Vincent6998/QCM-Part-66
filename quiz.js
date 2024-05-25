@@ -1810,16 +1810,6 @@ const allQuestions = [
         "category": "ATA 24"
 },
 {
-	"question": "In case of oil overheat an IDG is protected by:",
-	"choices" :[
-	"A) a thermal operated mechanism that melts and disconnects the IDG",
-	"B) the GCU which disconnects the IDG",
-	"C) the ELMS which sheds the IDG loads"
-	],
-	"correctAnswer": "A",
-        "category": "ATA 24"
-},
-{
 	"question": "To prevent the FCDC Batteries from draining when the PFCs are removed",
 	"choices" :[
 	"A) disconnect the main battery from the Hot Bat Bus",
@@ -2517,16 +2507,6 @@ const allQuestions = [
             "C) STBY system will power AC right bus"
         ],
         "correctAnswer": "B",
-        "category": "ATA 24"
-    },
-    {
-        "question": "Backup generator BUG Converter will automatically check the BUG",
-        "choices": [
-            "A) Right after engine shut down",
-            "B) When DC STBY self test",
-            "C) Right after the engine is started"
-        ],
-        "correctAnswer": "C",
         "category": "ATA 24"
     },
     {
