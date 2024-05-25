@@ -1770,16 +1770,6 @@ const allQuestions = [
         "category": "ATA 24"
 },
 {
-	"question": "The FCDC PSAs operate in the Secondary Mode when",
-	"choices" :[
-	"A) there is no power from the BUGS PMGS",
-	"B) the onside 28 VDC bus is not powered",
-	"C) the FCDC Battery is low"
-	],
-	"correctAnswer": "A",
-        "category": "ATA 24"
-},
-{
 	"question": "The supplemental cooling fan operates:",
 	"choices" :[
 	"A) when a Backup Generator supplies power to the 2 XFR Buses",
@@ -1933,7 +1923,7 @@ const allQuestions = [
     "question": "Where is the ground service switch located?",
     "choices": [
       "A) P300 auxiliary power panel",
-      "B) Flight attendant panel by door 1 left",
+      "B) Flight attendant panel by door 2 left",
       "C) P310 standby power management panel"
     ],
     "correctAnswer": "B",
@@ -2497,16 +2487,6 @@ const allQuestions = [
             "C) Connect the primary external power or push the battery switch on"
         ],
         "correctAnswer": "C",
-        "category": "ATA 24"
-    },
-    {
-        "question": "When there are only two IDG operating, what happens if right IDG fails?",
-        "choices": [
-            "A) BU converter will power AC right bus",
-            "B) AC left bus will power AC right bus",
-            "C) STBY system will power AC right bus"
-        ],
-        "correctAnswer": "B",
         "category": "ATA 24"
     },
     {
