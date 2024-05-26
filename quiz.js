@@ -1290,8 +1290,6 @@ const allQuestions = [
     "correctAnswer": "A",
     "category": "ATA 50's"
   },	
-{
-  "questions": [
     {
       "question": "Which unit controls the operation of engine pneumatic system?",
       "choices": [
@@ -1352,8 +1350,6 @@ const allQuestions = [
       "correctAnswer": "A",
       "category": "ATA 36"
     },
-{
-  "questions": [
     {
       "question": "The unit of duct pressure shown in the air synoptic page is:",
       "choices": [
@@ -1484,8 +1480,6 @@ const allQuestions = [
       "correctAnswer": "A",
       "category": "ATA 36"
     },
-{
-  "questions": [
     {
       "question": "All isolation valves are interchangeable and interchangeable with:",
       "choices": [
@@ -1656,8 +1650,6 @@ const allQuestions = [
   "correctAnswer": "B",
   "category": "ATA 36"
 },
-{
-  "questions": [
     {
       "question": "When you do any test that does a check of fire bottle squibs, the ELMS supplies a small current to fire bottle squibs for:",
       "choices": [
@@ -1768,8 +1760,6 @@ const allQuestions = [
       "correctAnswer": "C",
       "category": "ATA 26"
     },
-{
-  "questions": [
     {
       "question": "If you pull and rotate the engine fire switch, the fire bottles will discharge:",
       "choices": [
@@ -1900,8 +1890,6 @@ const allQuestions = [
       "correctAnswer": "C",
       "category": "ATA 26"
     },
-{
-  "questions": [
     {
       "question": "What is the purpose of cargo compartment fire extinguishing in-line pressure switch reset button?",
       "choices": [
@@ -2062,8 +2050,6 @@ const allQuestions = [
       "correctAnswer": "A",
       "category": "ATA 26"
     },
-{
-  "questions": [
     {
       "question": "The power for the captain and first officer seats is supplied from:",
       "choices": [
@@ -2224,8 +2210,6 @@ const allQuestions = [
       "correctAnswer": "A",
       "category": "ATA 25"
     },
-{
-  "questions": [
     {
       "question": "If cargo compartment fiberglass liners have cuts, tears or holes,",
       "choices": [
@@ -2366,8 +2350,6 @@ const allQuestions = [
       "correctAnswer": "B",
       "category": "ATA 25"
     },
-{
-  "questions": [
     {
       "question": "In case of emergency, is it possible to open the lavatory door?",
       "choices": [
