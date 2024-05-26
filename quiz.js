@@ -1,6 +1,2434 @@
 const allQuestions = [
 
 {
+        "question": "Where do you find the information for basic handling of the structure?",
+        "choices": [
+            "A) AMM (Aircraft Maintenance Manual)",
+            "B) NTM (No-destructive Test Method)",
+            "C) SRM (Structure Repair Manual)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many SRM can we find for B777?",
+        "choices": [
+            "A) One for all B777",
+            "B) One SRM for each ATA chapter",
+            "C) Two, one for B777-200 and one for B777-300"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which manual gives damage tolerance on the airplane structure?",
+        "choices": [
+            "A) AMM (aircraft maintenance manual)",
+            "B) MEL/CDL (minimum equipment list/ component deviation guide)",
+            "C) SRM (structural repair manual)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many ATA chapters are there in the SRM?",
+        "choices": [
+            "A) 100",
+            "B) 1",
+            "C) 7"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What's the meaning of “LBL” and “RBL” in the aircraft breakdown?",
+        "choices": [
+            "A) “LBL” is the upper part and “RBL” is the lower part of water line",
+            "B) “LBL” is the left-hand side and “RBL” is the right-hand side of buttock line",
+            "C) “LBL” is the left-hand side and “RBL” is the right-hand side of water line"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "In the SRM, where can we find allowable damage limit for the fuselage?",
+        "choices": [
+            "A) In the 53 ATA chapter",
+            "B) In the 54 ATA chapter",
+            "C) In the 51 ATA chapter"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which information can we find in the SRM?",
+        "choices": [
+            "A) Structure identification, allowable damage, repairs",
+            "B) Non normal check lists",
+            "C) Non-destructive tests, standard practices"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which information is given by the fuselage station diagram and cross-section diagram?",
+        "choices": [
+            "A) Reference system to find the different airplane components",
+            "B) External time limited repair",
+            "C) Allowable damage limits"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Find the right order to do an evaluation of damage below a passenger door?",
+        "choices": [
+            "A) 1) Identification of chapter. 2) identification of station. 3) identification of section. 4) allowable damage limits.",
+            "B) 1) Identification of chapter. 2) identification of section. 3) allowable damage limits.",
+            "C) 1) Effectivity of aircraft. 2) identification of chapter. 3) identification of station. 4) identification of section. 5) allowable damage limits."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Where can we find effectivity of the aircraft in the SRM?",
+        "choices": [
+            "A) Front matter chapter",
+            "B) ATA 57 chapter",
+            "C) ATA 51 chapter"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which ATA chapters can we find in the SRM?",
+        "choices": [
+            "A) 05;06;07;11;12;51; 52; 53; 54; 55; 56; 57; 58; 59",
+            "B) 00; 06; 51",
+            "C) 51; 52; 53; 54; 55; 56; 57"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which ATA gives standard practices and structure general in the SRM?",
+        "choices": [
+            "A) 57",
+            "B) 38",
+            "C) 51"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+{
+        "question": "Which passenger entry doors are plug type door?",
+        "choices": [
+            "A) All doors",
+            "B) Left side doors",
+            "C) Right side doors"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What should you do first when closing a passenger entry door?",
+        "choices": [
+            "A) Release hold open device",
+            "B) Disarm the door",
+            "C) Pull the door in"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Flight lock mechanism is used to:",
+        "choices": [
+            "A) Lock the door when airplane is in the air",
+            "B) Lock the door when airplane is parked",
+            "C) Lock the door when airspeed is above 80 knots"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Two positions of the passenger door mode handle are:",
+        "choices": [
+            "A) ARMED and DISARMED",
+            "B) AUTO and MANUAL",
+            "C) LOCKED and UNLOCKED"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which cargo door on VNA owned aircraft is large size?",
+        "choices": [
+            "A) Forward",
+            "B) Aft",
+            "C) Both forward and aft"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "You open and close forward and aft cargo doors using:",
+        "choices": [
+            "A) Electric power",
+            "B) Hydraulic power",
+            "C) Pneumatic power"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "When closing the forward cargo door, which light should be on before you can use the lock handle to lock the door?",
+        "choices": [
+            "A) DOOR CLOSED light",
+            "B) DOOR IN light",
+            "C) DOOR LATCHED light"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What should you do before opening the forward cargo door using the internal switch?",
+        "choices": [
+            "A) Unlock the door using the internal release lever",
+            "B) Unlock the door using the external catch release handle",
+            "C) Both are correct"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many vent doors are installed on the forward cargo door?",
+        "choices": [
+            "A) 1",
+            "B) 2",
+            "C) 4"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which of the following cannot be used to check if the cargo door is open?",
+        "choices": [
+            "A) EICAS upper display",
+            "B) EICAS status page",
+            "C) Door synoptic page"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Bulk cargo door is open and close using:",
+        "choices": [
+            "A) Electric motor",
+            "B) Hydraulic motor",
+            "C) Counter balance mechanism"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which passenger entry door status cannot be shown on CSCP?",
+        "choices": [
+            "A) LOCKED",
+            "B) UNLOCKED",
+            "C) ARMED"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Pressure seal depressors on the forward side of passenger doors 1L and 1R have holes:",
+        "choices": [
+            "A) To help control air noise",
+            "B) To pull thru the seal",
+            "C) To help easy installation"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The door flight lock mechanism:",
+        "choices": [
+            "A) Latches the lock mechanism closed when airplane speed more than 100 kts",
+            "B) Locks the latch mechanism closed when airplane is in the air",
+            "C) Locks the latch mechanism closed when airplane speed is more than 80 kts"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "You cannot deploy the door slide raft by opening the door from outside. This is because:",
+        "choices": [
+            "A) AIMS monitors the door switches only from inside the airplane",
+            "B) The mode selector goes to MANUAL if the external handle is pulled",
+            "C) EPAS does not work"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Purpose of vent door mechanism on passenger entry door is to:",
+        "choices": [
+            "A) Release pressurization and vent positive cabin pressure",
+            "B) Keep door unlatched and vent positive cabin pressure",
+            "C) Release pressurization and keep door latched when cabin is pressurized"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "You deactivate Emergency Power Assist System (EPAS) by:",
+        "choices": [
+            "A) A switch on the EPAS actuator",
+            "B) A switch on EPAS battery pack",
+            "C) A safety pin through EPAS actuator"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "After the EPAS has fired, can you immediately close the door?",
+        "choices": [
+            "A) No. EPAS actuator takes 5 min to bleed down the pressure",
+            "B) Yes. EPAS actuator disengages the hinge lock mechanism",
+            "C) No. EPAS actuator keeps the door open until a new slide/raft is installed"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Can you open the forward cargo door when there is no electrical power?",
+        "choices": [
+            "A) Yes. There are latch manual drive and lift manual drive",
+            "B) Yes. There are lift manual drive and manual lock handle",
+            "C) No. Lift manual drive and latch manual drive operate only by electric power"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the purpose of the lock mechanism in the forward cargo door system?",
+        "choices": [
+            "A) The lock mechanism prevents the forward cargo from opening when there is a negative ΔP",
+            "B) The lock mechanism latches the cargo door closed when the cargo compartment is pressurized",
+            "C) The lock mechanism holds the cargo door main latch cam in the latched position"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Purpose of flight compartment door pressure sensor is to:",
+        "choices": [
+            "A) Release the door latch when the evacuation system is activated",
+            "B) Release the door latch when there is a rapid decompression in the cabin",
+            "C) Release the door latch when there is a rapid decompression in the cockpit"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Do all doors give their status to PSEU?",
+        "choices": [
+            "A) Yes. PSEU uses these signals for control and indication in the cockpit",
+            "B) No. Only the doors that go through the pressurized structure of the airplane",
+            "C) Yes. The pilot needs to know all doors' status before take-off"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "All cargo doors are located on:",
+        "choices": [
+            "A) The left-hand side of the airplane",
+            "B) The right-hand side of the airplane",
+            "C) Both left and right-hand side of the airplane"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which of the following is necessary for the passenger entry door emergency power assist system (EPAS) to activate?",
+        "choices": [
+            "A) Emergency evacuation system armed.",
+            "B) Battery bus energized.",
+            "C) Mode select lever in the ARMED/AUTO position and the interior handle to the open position."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the first action you must do to electrically operate the forward cargo compartment door?",
+        "choices": [
+            "A) Release the lock handle.",
+            "B) Energize the door control relay.",
+            "C) Manually operate the lift manual drive."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which one of the following will stop passenger entry door handle movement if cabin pressurization is too high to safely open the door?",
+        "choices": [
+            "A) The door handle mechanism.",
+            "B) The vent door mechanism.",
+            "C) The mode select mechanism."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How can you check the amount of pressure in the inflation cylinder for the escape slide pack?",
+        "choices": [
+            "A) Look through the view hole on the bustle.",
+            "B) Look through the view hole on the exterior of the door.",
+            "C) Use the cabin management system."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which component prevents the cargo door from unlocking when the cargo compartment is pressurized?",
+        "choices": [
+            "A) Vent door.",
+            "B) Latch pin.",
+            "C) Pull-in hook."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The passenger door closed and locked information is monitored by means of?",
+        "choices": [
+            "A) A single micro switch.",
+            "B) 2 proximity sensors.",
+            "C) Landing gear control interface unit."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "When you open the cabin door from the outside with the slide system armed?",
+        "choices": [
+            "A) The locking mechanism is blocked.",
+            "B) Only the girt bar is removed from the floor fittings.",
+            "C) The slide mechanism disarms."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "In a passenger door assembly, what causes the actuator to deploy the door in case of emergency?",
+        "choices": [
+            "A) The pressure contained in the escape slide bottle.",
+            "B) The external handle when it is used.",
+            "C) The nitrogen bottle and the percussion lever after operation of the internal door handle."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How is the operator warned when there is a residual pressure in the cabin?",
+        "choices": [
+            "A) By a white flashing light.",
+            "B) By a vent door mechanism.",
+            "C) By the hold open mechanism."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many adjustable stops are fitted on the type 1 door?",
+        "choices": [
+            "A) 10 stops.",
+            "B) 16 stops.",
+            "C) 12 stops."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the purpose of the programming mechanism chain?",
+        "choices": [
+            "A) Controls the rate at which the door opens and closes.",
+            "B) Correctly aligns the door to the airplane as the door opens and closes.",
+            "C) Holds the door in the full open position."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What happens when the doors are opened from outside?",
+        "choices": [
+            "A) The white light comes ON.",
+            "B) The mode select handle moves to Disarmed if it is Armed.",
+            "C) The safety switch on the battery EPAS moves to disarm."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the purpose of the flight lock mechanism?",
+        "choices": [
+            "A) Lock the vent door in the closed position.",
+            "B) Lock the latch mechanism closed when the airplane is in the air.",
+            "C) Lock the latch mechanism closed when the airspeed is 80 knots or more."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many battery packs does the EPAS on door 3 (over wing) on B777-300 have?",
+        "choices": [
+            "A) One, like the other doors.",
+            "B) Two, one EPAS battery, and one over-wing door back-up battery.",
+            "C) Three, one EPAS battery, one SARD battery and one over-wing door back-up battery."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many safety pins must be installed on the slide/raft when you replace it?",
+        "choices": [
+            "A) One on the escape slide pack inflation cylinder.",
+            "B) Two, one on the escape slide raft inflation cylinder and one on the escape slide pack girt release.",
+            "C) None, you just put the safety switch of the EPAS on the safety position."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What happens in case of vent door mechanism interlock rod failure?",
+        "choices": [
+            "A) You can open the door but you can't go back to the closed position after.",
+            "B) You can't open the door, so you must remove the hinge cover to get access to the vent door mechanism.",
+            "C) The flight lock actuator is energized to keep the door in the closed position."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+{
+        "question": "What structure is B777 fuselage structure?",
+        "choices": [
+            "A) Semi-monocoque",
+            "B) Monocoque",
+            "C) Combination between monocoque and semi-monocoque"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many pressure bulkheads are there in the fuselage?",
+        "choices": [
+            "A) 3",
+            "B) 4",
+            "C) 2"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "When you open the radome, it is",
+        "choices": [
+            "A) Detached from the fuselage",
+            "B) Held by a hinge",
+            "C) Opened upward"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Wing-to-body fairing is made of",
+        "choices": [
+            "A) Steel",
+            "B) Aluminum",
+            "C) Composite"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The sound dampening angles are attached to",
+        "choices": [
+            "A) Fuselage skin",
+            "B) Frames and stringers",
+            "C) Wing-to-body fairing"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The scuff plates are attached to",
+        "choices": [
+            "A) Passenger entry door thresholds",
+            "B) Passenger entry door cut-out",
+            "C) Passenger entry door hinge"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "When you open the nose radome, wind velocity must be",
+        "choices": [
+            "A) Less than 65kts",
+            "B) Less than 45kts",
+            "C) Less than 80kts"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Lightning diverter strips in the nose radome deterioration can cause",
+        "choices": [
+            "A) Weather radar incorrect operation",
+            "B) Lightning to strike the radome",
+            "C) Radio noise interference"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The fuselage sections 41 through 48 are",
+        "choices": [
+            "A) Bolted together",
+            "B) Attached to each other by threads",
+            "C) Riveted to each other"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Where can you find the keel beam?",
+        "choices": [
+            "A) Under the forward cargo compartment",
+            "B) Between the two main landing gear wheel wells",
+            "C) Under the aft cargo compartment"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What fuselage section is just behind the nose radome?",
+        "choices": [
+            "A) Section 49",
+            "B) Section 41",
+            "C) Section 43"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What fuselage section contain AFT pressure bulkhead (separation between passengers cabin and the stabilizer compartment)?",
+        "choices": [
+            "A) Section 40",
+            "B) Section 47",
+            "C) Section 41"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The Boeing B 777 fuselage structure is?",
+        "choices": [
+            "A) Semi monocoque type",
+            "B) Fiber glace type",
+            "C) Paper and wood type"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The Boeing 777 fuselage is made of?",
+        "choices": [
+            "A) 1 section",
+            "B) 6 or 8 sections",
+            "C) Chrome-plated steel"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+{
+    "question": "What is purpose of engine strut fire seal?",
+    "choices": [
+      "A) To make a seal between the side of the strut and the thrust reversers",
+      "B) To make a seal between the strut and the upper fan case",
+      "C) To make a seal between the strut and the fan cowls"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is purpose of strut firewall?",
+    "choices": [
+      "A) To prevent damage to the bottom of the strut caused by too much heat",
+      "B) To prevent damage to the side of strut caused by too much heat",
+      "C) To prevent damage to the forward of strut caused by too much cool"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Where is located the strut firewall?",
+    "choices": [
+      "A) On the bottom of the strut",
+      "B) On the side of the strut",
+      "C) On the thrust reverser upper parts"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is correct to unblock the forward strut drain?",
+    "choices": [
+      "A) By airflow applied to the drain outlet",
+      "B) By airflow applied to the drain inlet",
+      "C) By vacuum applied to the drain outlet"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What can use to unblock the forward strut drain?",
+    "choices": [
+      "A) Airflow",
+      "B) Piece of locking wire",
+      "C) A or B"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How to perform the leak check of the strut aft upper spar?",
+    "choices": [
+      "A) Open access panel, apply water onto, examine the lower side for leak and repair as necessary",
+      "B) Pressurize the area by nitrogen to find out leak and repair as necessary",
+      "C) Pressurize the area by air to find out leak and repair as necessary"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is correct for the strut access doors?",
+    "choices": [
+      "A) None of doors is pressure relief door",
+      "B) All doors are pressure relief doors",
+      "C) Some doors are pressure relief doors, all the other are not pressure relief doors"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is not correct for the strut access doors?",
+    "choices": [
+      "A) All doors are behind the thrust reverser cowls so these doors are not required in the aerodynamic smoothness limits",
+      "B) All doors are in the air stream so these doors are required in the aerodynamic smoothness limits",
+      "C) A and B"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is correct for the strut aft fairing access doors?",
+    "choices": [
+      "A) There are two doors",
+      "B) There are four doors, each door has three latches",
+      "C) There are four door, each door has two latches and two hinges"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The strut aft fairing access doors are hold in opened position by meaning of",
+    "choices": [
+      "A) The locking pin on the upper hinge",
+      "B) The hold open rod",
+      "C) The hold open device on the lower hinge"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+{
+    "question": "Where are the hinges of the strut aft fairing door located?",
+    "choices": [
+      "A) On the door fwd edge",
+      "B) On the door aft edge",
+      "C) On the door upper edge"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How is the strut attached to the wing?",
+    "choices": [
+      "A) By upper link, two side links and two aft upper spar fittings",
+      "B) By diagonal brace",
+      "C) All above A and B"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "When removing the strut access door we make sure",
+    "choices": [
+      "A) Use a hand tool only",
+      "B) Loosen the latch bolts until the slot indicators turned approximately about 90 degrees counterclockwise from the lock position",
+      "C) A and b"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is true for a preparation of a strut attaching pin assembly removal?",
+    "choices": [
+      "A) Make sure the related engine is supported properly if the engine is not removed",
+      "B) Make sure the related strut is supported properly if the engine is removed",
+      "C) A or b"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is correct for the strut removal?",
+    "choices": [
+      "A) Remove the engine firstly",
+      "B) Disconnect all strut systems",
+      "C) A and b"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How to prepare the strut for maintenance action?",
+    "choices": [
+      "A) Ground the airplane and deactivate the thrust reversers in stow position",
+      "B) Deactivate the leading edge slat in retract position",
+      "C) All above a and b"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "With the strut aft fairing doors opened we can access to",
+    "choices": [
+      "A) The engine (fuel low pressure) spar valve",
+      "B) The engine driven pump depressurization valve",
+      "C) Components of left (or right) hydraulic system such filter modules, ACMP, reservoir,…"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is a correct indication that a strut pin assembly is unloaded for removing?",
+    "choices": [
+      "A) That strut pin assembly able to be turned easily with a maximum torque of 125 pound -inches",
+      "B) The inner pin assembly dimensions checked in limits",
+      "C) A and B"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is an indicator slots position of the strut access door latch when it is in locked position?",
+    "choices": [
+      "A) In position of red marking",
+      "B) Indicator slot is approximately perpendicular to the edge (of the door) nearest to the latch bolt",
+      "C) When latch bolt tightened with specified torque value"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+{
+    "question": "The purpose of the engine pylon is?",
+    "choices": [
+      "A) To support the flap handle and engine controls in the cockpit.",
+      "B) To contain the engine strut.",
+      "C) To attach the two parts of the wing."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The engine struts pylons are attached to the wing with?",
+    "choices": [
+      "A) Fuse pins.",
+      "B) Fiber carbon screws.",
+      "C) Cement."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "On Boeing 777, the pylon also contains?",
+    "choices": [
+      "A) Fairings.",
+      "B) The EEC (Electronic Engine Control).",
+      "C) The flaperon PCU."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The pylon has 4 strut access doors?",
+    "choices": [
+      "A) To drain the fuel dry bay.",
+      "B) To get access to the hydraulic bay.",
+      "C) To vent the engine on ground."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+{
+    "question": "The horizontal stabilizer attached to the airplane by meaning of",
+    "choices": [
+      "A) 02 pivot fittings at the rear spar and 01 stabilizer trim actuator at the front spar",
+      "B) 02 pivot fittings at the rear spar and 01 stabilizer trim actuator at the upper fitting",
+      "C) 02 pivot fittings at the front spar and 01 stabilizer trim actuator at the rear spar"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is the secondary structure attached to the horizontal stabilizer?",
+    "choices": [
+      "A) leading edge",
+      "B) elevators and tip fairing",
+      "C) A and B"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is the main structure of the horizontal stabilizer?",
+    "choices": [
+      "A) aluminum",
+      "B) carbon fiber reinforced composite",
+      "C) glass fiber reinforced composite"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is correct for the pivot fittings of the horizontal stabilizer?",
+    "choices": [
+      "A) the left and the right fitting are the same",
+      "B) the left and the right fitting are interchangeable",
+      "C) the left and the right fittings are not the same, the right fitting can move laterally because of the difference of the thermal expansion between the composite stabilizer and the metal fuselage"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How to remove trailing edge skin panels of the horizontal stabilizer?",
+    "choices": [
+      "A) all panels on the upper surface at a time",
+      "B) all panels on the lower surface at a time",
+      "C) maximum two adjacent panels at a time"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How to make an electrical bond for the trailing edge panels of the horizontal stabilizer during panel installation?",
+    "choices": [
+      "A) find out the fastener location for the electrical bonding",
+      "B) apply specified coating to the composite part of each hole and let it dry then install bolts in those holes without sealant",
+      "C) A and B",
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Static dischargers of elevators are electrically bonded to the airplane by meaning of?",
+    "choices": [
+      "A) of the ground cable connected to each discharger",
+      "B) of the conducting strip on the elevator surface and the ground cable connected to the conducting strip",
+      "C) A and B
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is the main structure of the vertical stabilizer?",
+    "choices": [
+      "A) aluminum",
+      "B) carbon fiber reinforced composite",
+      "C) glass fiber reinforced composite"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is the secondary structure attached to the vertical stabilizer?",
+    "choices": [
+      "A) leading edge only",
+      "B) leading edge, rudder and tip fairing",
+      "D) tip fairing
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Where is the HF antenna located?",
+    "choices": [
+      "A) on the vertical stabilizer tip fairing",
+      "B) on the vertical stabilizer side panel",
+      "C) on the vertical stabilizer leading edge panel"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Before work on the vertical stabilizer we make sure that?",
+    "choices": [
+      "A) prevent any possible operation of the rudder",
+      "B) deactivate the HF communication system and use the specified safety harness",
+      "C) A and B
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The Elevator and Rudder are made of?",
+    "choices": [
+      "A) Carbon fiber reinforced plastic",
+      "B) Titanium ribs and panels",
+      "C) hood panels"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The vertical stabilizer supports?",
+    "choices": [
+      "A) The horizontal stabilizer.",
+      "B) The APU (auxiliary power unit)",
+      "C) The rudder."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The horizontal stabilizer contain parts of?",
+    "choices": [
+      "A) The APUC (APU controller)",
+      "B) Elevators",
+      "C) The rear (number 5) fuel tank."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The stabilizer has a secondary structure that attached?",
+    "choices": [
+      "A) The elevator.",
+      "B) The rudder and Tab.",
+      "C) Ten leading edge slats."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+{
+    "question": "The external surface of number 1 cockpit window has a",
+    "choices": [
+      "A) Rain protection hydrophobic coating",
+      "B) Ultra-violet prevention coating",
+      "C) Light sensitive auto shade coating"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Number 3 cockpit window",
+    "choices": [
+      "A) Has an anti-ice heating film",
+      "B) Has no anti-ice protection",
+      "C) Has an anti-fog heating film"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The number 2 cockpit window alert switch gives an EICAS advisory message when",
+    "choices": [
+      "A) You do not close it before take-off",
+      "B) The latch handle is out of the latched position",
+      "C) You try to open it when the airplane is in the air"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Spring clips that hold the passenger windows to the fuselage structure are",
+    "choices": [
+      "A) All the same",
+      "B) Different in bolt sizes (color-coded)",
+      "C) Different in grip lengths (color-coded)"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What is the correct agent used to clean the windows?",
+    "choices": [
+      "A) M.E.K",
+      "B) Mild soap (or isopropanol) and water mixture",
+      "C) Cleaning solvent"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The panes of passenger windows are made of",
+    "choices": [
+      "A) Plastic",
+      "B) Glass",
+      "C) Fiber glass"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How are the six cockpit windows numbered?",
+    "choices": [
+      "A) 1L, 2L, 3L, 1R, 2R, 3R",
+      "B) 1, 2, 3, 4, 5, 6",
+      "C) C1, C2, L1, L2, R1, R2"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "How many heating films are there in each number 1 cockpit window?",
+    "choices": [
+      "A) 2 anti-ice heating films",
+      "B) 2 anti-fog heating films",
+      "C) 1 anti-ice heating film and 1 anti-fog heating film"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What precaution do you observe when doing the torque for number 1 cockpit window bolts?",
+    "choices": [
+      "A) Use correct bolts, torque in correct sequence, torque 3 times",
+      "B) Use correct bolts, torque in correct sequence, torque 2 times",
+      "C) Use correct bolts, torque in correct sequence, torque 4 times"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Which cockpit windows is removed from inside of the cockpit?",
+    "choices": [
+      "A) Number 1",
+      "B) Number 2",
+      "C) Number 3"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What would indicate that a flight deck side window is NOT properly closed?",
+    "choices": [
+      "A) Audible caution tone is heard.",
+      "B) Side window hand crank is not in the locked position.",
+      "C) WINDOWS NOT CLOSED placard is visible OR the lock lever is not fully forward and in the locked position."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Information from the alert switch on the number two flight compartment window?",
+    "choices": [
+      "A) Show on EICAS ( Engine Indication and Crew Alerting System ).",
+      "B) Goes to the warning systems electronics unit.",
+      "C) Shows on the MAT ( Maintenance Access Terminal )."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What material the passenger compartment windows made of?",
+    "choices": [
+      "A) Windows are made of acrylic.",
+      "B) Windows are made of bonded glass.",
+      "C) Windows are made of strengthened glass."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "When the windows is not completely closed?",
+    "choices": [
+      "A) The latch cam hook not let turn.",
+      "B) You see 'WINDOW NOT CLOSED'.",
+      "C) The switch are closed."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "In the flight deck, the number two windows?",
+    "choices": [
+      "A) Give emergency escape.",
+      "B) Is not openable.",
+      "C) has wiper arm"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+{
+    "question": "Wing structure and skin are made of",
+    "choices": [
+      "A) Aluminum",
+      "B) Steel",
+      "C) Composite"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Vortex generators are installed on",
+    "choices": [
+      "A) Wing tip",
+      "B) Wing lower surface",
+      "C) Wing upper surface"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Purpose of wind dry bays is to",
+    "choices": [
+      "A) Provide access for fuel tank maintenance",
+      "B) Prevent fuel spill on engine if an engine burst occurs",
+      "C) Let fuel in when overfill occurs"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The baffle rib has",
+    "choices": [
+      "A) One hole at the bottom to let fuel flow inboard",
+      "B) Check valve to let fuel flow outboard at a low rate",
+      "C) Check valve to let fuel flow inboard at a slow rate"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "Fuel dam rib",
+    "choices": [
+      "A) Prevents fuel from flowing outboard",
+      "B) Prevents fuel from flowing away from the pump inlets",
+      "C) Prevents fuel from flowing inboard"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What makes electrical bond between fuel tank access doors and wing skin?",
+    "choices": [
+      "A) A gasket",
+      "B) A bonding wire",
+      "C) No bonding is required"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "What door do you use to supply an opening for airflow when purging the fuel bays in center wing section?",
+    "choices": [
+      "A) Purge door in the left main wheel well",
+      "B) Purge door in the right main wheel well",
+      "C) Purge door in dry bay area"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The primary structure of the wing are made of?",
+    "choices": [
+      "A) Aluminum",
+      "B) Graphite epoxy",
+      "C) Fiber glass"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "These components attach to the wing structure?",
+    "choices": [
+      "A) Engine pylon and Flight control surface",
+      "B) Leading edge slat and Rudder tab",
+      "C) Elevator"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The wing fuel tank access door are?",
+    "choices": [
+      "A) On the bottom of the wing",
+      "B) On the top of the wing",
+      "C) In the main landing gears"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },
+  {
+    "question": "The wing landing gear doors are?",
+    "choices": [
+      "A) On the bottom of the wings",
+      "B) On the top of the wings",
+      "C) Made of titanium"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 50's"
+  },	
+{
+  "questions": [
+    {
+      "question": "Which unit controls the operation of engine pneumatic system?",
+      "choices": [
+        "A) ASCPC",
+        "B) CTC",
+        "C) ECSMC"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "How many high pressure ground connections are installed on B777?",
+      "choices": [
+        "A) 2 connections",
+        "B) 3 connections",
+        "C) 4 connections"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The ground air symbol on the air synoptic page is:",
+      "choices": [
+        "A) Always shown on the air synoptic page",
+        "B) Shown when ground air cart is connected",
+        "C) Shown when ground air cart is connected and user system is on"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "On the air synoptic page, the white circle with flow bar 90 degrees to the duct is used to indicate:",
+      "choices": [
+        "A) Valve opened",
+        "B) Valve closed",
+        "C) Valve failed"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "On the air synoptic page, how is the valve position invalid indicated?",
+      "choices": [
+        "A) Amber valve closed symbol with amber X",
+        "B) White circle with flow bar in line with duct",
+        "C) White circle with no flow bar"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "How can you know which ASCPC controls the cabin pressurization system?",
+      "choices": [
+        "A) See maintenance page",
+        "B) See air synoptic page",
+        "C) See status page"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+{
+  "questions": [
+    {
+      "question": "The unit of duct pressure shown in the air synoptic page is:",
+      "choices": [
+        "A) psid",
+        "B) psig",
+        "C) Milibar"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Which of the following is correct?",
+      "choices": [
+        "A) HPSOV and PRSOV are the same",
+        "B) HPSOV is controlled and operates by electrical power",
+        "C) You can lock HPSOV in open position"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Which of the following regulates control pressure to FAMV?",
+      "choices": [
+        "A) PRSOVC",
+        "B) HPFAC",
+        "C) Manifold flow sensor"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "’CLOSED’ light on Isolation Valve Switches illuminates",
+      "choices": [
+        "A) Any time Isolation Valve in Close position",
+        "B) When Isolation valve closed due to non-normal condition of the valve or pneumatic system",
+        "C) Only when Isolation Valve Switch is selected to OFF"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "When both engines are running and supply air to the pneumatic system, Center Isolation position is normally",
+      "choices": [
+        "A) Open",
+        "B) Modulated",
+        "C) Closed"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Which sensor is used by ASCPC to supply duct pressure to EICAS?",
+      "choices": [
+        "A) Manifold flow sensor",
+        "B) Manifold pressure sensor",
+        "C) Intermediate pressure sensor"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Pneumatic system of B777 has the following modes of operation",
+      "choices": [
+        "A) Primary, Analog (backup) and Pneumatic modes",
+        "B) Primary and Backup modes",
+        "C) Pneumatic and Backup modes"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "In Pneumatic mode of operation, the engine air supply system is controlled by",
+      "choices": [
+        "A) ASCPC",
+        "B) CTC",
+        "C) Reference pressure regulator inside HPFAC and PRSOVC"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "In Backup mode, FAMV is",
+      "choices": [
+        "A) Fully closed",
+        "B) Modulated",
+        "C) Fully open"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "When the pneumatic system operates in Pneumatic mode, to turn off the air bleed we should",
+      "choices": [
+        "A) Pull ASCPC circuit breaker",
+        "B) Select engine bleed switch to OFF",
+        "C) Shut down engine"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Controlled air from the engine compressor to HPFAC and PRSOVC are cooled by",
+      "choices": [
+        "A) Fuel",
+        "B) Fan air",
+        "C) Ambient air"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The purpose of the Duct Vent Valve is to",
+      "choices": [
+        "A) Bleed air from the pneumatic system",
+        "B) Bleed air from FAMV",
+        "C) Bleed air to prevent overpressure condition caused by HPSOV leakage when HPSOV and PRSOV are both commanded to close"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Without electrical power, isolation valves are",
+      "choices": [
+        "A) Spring-loaded closed",
+        "B) Spring-loaded open",
+        "C) Latched in the previous position when electrical power was available"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+{
+  "questions": [
+    {
+      "question": "All isolation valves are interchangeable and interchangeable with:",
+      "choices": [
+        "A) PRSOV",
+        "B) HPSOV",
+        "C) APU shutoff valve"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Where can you find the accurate position information of HPSOV and PRSOV?",
+      "choices": [
+        "A) Air Supply Maintenance page",
+        "B) Air synoptic page",
+        "C) Position indicator on the valve"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Intermediate Pressure Check Valve installation is prevented by:",
+      "choices": [
+        "A) Flow direction arrow on the valve",
+        "B) Direction arrow and male-female flanges",
+        "C) Male and female flanges"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Purpose of Controller Air Cooler is to:",
+      "choices": [
+        "A) Use fan air to cool engine controlled to HPFAC and PRSOVC",
+        "B) Cool HPFAC and PRSOVC",
+        "C) Cool ASCPC"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The pressure regulating and shutoff valve controller (PRSOVC):",
+      "choices": [
+        "A) Supplies control pressure to the pressure regulating and shutoff valve (PRSOV).",
+        "B) Is controlled by the high pressure and fan air controller (HPFAC).",
+        "C) Supplies control pressure to the high pressure/fan air controller (HPFAC)."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The airplane is on the ground, the right engine is on and the APU is on. What must you do when you want to do a cross bleed start from the right engine to the left engine?",
+      "choices": [
+        "A) Set the left and right pack and trim air switches to OFF or FAULT.",
+        "B) Set all the switches on the bleed air/pressurization panel to AUTO or to ON.",
+        "C) Set the APU bleed air switch to OFF."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "When both engines give air to the pneumatic distribution system, what is the usual position of the center isolation valve?",
+      "choices": [
+        "A) Latched closed.",
+        "B) Modulating.",
+        "C) Closed."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Which sensors in the pneumatic system are used by the ASCPCs (Air Supply and Cabin Pressure Controller) to give DUCT PRESS information on the EICAS display?",
+      "choices": [
+        "A) Left and right manifold dual temperature sensors.",
+        "B) Left and right manifold flow sensors.",
+        "C) Left and right manifold pressure sensors."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "What regulates control pressure to the fan air modulating valve (FAMV)?",
+      "choices": [
+        "A) The high pressure/fan air controller (HPFAC).",
+        "B) The pressure regulating and shutoff valve controller (PRSOVC).",
+        "C) The manifold flow sensor."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+    {
+      "question": "Which valves in the engine bleed air system are interchangeable?",
+      "choices": [
+        "A) APU shut off valve and Fan air Modulating Valve (FAMV).",
+        "B) The pressure regulating and shutoff valve (PRSOV) and High pressure and shutoff valve (HPSOV).",
+        "C) The Fan air modulating valve (FAMV) and High pressure and shutoff valve (HPSOV)."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "In normal condition the Pneumatic System controls?",
+      "choices": [
+        "A) Pneumatic pressure.",
+        "B) Pneumatic temperature and pressure.",
+        "C) Pneumatic temperature, flow, and pressure."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "At normal engine speed, during cruise bleed air is tapped (bleed) from?",
+      "choices": [
+        "A) The high-pressure stage.",
+        "B) The auxiliary power unit bleed.",
+        "C) The intermediate pressure stage."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The position of the PRSOV (pressure regulating and shut off valve) is monitored by the ASCPC?",
+      "choices": [
+        "A) Through a RVDT on the butterfly of the valve.",
+        "B) With a proximity sensor wired with each PSEU (Proximity Sensor Electronic Unit).",
+        "C) The position is not electronically monitored, the ASCPC determines the valve position with pneumatic sensors in the pneumatic circuit."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The ASCPC (Air Supply and Cabin Pressure Controller) has two control modes?",
+      "choices": [
+        "A) Digital for Air Supply and Analogic for Air Distribution.",
+        "B) Primary for all functions and Alternate for backup functions of the Air Conditioning.",
+        "C) Digital for Air Supply, Distribution, and Pressurization. Analogic mode for Air Supply Back Up."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The position of the isolation valves are driven by?",
+      "choices": [
+        "A) Left ASCPC in primary, Right ASCPC in backup mode.",
+        "B) Both ASCPC at the same time.",
+        "C) The ELMS."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 36"
+    },
+    {
+      "question": "The Fan Air Modulating Valve is?",
+      "choices": [
+        "A) Fail safe full open.",
+        "B) Fail safe fully closed.",
+        "C) Spring loaded 50% open."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 36"
+    },
+{
+  "question": "Under normal conditions, what is the source of bleed air to start the left engine?",
+  "choices": [
+    "A) Right engine bleed air system",
+    "B) APU",
+    "C) Left ground cart"
+  ],
+  "correctAnswer": "B",
+  "category": "ATA 36"
+},
+{
+  "questions": [
+    {
+      "question": "When you do any test that does a check of fire bottle squibs, the ELMS supplies a small current to fire bottle squibs for:",
+      "choices": [
+        "A) the bottles selected only",
+        "B) the bottles selected and to all other fire bottle squibs",
+        "C) the bottles selected and their related wiring."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The fire and overheat test switch (FIRE/OVHT TEST) does a test of:",
+      "choices": [
+        "A) inaccessible during-the-flight areas fire and smoke detection systems",
+        "B) the fire extinguishing system:",
+        "C) all airplane fire protection system"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The squib test failure signal resets when:",
+      "choices": [
+        "A) If you repair the squib circuit",
+        "B) If you repair the squib circuit and do another test",
+        "C) if you cycle the power"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "As the temperature of the core of the engine fire detectors increases, electrical resistance of conductor ground connected to the tube:",
+      "choices": [
+        "A) increases",
+        "B) decreases",
+        "C) shows short-circuited"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The engine and APU fire detection cards function differently:",
+      "choices": [
+        "A) and are not interchangeable",
+        "B) but are interchangeable",
+        "C) but are interchangeable if you reprogram the pins on the card."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "If an engine has an overheat condition, these indications occur in the flight deck:",
+      "choices": [
+        "A) The master caution lights come on; The caution aural operates; An engine overheat caution message shows.",
+        "B) The master warning lights come on; The fire warning aural operates; An engine fire warning message shows.",
+        "C) The master warning lights come on; The fire warning aural operates; An engine fire warning message shows; The engine fire warning light comes on; The fuel control switch fire warning light comes on."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "How many ways can you test lavatory smoke detectors?",
+      "choices": [
+        "A) 1",
+        "B) 2",
+        "C) 3"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The APU fire detection system has two modes of operation: unattended mode and attended mode. The difference between these modes is defined by:",
+      "choices": [
+        "A) engine operation",
+        "B) air/ground mode",
+        "C) engine operation and air/ground mode"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "When using the fire/overheat test switch to make sure the APU fire detection system operates correctly the APU fire switch:",
+      "choices": [
+        "A) can not be pulled during the test",
+        "B) is unlocked during the test",
+        "C) is not power supplied"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The forward lower cargo smoke detector and the aft lower cargo smoke detector are:",
+      "choices": [
+        "A) interchangeable.",
+        "B) identical but not interchangeable",
+        "C) different"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The lavatory smoke detectors and cargo smoke detectors are:",
+      "choices": [
+        "A) interchangeable.",
+        "B) identical but not interchangeable",
+        "C) different"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+{
+  "questions": [
+    {
+      "question": "If you pull and rotate the engine fire switch, the fire bottles will discharge:",
+      "choices": [
+        "A) with the battery switch ON or OFF, and with or without ground power on the airplane",
+        "B) when the battery switch ON and with or without ground power on the airplane",
+        "C) when the battery switch ON and with ground power on the airplane"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The engine fire switch releases if:",
+      "choices": [
+        "A) the engine has a fire.",
+        "B) when the battery switch is ON and the engine fuel control switch is in CUTOFF during a fire/overheat test.",
+        "C) the engine has a fire or when the battery switch is ON and the engine fuel control switch is in CUTOFF during a fire/overheat test."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "To operate APU fire extinguishing system from the P40 panel, you should:",
+      "choices": [
+        "A) push the APU bottle discharge switch",
+        "B) push the APU fire shutdown switch",
+        "C) push the APU fire shutdown switch first, and then push the APU bottle discharge switch"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Flight and ground operation of the lower cargo fire extinguishing system is:",
+      "choices": [
+        "A) the same",
+        "B) different",
+        "C) different and dependent on the landing time"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Which statement is true for Engine Overheat Detection?",
+      "choices": [
+        "A) Overheat detectors are different from Fire detectors",
+        "B) Overheat condition is detected by Engine Fire Detection Loops",
+        "C) Fuel control switch light comes on when there is an engine overheat"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Which statement is true for APU fire detection system?",
+      "choices": [
+        "A) Operates only in the air",
+        "B) Uses smoke detectors",
+        "C) Has two modes: Attended and Unattended"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Airplane is on the ground, if you push forward cargo Fire Arm switch and then Discharge switch",
+      "choices": [
+        "A) Bottles 1A and 1B fire immediately, bottle 2A fires after 20 minutes",
+        "B) Bottles 1A and 1B fire immediately, bottles 2A, 2B, 2C discharge after",
+        "C) Only bottles 1A and 1B fire immediately"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Engine fire switch releases if the engine has a fire or",
+      "choices": [
+        "A) During fire/overheat test",
+        "B) Fuel control switch is in CUT OFF",
+        "C) BAT switch is ON"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Where can you find engine fire extinguisher bottles?",
+      "choices": [
+        "A) Forward cargo compartment",
+        "B) Aft cargo compartment",
+        "C) Main equipment center"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "What agent is used for engine and APU fire extinguishing?",
+      "choices": [
+        "A) Water",
+        "B) Halon",
+        "C) Powder"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "How do you check engine/APU fire bottles pressure switch circuit on the ground?",
+      "choices": [
+        "A) Push and hold the bottle pressure switch test button",
+        "B) Do a fire/overheat test",
+        "C) Weigh the bottle"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "If you shut down the APU by fire shutdown switch on P40, to start the APU again you need to",
+      "choices": [
+        "A) Do a fire/overheat test",
+        "B) Power the airplane by external power",
+        "C) Cycle the BAT switch"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "What is the hydrostatic test interval for fire extinguisher bottles?",
+      "choices": [
+        "A) 7 years",
+        "B) 6 years",
+        "C) 5 years"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+{
+  "questions": [
+    {
+      "question": "What is the purpose of cargo compartment fire extinguishing in-line pressure switch reset button?",
+      "choices": [
+        "A) To set switch contacts to open after it is latched closed by discharge pressure",
+        "B) To reset the switch after extinguisher bottle replacement",
+        "C) To set switch contacts to close after it is latched opened by discharge pressure"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "What is maximum service life of a fire extinguisher bottle squib?",
+      "choices": [
+        "A) 5 years",
+        "B) 10 years",
+        "C) 15 years"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "At what temperature will the lavatory fire extinguisher bottle nozzles melt?",
+      "choices": [
+        "A) 77° C",
+        "B) 100° C",
+        "C) 90° C"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Which is true for the engine overheat detection system?",
+      "choices": [
+        "A) Overheat detection is provided by the engine fire detection system.",
+        "B) The overheat detectors are different than the fire detectors.",
+        "C) The pressure regulating and shutoff valve (PRSOV) closes automatically."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Which is true for the APU fire detection system?",
+      "choices": [
+        "A) It uses duct leak detection system to monitor for fire conditions.",
+        "B) It uses smoke detectors to monitor for a fire condition.",
+        "C) It has two modes of operation, unattended and attended."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "When smoke is detected in a lavatory?",
+      "choices": [
+        "A) The green light on the smoke detector comes on.",
+        "B) The lavatory call light/reset switch for that lavatory flashes.",
+        "C) The horn can only be shutoff when the smoke is gone."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "With the airplane on the ground, what happens when you push the FWD cargo fire arming switch, then push the discharge switch?",
+      "choices": [
+        "A) Bottles 1A and 1B discharge immediately. Bottles 2A, 2B and 2C discharge at twenty minutes intervals.",
+        "B) Bottles 1A and 1B discharge immediately. Bottles 2A discharges twenty minutes later.",
+        "C) Bottles 2B and 2C do not discharge. Bottles 1A, 1B and 2A discharge immediately."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Which of these happens when an engine fire is detected?",
+      "choices": [
+        "A) The fire switch solenoid unlocks.",
+        "B) An EICAS caution message shows.",
+        "C) The pressure regulating and shutoff valve (PRSOV) closes automatically."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "What is the purpose of the fire overheat test switch for the APU fire extinguishing circuit?",
+      "choices": [
+        "A) To energize the solenoid to unlock the APU fire switch.",
+        "B) To switch off the Fire lights in the APU fire switch.",
+        "C) To reset the remote shutdown and the bottle discharge by the switch on the P40 panel."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "APU fire on ground with two engines OFF causes?",
+      "choices": [
+        "A) The APU shuts down automatically and the extinguisher bottle discharges.",
+        "B) The APU shuts down automatically.",
+        "C) Nothing happens except an aural warning on the nose landing gear P40 panel."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+ {
+      "question": "The lower cargo fire extinguishing system has?",
+      "choices": [
+        "A) 2 Fire extinguishing bottles.",
+        "B) 3 Fire extinguishing bottles.",
+        "C) 5 Fire extinguishing bottles."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The fire bottle discharge switch and light of the Lower Lobe Attendant Rest ( LLAR ) fire extinguishing system is?",
+      "choices": [
+        "A) On the LLAR attendant switch panel.",
+        "B) On the entrance enclosure attendant switch panel.",
+        "C) On the fire extinguishing menu of the cabin control panel."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The Overhead Flight Attendant Rest ( OFAR ) smoke detector can be tested by?",
+      "choices": [
+        "A) The fire test switch on P5 panel.",
+        "B) The CSS and individually at each detector.",
+        "C) Only by the CSS."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 26"
+    },
+    {
+      "question": "The smoke detectors in OFCR / OFAR are of the type?",
+      "choices": [
+        "A) Electro pneumatic Smoke detector.",
+        "B) Optical smoke detector.",
+        "C) Electronic Smoke detector."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Lower Cargo Compartment Smoke Detection: The purpose of the 'line heaters' is to?",
+      "choices": [
+        "A) Prevent false detection due to air humidity.",
+        "B) Avoid ice accumulator in the detector.",
+        "C) Periodically test the system."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+    {
+      "question": "Lower Cargo Compartment Smoke Detection: The purpose of the 'water separator' is to?",
+      "choices": [
+        "A) Remove water concentration in the air sampling.",
+        "B) Avoid smoke detectors contamination.",
+        "C) Decrease the weight of the system."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 26"
+    },
+{
+  "questions": [
+    {
+      "question": "The power for the captain and first officer seats is supplied from:",
+      "choices": [
+        "A) three phase 115V AC utility bus",
+        "B) three phase 115V AC service bus",
+        "C) single phase 115V AC standby bus"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Which of the following statements is NOT correct:",
+      "choices": [
+        "A) The emergency stop switch removes power from the horizontal control circuits of the Captain/First Officer seat",
+        "B) The emergency stop switch removes power from the vertical control circuits of the Captain/First Officer seat.",
+        "C) The emergency stop switch removes power from the Captain/First Officer seat"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "For ground service equipment and necessary in-flight equipment, there are two usual kinds of electrical outlets:",
+      "choices": [
+        "A) 115 volts AC single phase power at 400 Hertz and 28 volts DC power",
+        "B) 115 volts AC single phase power at 50 Hertz and 28 volts DC power",
+        "C) 115 volts AC single phase power at 60 Hertz and 28 volts DC power"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Business class seats with electric controls for adjustment receives:",
+      "choices": [
+        "A) three-phase power from the three phase bus",
+        "B) single phase power from the three phase bus",
+        "C) DC power from the utility bus"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The operation of the electrical/mechanical components is:",
+      "choices": [
+        "A) automatically controlled by the cargo system controller only.",
+        "B) automatically controlled by the cargo system controller, but some of them can be operated manually",
+        "C) operated manually if no power available."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The cargo handling system gets power for control from",
+      "choices": [
+        "A) ground handling bus",
+        "B) ground service bus",
+        "C) ground utility bus"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "If a lateral guide was manually lowered:",
+      "choices": [
+        "A) it can be released electrically",
+        "B) it must manually be released before it will operate electrically",
+        "C) it will reset itself when power is put on the system"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "When you replace a PDU you must clean and seal the PDU mounting base to the airframe. Then make sure that:",
+      "choices": [
+        "A) electrical resistance between the PDU and airframe is acceptable",
+        "B) the PDU mounting base is properly secured to the airframe",
+        "C) the PDU is correctly installed on the PDU mounting base."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The cargo system controllers adjust for the difference between the forward and aft cargo compartments and for system options by using the logic that is defined by:",
+      "choices": [
+        "A) code switches.",
+        "B) programming pins",
+        "C) P/N"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "To do a test of the cargo system controllers:",
+      "choices": [
+        "A) use the BITE",
+        "B) use the MAT",
+        "C) you operate the system to see if it operates correctly"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Emergency evacuation signal can be operated from:",
+      "choices": [
+        "A) The attendant stations only",
+        "B) The flight deck only",
+        "C) The attendant stations and flight deck"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "If captain/first officer seat continues to move when you release an adjustment switch. You can stop this movement by",
+      "choices": [
+        "A) Using the emergency stop switch",
+        "B) Pushing the adjustment switch in reverse direction",
+        "C) Disconnecting electrical power to the seat"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "You can remove captain/first officer seat by",
+      "choices": [
+        "A) Sliding forward off the tracks",
+        "B) Sliding aftward off the tracks",
+        "C) Removing the seat tracks"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "You can externally open the stowage bin if the actuator does not operate correctly by pushing the emergency release lever which is located at",
+      "choices": [
+        "A) The bezel",
+        "B) Top of side wall panel",
+        "C) Stowage bin sidewall"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Air chillers can be attached to",
+      "choices": [
+        "A) The top of the galleys",
+        "B) The bottom of the galleys",
+        "C) The back of the galleys"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Fixed galleys are attached to airplane structure by",
+      "choices": [
+        "A) Tie rods at the top and bolts to hardpoint fittings at the bottom",
+        "B) Tie rods at the top and bolts/fittings to seat tracks at the bottom",
+        "C) Bolts and fittings to the seat tracks at the bottom"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+{
+  "questions": [
+    {
+      "question": "If cargo compartment fiberglass liners have cuts, tears or holes,",
+      "choices": [
+        "A) You can repair when time available",
+        "B) You must repair",
+        "C) You must replace the liners"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "What is the purpose of lower lobe cargo compartment decompression panels?",
+      "choices": [
+        "A) To prevent fuselage structural damage if there is a sudden decompression of passenger compartment",
+        "B) To ensure equal air pressure between passenger compartment and cargo compartment",
+        "C) To prevent fuselage structural damage if there is a sudden decompression of cargo compartment"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "How can you identify individual Power Drive Unit (PDU)?",
+      "choices": [
+        "A) By row location number",
+        "B) By PDU location in the row",
+        "C) By row location number and its location in the row (left, right, center)"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "What do you need to do prior to the removal of passenger door escape slide/raft?",
+      "choices": [
+        "A) Install the safety pin to lock the release mechanism",
+        "B) Install the safety pin to the girt bar mechanism",
+        "C) Install the safety pin to the lacing cover"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "After deployment, the slide/raft is inflated by",
+      "choices": [
+        "A) Inflation cylinder air",
+        "B) Ambient air",
+        "C) Air from the aspirators"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Why is it important to repair damaged cargo liners?",
+      "choices": [
+        "A) The liners keep the cargo compartments pressurized.",
+        "B) The liners protect cargo containers from damage.",
+        "C) Sealed cargo compartments are necessary for fire protection and temperature control."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "One retractable guide roller/lock attaches to the forward cargo door sill. What is the purpose of this component?",
+      "choices": [
+        "A) It guides the cargo door to full close and then locks it.",
+        "B) It aligns and locks the cargo loader to the cargo door sill.",
+        "C) It guides and aligns containers as they move through the cargo door opening."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The Cargo System Controller controls the position of?",
+      "choices": [
+        "A) PDU and lateral guide.",
+        "B) Sill roller lock and retractable guide.",
+        "C) Center stop lock and lateral guide."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "To supply power to the Cargo handling system, these conditions must be true?",
+      "choices": [
+        "A) Grnd Handling Bus powered/Cargo Door full open/System Power Switch ON.",
+        "B) Grnd Handling Bus powered and System Power Switch armed.",
+        "C) Grnd Handling Bus powered and joystick FWD/AFT/IN/OUT."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The AIR CHILLER UNITS?",
+      "choices": [
+        "A) Are automatic devices that remove odors from the galleys.",
+        "B) Operate on ground only to cool the galleys.",
+        "C) Supply cold AIR in the carts or in compartments that need refrigeration when the system is ON."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "On the emergency evacuation panel (P8) in the cockpit, the ON / OFF / ARM switch?",
+      "choices": [
+        "A) Is not used because evacuation is commanded by the push button on the attendant switch panel located at door 2 left.",
+        "B) Will stop the alarm in the cockpit to let the pilots contact the attendant.",
+        "C) The ARM position is not used, only ON / OFF will command or not an emergency evacuation for all the cabin"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "On electrically powered aircraft, which conditions are necessary to power the cargo loading system?",
+      "choices": [
+        "A) Control panel access door open and power switch ON.",
+        "B) Power switch ON and cargo door full open.",
+        "C) Power switch AUTO and all manual door sill latches UP."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "On an unpowered aircraft, is it possible to move the pilots seats?",
+      "choices": [
+        "A) No, electrical power is necessary.",
+        "B) Yes, but only the backrest is possible.",
+        "C) Yes, by using the manual controls"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "Where is the Flight Crew Rest area?",
+      "choices": [
+        "A) In the mid section of the passenger compartment.",
+        "B) AFT of the cockpit.",
+        "C) At the AFT section of the passenger's compartment."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+{
+  "questions": [
+    {
+      "question": "In case of emergency, is it possible to open the lavatory door?",
+      "choices": [
+        "A) Yes, but a special tool is required.",
+        "B) No, the door can only be opened from inside.",
+        "C) Yes, no specific tool is needed."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "In the lower lobe cargo compartments, the decompression panels?",
+      "choices": [
+        "A) Prevent fuselage structural damage if there is sudden decompression of the passenger compartment.",
+        "B) Automatically open in case of fire to remove smokes.",
+        "C) Allow the ventilation of the cargo compartments."
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 25"
+    },
+    {
+      "question": "To operate the cargo loading system?",
+      "choices": [
+        "A) The aircraft must be electrically supplied.",
+        "B) Electrical power is not required.",
+        "C) The ground handling bus must be supplied."
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 25"
+    },
+    {
+      "question": "If electrical power to the cargo loading system is lost, the containers?",
+      "choices": [
+        "A) Cannot be unloaded.",
+        "B) Must be manually unloaded.",
+        "C) Are automatically unloaded."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "When the cargo loading system is unpowered, the lateral guides are normally?",
+      "choices": [
+        "A) In the lowered (up) position.",
+        "B) In the retract (down) position.",
+        "C) In the last position selected by the control panel."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },
+    {
+      "question": "The cargo loading system of the B777 is?",
+      "choices": [
+        "A) Automatic and does not require any action from the ground crew.",
+        "B) Electrical for the aft and fwd cargo compartment.",
+        "C) Only manual and does not require electrical power."
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 25"
+    },	
+{
 	"question": "The CDB installation fault results tell you that the possible causes of the fault are OEU 1-2-4 and OEU 1-2-5 because:",
 	"choices" :[
 	"A) One of the 2 OEUS didn't transmit or receive the token",
