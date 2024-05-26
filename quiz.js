@@ -945,7 +945,7 @@ const allQuestions = [
     "choices": [
       "A) of the ground cable connected to each discharger",
       "B) of the conducting strip on the elevator surface and the ground cable connected to the conducting strip",
-      "C) A and B
+      "C) A and B"
     ],
     "correctAnswer": "B",
     "category": "ATA 50's"
@@ -965,7 +965,7 @@ const allQuestions = [
     "choices": [
       "A) leading edge only",
       "B) leading edge, rudder and tip fairing",
-      "D) tip fairing
+      "D) tip fairing"
     ],
     "correctAnswer": "B",
     "category": "ATA 50's"
@@ -985,7 +985,7 @@ const allQuestions = [
     "choices": [
       "A) prevent any possible operation of the rudder",
       "B) deactivate the HF communication system and use the specified safety harness",
-      "C) A and B
+      "C) A and B"
     ],
     "correctAnswer": "C",
     "category": "ATA 50's"
