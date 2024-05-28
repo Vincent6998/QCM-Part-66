@@ -1,5 +1,627 @@
 const allQuestions = [
 
+    {
+        "question": "Which ATA chapter gives an overview of windows structure?",
+        "choices": [
+            "A) Chapter 56",
+            "B) Chapter 57",
+            "C) Chapter 58"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Which ATA chapter gives an overview of pylon structure?",
+        "choices": [
+            "A) Seriously? There are questions about chapters?",
+            "B) Chapter 54",
+            "C) Chapter 55"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Landing gears doors are made of:",
+        "choices": [
+            "A) Fiberglass/hybrid CFRP",
+            "B) Toughened CFRP",
+            "C) CFRP"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Wing-to-body fairing is made of:",
+        "choices": [
+            "A) Fiberglass/hybrid CFRP",
+            "B) Toughened CFRP",
+            "C) CFRP"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Node radome is made of:",
+        "choices": [
+            "A) CFRP",
+            "B) Aluminium",
+            "C) Fiberglass"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Torque box in the vertical stabilizer is made of:",
+        "choices": [
+            "A) Toughened CFRP",
+            "B) CFRP",
+            "C) Fiberglass/hybrid CFRP"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Select one disadvantage about using carbon material:",
+        "choices": [
+            "A) It is heavier than aluminium",
+            "B) Drilling it is a health hazard",
+            "C) It can't be painted"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Slats are made of:",
+        "choices": [
+            "A) Aluminium",
+            "B) CFRP",
+            "C) Titanium"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Floor beams are made of:",
+        "choices": [
+            "A) Aluminium",
+            "B) Toughened CFRP",
+            "C) Titanium"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the 'water line' (WL)?",
+        "choices": [
+            "A) It's the lateral measurement in inches from the center line of the airplane",
+            "B) It's the height measurement in inches from a reference below the airplane",
+            "C) It's a length measurement in inches from a zero datum"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the buttock line (BL)?",
+        "choices": [
+            "A) It's the lateral measurement in inches from the center line of the airplane",
+            "B) It's the height measurement in inches from a reference below the airplane",
+            "C) It's a length measurement in inches from a zero datum"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The fuselage is a:",
+        "choices": [
+            "A) Biconvex dissymmetric structure",
+            "B) Monocoque structure",
+            "C) Semi-monocoque structure"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Zero datum is:",
+        "choices": [
+            "A) 92.5 inches forward of the nose fuselage",
+            "B) 92.5 inches aft of the nose fuselage",
+            "C) The very forward part of radome"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "'Section 41' is the first aircraft longitudinal section...",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the APU's section?",
+        "choices": [
+            "A) Section 46",
+            "B) Section 47",
+            "C) Section 48"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "What is the main landing gears' section?",
+        "choices": [
+            "A) Section 44",
+            "B) Section 45",
+            "C) Section 46"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "On the B777-300 there are more sections because of the added length...",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Opening the radome gives access to:",
+        "choices": [
+            "A) The weather radar",
+            "B) The VOR antennas",
+            "C) The HF couplers"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Can the radome be held and locked open?",
+        "choices": [
+            "A) No it is not possible",
+            "B) Yes using hold open fittings",
+            "C) Yes using an additional locking tool"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Wings frames and stringers are made of:",
+        "choices": [
+            "A) CFRP",
+            "B) Titanium alloy",
+            "C) Aluminium"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Wing fairings are made of:",
+        "choices": [
+            "A) Fiberglass/hybrid CFRP",
+            "B) CFRP",
+            "C) Aluminium"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The impact resistant access doors are used to:",
+        "choices": [
+            "A) Protect the fuel tanks in case of engine burst",
+            "B) Improve the wing rigidity",
+            "C) Protect the fuel tanks against leaks"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The 4 pylon/strut openable doors permits to access to:",
+        "choices": [
+            "A) Center hydraulic bay",
+            "B) Left or right hydraulic bay",
+            "C) Engine extinguishing bottle"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The forward and aft engine mounts are located:",
+        "choices": [
+            "A) Inside the engine",
+            "B) On the wing part",
+            "C) Inside the engine strut/pylon"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "In case of ditching, the engine can be disconnected from the pylon/strut because of the:",
+        "choices": [
+            "A) Shear rivets",
+            "B) Fuse pins",
+            "C) Hi-locks"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "To access rudder's PCU you better open access doors from the:",
+        "choices": [
+            "A) Left hand side of the vertical stabilizer",
+            "B) Right hand side of the vertical stabilizer",
+            "C) Either left or right side of the vertical stabilizer"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "On the B777, why windows number 2 can be openable?",
+        "choices": [
+            "A) They permit to cool the cockpit in case of hot weather",
+            "B) They give a larger view during taxiing",
+            "C) They give an emergency escape"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many windows in the flight deck can be reheated?",
+        "choices": [
+            "A) 2",
+            "B) 4",
+            "C) 6"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How the windows number 2 are monitored for correct closing/locking?",
+        "choices": [
+            "A) By an alert switch on the latch handle",
+            "B) By an alert switch on the latch number 4",
+            "C) By an alert switch on the carriage"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "If the 2 openable windows are not close properly, on the EICAS the pilots will see:",
+        "choices": [
+            "A) Advisory message 'WINDOWS'",
+            "B) Caution message 'WINDOWS'",
+            "C) Two advisory messages: 'WINDOW LEFT' and 'WINDOW RIGHT'"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many types of spring clips are used to hold the passengers windows assembly?",
+        "choices": [
+            "A) 1",
+            "B) 2",
+            "C) 3"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The length of the spring clips types depends on:",
+        "choices": [
+            "A) The torque to be applied",
+            "B) The location of the window in the fuselage",
+            "C) The number of panes"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The SRM is a customized manual for each airlines...",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Chapter 58 concern:",
+        "choices": [
+            "A) Windows structure",
+            "B) Wings structure",
+            "C) Doesn't exist"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Passenger / crew doors are:",
+        "choices": [
+            "A) Butterfly type",
+            "B) Plug type",
+            "C) Scissor doors type"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Cargo doors are located on:",
+        "choices": [
+            "A) The left-hand side of the fuselage",
+            "B) The right-hand side of the fuselage",
+            "C) The right-hand side of the fuselage but the bulk cargo door is on the..."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "On the B777-300, all passenger doors are equipped with an escape slide:",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "EPAS system is used to:",
+        "choices": [
+            "A) Open the door in emergency",
+            "B) Open the door normally",
+            "C) Deploy and inflate the escape slide"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "On the 'door auto/manual switch' on the (ASP) P89, if 'auto' is flashing, that means:",
+        "choices": [
+            "A) All pax doors are in manual",
+            "B) All pax doors are 'armed/auto'",
+            "C) At least one pax door is 'armed/auto'"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Vent door mechanism is used to:",
+        "choices": [
+            "A) Block the door opening mechanism in case of 'high delta pressure'",
+            "B) Draining rainwater in rainy weather",
+            "C) Helps the door lifting because of the door weight"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Opening the pax door from the outside door handle will automatically disarm the escape slide mechanism:",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Passenger door has:",
+        "choices": [
+            "A) 14 door stops",
+            "B) 16 door stops",
+            "C) 18 door stops"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The programming mechanism chain is used to:",
+        "choices": [
+            "A) Correctly aligns the door to the A/C during opening and closing",
+            "B) Make the door open in EPAS opening emergencies",
+            "C) Both answers"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "To lift upward the door, the two systems involved are:",
+        "choices": [
+            "A) The primary lift and the muscular force",
+            "B) The primary lift and the linear lift",
+            "C) The primary lift and the gas spring actuator"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "If the vent door interlock rod is broken:",
+        "choices": [
+            "A) The door can be still open or closed normally",
+            "B) The door can be closed but cannot be opened anymore",
+            "C) The door can be opened but cannot be closed anymore"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The flight lock actuator is used to lock the door:",
+        "choices": [
+            "A) On ground only if the door is 'armed/auto'",
+            "B) If aircraft speed is higher than 80 kts",
+            "C) During flight only"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The push/pull cable connected on the mode select handle is used to:",
+        "choices": [
+            "A) Disarm the mode select handle if the door is opened from the outside",
+            "B) Latch or unlatch the escape slide's girt bar",
+            "C) Latch the torque tube if the door is not correctly closed"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "If the Girt Bar is latched on the floor fittings, the crew can see:",
+        "choices": [
+            "A) Two black indication flags",
+            "B) Two white indication flags",
+            "C) Two yellow indication flags"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "To safety the EPAS opening squib on door '4 right':",
+        "choices": [
+            "A) The EPAS battery pack switch must be set to disarm",
+            "B) The EPAS battery pack switch must be set to armed",
+            "C) You have to insert lock pins on the programming mechanism"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "On the B777-300 door No. 3 left (or right), how many battery packs should be deactivated for maintenance?",
+        "choices": [
+            "A) 1",
+            "B) 2",
+            "C) 3"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "You can find an emergency locator transmitter inside one typical escape slide pack:",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Pulling the cable from the backup battery power switch (on the door frame) will fire:",
+        "choices": [
+            "A) The EPAS + SARD + slide squibs",
+            "B) The EPAS and SARD squibs",
+            "C) The SARD and slide deploy squibs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "FWD and AFT large cargo doors are:",
+        "choices": [
+            "A) Plug type and identical",
+            "B) Non-plug type and non-identical",
+            "C) Non-plug type but identical"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Cargo doors are operated:",
+        "choices": [
+            "A) Pneumatically",
+            "B) Electrically",
+            "C) Hydraulically"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "To open a cargo door, the first action to perform is:",
+        "choices": [
+            "A) To move the electrical switch to open",
+            "B) To move the lock handle to open the vent door",
+            "C) To unlock the 8 latches"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many sockets/plugs can be found in the cargo compartment of a B777?",
+        "choices": [
+            "A) 2",
+            "B) 3",
+            "C) 4"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "How many latches should be opened to unlatch the cargo door properly?",
+        "choices": [
+            "A) 8 latches (4 pairs) + 2 pull-in hooks.",
+            "B) 8 latches (4 pairs).",
+            "C) 2 pull-in hooks."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "To close the lock handle, the 'door latched light' on the P43 control panel must be:",
+        "choices": [
+            "A) Orange.",
+            "B) Off.",
+            "C) Green."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "During operations, which control switch always gets the control priority?",
+        "choices": [
+            "A) The internal control switch.",
+            "B) The external control switch.",
+            "C) Neither of the two."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "Bulk cargo door is a plug type:",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "The forward access door:",
+        "choices": [
+            "A) Is a non-plug type.",
+            "B) Is monitored by the PSEU(s).",
+            "C) Gives access to the M.E.C."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "If one of the off wing escape slide compartment doors opens, the pilots don't get any information about that:",
+        "choices": [
+            "A) Vrai",
+            "B) Faux"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 50's"
+    },
+    {
+        "question": "From the CSCP the cabin crew can check if the PAX doors are 'armed/disarmed':",
+        "choices": [
+            "A) Yes always.",
+            "B) No never.",
+            "C) It depends if the option is available on the aircraft."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 50's"
+    },
 {
         "question": "Where do you find the information for basic handling of the structure?",
         "choices": [
