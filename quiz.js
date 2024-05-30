@@ -1,5 +1,243 @@
 const allQuestions = [
+	
+{
+    "question": "On the B777, how many ASCP(s) are available?",
+    "choices": [
+        "A) 2",
+        "B) 3",
+        "C) 4"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "What are the different air sources?",
+    "choices": [
+        "A) Engines + APU.",
+        "B) APU + ASU.",
+        "C) Engines + ASU + APU."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "What are the 3 pneumatic system modes?",
+    "choices": [
+        "A) Digital - secondary + direct.",
+        "B) Digital - analogic - pneumatic.",
+        "C) Primary - secondary - pneumatic."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "On the P5 'bleed air panel' what are the normal positions of the control switches?",
+    "choices": [
+        "A) Released and 'off'.",
+        "B) Flush and 'on'.",
+        "C) ENG 'off' but all others to 'on'."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "Who control the right isolation valve?",
+    "choices": [
+        "A) Left ASCP.",
+        "B) Right ASCP.",
+        "C) Both ASCP."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "The left ASCP can override and control the right engine's valves:",
+    "choices": [
+        "A) Faux",
+        "B) Vrai"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "The HPSOV is totally closed during...",
+    "choices": [
+        "A) Engine high power.",
+        "B) Engine idle power.",
+        "C) Engine deceleration."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "On GE90-115, the HPFAC is located:",
+    "choices": [
+        "A) Under the fan hub.",
+        "B) On the fan case just next to the PRSOVC.",
+        "C) On the fan case just next to the oil tank."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "The FAMV can be locked close for:",
+    "choices": [
+        "A) Maintenance removal.",
+        "B) MEL dispatch.",
+        "C) Ground test."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "What is the purpose of the DVV (duct-vent-valve)?",
+    "choices": [
+        "A) Over temperature protection.",
+        "B) Over flow protection.",
+        "C) Over pressure protection."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "Which components are made to perform 'the pneumatic mode'?",
+    "choices": [
+        "A) The left and right ASCP(s).",
+        "B) The PRSOVC(s) and HPFAC(s).",
+        "C) The HPSOV(s) and FAMV(s)."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "On the GE90-115, the CAC purpose is to:",
+    "choices": [
+        "A) Cool the PRSOVC air muscle pressure only.",
+        "B) Cool PRSOVC + HPFAC air + EAIC muscle pressure.",
+        "C) Cool the PRSOVC + HPFAC air muscle pressure only."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "The 4 isolation valves are identicals interchangeable:",
+    "choices": [
+        "A) Vrai",
+        "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "What is the normal position of the center isolation valve during cruise?",
+    "choices": [
+        "A) Open",
+        "B) Regulating",
+        "C) Close"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "During cruise (without any failure), what is the PRSOV's position?",
+    "choices": [
+        "A) Fully open",
+        "B) Regulating",
+        "C) Fully close"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "If both ASCP(s) totally fail during cruise (but there's still a correct pressure inside the manifold)...",
+    "choices": [
+        "A) The 4 isolation valves go to their 'fail safe open' position.",
+        "B) The 4 isolation valves go to their 'fail safe close' position.",
+        "C) The 4 isolation valves go to their 'spring loaded close' position."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
 
+{
+    "question": "Which sensors give the duct pressure information on the ECS data blocks?",
+    "choices": [
+        "A) The IP sensors.",
+        "B) The ASCP(s) calculation by average.",
+        "C) The manifold pressure sensors."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "The FAMV and PRSOV positions informations are available on:",
+    "choices": [
+        "A) The status and synoptic pages.",
+        "B) The synoptic and maintenance pages.",
+        "C) The maintenance page only."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "The ASU maximum operating limits according to AMM are:",
+    "choices": [
+        "A) 50 PSIG and/or 232°C.",
+        "B) 50 PSIG and/or 10 lbs/sec.",
+        "C) 10 lbs/sec and/or 190°C."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 36"
+},
+{
+    "question": "During normal operation (without failure), if an isol. valve closes, the 'close light' will illuminate on the P5?",
+    "choices": [
+        "A) Vrai",
+        "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "Where is located the IP sensor on GE90-115?",
+    "choices": [
+        "A) Under the fan hub.",
+        "B) On the fan case.",
+        "C) Inside the engine pylon."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "What are the air source priorities during 'engine start' on ground?",
+    "choices": [
+        "A) 1: Engine - 2: ASU - 3: APU",
+        "B) 1: ASU - 2: Engine - 3: APU",
+        "C) 1: ASU - 2: APU - 3: Engine"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
+{
+    "question": "Per engine the dedicated ASCP uses:",
+    "choices": [
+        "A) 3 sensors",
+        "B) 4 sensors",
+        "C) 5 sensors"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 36"
+},
+{
+    "question": "Where is located the precooler?",
+    "choices": [
+        "A) On the fan hub.",
+        "B) On the fan case.",
+        "C) On top of the engine."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 36"
+},
     {
         "question": "Which ATA chapter gives an overview of windows structure?",
         "choices": [
