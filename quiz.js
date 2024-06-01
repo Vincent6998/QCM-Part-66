@@ -1,5 +1,1595 @@
 const allQuestions = [
-	
+
+{
+    "question": "This pressurization information shows in the ECS (environmental control system) data block on the EICAS display duct pressure:",
+    "choices": [
+      "A) Amber if duct pressure is less than 11 psi",
+      "B) Amber if duct pressure is less than 9.42 psi",
+      "C) Amber if duct pressure is less than 8.95 psi"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Cabin Altitude Warning Message shows if cabin altitude is higher than a safe limit. The cabin altitude at which the warning message shows is:",
+    "choices": [
+      "A) 10,000 feet",
+      "B) 14,200 feet",
+      "C) related to the selected landing altitude"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "In the automatic mode of Cabin Pressure Control System, the Air Supply Cabin Pressure Controller (ASCPC) in control of the position of the outflow valve is:",
+    "choices": [
+      "A) The left ASCPC",
+      "B) The right ASCPC",
+      "C) dependent on the power up sequence"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "In the Cabin Pressure Control System:",
+    "choices": [
+      "A) One outflow valve can operate in automatic mode and the other can operate in manual mode at the same time",
+      "B) Both outflow valves shall work in automatic mode at the same time",
+      "C) Both outflow valves shall work in manual mode at the same time"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "When can you use the Outflow Valve Manual Switch to move the outflow valves?",
+    "choices": [
+      "A) when you manually set the landing altitude",
+      "B) when the cabin pressure is more than 8.6 psi above ambient",
+      "C) when the Outflow Valve Switches are in the MAN position"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The positive pressure relief valve opens when cabin air pressure:",
+    "choices": [
+      "A) is higher than ambient pressure by a set value",
+      "B) is lower than ambient pressure by a set value",
+      "C) is differential to the remote ambient pressure sense port by 8.95 psi"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "How many Pack Flow Schedules (limits) can be set by the Air Supply Cabin Pressure Controller (ASCPC) for the Cabin Temperature Controllers (CTC) to use to control air flow into the airplane, (packs and trim air)?",
+    "choices": [
+      "A) 2",
+      "B) 3",
+      "C) 4"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "In the air conditioning - pack flow control system, at start up (when you put the pack switch to AUTO), the flow control and shutoff valve opens.",
+    "choices": [
+      "A) fully to increase air flow to the schedule rate",
+      "B) at a rate that gives efficient air cycle machine acceleration",
+      "C) slowly to permit condensed water to evaporate from the pack"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "In normal condition, which component controls Flow Control and Shut Off Valve (FCSOV)?",
+    "choices": [
+      "A) Cabin Temperature Controller (CTC)",
+      "B) Air Supply and Cabin Pressure Controller (ASCPC)",
+      "C) Airplane Information Management System (AIMS)"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Why are there 2 FCSOVs for each air conditioning pack?",
+    "choices": [
+      "A) The upper FCSOV is the main source for pack flow, the lower valve is the standby source",
+      "B) One FCSOV is controlled by ASCPC while the other is controlled by CTC",
+      "C) The upper valve controls air flow to air conditioning pack at low altitude, the lower valve lets air go through Ozone Converter before entering air conditioning pack at higher altitudes"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "How long after selecting pack control switch to OFF will the OFF light (on the pack control switch) illuminate?",
+    "choices": [
+      "A) 20 seconds",
+      "B) 35 seconds",
+      "C) 2 minutes"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which statement best describes the purpose of Economy Cooling Valve (ECV)?",
+    "choices": [
+      "A) ECV meters the air flow through air conditioning pack when FCSOV fully open",
+      "B) ECV opens to prevent ACM stall at altitudes higher than 26000ft",
+      "C) ECV opens to let air go around the ACM turbine 1 and the water separation parts of the pack"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Purpose of the upper recirculation fans is to:",
+    "choices": [
+      "A) Put cabin air to mix manifold",
+      "B) Put cabin air back in the overhead conditioned air distribution ducts",
+      "C) Move cabin air overboard"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "In normal condition, which component controls the operation of recirculation fans?",
+    "choices": [
+      "A) Right CTC",
+      "B) Left CTC",
+      "C) Environmental Control System Miscellaneous Card (ECSMC)"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The purpose of Equipment Cooling Controllers (ECCs) is to:",
+    "choices": [
+      "A) Take control of equipment cooling supply fans and override valves in the air when there is low flow condition",
+      "B) Control equipment cooling supply fans and vent valves",
+      "C) Take control of equipment cooling fans and valves when ECSMC fails"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "SATCOM backup fan is used to pull the air through electronic components in E11. This fan is on when:",
+    "choices": [
+      "A) Airplane is in the air",
+      "B) Airplane is on the ground",
+      "C) Both lavatory/galley ventilation fans do not work"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Advisory message EQUIP COOLING appears when:",
+    "choices": [
+      "A) There is low flow in the equipment cooling system in the air for 5 minutes",
+      "B) Smoke is detected in the equipment cooling system on the ground",
+      "C) There is low flow in the equipment cooling system on the ground for 5 minutes"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which flow schedule gives the largest airflow to the air conditioning pack?",
+    "choices": [
+      "A) Schedule 0",
+      "B) Schedule 1",
+      "C) Schedule 2"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What is the purpose of ASCPC to set different flow schedules (0,2,3,4)?",
+    "choices": [
+      "A) To increase engine bleed air load",
+      "B) To reduce air to other systems",
+      "C) To reduce engine bleed air load or to make more air available to other systems"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What is used to set the master temperature for all passenger zones?",
+    "choices": [
+      "A) CABIN TEMP control selector in the cockpit",
+      "B) Cabin System Control Panel (CSCP)",
+      "C) Cabin Area Control Panel (CACP)"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which of the following statements is true?",
+    "choices": [
+      "A) The left CTC monitors and controls the temperature for these zones: F/D, A, B, C",
+      "B) The right CTC monitors and controls the temperature for these zones: Fwd Cargo, D, E, F",
+      "C) The right CTC monitors and controls the temperature for these zones: Fwd Cargo, B, D, F"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The galley heaters get power when:",
+    "choices": [
+      "A) Airplane is in the air",
+      "B) Both packs are on",
+      "C) Left or right pack is on"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Normal control of the pack flow control and shutoff valves comes from the?",
+    "choices": [
+      "A) Related environmental control system miscellaneous card (ECSMC)",
+      "B) Related air Cabin Temperature controller (CTC)",
+      "C) Related air supply cabin pressure controller (ASCPC)"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What controls the position of the ram air inlet doors?",
+    "choices": [
+      "A) The right environmental control system miscellaneous card (ECSMC)",
+      "B) The cabin temperature controller (CTC)",
+      "C) The air supply and cabin pressure controller (ASCPC)"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which of these best describes the purpose of the second stage turbine bypass valve (TBV)?",
+    "choices": [
+      "A) The TBV opens to prevent air cycle machine surges when the airplane is above 26,000 feet (7,930 meters)",
+      "B) The TBV regulates the air flow through the pack when the RAM air inlet door is full open",
+      "C) The cabin temperature controller uses the TBV to control the pack outlet temperature"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Why are there two flow control and shutoff valves for each air conditioning pack?",
+    "choices": [
+      "A) One valve is for the cabin temperature controller. The other valve is for the air supply cabin pressure controller",
+      "B) The upper valve controls the flow of air into the trim air system and the lower one controls the flow of air into the pack",
+      "C) The upper valve lets air go into the pack at low altitude. The lower valve lets air go through the ozone converter then into the pack at high altitude"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which panel lets you set the master cabin temperature for the passenger compartment?",
+    "choices": [
+      "A) Bleed air/pressurization panel",
+      "B) Cabin area control panel (CACP)",
+      "C) Air conditioning panel"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which one of these statements about the trim air modulating valves is correct?",
+    "choices": [
+      "A) The trim air modulating valves have two positions, fully open or fully closed",
+      "B) All of the trim air modulating valves are the same",
+      "C) The air supply cabin pressure controllers (ASCPC) control all of the trim air modulating valves"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The flight deck usually receives conditioned air from the?",
+    "choices": [
+      "A) Right pack",
+      "B) Mix manifold",
+      "C) Left pack"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The purpose of the upper recirculation fans is to?",
+    "choices": [
+      "A) Put cabin air into the flight compartment",
+      "B) Put cabin air into the distribution system",
+      "C) Vent cabin air overboard"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The SATCOM backup cooling fan operates when?",
+    "choices": [
+      "A) Both lavatory/galley ventilation fans are off for more than 10 seconds",
+      "B) Smoke is detected in the aft or bulk cargo compartment for more than 10 seconds",
+      "C) Both forward equipment cooling supply fans are off for more than 10 seconds"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The equipment cooling system has one control switch on the air conditioning control panel. What causes the OVRD light in the switch to come on?",
+    "choices": [
+      "A) If smoke is detected in the supply part of the forward equipment cooling system only",
+      "B) The system is in override mode",
+      "C) Only if the forward cargo fire switch is ARMED"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which one of these conditions, related to the equipment cooling system, causes the ground crew call horn to sound when the airplane is on the ground?",
+    "choices": [
+      "A) Low flow or high temperature condition in the equipment cooling system",
+      "B) Both lavatory/galley ventilation fans off",
+      "C) Low pressure condition in the equipment cooling system"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What occurs to the forward equipment cooling system when smoke is detected by the E/E cooling smoke detector?",
+    "choices": [
+      "A) The system operates the main equipment center fire extinguishing system",
+      "B) The system goes to the override (OVRD) mode. This sends smoke overboard",
+      "C) The system closes the forward cargo heat valve, opens the vent valve and puts the vent fan to high flow mode"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Normal operation of the cabin pressurization system requires?",
+    "choices": [
+      "A) The flight crew to set the takeoff altitude on the pressurization panel",
+      "B) No flight crew action on the pressurization panel",
+      "C) The flight crew to open the outflow valves after landing"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "When can you use the outflow valve manual switches to move the outflow valves?",
+    "choices": [
+      "A) Anytime power is available",
+      "B) When the outflow valve AUTO switches are in the MAN position",
+      "C) When the cabin pressure is more than 8.6 psi above ambient"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "How can you see if a positive pressure relief valve is open?",
+    "choices": [
+      "A) It shows on the air supply maintenance page",
+      "B) It shows on the EICAS display",
+      "C) The brightly colored edge of the valve door shows"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Air conditioning system has?",
+    "choices": [
+      "A) One pack for fresh air and a zone temperature control with electric heaters",
+      "B) Two packs in the lower section of the fuselage",
+      "C) One pack for the cabin pressurization system"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "777-300: In the case of a smoke detection in the OFAR (Overhead Flight Attendant Rest)?",
+    "choices": [
+      "A) The Air shut off valve closes and the fire bottle automatically discharges 10 seconds after",
+      "B) The Air shut off valve closes and the exhaust valve opens",
+      "C) The Air shut off valve closes and the exhaust valve closes"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What determines the PACK outlet temperature?",
+    "choices": [
+      "A) The master cabin temperature control",
+      "B) The zone requesting the coldest temperature",
+      "C) The zone requesting the warmest temperature"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Why should the CABIN TEMP selector be set to mid position?",
+    "choices": [
+      "A) To set the maximum temperature in any zone",
+      "B) To allow full temperature range adjustment on cabin attendant panel",
+      "C) To prevent cabin overheat during low altitude flight"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What does the \"MAN\" position on the \"FLT DECK TEMP\" selector do?",
+    "choices": [
+      "A) It removes power from the trim air system",
+      "B) It causes the packs to provide air at an average mid temperature range",
+      "C) It allows the flight deck trim air modulating valve to operate manually"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "What happens if the \"FLT DECK TEMP\" selector is moved to the \"C\" position?",
+    "choices": [
+      "A) The pack temperature decreases",
+      "B) It opens the flight deck trim Air Valve",
+      "C) It closes the flight deck trim air modulating valve and lowers the Flight Deck temperature"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "Which system(s) supply trim air to the flight deck?",
+    "choices": [
+      "A) Left trim air system",
+      "B) Both right and left trim air systems",
+      "C) Center trim air system"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "How does the Trim Air system meet zone temperature requirements?",
+    "choices": [
+      "A) It controls pack air temperature",
+      "B) It heats conditioned air",
+      "C) It cools conditioned air"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "When does the EICAS advisory message \"EQUIP COOLING\" display?",
+    "choices": [
+      "A) When one of the two supply fans is inoperative",
+      "B) In the air, when the forward equipment cooling system is inoperative",
+      "C) On the ground when the forward equipment cooling system is inoperative"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "On the B777-300, the air supply valve is commanded open when?",
+    "choices": [
+      "A) The airplane is on the ground",
+      "B) The left air conditioning pack is selected \"ON\"",
+      "C) The airplane is in the air and above 25000ft altitude"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "When cabin pressure differential at the remote ambient pressure sense port is more than 8.95 psi?",
+    "choices": [
+      "A) Only the lower positive pressure relief valves open",
+      "B) Only the upper positive pressure relief valves close",
+      "C) The two positive pressure relief valves open simultaneously"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "There are two outflow valves?",
+    "choices": [
+      "A) Two aft of the airplane, one left side and one right side",
+      "B) One forward (primary) and one aft of the airplane (back up)",
+      "C) One forward and one aft on left side of the airplane (working simultaneously)"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The position of the outflow valves are normally controlled by?",
+    "choices": [
+      "A) The left Air Supply Cabin Pressure Controller (ASCPC)",
+      "B) The Electrical load Management System (ELMS)",
+      "C) The outflow valve manual switches on the bleed air/pressurization panel"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+ {
+    "question": "There are four negative pressure relief vents?",
+    "choices": [
+      "A) Two on each cargo door",
+      "B) Two each side of the fuselage",
+      "C) One on each passenger door"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+  {
+    "question": "The positive pressure relief valves?",
+    "choices": [
+      "A) Are not monitored",
+      "B) Are monitored by the two Air Supply Cabin Pressure Controllers (ASCPC)",
+      "C) Are monitored by the two Environmental Control System Miscellaneous Cards (ECSMCs)"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 21"
+  },
+  {
+    "question": "When does the advisory message EQUIP COOLING display?",
+    "choices": [
+      "A) In the air, when forward equipment cooling system is inoperative",
+      "B) On the ground, when forward equipment cooling system is inoperative",
+      "C) When one of the two supply fans is inoperative"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 21"
+  },
+{
+    "question": "Where can you check the crew oxygen pressure?",
+    "choices": [
+      "A) At cylinder gauge",
+      "B) At status page",
+      "C) Both are correct"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "The crew oxygen cylinders are made of?",
+    "choices": [
+      "A) Composite material",
+      "B) Stainless steel",
+      "C) Aluminium"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "When you push down and hold the reset/test lever on the crew oxygen mask, what flow indication will be shown?",
+    "choices": [
+      "A) Momentary flow",
+      "B) Continuous flow",
+      "C) No flow"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "How many crew oxygen masks are installed on B777?",
+    "choices": [
+      "A) 2",
+      "B) 4",
+      "C) 6"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "What oxygen is supplied for crew in the crew rest area in case of decompression?",
+    "choices": [
+      "A) Oxygen from crew oxygen cylinder",
+      "B) Oxygen from portable oxygen bottle",
+      "C) Oxygen from chemical oxygen generator"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "Which is one of the conditions to make passenger oxygen masks automatically drop?",
+    "choices": [
+      "A) Airplane is on ground with airspeed more than 80 knots",
+      "B) Airplane is in the air with airspeed more than 80 knots",
+      "C) Airplane is on ground with airspeed less than 80 knots"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "What warning will be on the LLAR in case of decompression?",
+    "choices": [
+      "A) Red light is flashing",
+      "B) Warning horn is sounding",
+      "C) Both are correct"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "What is the indication of a chemical oxygen generator that has been operated?",
+    "choices": [
+      "A) Expended indicator turns a dark color",
+      "B) Expended indicator turns a white color",
+      "C) Expended indicator turns a red color"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "The oxygen overboard discharge disk is?",
+    "choices": [
+      "A) Green color",
+      "B) Blue color",
+      "C) Red color"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "Where can you find crew oxygen pressure?",
+    "choices": [
+      "A) Pressure gauge on cylinder and Status page",
+      "B) Oxygen Synoptic page",
+      "C) CSCP and pressure gauge on cylinder"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+{
+    "question": "Crew oxygen remote fill port is located?",
+    "choices": [
+      "A) In the main equipment center",
+      "B) At nose landing gear P40",
+      "C) In the forward equipment center"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "Why are there two positions for the movable retainer ring?",
+    "choices": [
+      "A) There are two different types of composite bottles",
+      "B) One for composite and one for steel oxygen bottle",
+      "C) One is used as spare for the other"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "What is the purpose of the thermal compensator?",
+    "choices": [
+      "A) To make cylinder temperature equal outside temperature",
+      "B) To equalize temperature of the two bottles",
+      "C) To absorb the heat that pressurized oxygen causes when filling the unpressurized lines"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "Purpose of the crew oxygen system bleed valve is to?",
+    "choices": [
+      "A) Bleed oxygen overboard when overpressure occurs",
+      "B) Make sure that AIMS get correct cylinder pressure information",
+      "C) Bleed oxygen after cylinder installation"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "Dilution control is used to?",
+    "choices": [
+      "A) Set 100% oxygen when breathing",
+      "B) Control the oxygen pressure",
+      "C) Vent air out of the mask"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "When does the crew oxygen bleed valve operate?",
+    "choices": [
+      "A) Either engine start on the ground",
+      "B) After landing",
+      "C) After all doors closed"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "When do passenger oxygen masks fall down?",
+    "choices": [
+      "A) When cabin altitude is more than 13500ft",
+      "B) When passenger oxygen switch on P5 set to ON",
+      "C) Both a and b"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "How long after selecting the passenger oxygen switch on P5 to ON, the electric circuit that causes the latch/actuator to open will reset?",
+    "choices": [
+      "A) 5 min",
+      "B) 10 min",
+      "C) 2 min"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "How long will the passenger oxygen generator supply oxygen?",
+    "choices": [
+      "A) At least 22 min",
+      "B) At least 12 min",
+      "C) At least 30 min"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+ {
+    "question": "The wing anti-ice system operates?",
+    "choices": [
+      "A) In flight only",
+      "B) On the ground in icing conditions",
+      "C) In flight only, except for ground tests"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "With AUTO or ON selected, the operational mode is inhibited if:",
+    "choices": [
+      "A) Airplane on the ground",
+      "B) TAT is more than 50°F (10°C)",
+      "C) Bleed air temperature less than 200°F (93°C)"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The WAI system receives Air/ground information from:",
+    "choices": [
+      "A) The weight on wheels (WOW) cards",
+      "B) The Air Data Inertial Reference Unit (ADIRU)",
+      "C) The weight on wheels (WOW) cards and the Air Data Inertial Reference Unit (ADIRU)"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "To do wing anti-ice system ground tests with the MAT, the availability of the bleed air is:",
+    "choices": [
+      "A) Not necessary",
+      "B) Necessary",
+      "C) Dependent on the type of the required test"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "If the EAI controller's torque motor has no power, the EAI valve:",
+    "choices": [
+      "A) Is set to full close",
+      "B) Is set to full open",
+      "C) Is pneumatically actuated"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The engine anti-ice system tests with related engine not running can be done if you need to check that:",
+    "choices": [
+      "A) The related engine anti-ice system can control the bleed airflow",
+      "B) The electrical interface connections of the related engine anti-ice system are correct",
+      "C) The electrical interface connections of the related engine anti-ice system are correct, and that the related ice detector operates correctly"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The probes and sensors that have heaters, are:",
+    "choices": [
+      "A) Pitot probes; TAT probe; AOA sensors",
+      "B) Pitot probes; TAT probe; AOA sensors; engine P2/T2 probes",
+      "C) Pitot probes; static ports; TAT probe; AOA sensors; engine P2/T2 probes"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The TAT probe heater receives power when:",
+    "choices": [
+      "A) The airplane is in the air",
+      "B) The airplane is on the ground and the computed airspeed (CAS) is more than 50 knots",
+      "C) The airplane is on the ground and one or both engines are on"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "Engine P2/T2 probe heat systems is controlled by:",
+    "choices": [
+      "A) Electronic engine controls (EECs)",
+      "B) The engine data interface unit (EDIU)",
+      "C) The AIMS"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "There are two window heat control units (WHCUs), which:",
+    "choices": [
+      "A) Operate with one as primary, and another in backup",
+      "B) Control all on-side windows heating",
+      "C) Control off-side No.1 windows heating"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The backup window heat system operates to supply the power to:",
+    "choices": [
+      "A) Number No 1 windows only",
+      "B) Number No 1 and No 2 windows",
+      "C) All windows"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "Number of modes of operation for the windshield wipers is:",
+    "choices": [
+      "A) 2",
+      "B) 3",
+      "C) 4"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The ice detector probe is:",
+    "choices": [
+      "A) Vibration type",
+      "B) Radioactive",
+      "C) Pressure type"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The ice detector gives an engine icing signal to the ACIPS, if:",
+    "choices": [
+      "A) The airplane is in the air, and the heater is on for 15 seconds or more",
+      "B) The airplane is in the air, and the heater is on for 25 seconds or more",
+      "C) The airplane is in the air and there are ten cycles of heater operation"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The detector gives a wing icing signal to the ACIPS, if:",
+    "choices": [
+      "A) The airplane is in the air, and the heater is on for 15 seconds or more",
+      "B) The airplane is in the air, and the heater is on for 25 seconds or more",
+      "C) The airplane is in the air and there are ten cycles of heater operation"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+{
+    "question": "Which slats are heated to prevent icing?",
+    "choices": [
+      "A) 3,4,5 and 10,11,12",
+      "B) All 12 slats",
+      "C) 4,5,6 and 11,12,13"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "What controls the wing anti-ice valve?",
+    "choices": [
+      "A) AIMS",
+      "B) ACIPS control card",
+      "C) HYDIM cards"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "When WAI selector is selected to ON, does WAI system always operate?",
+    "choices": [
+      "A) Yes",
+      "B) Yes if operational mode inhibit is not active",
+      "C) Yes if the whole system is in good condition"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "Purpose of Controller Air Cooler (CAC) is to decrease the temperature of engine bleed air that goes to",
+    "choices": [
+      "A) EAI valve controller",
+      "B) EAI valve",
+      "C) Ice detectors"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "How do you remove power from the flight deck window heating system for maintenance?",
+    "choices": [
+      "A) Select window heat switches on P5 to OFF",
+      "B) Select window heat switches on P5 and Backup window heat switches on P5 to OFF",
+      "C) Select window heat switches on P5 and Backup window heat switches on P61 to OFF"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "Is there a rain repellent fluid system on B777?",
+    "choices": [
+      "A) Yes",
+      "B) No, a hydrophobic coating on each forward window repels rain",
+      "C) No, rain repellent agent is dangerous"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "How is ice detected?",
+    "choices": [
+      "A) Ice detector probe heater cycle determines a wing or engine icing condition",
+      "B) Ice detector vibration frequency determines a wing or engine icing condition",
+      "C) Ice detector temperature probe gives indication of icing condition"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "How is the landscape camera window heated?",
+    "choices": [
+      "A) Electric heating film in the window lamination supplies heat to the window",
+      "B) Two heat resistors supply heat to the window",
+      "C) WHCU supply heat to the window"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "On the engine anti-ice system, bleed air source is from:",
+    "choices": [
+      "A) An engine high stage bleed air port",
+      "B) An engine fan air bleed air port, through electrical heaters",
+      "C) The pneumatic distribution system"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The airplane ice detection system turns on wing and engine anti-ice:",
+    "choices": [
+      "A) Anytime ice is detected and the anti-ice switches are in auto",
+      "B) When the anti-ice switches are in auto, the airplane is in the air and ice is detected",
+      "C) When the airplane is in the air and ice is detected"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The wing anti-ice system is:",
+    "choices": [
+      "A) A thermal system with hot air from pneumatic system",
+      "B) A thermal system with electric heaters",
+      "C) A glycol system with two tanks in the dries bays"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "In manual control, the engine anti-ice system can operate:",
+    "choices": [
+      "A) Only on the ground",
+      "B) Only in the air",
+      "C) On the ground or in the air"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "In manual control, the wing anti-ice system can operate:",
+    "choices": [
+      "A) Only on the ground",
+      "B) On the ground or in the air",
+      "C) Only in flight"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "When engine anti-ice is operating:",
+    "choices": [
+      "A) Engine approach idle is selected",
+      "B) The 'ENGINE ANTI-ICE ON' memo message is displayed",
+      "C) The backup window heat system comes on"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The 'EAI' symbol on EICAS indicates that:",
+    "choices": [
+      "A) Engine anti-ice system is armed",
+      "B) Engine anti-ice system is operating",
+      "C) Engine anti-ice system has failed"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The TAT probe heater goes ON:",
+    "choices": [
+      "A) Automatically if airplane is in flight",
+      "B) When the TAT heater switch is set to ON position",
+      "C) After an engine start when airplane is on the ground"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The wing anti-ice system can operate automatically:",
+    "choices": [
+      "A) Only on the ground",
+      "B) Only in flight",
+      "C) Both on the ground and in flight"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "Anti-ice and anti-fog protections are available on:",
+    "choices": [
+      "A) Both pilot's number one windows",
+      "B) Flight deck side windows only",
+      "C) All flight deck windows"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The backup window heat system is available on:",
+    "choices": [
+      "A) All flight deck windows",
+      "B) Both pilot's number one windows",
+      "C) Flight deck side windows only"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The 'ANTI-ICE ON' advisory message is displayed if:",
+    "choices": [
+      "A) TAT below 10°C, all ANTI-ICE selectors ON and ice is detected",
+      "B) TAT above 10°C, any ANTI-ICE selector ON and no ice is detected",
+      "C) TAT below 10°C, any ANTI-ICE selector OFF and no ice is detected"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "On the B777-200, the rain repellent system is:",
+    "choices": [
+      "A) A fluid sprayed onto the number one windows, with two pushbutton switches",
+      "B) A pneumatic bleed air blown on the number one windows",
+      "C) A hydrophobic coating applied to the number one windows"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "The Drain and Water line heating function is:",
+    "choices": [
+      "A) A system with electric and pneumatic heaters",
+      "B) A system with electric heaters only requiring no actions from the crew",
+      "C) A system that is powered only when the airplane is in flight"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+{
+    "question": "The purpose of the fuel vent system is:",
+    "choices": [
+      "A) To make sure that a flame does not come inside the fuel tanks",
+      "B) To keep the pressure of the fuel tanks near the pressure of the outside atmosphere",
+      "C) To let fuel in the vent system return to the fuel tanks so the engines or APU can use it"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The pressure refuel system is controlled by:",
+    "choices": [
+      "A) The Fuel Quantity Processor Unit (FQPU)",
+      "B) The Electrical Load Management System (ELMS)",
+      "C) The FQPU and the ELMS"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Power to open and close the refuel valves is supplied by:",
+    "choices": [
+      "A) Integrated Refuel Panel (IRP)",
+      "B) FQPU",
+      "C) ELMS"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The overfill indication light is a red light that comes on when there is fuel in a surge tank, or when you do the overfill test. The overfill test protection should be performed:",
+    "choices": [
+      "A) Before refueling",
+      "B) During refueling",
+      "C) After refueling"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "During the pressure refuel system test, if one or more of the refuel valve indicator lights does not go out, the faulty component is:",
+    "choices": [
+      "A) The FQIS processor unit",
+      "B) The valve itself",
+      "C) The ELMS"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The power to open or close the spar valve is supplied from",
+    "choices": [
+      "A) The hot battery bus (ELMS) via the engine fire switch",
+      "B) The hot battery bus (ELMS) or the engine fuel spar valve battery via the engine fire switch",
+      "C) The hot battery bus or the DC standby bus via valve shut-off switches"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The engine fuel spar valve battery makes sure that the fuel system always has power:",
+    "choices": [
+      "A) To close engine fuel spar and APU fuel shutoff valves",
+      "B) To close engine fuel spar and crossfeed valves",
+      "C) To close engine fuel spar and APU fuel isolation valve"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The fuel system has 11 motor-actuated valves. These valves:",
+    "choices": [
+      "A) Are all interchangeable",
+      "B) Use interchangeable actuators",
+      "C) Use the same adapter/shaft"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "A light on lower part of the boost pump control switch shows when:",
+    "choices": [
+      "A) There is power is not supplied to the pump",
+      "B) There is low pressure at the pump outlet",
+      "C) The pump is faulty"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "On the crossfeed valve switches, the VALVE light comes on to show the related valve:",
+    "choices": [
+      "A) Is open",
+      "B) Is closed",
+      "C) Is in transit, or a valve disagree fault exists"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "APU DC fuel pump operates automatically when:",
+    "choices": [
+      "A) The APU selector is in the ON position and aircraft is on the ground",
+      "B) The APU selector is in the ON position and there is no pressure in the left engine feed manifold",
+      "C) The APU selector is in the ON position and there is no pressure in the right engine feed manifold"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "When the jettison system is operating in the Maximum Landing Weight (MLW) mode, the quantity of fuel to remain after it jettisons fuel to the MLW is calculated by:",
+    "choices": [
+      "A) The fuel quantity processor unit (FQPU)",
+      "B) The Electrical Load Management System (ELMS)",
+      "C) The Airplane Information Management System (AIMS)"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The fuel quantity indicating system (FQIS) does these functions:",
+    "choices": [
+      "A) Measures the fuel volume; Calculates the fuel quantity",
+      "B) Measures the fuel volume; Calculates the fuel quantity; Shows when there is water in the tanks",
+      "C) Measures the fuel volume; Calculates the fuel quantity; Controls refuel operations; Shows when there is water in the tanks"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The water detectors are:",
+    "choices": [
+      "A) Capacitance-type transmitters",
+      "B) Vibrating cylinder transducer type",
+      "C) Ultrasonic devices type"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The FQPU has two channels, 1 and 2, that operate:",
+    "choices": [
+      "A) Independently",
+      "B) As backup to each other",
+      "C) In parallel processing signals from the same tank units"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "To manually measure fuel quantity with the fuel measuring stick assemblies, you can get airplane attitude (pitch and roll) information:",
+    "choices": [
+      "A) By using inclinometers (in the nose wheel well) and the leveling scale (in the right main wheel well) only",
+      "B) By using the pitch and roll data from the fuel quantity maintenance page 2 only",
+      "C) By using inclinometers (in the nose wheel well) and the leveling scale (in the right main wheel well) or the pitch and roll data from the fuel quantity maintenance page 2"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "When fuel enters surge tank, how do you turn off OVERFILL light?",
+    "choices": [
+      "A) Drain surge tank and move Reset/Normal switch to Normal",
+      "B) Drain surge tank and move Reset/Normal switch to Reset",
+      "C) Move Reset/Normal switch to Reset"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "When Refueling Panel is powered up, which test do we see?",
+    "choices": [
+      "A) Overfill test",
+      "B) Indicator test",
+      "C) System test"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Which of the following components require fuel tank drain for removal?",
+    "choices": [
+      "A) X-feed valve",
+      "B) Spar valve actuator",
+      "C) Main tank boost pump"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "If you want to move fuel from the left main tank to other tanks, you turn on left boost pumps and then open:",
+    "choices": [
+      "A) Jettison Isolation valve",
+      "B) X-feed valve",
+      "C) Defuel and X-feed valves"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+{
+    "question": "When both center tank fuel pump switches on P5 panel are selected to ON and APU is the only electric power source",
+    "choices": [
+      "A) Both pumps will operate",
+      "B) Left pump will operate",
+      "C) Right pump will operate"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What component controls the fuel jettison system?",
+    "choices": [
+      "A) MAT",
+      "B) ELMS",
+      "C) FQPU"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Fuel jettison nozzle valve can be opened",
+    "choices": [
+      "A) Only on the ground",
+      "B) Only in the air",
+      "C) Any time the switches are selected"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "'ENG S/O VLV' on Fuel Management Maintenance Page is the indication of",
+    "choices": [
+      "A) Shutoff valve on the HMU",
+      "B) Spar valve",
+      "C) Isolation valve"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "We can find pitch and roll data in",
+    "choices": [
+      "A) Nose wheel well",
+      "B) Nose wheel well and Fuel Quantity Maintenance Page 2",
+      "C) MLG wheel well and Fuel Quantity Maintenance Page 1"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "How do you do center tank fuel sump drain?",
+    "choices": [
+      "A) Push up on the flex hose connection on the sump drain valve",
+      "B) Turn and push up the primary poppet with a fuel sampling tool",
+      "C) Remove the sump drain valve"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "How many refueling stations are there on B777?",
+    "choices": [
+      "A) Only one located at left wing",
+      "B) Two stations, one on each wing",
+      "C) Two stations on left wing"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Purpose of water scavenge jet pump?",
+    "choices": [
+      "A) Prevent water from collecting in the bottom of the tank",
+      "B) Take fluid from the tank low point and send it to the pump outlets",
+      "C) Scavenge fuel back to fuel tank"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "How do you connect Fuel Feed Manifold and Refueling Manifold?",
+    "choices": [
+      "A) Open X-feed and Defuel valves",
+      "B) Open defuel valve",
+      "C) Open X-feed valve"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Select Jettison ARM switch to ON on the ground will cause",
+    "choices": [
+      "A) Fuel jettison pumps to operate",
+      "B) Fuel jettison pumps and Jettison Isolation valves to operate",
+      "C) Nozzle valve to operate"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What happens when the integrated refuel panel (IRP) initially gets power?",
+    "choices": [
+      "A) It does an overfill test",
+      "B) It does an indicator test",
+      "C) It does no tests"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What indication shows that a refuel valve is open?",
+    "choices": [
+      "A) Symbol on the fuel synoptic page",
+      "B) Light on the integrated refuel panel (IRP)",
+      "C) Pressure light on the P5 overhead panel"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Fuel gets into the left surge tank. The surge tank float switch makes the refuel valves close and makes the overfill light come on. How do you make the overfill light go off?",
+    "choices": [
+      "A) The fuel quantity processor unit (FQPU) turns the overfill light off automatically",
+      "B) You drain the surge tank and move the RESET/NORMAL switch to NORMAL",
+      "C) You drain the surge tank and move the RESET/NORMAL switch to RESET"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "When you refuel the airplane, what happens when you push the SYSTEM TEST switch on the integrated refuel panel (IRP)?",
+    "choices": [
+      "A) The refuel valves close two at a time",
+      "B) The refuel system goes into manual mode",
+      "C) The refuel valves all close at the same time"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "You must defuel the fuel tank to remove the:",
+    "choices": [
+      "A) Engine fuel spar valve actuator",
+      "B) Fuel crossfeed valve",
+      "C) Main fuel tank motor impeller of a boost pump"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "With all boost pumps switches off, which boost pump can automatically operate?",
+    "choices": [
+      "A) Left aft",
+      "B) Left forward",
+      "C) Right aft"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What type of sensors does the fuel quantity processor unit use to measure fuel height?",
+    "choices": [
+      "A) Magnetic field floats",
+      "B) Ultrasonic transmitter units",
+      "C) Capacitance measurement units"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Where is the engine fuel spar valve battery?",
+    "choices": [
+      "A) On the front spar of the left wing",
+      "B) In a flight deck stowage bin",
+      "C) In the OPAS card file"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "During APU starts, the APU dc fuel pump operates automatically when:",
+    "choices": [
+      "A) The ground service bus has no power",
+      "B) There is no pressure in the left engine feed manifold",
+      "C) The boost pump switches are off"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "You will use the boost pumps to defuel (remove all the fuel from) the left main tank. What valves must you open?",
+    "choices": [
+      "A) Jettison isolation valves",
+      "B) Defuel valve and a crossfeed valve",
+      "C) Defuel valve and the APU isolation valve"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What controls the main tank jettison pumps?",
+    "choices": [
+      "A) Override/jettison pump switches",
+      "B) ELMS",
+      "C) Fuel-to-remain-selector"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "What fuel tank component does not send signals to the fuel quantity processor unit (FQPU)?",
+    "choices": [
+      "A) Densitometer",
+      "B) Fuel temperature sensor",
+      "C) DC pump pressure switch"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "How does a densitometer work?",
+    "choices": [
+      "A) With a vibration detector",
+      "B) With a capacitance detector",
+      "C) With a float in a special material"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The fuel quantity processor unit (FQPU) is:",
+    "choices": [
+      "A) On the E5 shelf (Fwd Cargo)",
+      "B) On the E6 shelf (Aft Cargo)",
+      "C) On the E2 shelf (Main Equipment Center)"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The purpose of the refuel manifold drain valve is:",
+    "choices": [
+      "A) For jettison, when the vacuum relief valve is open",
+      "B) To remove the fuel from the refuel manifold",
+      "C) To drain the center tank"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The Boeing 777 fuel system has:",
+    "choices": [
+      "A) Three fuel tanks and two reserves tanks in the lower lobe area",
+      "B) Three fuel tanks, in the Left and Right wing and in the center wing section",
+      "C) Three fuel tanks and a trim tank in the stabilizer"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "Which of the items listed below is NOT determined by the Fuel Quantity Indicating System?",
+    "choices": [
+      "A) Fuel Quantity",
+      "B) Fuel Type",
+      "C) Fuel Density"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 28"
+  },
+  {
+    "question": "How many tank probes are in the main tank of the 777-300 ER?",
+    "choices": [
+      "A) 25",
+      "B) 23",
+      "C) 28"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "You will use the defuel valve to?",
+    "choices": [
+      "A) Defuel or jettison fuel tanks",
+      "B) Defuel or refuel the tanks",
+      "C) Defuel or to move fuel from one tank to another"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },
+  {
+    "question": "The purpose of the surge tank float switch is to?",
+    "choices": [
+      "A) Alert the ground crew in the event of fuel imbalance during refueling",
+      "B) Alert the ground crew in the event of water detection in a surge tank",
+      "C) Stop the refueling if some fuel comes in the surge tank"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 28"
+  },	
 {
     "question": "On the B777, how many ASCP(s) are available?",
     "choices": [
