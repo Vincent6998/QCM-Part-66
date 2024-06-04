@@ -147,7 +147,7 @@ const allQuestions = [
       "B) Control equipment cooling supply fans and vent valves",
       "C) Take control of equipment cooling fans and valves when ECSMC fails"
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "category": "ATA 21"
   },
   {
