@@ -1,5 +1,95 @@
 const allQuestions = [
-
+	
+{
+  "question": "On normal function, which LAV/GALLEY Vent Fan is on?",
+  "choices": [
+    "A) the left",
+    "B) the right",
+    "C) both"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "If we put the selector 'FWD Cargo A/C' OFF:",
+  "choices": [
+    "A) there is no air in fwd cargo",
+    "B) fwd cargo still ventilated",
+    "C) all valves goes off"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What controls the temperature in the Aft Cargo?",
+  "choices": [
+    "A) Left CTC",
+    "B) Left ECSMC",
+    "C) Right ECMSC"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "What controls the temperature in the bulk Cargo?",
+  "choices": [
+    "A) Left CTC",
+    "B) Left ECSMC",
+    "C) Right ECMSC"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "In normal function, which fan sends air to cool MEC?",
+  "choices": [
+    "A) Right Supply Fan",
+    "B) Left Supply Fan",
+    "C) Left Vent Fan"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "The Vent Fan sends extracted air of the MEC to the:",
+  "choices": [
+    "A) Fwd Outflow Valve and Aft cargo",
+    "B) Fwd Outflow Valve, Fwd cargo and Mix Bay",
+    "C) Fwd Outflow Valve, Fwd Cargo and Mix Manifold"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "In flight, how many sensors must detect a Low Flow to open the override valve?",
+  "choices": [
+    "A) 1",
+    "B) 2",
+    "C) 3"
+  ],
+  "correctAnswer": "B"
+},
+{
+  "question": "When there is an Override in the MEC:",
+  "choices": [
+    "A) Vent Fan turns on",
+    "B) Supply Fan turns on",
+    "C) Supplemental Cooling Fan turns on"
+  ],
+  "correctAnswer": "C"
+},
+{
+  "question": "What is the backup of the ECSMC?",
+  "choices": [
+    "A) ECC",
+    "B) EEC",
+    "C) ECE"
+  ],
+  "correctAnswer": "A"
+},
+{
+  "question": "What controls the Outflow Valves in normal condition?",
+  "choices": [
+    "A) Right CTC",
+    "B) Both ECSMC",
+    "C) Left ASCPC"
+  ],
+  "correctAnswer": "C"
+},
 {
     "question": "This pressurization information shows in the ECS (environmental control system) data block on the EICAS display duct pressure:",
     "choices": [
