@@ -134,10 +134,10 @@ const allQuestions = [
     "question": "In normal condition, which component controls the operation of recirculation fans?",
     "choices": [
       "A) Right CTC",
-      "B) Left CTC",
+      "B) Both CTC",
       "C) Environmental Control System Miscellaneous Card (ECSMC)"
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "category": "ATA 21"
   },
   {
