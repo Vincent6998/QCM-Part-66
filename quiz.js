@@ -8,6 +8,7 @@ const allQuestions = [
     "C) both"
   ],
   "correctAnswer": "B"
+"category": "ATA 21"
 },
 {
   "question": "If we put the selector 'FWD Cargo A/C' OFF:",
@@ -17,6 +18,7 @@ const allQuestions = [
     "C) all valves goes off"
   ],
   "correctAnswer": "B"
+"category": "ATA 21"
 },
 {
   "question": "What controls the temperature in the Aft Cargo?",
@@ -26,6 +28,7 @@ const allQuestions = [
     "C) Right ECMSC"
   ],
   "correctAnswer": "B"
+"category": "ATA 21"
 },
 {
   "question": "What controls the temperature in the bulk Cargo?",
@@ -35,6 +38,7 @@ const allQuestions = [
     "C) Right ECMSC"
   ],
   "correctAnswer": "C"
+"category": "ATA 21"
 },
 {
   "question": "In normal function, which fan sends air to cool MEC?",
@@ -44,6 +48,7 @@ const allQuestions = [
     "C) Left Vent Fan"
   ],
   "correctAnswer": "A"
+"category": "ATA 21"
 },
 {
   "question": "The Vent Fan sends extracted air of the MEC to the:",
@@ -53,6 +58,7 @@ const allQuestions = [
     "C) Fwd Outflow Valve, Fwd Cargo and Mix Manifold"
   ],
   "correctAnswer": "B"
+"category": "ATA 21"
 },
 {
   "question": "In flight, how many sensors must detect a Low Flow to open the override valve?",
@@ -62,6 +68,7 @@ const allQuestions = [
     "C) 3"
   ],
   "correctAnswer": "B"
+"category": "ATA 21"
 },
 {
   "question": "When there is an Override in the MEC:",
@@ -71,6 +78,7 @@ const allQuestions = [
     "C) Supplemental Cooling Fan turns on"
   ],
   "correctAnswer": "C"
+"category": "ATA 21"
 },
 {
   "question": "What is the backup of the ECSMC?",
@@ -80,6 +88,7 @@ const allQuestions = [
     "C) ECE"
   ],
   "correctAnswer": "A"
+ "category": "ATA 21"
 },
 {
   "question": "What controls the Outflow Valves in normal condition?",
@@ -89,6 +98,7 @@ const allQuestions = [
     "C) Left ASCPC"
   ],
   "correctAnswer": "C"
+"category": "ATA 21"
 },
 {
     "question": "This pressurization information shows in the ECS (environmental control system) data block on the EICAS display duct pressure:",
