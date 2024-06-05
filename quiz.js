@@ -245,7 +245,7 @@ const allQuestions = [
     "choices": [
       "A) Take control of equipment cooling supply fans and override valves in the air when there is low flow condition",
       "B) Control equipment cooling supply fans and vent valves",
-      "C) Take control of equipment cooling fans and valves when ECSMC fails"
+      "C) Take control of equipment cooling fans and override valve when ECSMC fails"
     ],
     "correctAnswer": "C",
     "category": "ATA 21"
