@@ -7,7 +7,7 @@ const allQuestions = [
     "B) the right",
     "C) both"
   ],
-  "correctAnswer": "B"
+  "correctAnswer": "B",
 "category": "ATA 21"
 },
 {
@@ -17,7 +17,7 @@ const allQuestions = [
     "B) fwd cargo still ventilated",
     "C) all valves goes off"
   ],
-  "correctAnswer": "B"
+  "correctAnswer": "B",
 "category": "ATA 21"
 },
 {
@@ -27,7 +27,7 @@ const allQuestions = [
     "B) Left ECSMC",
     "C) Right ECMSC"
   ],
-  "correctAnswer": "B"
+  "correctAnswer": "B",
 "category": "ATA 21"
 },
 {
@@ -37,7 +37,7 @@ const allQuestions = [
     "B) Left ECSMC",
     "C) Right ECMSC"
   ],
-  "correctAnswer": "C"
+  "correctAnswer": "C",
 "category": "ATA 21"
 },
 {
@@ -47,7 +47,7 @@ const allQuestions = [
     "B) Left Supply Fan",
     "C) Left Vent Fan"
   ],
-  "correctAnswer": "A"
+  "correctAnswer": "A",
 "category": "ATA 21"
 },
 {
@@ -57,7 +57,7 @@ const allQuestions = [
     "B) Fwd Outflow Valve, Fwd cargo and Mix Bay",
     "C) Fwd Outflow Valve, Fwd Cargo and Mix Manifold"
   ],
-  "correctAnswer": "B"
+  "correctAnswer": "B",
 "category": "ATA 21"
 },
 {
@@ -67,7 +67,7 @@ const allQuestions = [
     "B) 2",
     "C) 3"
   ],
-  "correctAnswer": "B"
+  "correctAnswer": "B",
 "category": "ATA 21"
 },
 {
@@ -77,7 +77,7 @@ const allQuestions = [
     "B) Supply Fan turns on",
     "C) Supplemental Cooling Fan turns on"
   ],
-  "correctAnswer": "C"
+  "correctAnswer": "C",
 "category": "ATA 21"
 },
 {
@@ -87,7 +87,7 @@ const allQuestions = [
     "B) EEC",
     "C) ECE"
   ],
-  "correctAnswer": "A"
+  "correctAnswer": "A",
  "category": "ATA 21"
 },
 {
@@ -97,7 +97,7 @@ const allQuestions = [
     "B) Both ECSMC",
     "C) Left ASCPC"
   ],
-  "correctAnswer": "C"
+  "correctAnswer": "C",
 "category": "ATA 21"
 },
 {
