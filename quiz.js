@@ -1407,7 +1407,7 @@ const allQuestions = [
       "B) ELMS",
       "C) FQPU"
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "C",
     "category": "ATA 28"
   },
   {
