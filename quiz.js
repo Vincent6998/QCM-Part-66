@@ -191,16 +191,6 @@ const allQuestions = [
     "category": "ATA 21"
   },
   {
-    "question": "Why are there 2 FCSOVs for each air conditioning pack?",
-    "choices": [
-      "A) The upper FCSOV is the main source for pack flow, the lower valve is the standby source",
-      "B) One FCSOV is controlled by ASCPC while the other is controlled by CTC",
-      "C) The upper valve controls air flow to air conditioning pack at low altitude, the lower valve lets air go through Ozone Converter before entering air conditioning pack at higher altitudes"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 21"
-  },
-  {
     "question": "How long after selecting pack control switch to OFF will the OFF light (on the pack control switch) illuminate?",
     "choices": [
       "A) 20 seconds",
@@ -306,16 +296,6 @@ const allQuestions = [
       "A) The left CTC monitors and controls the temperature for these zones: F/D, A, B, C",
       "B) The right CTC monitors and controls the temperature for these zones: Fwd Cargo, D, E, F",
       "C) The right CTC monitors and controls the temperature for these zones: Fwd Cargo, B, D, F"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 21"
-  },
-  {
-    "question": "The galley heaters get power when:",
-    "choices": [
-      "A) Airplane is in the air",
-      "B) Both packs are on",
-      "C) Left or right pack is on"
     ],
     "correctAnswer": "C",
     "category": "ATA 21"
@@ -620,16 +600,6 @@ const allQuestions = [
     "correctAnswer": "A",
     "category": "ATA 21"
   },
-  {
-    "question": "When does the advisory message EQUIP COOLING display?",
-    "choices": [
-      "A) In the air, when forward equipment cooling system is inoperative",
-      "B) On the ground, when forward equipment cooling system is inoperative",
-      "C) When one of the two supply fans is inoperative"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 21"
-  },
 {
     "question": "Where can you check the crew oxygen pressure?",
     "choices": [
@@ -671,31 +641,11 @@ const allQuestions = [
     "category": "ATA 35"
   },
   {
-    "question": "What oxygen is supplied for crew in the crew rest area in case of decompression?",
-    "choices": [
-      "A) Oxygen from crew oxygen cylinder",
-      "B) Oxygen from portable oxygen bottle",
-      "C) Oxygen from chemical oxygen generator"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 35"
-  },
-  {
     "question": "Which is one of the conditions to make passenger oxygen masks automatically drop?",
     "choices": [
       "A) Airplane is on ground with airspeed more than 80 knots",
       "B) Airplane is in the air with airspeed more than 80 knots",
       "C) Airplane is on ground with airspeed less than 80 knots"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 35"
-  },
-  {
-    "question": "What warning will be on the LLAR in case of decompression?",
-    "choices": [
-      "A) Red light is flashing",
-      "B) Warning horn is sounding",
-      "C) Both are correct"
     ],
     "correctAnswer": "B",
     "category": "ATA 35"
@@ -800,42 +750,12 @@ const allQuestions = [
     "correctAnswer": "C",
     "category": "ATA 35"
   },
-  {
-    "question": "How long after selecting the passenger oxygen switch on P5 to ON, the electric circuit that causes the latch/actuator to open will reset?",
-    "choices": [
-      "A) 5 min",
-      "B) 10 min",
-      "C) 2 min"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 35"
-  },
-  {
-    "question": "How long will the passenger oxygen generator supply oxygen?",
-    "choices": [
-      "A) At least 22 min",
-      "B) At least 12 min",
-      "C) At least 30 min"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 35"
-  },
  {
     "question": "The wing anti-ice system operates?",
     "choices": [
-      "A) In flight only",
+      "A) On Ground",
       "B) On the ground in icing conditions",
-      "C) In flight only, except for ground tests"
-    ],
-    "correctAnswer": "C",
-    "category": "ATA 30"
-  },
-  {
-    "question": "With AUTO or ON selected, the operational mode is inhibited if:",
-    "choices": [
-      "A) Airplane on the ground",
-      "B) TAT is more than 50°F (10°C)",
-      "C) Bleed air temperature less than 200°F (93°C)"
+      "C) In flight only"
     ],
     "correctAnswer": "C",
     "category": "ATA 30"
@@ -970,32 +890,12 @@ const allQuestions = [
     "correctAnswer": "C",
     "category": "ATA 30"
   },
-{
-    "question": "Which slats are heated to prevent icing?",
-    "choices": [
-      "A) 3,4,5 and 10,11,12",
-      "B) All 12 slats",
-      "C) 4,5,6 and 11,12,13"
-    ],
-    "correctAnswer": "A",
-    "category": "ATA 30"
-  },
   {
     "question": "What controls the wing anti-ice valve?",
     "choices": [
       "A) AIMS",
       "B) ACIPS control card",
       "C) HYDIM cards"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 30"
-  },
-  {
-    "question": "When WAI selector is selected to ON, does WAI system always operate?",
-    "choices": [
-      "A) Yes",
-      "B) Yes if operational mode inhibit is not active",
-      "C) Yes if the whole system is in good condition"
     ],
     "correctAnswer": "B",
     "category": "ATA 30"
@@ -1036,16 +936,6 @@ const allQuestions = [
       "A) Ice detector probe heater cycle determines a wing or engine icing condition",
       "B) Ice detector vibration frequency determines a wing or engine icing condition",
       "C) Ice detector temperature probe gives indication of icing condition"
-    ],
-    "correctAnswer": "A",
-    "category": "ATA 30"
-  },
-  {
-    "question": "How is the landscape camera window heated?",
-    "choices": [
-      "A) Electric heating film in the window lamination supplies heat to the window",
-      "B) Two heat resistors supply heat to the window",
-      "C) WHCU supply heat to the window"
     ],
     "correctAnswer": "A",
     "category": "ATA 30"
@@ -1180,6 +1070,342 @@ const allQuestions = [
     "correctAnswer": "C",
     "category": "ATA 30"
   },
+{
+    "question": "TAT PROBE HEATING OPERATES ONLY IN FLIGHT?",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "THE PITOT PROBES HEATING WILL OPERATE:",
+    "choices": [
+      "A) AS SOON AS ONE ENGINE IS RUNNING OR DURING FLIGHT.",
+      "B) ONLY IN FLIGHT.",
+      "C) ONLY IF ICE AS BEEN DETECTED."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF THE RIGHT EAI SWITCH IS SET TO 'ON':",
+    "choices": [
+      "A) THE EAI WILL OPERATES AIR OR GROUND BUT ENGINE RUNNING.",
+      "B) THE EAI WILL OPERATES ONLY IN AIR BUT ENGINE RUNNING.",
+      "C) THE EAI WILL OPERATES AIR OR GROUND REGARDLESS OF ENGINE RUNNING."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHAT IS THE PURPOSE OF A B777-300 CAC?",
+    "choices": [
+      "A) REDUCE AIR MUSCLE PRESSURE TEMPERATURE FOR THE PRSOVC + HPFAC + EAIC.",
+      "B) REDUCE AIR MUSCLE PRESSURE TEMPERATURE FOR THE PRSOVC + EAIC.",
+      "C) REDUCE AIR MUSCLE PRESSURE TEMPERATURE FOR THE EAIC ONLY."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "THE WHOLE SLATS ARE HEATED DURING WAI OPERATION:",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WAI OPERATES:",
+    "choices": [
+      "A) ONLY IN FLIGHT.",
+      "B) ONLY ON GROUND.",
+      "C) BOTH (FLIGHT AND GROUND)."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF BOTH EAI VALVES CONTROL SWITCHES ARE SET TO 'AUTO':",
+    "choices": [
+      "A) THE VALVES WILL OPEN DURING FLIGHT ONLY BECAUSE ICE SHOULD BE DETECTED.",
+      "B) THE VALVES WILL OPEN DIRECTLY BUT ENGINE RUNNING.",
+      "C) THE VALVES WILL OPEN DURING GROUND OR FLIGHT BUT ICE SHOULD BE DETECTED."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "CONCERNING THE ICE DETECTORS: ONLY ONE IS ENOUGH TO DETECT 'ICING CONDITIONS'?",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "TO DEFROST THE ENGINE AIR INLET, WHICH AIR STAGE FROM THE HPC IS USED?",
+    "choices": [
+      "A) THE 4th.",
+      "B) THE 7th.",
+      "C) THE 9th."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "HOW THE LEFT EAI VALVE IS CONTROLLED?",
+    "choices": [
+      "A) BY HIS OWN SIDE ACIPS CARD USING A DEDICATED CONTROLLER.",
+      "B) IN HARD WIRE BECAUSE THE VALVE IS ELECTROPNEUMATIC.",
+      "C) BY EITHER LEFT OR RIGHT ACIPS CARD USING A DEDICATED CONTROLLER."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF AN 'ANTI-ICE ON' ADVISORY MESSAGE APPEARS ON THE EICAS, PILOT'S ACTION SHOULD BE:",
+    "choices": [
+      "A) THE WAI SWITCH MUST BE SET TO 'ON' TO OPERATE THE WAI.",
+      "B) THE WAI SYSTEM IS FAIL TO OPERATE.",
+      "C) THE WAI SWITCH MUST BE SET TO 'OFF OR AUTO' BECAUSE THE TAT IS TOO HIGH."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "DURING WAI OPERATION WHAT IS VISIBLE ON THE EICAS PAGE?",
+    "choices": [
+      "A) GREEN 'WAI' BELOW N1 DISPLAY.",
+      "B) GREEN 'WAI' ABOVE N1 DISPLAY.",
+      "C) GREEN 'WAI' ABOVE EGT DISPLAY."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "DURING OPERATIONS, THE WAI VALVE:",
+    "choices": [
+      "A) REGULATES AIR PRESSURE TO THE MANIFOLD.",
+      "B) IS FULLY OPEN TO DEFROST CORRECTLY THE SLATS.",
+      "C) OPENS ONLY DURING FEW SECONDS THE PACKS NEEDS TOO MUCH AIR."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "HOW THE CENTER ACIPS CARD RECEIVES INFORMATION OF 'ICING CONDITIONS'?",
+    "choices": [
+      "A) BY ARINC 329 ARINC SYSTEMS BUSES.",
+      "B) BY ARINC 629 SYSTEMS BUSES.",
+      "C) BY ARINC 717 ARINC SYSTEMS BUSES."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "ICE DETECTORS CAN SEND 'ICE CONDITION DETECTION' DURING:",
+    "choices": [
+      "A) GROUND OR FLIGHT.",
+      "B) FLIGHT ONLY.",
+      "C) GROUND ONLY."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF 2 'PROBE DEFROST CYCLES' ARE MADE WITHIN 3 MINUTES ON THE SAME ICE DETECTOR PROBE:",
+    "choices": [
+      "A) WAI STARTS.",
+      "B) EAI STARTS.",
+      "C) EAI + WAI START TOGETHER."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHAT ARE THE DRAIN MAST HEATING LEVEL(S)?",
+    "choices": [
+      "A) 28 VAC PERMANENTLY.",
+      "B) 115 VAC PERMANENTLY.",
+      "C) 28 VAC ON GROUND AND 115 VAC IN FLIGHT."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHICH PARTS OF THE WASTE TANKS ARE PREVENTS TO FROST?",
+    "choices": [
+      "A) DRAIN LINES ONLY.",
+      "B) DRAIN 'BALL' VALVES ONLY.",
+      "C) BOTH."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF THE WAI CONTROL SWITCHES ARE SET TO 'ON':",
+    "choices": [
+      "A) THE WAI SYSTEM WILL OVERRIDE ALL THE OTHER SYSTEMS.",
+      "B) THE WAI SYSTEM WILL OPERATE IN FLIGHT.",
+      "C) THE WAI SYSTEM IS 'ARMED' AND WAITS FOR THE ICE DETECTION SYSTEM."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF THE WAI CONTROL SWITCHES ARE SET TO 'AUTO':",
+    "choices": [
+      "A) THE WAI SYSTEM WILL OVERRIDE AND OPERATES WHATEVER THE FLIGHT PHASE.",
+      "B) THE WAI SYSTEM WILL OPERATE IN FLIGHT.",
+      "C) THE WAI SYSTEM IS 'ARMED' AND WAITS FOR THE ICE DETECTION SYSTEM."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+ {
+    "question": "WHAT ARE THE HEATING LEVELS FOR THE FRONT WINDOWS?",
+    "choices": [
+      "A) ANTI-ICE ONLY.",
+      "B) ANTI-ICE (NORMAL) AND ANTI-FOG (B/U).",
+      "C) ANTI-FOG ONLY."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHAT ARE THE HEATING LEVELS FOR THE SIDE WINDOWS?",
+    "choices": [
+      "A) ANTI-ICE ONLY.",
+      "B) ANTI-ICE (NORMAL) AND ANTI-FOG (B/U).",
+      "C) ANTI-FOG ONLY."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "HOW CAN YOU UNPOWER THE FRONT WINDOWS HEATING?",
+    "choices": [
+      "A) USING SWITCHES ON P5 AND P61.",
+      "B) USING SWITCHES ON P5 ONLY.",
+      "C) USING SWITCHES ON P61 ONLY."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHAT IS THE RAIN REPELLENT ON THE FRONT WINDOWS?",
+    "choices": [
+      "A) A LIQUID SPRAYED ONE.",
+      "B) THE HEATING IS THE ONLY PROTECTION ON THE WINDOWS.",
+      "C) AN HYDROPHOBIC COATING."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "DURING OPERATIONS, THE EAI VALVE:",
+    "choices": [
+      "A) REGULATES AIR PRESSURE TO THE MANIFOLD.",
+      "B) IS FULLY OPEN TO DEFROST CORRECTLY THE ENGINE AIR INLET.",
+      "C) OPENS ONLY DURING FEW SECONDS BECAUSE THE ENGINE COMPRESSOR CAN'T HANDLE THE PRESSURE."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 30"
+  },
+  {
+    "question": "IF AN OVERHEAT IS DETECTED FROM THE RIGHT ENGINE DLODS MODULE:",
+    "choices": [
+      "A) BOTH ENGINES EAI VALVES WILL CLOSE.",
+      "B) THE RIGHT EAI VALVE WILL CLOSE.",
+      "C) THE RIGHT EAI VALVE WILL OPEN."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WAI VALVE OPERATING LOGIC IS:",
+    "choices": [
+      "A) FAIL SAFE OPEN SPRING LOADED OPEN.",
+      "B) FAIL SAFE CLOSE SPRING LOADED OPEN.",
+      "C) FAIL SAFE CLOSE SPRING LOADED CLOSE."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },
+  {
+    "question": "THE WAI ACIPS CARD IS LOCATED ON THE:",
+    "choices": [
+      "A) P5.",
+      "B) P84.",
+      "C) P85."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "ACIPS MEANS:",
+    "choices": [
+      "A) AIR CONDITIONING ICE PROTECTION SYSTEM.",
+      "B) AIRFOIL AND COWLS ICE PROTECTION SYSTEM.",
+      "C) AIRCRAFT ICE PROTECTION SYSTEM."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHICH ACIPS CARD CONTROLS THE WAI SYSTEM?",
+    "choices": [
+      "A) LEFT.",
+      "B) CENTER.",
+      "C) RIGHT."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "CONCERNING THE DRAIN AND WATER LINES HEATING:",
+    "choices": [
+      "A) ELECTRICAL POWER COMES FROM THE HOT BATT BUS.",
+      "B) ELECTRICAL POWER COMES FROM THE GROUND SERVICE BUS.",
+      "C) ELECTRICAL POWER COMES FROM THE GROUND HANDLING BUS."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "WHEN DOES THE DRAIN AND WATER LINES HEATING SYSTEM OPERATE?",
+    "choices": [
+      "A) AUTOMATICALLY AS SOON AS THE ENGINES ARE RUNNING.",
+      "B) AUTOMATICALLY AS SOON AS THE AIRCRAFT IS POWERED.",
+      "C) MANUALLY AS SOON AS THE CONTROL SWITCH ON THE P5 IS SET TO 'ON'."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "EAI CACs ON THE GE90-115 (B777-300) ARE IDENTICAL WITH THE GE90-90/94 (B777-200):",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 30"
+  },
+  {
+    "question": "ON THE GE90-115 WHERE IS LOCATED THE EAIC?",
+    "choices": [
+      "A) ON THE FAN HUB.",
+      "B) ON THE CORE ENGINE.",
+      "C) ON THE FAN CASE."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 30"
+  },	
   {
     "question": "The Drain and Water line heating function is:",
     "choices": [
@@ -1407,7 +1633,7 @@ const allQuestions = [
       "B) ELMS",
       "C) FQPU"
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "B",
     "category": "ATA 28"
   },
   {
