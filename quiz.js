@@ -1159,16 +1159,6 @@ const allQuestions = [
     "category": "ATA 30"
   },
   {
-    "question": "The wing anti-ice system can operate automatically:",
-    "choices": [
-      "A) Only on the ground",
-      "B) Only in flight",
-      "C) Both on the ground and in flight"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 30"
-  },
-  {
     "question": "Anti-ice and anti-fog protections are available on:",
     "choices": [
       "A) Both pilot's number one windows",
@@ -1184,16 +1174,6 @@ const allQuestions = [
       "A) All flight deck windows",
       "B) Both pilot's number one windows",
       "C) Flight deck side windows only"
-    ],
-    "correctAnswer": "B",
-    "category": "ATA 30"
-  },
-  {
-    "question": "The 'ANTI-ICE ON' advisory message is displayed if:",
-    "choices": [
-      "A) TAT below 10°C, all ANTI-ICE selectors ON and ice is detected",
-      "B) TAT above 10°C, any ANTI-ICE selector ON and no ice is detected",
-      "C) TAT below 10°C, any ANTI-ICE selector OFF and no ice is detected"
     ],
     "correctAnswer": "B",
     "category": "ATA 30"
@@ -1254,16 +1234,6 @@ const allQuestions = [
       "B) Faux"
     ],
     "correctAnswer": "B",
-    "category": "ATA 30"
-  },
-  {
-    "question": "WAI operates:",
-    "choices": [
-      "A) Only in flight.",
-      "B) Only on ground.",
-      "C) Both (flight and ground)."
-    ],
-    "correctAnswer": "A",
     "category": "ATA 30"
   },
   {
@@ -1433,16 +1403,6 @@ const allQuestions = [
       "C) Using switches on P61 only."
     ],
     "correctAnswer": "A",
-    "category": "ATA 30"
-  },
-  {
-    "question": "What is the rain repellent on the front windows?",
-    "choices": [
-      "A) A liquid sprayed one.",
-      "B) The heating is the only protection on the windows.",
-      "C) An hydrophobic coating."
-    ],
-    "correctAnswer": "C",
     "category": "ATA 30"
   },
   {
