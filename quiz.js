@@ -601,6 +601,144 @@ const allQuestions = [
     "category": "ATA 21"
   },
 {
+    "question": "PORTS ON THE FLOW CONTROL UNITS ARE USED TO:",
+    "choices": [
+      "A) CONNECT ADDITIONNAL OXYGEN BOTTLES.",
+      "B) EMPTY THE OXYGEN BOTTLES.",
+      "C) TEST THE FCU IN ORDER TO SIMULATE DIFFERENT ALTITUDES."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "THE 777-200 'LLAR' OXYGEN SYSTEM IS...",
+    "choices": [
+      "A) CHIMICAL.",
+      "B) GAZEOUS.",
+      "C) THERE IS NO FIXED OXYGEN SYSTEM (ONLY MASKS)."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "B777 CREW OXYGEN SYSTEM IS :",
+    "choices": [
+      "A) CHIMICAL.",
+      "B) GAZEOUS.",
+      "C) OPTIONAL."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "HOW MANY O2 MASKS ARE AVAILABLE IN THE F/D ?",
+    "choices": [
+      "A) 2",
+      "B) 4",
+      "C) 6"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "IF THE CREW OVERBOARD DISCHARGE INDICATOR IS MISSING THAT'S MEAN :",
+    "choices": [
+      "A) AN AIRCRAFT DEPRESSURIZATION AS OCCUR.",
+      "B) AN HARD LANDING AS BEEN DETECTED.",
+      "C) A BOTTLE OVERPRESSURE CONDITION CAUSES THE DISC TO FALL."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "IF A CREW OXYGEN MASK IS IN USE, THE AUDIO MGNT UNIT GIVES MICROPHONE PRIORITY :",
+    "choices": [
+      "A) INSIDE THE MASK.",
+      "B) ON THE PTT (PUSH TO TALK) MICROPHONE.",
+      "C) BOTH CAN BE USED."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "BOTH FLOW CONTROL UNITS ARE IDENTICALS...",
+    "choices": [
+      "A) VRAI",
+      "B) FAUX"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "HOW CAN YOU CLOSE AND STOP THE FLOW CONTROL UNITS ?",
+    "choices": [
+      "A) THEY CLOSE AUTOMATICALLY WHEN THE OXYGEN PRESSURE IS LOW.",
+      "B) BY MOVING THE 'PASS OXYGEN' SWITCH TO 'RESET' (ON THE P5 PANEL).",
+      "C) BY DOING AN 'AIR COND RESET' ON THE P5 PANEL."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+  {
+    "question": "PASSENGER SYSTEM : HOW CAN THE PAX OXYGEN SYSTEM CAN BE DEPLOYED ?",
+    "choices": [
+      "A) MANUALLY.",
+      "B) AUTOMATICALLY.",
+      "C) BOTH."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "WHERE ARE LOCATED THE PAX OXYGEN BOTTLES ?",
+    "choices": [
+      "A) IN THE AFT CARGO COMPARTMENT.",
+      "B) IN THE FWD CARGO COMPARTMENT.",
+      "C) IN THE BULK CARGO COMPARTMENT."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "THE VOLTAGE AVERAGING UNIT GIVES :",
+    "choices": [
+      "A) THE AVERAGE PRESSURE TO THE AIMS FOR DISPLAY.",
+      "B) THE HIGHEST BOTTLE PRESSURE AVAILABLE TO THE AIMS FOR DISPLAY.",
+      "C) THE LOWEST BOTTLE PRESSURE AVAILABLE TO THE AIMS FOR DISPLAY."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "PAX RESTRAINT TOOLS SHOULD BE INSTALLED ON EACH PSU :",
+    "choices": [
+      "A) DURING FLIGHT.",
+      "B) DURING ALL 'A' CHECKS IN THE HANGAR.",
+      "C) DURING OXYGEN TEST."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 35"
+  },
+  {
+    "question": "THE CREW SYSTEM BLEED VALVE'S PURPOSE IS TO :",
+    "choices": [
+      "A) TO MAKE SURE THE S.O.V. IS CORRECTLY OPEN AND AIMS GET THE CORRECT INFO.",
+      "B) TO MAKE SURE THE S.O.V. IS CORRECTLY CLOSE AND AIMS GET THE CORRECT INFO.",
+      "C) TO MAKE SURE THAT THERE IS NO OVER PRESSURE INSIDE THE OXYGEN SUPPLY."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 35"
+  },
+  {
+    "question": "PRESSURE GAGE ON THE OXYGEN BOTTLE(S) IS THE ONLY WAY TO KNOW THE SYSTEM PRESSURE...",
+    "choices": [
+      "A) VRAI",
+      "B) FAUX"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 35"
+  },
+{
     "question": "Where can you check the crew oxygen pressure?",
     "choices": [
       "A) At cylinder gauge",
