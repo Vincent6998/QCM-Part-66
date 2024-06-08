@@ -1,5 +1,2214 @@
 const allQuestions = [
-	
+{
+        "question": "The flight control ARINC 629 buses have digital interfaces with the airplane systems:",
+        "choices": [
+            "A) through the left and right AIMS cabinets (data conversion gateway function) and system ARINC 629 buses",
+            "B) by direct connections with PSEUs, FSEUs, system card files, WEUs.",
+            "C) through EMLS and OPAS"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "All analog interfaces with the PFCS go to:",
+        "choices": [
+            "A) the AIMS cabinets",
+            "B) the ACE",
+            "C) the PCUs"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The High Lift Control System (HLCS) controls the operation of the:",
+        "choices": [
+            "A) Trailing edge flaps, leading edge slats, Krueger flaps",
+            "B) Trailing edge flaps, leading edge slats, Krueger flaps, spoilers",
+            "C) Trailing edge flaps, leading edge slats, Krueger flaps, spoilers, speed brakes"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The High Lift Control System (HLCS) has digital interface with many other airplane systems through:",
+        "choices": [
+            "A) the flight control ARINC 629 buses",
+            "B) the systems ARINC 629 buses",
+            "C) the AIMS cabinets"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "On the MAT you can do:",
+        "choices": [
+            "A) the operational tests for the HLCS.",
+            "B) the system tests for the HLCS.",
+            "C) the replacement tests for HLCS"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Wheel Force Transducer signals:",
+        "choices": [
+            "A) are used for the bank angle protection function override",
+            "B) represent the control wheel position and its movement.",
+            "C) measure autopilot input to detect a failed backdrive actuator."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The rudder PCU null LVDT:",
+        "choices": [
+            "A) reduce oscillation as the actuator extends and retracts",
+            "B) measures the movement of the actuator as it extends and retracts",
+            "C) is used for rigging the rudder PCU"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The elevator off-load function",
+        "choices": [
+            "A) transfers manual and autopilot commanded elevator deflection to the stabilizer",
+            "B) is a function of autopilot",
+            "C) is used for elevator removal procedure"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which conditions causes the column feel force to increase?",
+        "choices": [
+            "A) The feel actuator extends as the airspeed increases",
+            "B) The feel actuator extends as the airspeed decreases",
+            "C) The feel actuator retracts as the airspeed increases"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "A Flap skew is detected:",
+        "choices": [
+            "A) only during primary mode flap operation",
+            "B) by 16 LVDTs, which send position signals to FSEU",
+            "C) by 16 proximity switches, which send position signals to FSEU"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Spoilers 4 and 11:",
+        "choices": [
+            "A) are fly-by-wire in roll control and speedbrake control",
+            "B) are mechanically controlled for roll control and are fly-by-wire in speedbrake control",
+            "C) are fly-by-wire for roll control and are mechanically controlled in speedbrake control"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Aileron lockout function operates",
+        "choices": [
+            "A) Based on airplane speed and altitude in Normal mode and flap position in Secondary and Direct modes",
+            "B) Only when Autopilot engaged",
+            "C) Only in Normal mode"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Manual bypass valve on spoiler PCU is used for",
+        "choices": [
+            "A) Moving the spoiler by hand during maintenance without hydraulic pressure",
+            "B) Moving the spoiler by hand during maintenance with hydraulic pressure",
+            "C) Moving the spoiler if EHSV has failed"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Aileron PCU is rigged by using",
+        "choices": [
+            "A) Null LVDT",
+            "B) PCU rod end",
+            "C) Position LVDTS"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which spoilers are controlled by cables?",
+        "choices": [
+            "A) 5 and 10",
+            "B) 4 and 11",
+            "C) 6 and 9"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which spoilers have lock out function?",
+        "choices": [
+            "A) 6 and 9",
+            "B) 4 and 11",
+            "C) 5 and 10"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Purpose of the friction brake in Rudder system is to",
+        "choices": [
+            "A) Move rudder pedal in autopilot",
+            "B) Move rudder pedal to neutral position",
+            "C) Simulate the resistance of a cable-controlled system"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Rudder trim is used to",
+        "choices": [
+            "A) Trim the rudder",
+            "B) Decrease the force on rudder pedal",
+            "C) Increase rudder effect"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The Manual Trim Cancel switch",
+        "choices": [
+            "A) Operates only when pilot turn the switch more than 25°",
+            "B) Operates only in Direct Mode",
+            "C) Is used to remove pilot Rudder Trim command"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "What is the purpose of Elevator PCU manual test valve?",
+        "choices": [
+            "A) Release hydraulic lock in PCU",
+            "B) Adjust the null LVDT",
+            "C) Test PCU compensator/relief valve"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "What component on the STCM is used to test the hydraulic brake?",
+        "choices": [
+            "A) Rate control valve",
+            "B) Brake bypass valve",
+            "C) Motor-operated shutoff valve"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Flaps are moved by",
+        "choices": [
+            "A) Electric in Primary mode",
+            "B) Hydraulic in Primary mode",
+            "C) Hydraulic in Primary and Secondary modes"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "When Flap Load Relief occurs",
+        "choices": [
+            "A) Flaps move to UP position",
+            "B) Flap indication on EICAS screen remain unchanged",
+            "C) EICAS indications give the position of trailing edge flaps"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Purpose of the limit switch on slat PDU is to",
+        "choices": [
+            "A) Limit slat position in Primary mode",
+            "B) Limit slat position in Secondary mode",
+            "C) Limit slat position in Alternate mode"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "No-back brake helps prevent flap retraction if there is a PDU or torque tube failure, what caution do you observe while operating the flap drive system",
+        "choices": [
+            "A) 12 min operation in Primary mode and 30 min off",
+            "B) 30 min operation in Primary mode and 15 min off",
+            "C) 15 min operation in Alternate mode and 30 min off"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The primary source of electrical power for each Power Supply Assembly (PSA) is:",
+        "choices": [
+            "A) The left and right 28v dc buses and the captain's flight instrument bus.",
+            "B) The permanent magnet generators (PMG) on the left and right engines.",
+            "C) The hot battery bus."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "What is the purpose of the PFC disconnect switch?",
+        "choices": [
+            "A) It is for ground maintenance to do system tests on the primary flight control system (PFCS).",
+            "B) It permits the pilot to select the direct mode of primary flight control system (PFCS) operation.",
+            "C) It permits the pilot to disconnect the autopilot."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The primary flight control system (PFCS) switches from normal mode of operation to secondary mode when:",
+        "choices": [
+            "A) The pilots move the PFC disconnect switch to the DISC position.",
+            "B) The autopilot disengages.",
+            "C) It loses important air and attitude sensor data from both the ADIRU and the SAARU."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The aileron trim switches:",
+        "choices": [
+            "A) Send electrical signals to the ACEs (Actuator Control Electronics).",
+            "B) Are on the P5 panel.",
+            "C) Send electrical signals directly to the aileron trim actuator."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The aileron lockout function operates:",
+        "choices": [
+            "A) At cruise speed in normal mode and is based on the flaps position in secondary and direct mode.",
+            "B) When the aileron power control unit (PCU) has a failure in any mode of the primary flight control system (PFCS).",
+            "C) Only when the autopilot is disengaged."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "What is the function of the wheel force transducer?",
+        "choices": [
+            "A) It measures pilot manual input and sends a signal to the PFC for the wheel rudder cross-tie function.",
+            "B) It measures autopilot input to detect a failed backdrive actuator.",
+            "C) It measures pilot manual input and sends a signal to the PFCs to allow pilot override of the bank angle protection function."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Spoiler panels 4 and 11:",
+        "choices": [
+            "A) Operate electrically for roll and speedbrake control.",
+            "B) Operate mechanically for roll and electrically for speedbrake control.",
+            "C) Operate mechanically for roll and speedbrake control."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Spoiler mixing function is done in the PFCs to:",
+        "choices": [
+            "A) Combine the roll and speedbrake commands into one mixed command for each PCU.",
+            "B) Make sure the spoiler, flaperon, and aileron commands are coordinated.",
+            "C) Combine the speedbrake and flaperon commands to control drag."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The spoiler PCU is rigged on the airplane:",
+        "choices": [
+            "A) By adjustment of the null LVDT on the PCU.",
+            "B) By adjustment of the actuator position LVDT on the PCU.",
+            "C) By mechanical adjustment of the PCU rod end."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The purpose of the friction brake in the rudder mechanism is to:",
+        "choices": [
+            "A) Stop a runaway rudder.",
+            "B) Simulate the feel of a cable system.",
+            "C) Return the rudder pedals to the center position."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The rudder power control unit (PCU) null LVDT:",
+        "choices": [
+            "A) Reduces oscillations as the actuator extends and retracts.",
+            "B) Measures the pressure difference between both sides of the actuator piston.",
+            "C) Rigs the power control unit (PCU) during PCU installation."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The purpose of the rudder tab is to:",
+        "choices": [
+            "A) Increase the aerodynamic effect of the rudder",
+            "B) Aerodynamically assist in the movement of the rudder panel",
+            "C) Trim the rudder panel"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The purpose of the elevator is to supply:",
+        "choices": [
+            "A) Long term correction of the pitch attitude of the aircraft.",
+            "B) Roll control of the aircraft.",
+            "C) Short term correction of the pitch attitude of the aircraft."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The elevator offload function:",
+        "choices": [
+            "A) Transfers stabilizer movement to the elevator.",
+            "B) Refers to the elevator PCU removal procedure.",
+            "C) Commands the stabilizer to move when the elevator is not at the neutral position."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which of these conditions causes an increase in control column feel force:",
+        "choices": [
+            "A) Feel actuator extension as a result of airspeed increase.",
+            "B) Feel actuator retraction as a result of airspeed increase.",
+            "C) Feel actuator retraction as a result of airspeed decrease."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The purpose of the horizontal stabilizer is to supply:",
+        "choices": [
+            "A) Long term correction of the pitch attitude of the aircraft.",
+            "B) Roll control of the aircraft.",
+            "C) Short term yaw control of the aircraft."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "How many PDU (Power Drive Unit) are there on the leading edge slat system?",
+        "choices": [
+            "A) 2",
+            "B) 1",
+            "C) 4"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The alternate pitch trim levers:",
+        "choices": [
+            "A) Move cable pairs, rods and levers to mechanically command the stabilizer trim control modules (STCMs).",
+            "B) Can operate the stabilizer only in the direct mode.",
+            "C) Move switches that send electrical signal directly to the STCM solenoids."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "To verify the efficiency of the stabilizer hydraulic brakes:",
+        "choices": [
+            "A) Maintenance personnel uses the MAT to do a ground test.",
+            "B) Maintenance personnel operates a brake bypass valve on the Stab Trim Control Module.",
+            "C) Maintenance personnel uses a torque wrench."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "When you select the 'High Lift System secondary mode inhibit override' on the MAT:",
+        "choices": [
+            "A) You have 15 seconds to move the flap lever on the control stand.",
+            "B) Hydraulic power is necessary to move the flaps and slats.",
+            "C) The alternate flap/slat indication display shows."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "When you move the flap lever from 'UP' to '1' position in the primary modes:",
+        "choices": [
+            "A) Only the slats extend.",
+            "B) Only the flaps extend.",
+            "C) Both the flaps and slats extend."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "In the High Lift Control System, the secondary mode auto test:",
+        "choices": [
+            "A) Does a test of the secondary mode operation of the slats only.",
+            "B) Must be selected on the MAT.",
+            "C) Energizes the flap and slat electric motors for approximately two seconds."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which statement about the FSEUs is true?",
+        "choices": [
+            "A) Both FSEUs send commands to the primary control valves at the same time.",
+            "B) Both channels in the FSEU must agree before the FSEU sends a command.",
+            "C) FSEU 1 is always in control and FSEU 2 is always in standby."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Slat load relief function is available in:",
+        "choices": [
+            "A) The primary mode only.",
+            "B) The secondary mode only.",
+            "C) The primary and secondary modes."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "On the leading edge slat system, the no-back brake offset gearbox:",
+        "choices": [
+            "A) Reduces the speed of slat movement when the slats approach the commanded position.",
+            "B) Drives a ballscrew type of transmission.",
+            "C) Prevents slat retraction if the PDU fail."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "About the Primary Flight Control System (PFCS) and the High Lift Control System (HLCS):",
+        "choices": [
+            "A) PFCS is electrically controlled and HLCS is mechanically controlled",
+            "B) PFCS and HLCS are electrically controlled.",
+            "C) PFCS is mechanically controlled and HLCS is electrically controlled."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which of these flight control surfaces droop when the trailing edge flaps extend?",
+        "choices": [
+            "A) Flaperons only.",
+            "B) Flaperons and elevators.",
+            "C) Ailerons and flaperons."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Auto speedbrake function is available for:",
+        "choices": [
+            "A) Approach and Landing.",
+            "B) Rejected Takeoff and Landing.",
+            "C) Rejected Takeoff, Approach and Landing."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Which statement is true about Flap Load Relief function?",
+        "choices": [
+            "A) Flap Load Relief operates if flap airspeed limits are exceeded only with the flap lever in the 25 to 30 position.",
+            "B) Flap Load Relief operates if flap airspeed limits are exceeded with the flap lever in the 15 to 30 position.",
+            "C) There is no indication in the Flight Deck when Flap Load Relief is occurring."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The Aileron High Speed Droop function is available:",
+        "choices": [
+            "A) On the B777-200 and B777-300.",
+            "B) When trailing edge flaps are not retracted.",
+            "C) When the ailerons are locked out."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "On B777-300, if the squib has fired on the Spoiler Auxiliary Retract Device (SARD):",
+        "choices": [
+            "A) An indication light goes ON on the P61 panel.",
+            "B) There is no indication, only a load humming sound.",
+            "C) A red plunger extends on the bottom of the cartridge."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The alternate pitch trim levers control the stabilizer:",
+        "choices": [
+            "A) When the stabilizer hydraulic system is depressurized.",
+            "B) Only when the PFCS is in the Direct mode.",
+            "C) Directly and at all times."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The rudder surface is maneuvered by:",
+        "choices": [
+            "A) One Power Control Unit.",
+            "B) Two Power Control Units.",
+            "C) Three Power Control Units."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Aileron PCU mode of operation are:",
+        "choices": [
+            "A) Normal and Bypass.",
+            "B) Normal, Bypass and Blocking/Damped.",
+            "C) Normal, Blocking and Direct."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "To extend a spoiler PCU for maintenance, when hydraulic systems are depressurized:",
+        "choices": [
+            "A) It's not possible. Hydraulic pressure is necessary.",
+            "B) Use the manual bypass on the PCU.",
+            "C) Use the electrical secondary mode."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "To maneuver the stabilizer with hydraulic power:",
+        "choices": [
+            "A) Center or right hydraulic system must be pressurized.",
+            "B) All hydraulic system must be pressurized.",
+            "C) Left and right hydraulic system must be pressurized."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "When the flap hydraulic motor is inoperative:",
+        "choices": [
+            "A) Flap system operates with an electric motor.",
+            "B) Flap system is inoperative.",
+            "C) Flap system is maneuvered by the slat hydraulic motor."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "If one hydraulic system fails:",
+        "choices": [
+            "A) Only the Roll and Pitch axes are available.",
+            "B) All three axes are available with some spoilers.",
+            "C) The Roll, Pitch and Yaw axes are available with spoilers."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "With only the electrical Hot Bat Bus available:",
+        "choices": [
+            "A) Only the Yaw and Roll control stay available.",
+            "B) Only the left Primary Flight Computer receives electrical power.",
+            "C) Yaw, Roll and Pitch control are still available."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The STCM's (Stabilizer Trim Control Module) are located:",
+        "choices": [
+            "A) In the stabilizer compartment.",
+            "B) In the Main Equipment Center.",
+            "C) In each main gear wheel well."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "In normal mode, the aileron lockout logic is based on:",
+        "choices": [
+            "A) Airspeed and Altitude.",
+            "B) Airspeed with flaps and slats retracted.",
+            "C) Flaps and slats position and landing gear lever position."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "Trailing edge flap position sensors are located:",
+        "choices": [
+            "A) In the flap forward fairings.",
+            "B) In the left and right main gear wheel wells.",
+            "C) At the outboard ends of the flap torque tubes."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 27"
+    },
+    {
+        "question": "In normal mode, the rudder ratio changer schedule is based on:",
+        "choices": [
+            "A) Rudder pedal position and calibrated airspeed.",
+            "B) Altitude and flap position.",
+            "C) Rudder trim position and angle of attack."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "In alternate mode, the extended slat limit is:",
+        "choices": [
+            "A) Sealed position.",
+            "B) Slat system is disabled.",
+            "C) Only flap system stays available."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+    {
+        "question": "The leading edge slat system is driven by:",
+        "choices": [
+            "A) A single PDU (powered drive unit) for both wings.",
+            "B) Two PDU (one per wing).",
+            "C) Four PDU (Two per wing)."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 27"
+    },
+ {
+        "question": "Where is APUC located?",
+        "choices": [
+            "A) In aft cargo compartment",
+            "B) In main equipment center",
+            "C) In ceiling of aft galley"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Where is located the APU data memory module?",
+        "choices": [
+            "A) Next to APUC",
+            "B) In main equipment center",
+            "C) On APU"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU inlet door is located at:",
+        "choices": [
+            "A) Upper right side of tail cone",
+            "B) Upper left side of tail cone",
+            "C) Bottom of tail cone"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "When is APU OIL QTY status message shown?",
+        "choices": [
+            "A) APU oil quantity is 3.8Q or less",
+            "B) Oil quantity/ sump temperature sensor failed",
+            "C) Both are correct"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "How do you know if electric starter brush is worn to limit?",
+        "choices": [
+            "A) Brush wear indicator on starter shows yellow",
+            "B) Brush wear indicator on starter shows red",
+            "C) Brush wear sensor sends signal to APUC to give message"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "What condition caused APU autostart in the air?",
+        "choices": [
+            "A) L and R transfer buses loss power",
+            "B) L and R main buses loss power",
+            "C) L and R DC bus loss power"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "How do you shut down an APU after autostart?",
+        "choices": [
+            "A) Move APU selector to START and then back to OFF",
+            "B) Move APU selector to ON and then back to OFF",
+            "C) Move APU selector to START and then back to ON"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "What will APU do if overload condition occurs?",
+        "choices": [
+            "A) Increase fuel flow",
+            "B) Shutdown APU",
+            "C) Close IGV to give priority to electrical power generation"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "During APU start, the surge control valve is positioned to:",
+        "choices": [
+            "A) Full close",
+            "B) Full open",
+            "C) Intermediate position"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "How many EGT thermocouples are installed on APU?",
+        "choices": [
+            "A) 2",
+            "B) 4",
+            "C) 6"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "To do APU pneumatic start what is the position of APU bleed switch?",
+        "choices": [
+            "A) Auto",
+            "B) Off",
+            "C) Out"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Which is normal APU shutdown?",
+        "choices": [
+            "A) Shut down using APU switch on P5 panel",
+            "B) Shut down using APU shutdown switch on P40 panel",
+            "C) Shut down using APU fire handle on P5 panel"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "How to reset APU control system after APU is shut down from P40 panel?",
+        "choices": [
+            "A) Reset battery switch",
+            "B) Do Fire/OVHT test",
+            "C) Turn APU selector switch to OFF and back to ON"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU LIMIT caution message displayed means:",
+        "choices": [
+            "A) APU is operating for long time already and you should turn off APU",
+            "B) Low oil pressure or high EGT or high oil temperature",
+            "C) APU cycles exceeds overhaul limit"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU can supply pneumatic:",
+        "choices": [
+            "A) At any altitude",
+            "B) At flight level below 22000ft",
+            "C) Only on ground"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "When can you use Air turbine starter to start the APU?",
+        "choices": [
+            "A) Only on ground",
+            "B) Only in the air",
+            "C) On ground and in the air"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU can supply electrical power 120 KVA:",
+        "choices": [
+            "A) At any altitude",
+            "B) At flight level below 22000ft",
+            "C) Only on ground"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "You use APU maintenance switch on P61 to:",
+        "choices": [
+            "A) Supply electric power to APUC when APU is off",
+            "B) Reset APU",
+            "C) Start APU by electric motor"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "After shutdown APU using APU shutdown switch on P40, to reset the system you must:",
+        "choices": [
+            "A) Cycle main battery switch",
+            "B) Cycle APU maintenance switch on P61",
+            "C) Do the fire test"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "If you want to start APU after a protective shutdown, you must:",
+        "choices": [
+            "A) Replace APUC",
+            "B) Move APU start selector to OFF",
+            "C) Reset APU maintenance switch on P61"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Air starter will start the APU when",
+        "choices": [
+            "A) Electric starter fails",
+            "B) Airplane is in the air",
+            "C) Pneumatic pressure is available"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU oil is cooled by",
+        "choices": [
+            "A) Turbine air",
+            "B) Air in APU compartment thru air/oil heat exchanger",
+            "C) Fuel"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU is protected against surge by",
+        "choices": [
+            "A) Releasing Load Compressor air thru Surge Control Valve to APU exhaust",
+            "B) ELMS",
+            "C) Surge valve when airplane is in the air"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Before starting the APU, you should confirm which of the following conditions?",
+        "choices": [
+            "A) Fuel in the left main tank is more than 300kg",
+            "B) BAT switch in the OFF position",
+            "C) Fuel in the left main tank is at least 430kg and BAT switch ON"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU cool down time after APU switch is selected to OFF is",
+        "choices": [
+            "A) 200 sec",
+            "B) 105 sec",
+            "C) 150 sec"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Purpose of APU oil heater system?",
+        "choices": [
+            "A) To heat oil before entering the gearbox",
+            "B) To heat up oil for APU shutdown",
+            "C) To decrease bearing oil drag on start"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "When does APU oil heater system operate?",
+        "choices": [
+            "A) Airplane in the air",
+            "B) Ground service bus has power",
+            "C) Outside temperature less than 100°C"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU oil heater system consists of",
+        "choices": [
+            "A) 3 heater pads for gearbox and 1 heater probe for midframe bearing",
+            "B) 1 heater probe for gearbox controlled by APUC",
+            "C) 3 heater pads for gearbox controlled by ELMS"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Data from fuel temperature sensor installed on the APU fuel cluster is sent to APUC",
+        "choices": [
+            "A) To correct fuel viscosity changes during APU start and operation",
+            "B) To give temperature indication on MAT",
+            "C) To monitor the correct operation of the IGV and SCV actuator"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The thermostatic bypass valve on the APU lube cluster",
+        "choices": [
+            "A) Controls the oil flow to the bearings",
+            "B) Controls the oil flow to the oil heater",
+            "C) Controls the oil flow to the oil cooler"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU is mounted to the airplane tail section by",
+        "choices": [
+            "A) 4 mounts",
+            "B) 2 mounts with vibration isolators",
+            "C) 3 mounts with vibration isolators"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The tell-tale drains help find",
+        "choices": [
+            "A) Oil seal failure",
+            "B) Fuel seal failure",
+            "C) Oil component that has a leak"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "What part of the APU supplies pneumatic power to the airplane systems?",
+        "choices": [
+            "A) The second stage power section compressor.",
+            "B) The third stage power section compressor.",
+            "C) The load compressor driven by the APU main shaft."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "You use the APU maintenance switch on the P61 panel to:",
+        "choices": [
+            "A) Reset the APU after an auto-shutdown.",
+            "B) Power the APU controller, open the APU fuel valve, open the APU air inlet door and turn on the APU DC fuel pump.",
+            "C) Power the APU controller to show the APU data on the MFD."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU oil heater system turns on when?",
+        "choices": [
+            "A) You start the APU.",
+            "B) The airplane goes in the air mode.",
+            "C) There is electrical power on the ground service bus."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU oil system is cooled by:",
+        "choices": [
+            "A) An eductor cooling system that draws air through an oil cooler.",
+            "B) An electric fan that blows air through an oil cooler.",
+            "C) A fuel/oil heat exchanger located on the left side of the APU turbine case."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The inlet guide vane (IGV) actuator is controlled by the:",
+        "choices": [
+            "A) Auxiliary Power Unit Controller (APUC).",
+            "B) Fuel control torque motor.",
+            "C) Surge control valve."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "Automatic protective shutdowns are initiated by:",
+        "choices": [
+            "A) The flight crew.",
+            "B) The auxiliary power unit controller (APUC).",
+            "C) The on-board maintenance system (OMS)."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The main components of the APU are:",
+        "choices": [
+            "A) Two shafts, for speed regulation.",
+            "B) One shaft, two compressors, one turbine.",
+            "C) Two shafts, two compressors, two turbines."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU Controller is in 'Unattended mode' when:",
+        "choices": [
+            "A) Engines are not running and airplane is on the ground.",
+            "B) At least one engine is running.",
+            "C) Engines are running and airplane is in flight."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The EICAS message 'APU LIMIT' is:",
+        "choices": [
+            "A) A Warning message.",
+            "B) A Status message.",
+            "C) A Caution message."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "To control APU acceleration during start, APU Controller uses:",
+        "choices": [
+            "A) The fuel metering valve.",
+            "B) The surge control valve.",
+            "C) The inlet guide vanes."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "If the APU has a low oil pressure condition during operation in the 'attended mode':",
+        "choices": [
+            "A) The APU shuts down, Fault light illuminates on the P5 panel.",
+            "B) The APU runs normally, no message is displayed.",
+            "C) The APU runs normally, the message 'APU LIMIT' is displayed."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "When the APU bleed shutoff valve is closed:",
+        "choices": [
+            "A) The surge control valve is fully open.",
+            "B) The surge control valve is fully closed.",
+            "C) The position of the surge control valve depends only on the electrical load."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "During an APU start, the air turbine starter control valve closes at:",
+        "choices": [
+            "A) 55% RPM.",
+            "B) 100% RPM.",
+            "C) 7% RPM."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "On this APU, an overspeed shutdown is initiated at:",
+        "choices": [
+            "A) 101% RPM.",
+            "B) 112% RPM.",
+            "C) 106% RPM."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "At 7% APU RPM:",
+        "choices": [
+            "A) The fuel solenoid, ignition unit, and start relay are turned on.",
+            "B) The fuel solenoid and ignition unit are turned on.",
+            "C) The APU inlet door is commanded on."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU door actuator is energized by:",
+        "choices": [
+            "A) The auxiliary power unit controller (APUC).",
+            "B) The air supply and cabin pressure controller (ASCPC).",
+            "C) The electrical load management system (ELMS)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "You can check the APU system datas through:",
+        "choices": [
+            "A) The maintenance access terminal (MAT).",
+            "B) The air supply and cabin pressure controller (ASCPC).",
+            "C) The APU maintenance page or the status page."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "If oil quantity drops below the allowed limit:",
+        "choices": [
+            "A) The EICAS status message 'APU OIL QUANTITY' is displayed.",
+            "B) The EICAS status message 'APU LIMIT' is displayed.",
+            "C) The EICAS status message 'APU' is displayed."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The 'APU LIMIT' message is displayed when:",
+        "choices": [
+            "A) The APU is out of fuel.",
+            "B) An APU limit has been exceeded.",
+            "C) A heavy APU pneumatic load occurs."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "If the APU is in attended mode, what fault causes an immediate automatic shutdown?",
+        "choices": [
+            "A) APU controller failure.",
+            "B) High EGT.",
+            "C) Low oil pressure."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU fuel consumption is approximately:",
+        "choices": [
+            "A) 3000 kgs per hour.",
+            "B) 300 kgs per hour.",
+            "C) 30 kgs per hour."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU is located in:",
+        "choices": [
+            "A) The tailcone.",
+            "B) The left main landing gear compartment.",
+            "C) The bulk cargo compartment."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The purpose of the APU is:",
+        "choices": [
+            "A) Supply electric and pneumatic power to the airplane.",
+            "B) Supply electric power to the airplane only.",
+            "C) Supply an additional take off power to the airplane."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "It is still possible to start APU if:",
+        "choices": [
+            "A) The main battery is removed.",
+            "B) The APU air inlet door is closed.",
+            "C) The APU oil tank is empty."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The parameter monitored on EICAS varying with the load of the APU is:",
+        "choices": [
+            "A) APU RPM.",
+            "B) APU EGT.",
+            "C) APU oil pressure."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "An APU start is possible with:",
+        "choices": [
+            "A) Airplane on ground only.",
+            "B) Airplane on ground, or in flight in autostart mode only.",
+            "C) Airplane on ground or in flight."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU Controller is located:",
+        "choices": [
+            "A) In the E7 rack, above the aft cabine ceiling.",
+            "B) In the E1 rack, in the main equipment center.",
+            "C) In the E10 rack, in the bulk cargo compartment."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "During takeoff with the APU ON:",
+        "choices": [
+            "A) The inlet door stays fully open.",
+            "B) The inlet door goes to fully open position.",
+            "C) The inlet door closes from 45° open to 15° open."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 49"
+    },
+    {
+        "question": "APU pneumatic source is available:",
+        "choices": [
+            "A) On ground only.",
+            "B) At any altitude.",
+            "C) Up to an altitude of 22,000 feet."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The APU will start automatically if:",
+        "choices": [
+            "A) Airplane in flight and one engine shuts down.",
+            "B) Airplane in flight and both transfer buses are lost.",
+            "C) Airplane in flight and the two engine PRSOV are closed."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "The Data Memory Module (DMM):",
+        "choices": [
+            "A) Is the back up of the APU Controller (APUC).",
+            "B) Keeps APU data in non-volatile memory.",
+            "C) Controls the APU functions alternatively with the APU Controller."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+    {
+        "question": "To get a 400 hertz APU generator output frequency:",
+        "choices": [
+            "A) AC generation use an APU generator converter.",
+            "B) The APU must operate at a constant speed.",
+            "C) The APU electrical power is supplied by an Integrated Drive Generator (IDG)."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 49"
+    },
+{
+        "question": "How many potable water tanks are installed on B777?",
+        "choices": [
+            "A) One",
+            "B) Two",
+            "C) Three"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you check the water level remained in the tanks?",
+        "choices": [
+            "A) CSCP at door 1L",
+            "B) CACP at door 2L",
+            "C) CACP at door 4L"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you fill the water tanks?",
+        "choices": [
+            "A) At aft potable water service panel",
+            "B) At mid potable water service panel",
+            "C) At forward potable water service panel"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Lavatory water heater is located:",
+        "choices": [
+            "A) Next to water tank",
+            "B) Below sink",
+            "C) Behind mirror"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you find water isolation/drain valve handle?",
+        "choices": [
+            "A) Above door 1L",
+            "B) Above door 2L",
+            "C) Above door 4L"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Water tank quantity transmitters send signal:",
+        "choices": [
+            "A) Direct to water gage",
+            "B) Direct to CSS panel",
+            "C) To summary unit"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you find the water quantity gage?",
+        "choices": [
+            "A) At aft potable water service panel",
+            "B) At forward potable water service panel",
+            "C) At cabin service system panel"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Air compressor will operate to pressurize water tanks when:",
+        "choices": [
+            "A) Airplane on ground",
+            "B) Airplane in the air",
+            "C) Pneumatic pressure is not sufficient to pressurize water tanks"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "The lavatory sink and galley drain water system is called:",
+        "choices": [
+            "A) Brown water drain system",
+            "B) Gray water drain system",
+            "C) Blue water drain system"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "When vacuum blower is used to create vacuum for waste system:",
+        "choices": [
+            "A) At altitude below 31000ft",
+            "B) At altitude below 28000ft",
+            "C) At altitude below 16000ft"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Which 2 tanks are connected to one vacuum blower?",
+        "choices": [
+            "A) Tank 1 and 2",
+            "B) Tank 2 and 3",
+            "C) Tank 1 and 3"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Flush control module valve maintenance switch is used to operate the blower for:",
+        "choices": [
+            "A) 2 seconds",
+            "B) 5 seconds",
+            "C) 10 seconds"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Flush duty cycle is:",
+        "choices": [
+            "A) 10 seconds",
+            "B) 15 seconds",
+            "C) 20 seconds"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you check which toilet is unserviceable if one tank is full?",
+        "choices": [
+            "A) Check at CSCP/CACP",
+            "B) Check at MAT",
+            "C) Check at PAT"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "How many potable water tank are there on VNA B777?",
+        "choices": [
+            "A) 3",
+            "B) 2",
+            "C) 1"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you find potable water system isolation/drain valve in passenger cabin?",
+        "choices": [
+            "A) Above the ceiling aft of door 4 left",
+            "B) Above the ceiling fwd of door 4 left",
+            "C) Above the ceiling aft of door 2 left"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you find water shutoff valve in the lavatory?",
+        "choices": [
+            "A) Under the water sink",
+            "B) Behind the mirror",
+            "C) Behind the waste bin"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Which of the following statements is true?",
+        "choices": [
+            "A) The fill/overflow valve lets water flow overboard when tanks are full",
+            "B) The fill/overflow valve opens to turn on air compressor",
+            "C) The fill/overflow valve lets air flow into the tanks"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where can you find potable water system drain valves?",
+        "choices": [
+            "A) In the forward and aft drain panels",
+            "B) In the cargo compartments",
+            "C) In the forward most and aft most lavatory"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "The potable water isolation valves isolate the overhead water distribution lines to:",
+        "choices": [
+            "A) Forward and mid lavatories and galleys",
+            "B) Forward lavatories and galleys",
+            "C) Mid lavatories and galleys"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "After an overheat condition, water heater in lavatory will be:",
+        "choices": [
+            "A) Automatically reset",
+            "B) Manually reset",
+            "C) Changed"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What you need to do if you want to adjust water quantity transmitter?",
+        "choices": [
+            "A) Use the CACP",
+            "B) Supply electrical power",
+            "C) Fill the tanks to full then drain them"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Purpose of drain restrictor valves?",
+        "choices": [
+            "A) To limit grey water flow out of the drain mast on the ground",
+            "B) To restrict grey water flow from the drain mast",
+            "C) To limit air flow from the drain mast to prevent noise"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What do you do to prevent cabin pressure go out through the vacuum system if the flush valve fails in open position?",
+        "choices": [
+            "A) Push manual handle to close the valve",
+            "B) Pull manual handle to close the valve",
+            "C) Disconnect electric connector to flush control handle"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "How do you keep the flush valve in open position for maintenance?",
+        "choices": [
+            "A) Remove power to the flush control module",
+            "B) Push manual handle",
+            "C) Push maintenance switch on the flush control module one time"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+{
+        "question": "When do the vacuum blowers operate?",
+        "choices": [
+            "A) Below 16000ft",
+            "B) Above 16000ft",
+            "C) Any time flush switch is activated"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What component de-energizes the vacuum blowers above 16000 ft?",
+        "choices": [
+            "A) Flush control module pressure switch",
+            "B) ASCPC",
+            "C) Barometric switch"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Which of the following sensors send signal to the LCM when the waste tanks is full?",
+        "choices": [
+            "A) Continuous level sensor",
+            "B) Tank full sensor",
+            "C) Point level sensor"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Data from continuous level sensor is used",
+        "choices": [
+            "A) To control when tanks are full",
+            "B) For indication on CACP and CSCP",
+            "C) To shutdown effected lavatories"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What component do you use to do zero adjustment for continuous level sensor?",
+        "choices": [
+            "A) Logic control module (LCM)",
+            "B) CACP or CSCP",
+            "C) Flush control module"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What air is used to pressurize potable water tank?",
+        "choices": [
+            "A) Air from compressor only",
+            "B) Air from pneumatic system or from compressor",
+            "C) No air is required"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Where is the compressor interlock switch located?",
+        "choices": [
+            "A) On the waste tank",
+            "B) On the compressor",
+            "C) Behind the right end wall of the bulk cargo compartment"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Information from the water quantity summation unit shows on the?",
+        "choices": [
+            "A) Cabin services system (CSS)",
+            "B) Quantity indicator on the P5 panel",
+            "C) Airplane information management system"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Waste water from the lavatory and galley sinks?",
+        "choices": [
+            "A) Goes into a toilet",
+            "B) Drains out through drain masts",
+            "C) Goes into the toilet waste tank"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "In the vacuum waste system, which one of the following units controls the flush cycle (sequence of operation) for a vacuum toilet?",
+        "choices": [
+            "A) Left power management panel (P110)",
+            "B) Flush control module (FCM)",
+            "C) Flush valve"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "In the vacuum waste system, there are two vacuum blower barometric switches. What is the purpose of the switches?",
+        "choices": [
+            "A) The switches let the related vacuum blower operate only when the airplane is in the air",
+            "B) The switches de-energize the related vacuum blower when the airplane is above 16,000 feet (4880 meters)",
+            "C) The switches energize the related vacuum blower when the airplane is above 16,000 feet (4880 meters)"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Which one of these can automatically remove power from the flush module power relay?",
+        "choices": [
+            "A) An attendant switch panel",
+            "B) The continuous level sensor",
+            "C) The point level sensors"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Is it possible to drain the water system without electrical power on the aircraft?",
+        "choices": [
+            "A) Yes, the FWD Drain and AFT Drain valves can be operated manually",
+            "B) No, electrical power is always needed to open and close all the water control valves",
+            "C) Yes, the Fill/Overflow/Drain valve is operated manually"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Potable water is distributed by?",
+        "choices": [
+            "A) 1 electric water pump",
+            "B) Gravity from 2 water tanks",
+            "C) Charge air pressure (from the pneumatic manifold or a ground source)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Potable water quantity is indicated?",
+        "choices": [
+            "A) Only on the service panel and the CSCP",
+            "B) At the forward attendant panel",
+            "C) On the ECAM"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 38"
+    },
+    {
+        "question": "What happens when you push the flush switch in one toilet?",
+        "choices": [
+            "A) There is no effect on the operation of all the other toilet systems",
+            "B) The toilet system will be inhibited for a period of 15 secs by the FCM",
+            "C) All the other toilets are inhibited by the VSC during the period of operation of this toilet"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 38"
+    },
+    {
+        "question": "Why is the water tank pressurized?",
+        "choices": [
+            "A) To ease draining operation",
+            "B) To warm up water",
+            "C) To allow water distribution"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+    {
+        "question": "On the aircraft with two service panels. With electrical power, water draining for the potable system can be accomplished?",
+        "choices": [
+            "A) Only if the tank is depressurized at the forward attendant panel",
+            "B) Operation of the motorized drain valve for the forward potable water system only",
+            "C) By operation of the fill/drain valve handle (to drain position)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 38"
+    },
+{
+        "question": "If you pressurize the hydraulic systems with the hydraulic pumps make sure,",
+        "choices": [
+            "A) there is sufficient fuel in the main fuel tanks to cool the heat exchangers.",
+            "B) not to let fluid move between the center and right systems, which can cause a high fluid level in one system and a low fluid level in the other system.",
+            "C) the hydraulic reservoir is not overfull or under"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Four hydraulic interface module (HYDIM) cards supply control, indication, and other functions to the hydraulic system. Two of them control the functions for:",
+        "choices": [
+            "A) the left system.",
+            "B) the right system",
+            "C) the center system"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "When you operate one of the engine fire switches:",
+        "choices": [
+            "A) the related hydraulic pumps are switched off",
+            "B) the hydraulic fluid supply to the related pump shuts off and the pump depressurizes",
+            "C) the pressure line from the related pump is connected to the return line to relieve the pump"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Alternating Current Motor Pumps (ACMPs) are normally the primary pumps, and NOT controlled by the HYDIM cards in:",
+        "choices": [
+            "A) left hydraulic system",
+            "B) center hydraulic system",
+            "C) right hydraulic system"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The RAT is extended in 2 seconds by:",
+        "choices": [
+            "A) hydraulic pressure from the center hydraulic system",
+            "B) two solenoids on the actuator",
+            "C) the actuator internal spring"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The operation of the RAT generator heater system can be done:",
+        "choices": [
+            "A) in no way",
+            "B) through the MAT",
+            "C) from the RAT control panel"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Hydraulic reservoir quantity transmitters are interchangeable for:",
+        "choices": [
+            "A) left and center systems",
+            "B) right and center systems",
+            "C) left and right systems"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The reservoir pressure switches send a reservoir low pressure signal:",
+        "choices": [
+            "A) when the reservoir pressure is 16 psia or less.",
+            "B) when the reservoir pressure is 21 psia or less",
+            "C) when the reservoir pressure is 25 psia or less."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "When both ADP switches are selected to ON, which pump will operate?",
+        "choices": [
+            "A) C1 and C2 will operate continuously",
+            "B) C2 will operate continuously",
+            "C) C1 will operate continuously"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The Center Hydraulic Isolation System let hydraulic from the bottom of center hydraulic reservoir go to",
+        "choices": [
+            "A) Main landing gear",
+            "B) Alternate/Reserve brake and Nose wheel steering systems",
+            "C) Flaps/Slats systems"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Pulling RH Engine Fire handle will",
+        "choices": [
+            "A) Turn off RH EDP and ACMP",
+            "B) Activate Center Hydraulic Isolation System",
+            "C) Supply electrical power to depress. solenoid of RH EDP"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Airplane is powered and EDP switch is selected to OFF, which of the following is true?",
+        "choices": [
+            "A) EDP shutoff valve close",
+            "B) Depress. solenoid of EDP is not powered",
+            "C) Depress. solenoid of EDP is powered"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "ADP primary speed control circuit operates",
+        "choices": [
+            "A) A pneumatic actuator for the VIGVs",
+            "B) A pneumatic actuator for the MSOV",
+            "C) A speed sensor for MSOV"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "RAT motoring valve lever is used to",
+        "choices": [
+            "A) Turn RAT turbine on the ground by center hydraulic power",
+            "B) Turn RAT turbine on the ground by electrical power",
+            "C) Stow RAT after extension for maintenance"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "PRESS light on the RAT switch illumination indicates",
+        "choices": [
+            "A) RAT does not have enough pressure",
+            "B) RAT does not operate",
+            "C) RAT is supplying hydraulic pressure"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which of the following combination of upper and lower sight glasses shows a satisfactory hydraulic quantity in the reservoir?",
+        "choices": [
+            "A) Red-Black",
+            "B) Black-Black",
+            "C) Red-Red"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "We must not operate hydraulic pumps when pump temperature indication on Hyd Maintenance page",
+        "choices": [
+            "A) ≤ 100°C",
+            "B) ≥ 100°C",
+            "C) ≥ 90°C"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "ADU heaters are used to",
+        "choices": [
+            "A) Prevent icing for hydraulic entering ADP",
+            "B) Prevent icing for speed control components of ADP",
+            "C) Prevent icing for LSCU"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Minimum fuel quantity in the right main tank required for cooling center hydraulic system case drain is",
+        "choices": [
+            "A) 2175 kg",
+            "B) 3313 kg",
+            "C) 500 kg"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Purpose of hydraulic accumulators?",
+        "choices": [
+            "A) To absorb pressure changes caused by tail flight control PCUs",
+            "B) Reserve hydraulic for Alternate gear extension",
+            "C) Reserve hydraulic for Alternate brake and Nose gear steering systems"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "What controls ACMP primary pumps?",
+        "choices": [
+            "A) ELMS",
+            "B) HYDIM cards",
+            "C) AIMS"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which of following statements of interchangeability is correct?",
+        "choices": [
+            "A) EDPs and ADPs",
+            "B) EDPs and ACMPs",
+            "C) ADP and ACMPs"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The center hydraulic isolation system (CHIS) lets fluid from the bottom of the center system reservoir go to:",
+        "choices": [
+            "A) The alternate/reserve brakes and nose gear steering.",
+            "B) The leading edge slats and the trailing edge flaps.",
+            "C) The center system primary flight controls."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "What controls the automatic deployment of the RAT in flight?",
+        "choices": [
+            "A) The RAT deploy switch on the P5 overhead panel.",
+            "B) The HYDIM cards or ELMS.",
+            "C) A stall warning signal from the warning electronic system."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+{
+        "question": "What component supplies the air-driven pump primary speed control?",
+        "choices": [
+            "A) The ADP logic speed control unit (LSCU)",
+            "B) The hydraulic interface module (HYDIM)",
+            "C) The aircraft information management system (AIMS)"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Hydraulic pump fault lights on the hydraulic/RAT panel turn on when:",
+        "choices": [
+            "A) The hydraulic system pressure is low",
+            "B) The hydraulic reservoir quantity is low",
+            "C) The hydraulic pump pressure is low or the case drain temperature is high"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "What controls the manual ground deployment of the ram air turbine?",
+        "choices": [
+            "A) The RAT ground deploy switch on the P61 overhead maintenance panel",
+            "B) The RAT switch on the P5 overhead panel",
+            "C) The RAT switch on the P56 main wheel well electrical service panel"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which type of pumps are there in the HYD SYST?",
+        "choices": [
+            "A) 2 EDP, 2 ACMP, 4 ADP",
+            "B) 2 EDP, 4 ACMP, 2 ADP",
+            "C) 2 EDP, 4 ACMP, 2 ADP, 1 RAT"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which pumps are PRIMARY?",
+        "choices": [
+            "A) 2 EDP, 2 ADP",
+            "B) 2 EDP, 2 ACMP",
+            "C) 2 ACMP, 2 ADP"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which pumps are DEMAND?",
+        "choices": [
+            "A) 2 EDP, 2 ACMP",
+            "B) 2 EDP, 2 ADP",
+            "C) 2 ACMP, 2 ADP"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "When fill to the correct level, the sight glasses on the hydraulic reservoir show:",
+        "choices": [
+            "A) Top sight glass black and bottom sight glass black",
+            "B) Top sight glass red and bottom sight glass black",
+            "C) Top sight glass black and bottom sight glass red"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "You want to pressurize Left, Center and Right hydraulic system, do you have to check fuel level before?",
+        "choices": [
+            "A) No, there is no need to check the fuel level",
+            "B) Yes, in Left, Center and Right fuel tanks",
+            "C) Yes, in Left and Right fuel tank"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "To avoid fluid movement between the systems, you must:",
+        "choices": [
+            "A) Pressurize the left system first and depressurize the left system last",
+            "B) Pressurize the right system first and depressurize the right system first",
+            "C) Pressurize the right system first and depressurize the right system last"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Where can you see the hydraulic system parameters:",
+        "choices": [
+            "A) Hydraulic synoptic display and status display",
+            "B) Hydraulic synoptic display, maintenance page and status display",
+            "C) Hydraulic synoptic display, maintenance page, status display and reservoir fill quantity gage"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The Boeing 777 has",
+        "choices": [
+            "A) Four hydraulic systems",
+            "B) Two hydraulic systems",
+            "C) Three hydraulics systems"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "How many hydraulic systems are needed to power enough of the Flight Controls for safe flight?",
+        "choices": [
+            "A) Two systems",
+            "B) Three systems",
+            "C) One system"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "In normal operation, the left hydraulic system is pressurized by?",
+        "choices": [
+            "A) An electric pump",
+            "B) The RAT (Ram Air Turbine)",
+            "C) An engine driven pump"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The RAT (Ram Air Turbine) provides hydraulic power?",
+        "choices": [
+            "A) To the left system",
+            "B) To the Right and center systems",
+            "C) To the center system"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "The hydraulic EDP temperature transducer is located?",
+        "choices": [
+            "A) In the reservoir",
+            "B) On the return filter",
+            "C) On the case drain filter module"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "When the ACMPs push-buttons and Selectors are set to \"ON\", with aircraft on the ground, electrical power available and engine not running?",
+        "choices": [
+            "A) The left and right systems are pressurized",
+            "B) The left, center and right systems are pressurized",
+            "C) Only the center system is pressurized"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Which hydraulic systems are equipped with a fire shut-off valve?",
+        "choices": [
+            "A) Center system",
+            "B) Right and center systems",
+            "C) Left and right systems"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "What indications will appear when there is an overheat (105° C) of the left system EDP?",
+        "choices": [
+            "A) The advisory message appears on the EICAS",
+            "B) The advisory message appears on the EICAS and \"FAULT\" light come \"ON\" on P5",
+            "C) The status messages appears on the EICAS"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },
+    {
+        "question": "When servicing the hydraulic reservoirs with fluid?",
+        "choices": [
+            "A) You may gravity feed into fill neck on each reservoir",
+            "B) Each reservoir is serviced at its own panel",
+            "C) All 3 (three) systems can be replenished at hydraulic ground service bay"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 29"
+    },
+    {
+        "question": "Operation of the engine fire switch for the right engine:",
+        "choices": [
+            "A) Shuts down both the right system EDP and the right system ACMP",
+            "B) Shuts off the hydraulic fluid supply to the right system EDP",
+            "C) Operates the isolation valves in the center hydraulic isolation system (CHIS)"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 29"
+    },	
 {
   "question": "On normal function, which LAV/GALLEY Vent Fan is on?",
   "choices": [
