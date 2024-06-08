@@ -13138,9 +13138,17 @@ function filterQuestionsByCategory(categories) {
     return allQuestions.filter(question => categories.includes(question.category));
 }
 
+function sortCategories(categories) {
+    return categories.sort((a, b) => {
+        const numA = parseInt(a.match(/\d+/)[0]);
+        const numB = parseInt(b.match(/\d+/)[0]);
+        return numA - numB;
+    });
+
 function displayCategories() {
     console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
+categories = sortCategories(categories);
     let categoriesHTML = categories.map(category => `<label><input type="checkbox" value="${category}">${category}</label>`).join("");
     let categoriesElement = document.getElementById("categories");
     if (categoriesElement) {
