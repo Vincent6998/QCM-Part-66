@@ -1,4 +1,1645 @@
 const allQuestions = [
+
+{
+        "question": "With the autopilot engaged or disengaged, if the airplane bank angle exceeds 35 degrees, the bank angle protection (BAP) function operates. The backdrive actuators will move:",
+        "choices": [
+            "A) The control columns",
+            "B) The control wheels",
+            "C) The rudder pedals"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The AFDS engages all six backdrive actuators:",
+        "choices": [
+            "A) In autoland.",
+            "B) During landing phase",
+            "C) During take-off phase"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The autopilot pitch mode is VNAV SPD. What controls the airplane airspeed?",
+        "choices": [
+            "A) Both the elevator and the autothrottle.",
+            "B) The elevator.",
+            "C) The autothrottle."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The thrust management computing system (TMCS) autothrottle modes, such as THR, THR REF and SPD show on the?",
+        "choices": [
+            "A) EICAS display.",
+            "B) Primary flight display (PFD).",
+            "C) Mode control panel (MCP)."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The thrust management computing system (TMCS) thrust limit modes such as TO, CLB, CRZ and GA show on the?",
+        "choices": [
+            "A) EICAS display.",
+            "B) Primary flight display (PFD).",
+            "C) Mode control panel (MCP)."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "All the autopilot flight director computers (AFDCs) and their related sensors have no faults and the airplane is in cruise. How many AFDCs are engaged when you push an autopilot (A/P) switch on the mode control panel (MCP)?",
+        "choices": [
+            "A) 3",
+            "B) 2",
+            "C) 1"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The airplane is in cruise and has no faults. How many backdrive actuators engage when the pilot engages the autopilot?",
+        "choices": [
+            "A) 2",
+            "B) 3",
+            "C) 6"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "Which of these mode select switches on the mode control panel (MCP) does not have a light emitting diode?",
+        "choices": [
+            "A) A/T.",
+            "B) HOLD.",
+            "C) CLB/CON."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "At what radio altitude do the rudder pedal backdrive actuators engage during approach?",
+        "choices": [
+            "A) 400 feet.",
+            "B) 1 500 feet.",
+            "C) 2 500 feet."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The bank angle protection (BAP) is active when the?",
+        "choices": [
+            "A) Pilot disengages the autopilot.",
+            "B) Primary flight control system (PFCS) is in direct mode.",
+            "C) Bank angle is more than 35 degrees in normal mode."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "All the autopilot flight director computers (AFDCs) and their related sensors have no faults and the airplane is in cruise. How many AFDCs are master when you push an autopilot (A/P) switch on the mode control panel (MCP)?",
+        "choices": [
+            "A) 3",
+            "B) 2",
+            "C) 1"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "How many microprocessors are available in the MCP?",
+        "choices": [
+            "A) 2",
+            "B) 3",
+            "C) 4"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "How many backdrives are installed in the airplane?",
+        "choices": [
+            "A) 4",
+            "B) 6",
+            "C) 3"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+{
+        "question": "Concerning antenna switching?",
+        "choices": [
+            "A) LOC/VOR antennas switching is done by the ILS receiver.",
+            "B) Antennas switching is done by the AFDC.",
+            "C) LOC/VOR and G/S antennas switching are done by the ILS receiver"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "How many microprocessors are available in the AFDC?",
+        "choices": [
+            "A) 2",
+            "B) 3",
+            "C) 4"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The flight mode annunciator FMA autothrottle mode is speed SPD, therefore?",
+        "choices": [
+            "A) The target thrust is equal to the thrust limit",
+            "B) The thrust is equal to the N1 entered by the crew on the control display unit CDU speed page.",
+            "C) The speed is managed by the thrust management computing system TCMS"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "At Take off, auto throttle is active, therefore thrust reduction:",
+        "choices": [
+            "A) Occurs automatically at thrust reduction altitude provided VNAV is active.",
+            "B) Is only manually selected by the pilot by action on the 'Climb - Con' switch.",
+            "C) Is always automatic once the thrust reduction altitude is reached."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "TO-1 shows on the EICAS, therefore?",
+        "choices": [
+            "A) Only engine 1 autothrust is available.",
+            "B) Takeoff thrust is derated.",
+            "C) Thrust management computing function 1 (TMCF1) is active in takeoff mode, TMCF2 is in stand-by mode."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "Engine equalization is performed as follows?",
+        "choices": [
+            "A) Without throttles movement, provided they are close to each other.",
+            "B) By the autothrottle servo motors.",
+            "C) Only when the autothrottle is in the 'hold' mode."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "Following the power up test?",
+        "choices": [
+            "A) The right AFDC is normally master.",
+            "B) The left AFDC is normally master.",
+            "C) The system memorizes the AFDC that was master before power shutdown, at power up the opposite AFDC will become master."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The active ATHR function (left or right)?",
+        "choices": [
+            "A) Is normally of the same side of the active FMCF (left or right).",
+            "B) It is independent of the FMCF, at every ATHR engagement it switches side.",
+            "C) Left function (of left cabinet) manages the left throttle, right function (of right cabinet) manages the right throttle."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The autothrottle disconnect switches on the left and right thrust levers are used as follows?",
+        "choices": [
+            "A) Any switch disengages the autothrottle.",
+            "B) The left or right pushbutton disengages respectively the left or right autothrottle function.",
+            "C) Pushing both switches simultaneously disconnects the autothrottle for the remaining part of the flight, engagement of the autothrottle is no more possible before the next power-up."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+ {
+        "question": "What air pressure(s) used by ADIRU and SAARU to calculate airspeed?",
+        "choices": [
+            "A) Static air pressure",
+            "B) Pitot air pressure",
+            "C) Both pitot and static air pressures"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The pitot-static system get static air pressure from",
+        "choices": [
+            "A) Flush static port on the fuselage",
+            "B) Static port on pitot probe",
+            "C) Static port on engine cowls"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How static ADM/SADM connected to the static ports?",
+        "choices": [
+            "A) Each static ADM/SADM connected to each static port",
+            "B) One left port and one right port are connected by tubing and then connects to static ADM/SADM",
+            "C) All left ports are grouped and all right ports are grouped connected by tubing and then connects to static ADM/SADM"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Airspeed and altitude indicated on standby instruments are calculated by",
+        "choices": [
+            "A) ADIRU",
+            "B) SAARU",
+            "C) SADMs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What statement is not true?",
+        "choices": [
+            "A) ADM & SADM are interchangeable",
+            "B) Pitot ADM & static ADM are interchangeable",
+            "C) Pitot SADM & static SADM are interchangeable"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What is indicated on standby airspeed indicator when aircraft on ground and not moving?",
+        "choices": [
+            "A) 0 knots",
+            "B) 30 knots",
+            "C) 50 knots"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When pitot probe is low power heated?",
+        "choices": [
+            "A) Airplane is on ground with an engine running",
+            "B) Computed airspeed is more than 50 knots",
+            "C) Airplane is in the air"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How the inertial reference data and air data are supplied to user systems?",
+        "choices": [
+            "A) ADIRU is primary, SAARU is backup",
+            "B) SAARU is primary, ADIRU is backup",
+            "C) ADIRU and SAARU is selected alternately when flight leg changed"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When ADIRU loses primary power, the ground crew call horn will come on if",
+        "choices": [
+            "A) Airplane on ground with battery switch OFF and ADIRU switch ON",
+            "B) Airplane on ground with battery switch ON and ADIRU switch ON",
+            "C) Airplane on ground with battery switch ON and ADIRU switch OFF"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "From which power supply assembly does SAARU get the power?",
+        "choices": [
+            "A) Left power supply assembly",
+            "B) Center power supply assembly",
+            "C) Right power supply assembly"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "If ADIRU failed, how long can the SAARU supply backup navigation function?",
+        "choices": [
+            "A) 3 minutes",
+            "B) 10 minutes",
+            "C) 30 minutes"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "TAT probe is heated",
+        "choices": [
+            "A) When airplane is on the ground",
+            "B) When airplane is in the air",
+            "C) Only in icing conditions"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "AOA sensor has 2 heaters. Which statement is true?",
+        "choices": [
+            "A) One heater used in low heating mode, 2 heaters used in high heating mode",
+            "B) One heater is used, the other is backup",
+            "C) One heater for case heating and one for vane heating"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What test for ADIRU can you carry out on MAT/PMAT?",
+        "choices": [
+            "A) System test",
+            "B) Operational test",
+            "C) No test"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What will be shown on PFD if RA NCD occurs?",
+        "choices": [
+            "A) Yellow RA flag",
+            "B) Yellow NCD flag",
+            "C) RA display goes out of view"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What time is provided by GPS system?",
+        "choices": [
+            "A) UTC time",
+            "B) Local time",
+            "C) Both UTC and local time"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "GPS position is calculated by",
+        "choices": [
+            "A) GPS receiver",
+            "B) Multimode receiver",
+            "C) SATCOM receiver"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To calculate the airplane position, the receiver must know the position of at least how many satellites?",
+        "choices": [
+            "A) 3 satellites",
+            "B) 4 satellites",
+            "C) 6 satellites"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "GPS calculates airplane position using",
+        "choices": [
+            "A) The time required to send a signal to the satellite and receive a reply",
+            "B) A distance signal from the satellite and received by the airplane",
+            "C) The time required for a signal to travel from the satellite to the airplane"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which guidance to the runway is provided by ILS in normal mode?",
+        "choices": [
+            "A) Vertical guidance",
+            "B) Lateral guidance",
+            "C) Both are correct"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What kind of distance is provided by DME?",
+        "choices": [
+            "A) Vertical distance",
+            "B) Horizontal distance",
+            "C) Slant range distance"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "DME is operated on the same frequency band with",
+        "choices": [
+            "A) ATC",
+            "B) RA",
+            "C) VOR"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "TCAS data can be shown on ND in which EFIS mode?",
+        "choices": [
+            "A) EXP MAP, EXP VOR, PLN",
+            "B) EXP MAP, EXP VOR, EXP APP",
+            "C) EXP MAP, EXP VOR, EXP APP, Centered MAP"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Terrain data can be shown on ND in which EFIS mode?",
+        "choices": [
+            "A) EXP MAP, EXP VOR, PLN",
+            "B) EXP MAP, EXP VOR, EXP AP",
+            "C) EXP MAP, EXP VOR, EXP APP, Centered MAP"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which switch do you have to push on EFIS control panel to display terrain data on ND?",
+        "choices": [
+            "A) WXR",
+            "B) DATA",
+            "C) TERR"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+{
+        "question": "Red PULL Up and WINDSHEAR message can be shown on",
+        "choices": [
+            "A) Upper EICAS display",
+            "B) ND display",
+            "C) PFD display"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "On weather radar display, which color indicated turbulence?",
+        "choices": [
+            "A) Yellow",
+            "B) Red",
+            "C) Magenta"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Windshear symbols on ND display are",
+        "choices": [
+            "A) Red and yellow bars",
+            "B) Red and black bars",
+            "C) Yellow and black bars"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How to set ATC operating in mode A only?",
+        "choices": [
+            "A) ATC mode selector is in ALT RPTG OFF",
+            "B) ATC mode selector is in XPNDR",
+            "C) ATC mode selector is in STBY"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What information does the TCAS computer get from the ATC transponder?",
+        "choices": [
+            "A) Identification code",
+            "B) 24-bit airplane address",
+            "C) Radio altitude"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "TCAS Traffic advisory (TA) indications are shown on",
+        "choices": [
+            "A) PFD display",
+            "B) ND display",
+            "C) Both PFD and ND displays"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "TCAS Resolution advisory (RA) indications are shown on",
+        "choices": [
+            "A) PFD display",
+            "B) ND display",
+            "C) Both PFD and ND displays"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "TCAS uses whisper-shout technique to interrogate with",
+        "choices": [
+            "A) ATCRBS transponder",
+            "B) Mode S transponder",
+            "C) Mode B transponder"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which page is used to check the effectivity date of the navigation database?",
+        "choices": [
+            "A) Ident page",
+            "B) Nav data page",
+            "C) Maint page"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The center pitot probe is located on",
+        "choices": [
+            "A) Left side of aircraft",
+            "B) Right side of aircraft",
+            "C) Bottom of aircraft"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many gyros and accelerometers are installed on ADIRU?",
+        "choices": [
+            "A) 6 ring laser gyros and 6 accelerometers",
+            "B) 1 ring laser gyro and 1 accelerometer",
+            "C) 4 ring laser gyros and 4 accelerometers"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Where is the left GPS antenna located?",
+        "choices": [
+            "A) On the top of the aircraft",
+            "B) On the bottom of the aircraft",
+            "C) On the vertical stabilizer"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many gyros and accelerometers are installed on SAARU?",
+        "choices": [
+            "A) 4 fiber optic gyros and 4 accelerometers",
+            "B) 6 fiber optic gyros and 6 accelerometers",
+            "C) 1 fiber optic gyro and 1 accelerometer"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many SADM are installed on B777?",
+        "choices": [
+            "A) 02",
+            "B) 04",
+            "C) 06"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "ADM and SADM can be interchangeable?",
+        "choices": [
+            "A) Yes",
+            "B) No",
+            "C) Yes, if suitable software is loaded"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The radio altitude display on the primary flight display (PFD) goes blank when the radio altitude goes above?",
+        "choices": [
+            "A) 999 ft",
+            "B) 1500 ft",
+            "C) 2500 ft"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The weather radar panel receives power from the?",
+        "choices": [
+            "A) P11 circuit breaker panel",
+            "B) Weather radar (WXR) antenna assembly",
+            "C) Left and right WXR receiver/transmitters (RTs)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which weather radar antenna component requires special alignment procedures and should not be loosened by maintenance technicians?",
+        "choices": [
+            "A) Antenna drive unit",
+            "B) Mount assembly",
+            "C) Waveguide switch"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What happens to the traffic alert and collision avoidance system (TCAS) audio advisories when there is a ground proximity warning system (GPWS) warning or alert?",
+        "choices": [
+            "A) The TCAS audio advisories stop",
+            "B) The TCAS audio advisories mix with the GPWS warning or alert",
+            "C) The TCAS audio advisories have priority and the GPWS warning or alert stops"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "What ground proximity warning system (GPWS) time-critical warning messages show on the primary flight display (PFD)?",
+        "choices": [
+            "A) WINDSHEAR and TERRAIN",
+            "B) WINDSHEAR and PULL UP",
+            "C) WINDSHEAR, PULL UP and TERRAIN"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Alert aurals from the ground proximity warning computer go to the aural speakers through?",
+        "choices": [
+            "A) Audio management unit (AMU)",
+            "B) Warning electronic system (WES)",
+            "C) Left AIMS cabinet"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When is the ALTN NAV RADIO page available?",
+        "choices": [
+            "A) When both the left and right CDUs have failed",
+            "B) When the tune inputs from the AIMS cabinets have failed",
+            "C) When the onside CDU has failed"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which air data inertial reference system (ADIRS) component controls pitot heat?",
+        "choices": [
+            "A) The pitot standby air data module (SADM)",
+            "B) The static standby air data module (SADM)",
+            "C) The pitot air data modules (ADMs)"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How do you start a test of the ADIRU?",
+        "choices": [
+            "A) Remove then re-apply power to the ADIRU (power-up test)",
+            "B) Go to the ground test menu on the MAT",
+            "C) Go to the inertial monitor page of the CDU"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The only failure in the air data inertial reference unit (ADIRU) is a single gyro failure. What indications do you get?",
+        "choices": [
+            "A) A status message",
+            "B) A caution message",
+            "C) A maintenance memo"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+  {
+        "question": "The ground crew call horn has been on for five minutes. There are no equipment cooling problems on the airplane. Where would you go to silence the ground crew call horn?",
+        "choices": [
+            "A) The flight deck to power down the ADIRU.",
+            "B) The main equipment center.",
+            "C) The nose wheel well."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which indications do you see on the primary flight display (PFD) when you do a marker beacon test?",
+        "choices": [
+            "A) The letters MM.",
+            "B) The letters IM.",
+            "C) The letters FT."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When both flight management computing functions (FMCFs) fail with the FMC selector in the AUTO position, or the selected FMCF fails, the control display units (CDUs) supply?",
+        "choices": [
+            "A) Map data only.",
+            "B) LNAV commands and map data.",
+            "C) Thrust commands and map data."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The secondary attitude air data reference unit (SAARU) provides a back-up navigation function, but it is limited to?",
+        "choices": [
+            "A) 3 minutes.",
+            "B) 5 minutes.",
+            "C) 10 minutes."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many fault containment areas (FCA) are in the ADIRU?",
+        "choices": [
+            "A) 3",
+            "B) 5",
+            "C) 7"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The secondary attitude air data reference unit (SAARU) provides?",
+        "choices": [
+            "A) Air data information to the standby instruments.",
+            "B) Heading information to the standby compass.",
+            "C) Attitude information to the standby attitude indicator."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU can provide the same information as the ADIRU, except?",
+        "choices": [
+            "A) Computed airspeed.",
+            "B) Latitude and longitude.",
+            "C) Airframe pitch and roll rates."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "If the left radio altimeter fails, the left PFD?",
+        "choices": [
+            "A) Does not show radio altitude.",
+            "B) Shows center radio altitude.",
+            "C) Shows right radio altitude after manual switching."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Where do you go to manually tune the VOR radios?",
+        "choices": [
+            "A) The VOR control panel.",
+            "B) The Radio Management Panel (RMP).",
+            "C) The CDU NAV.RADIO page."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Marker beacon shows information on?",
+        "choices": [
+            "A) The navigation display.",
+            "B) The primary flight display.",
+            "C) The EICAS display."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "You turn the weather radar system on and off from the?",
+        "choices": [
+            "A) Weather control panel.",
+            "B) Mode control panel.",
+            "C) EFIS control panel."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Global Positioning System (GPS) calculates airplane position using?",
+        "choices": [
+            "A) The time required to send a signal to the satellite and receive a reply.",
+            "B) A distance signal from the satellite, received by the airplane.",
+            "C) The time required for a signal to be sent by the satellite."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which navigation display modes will display the weather radar?",
+        "choices": [
+            "A) Expanded APP, VOR and Map only.",
+            "B) Expanded APP, VOR, Map and center Map.",
+            "C) Expanded APP, VOR, Map and Plan."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Traffic Alert and Collision Avoidance System (TCAS) can track an airplane that?",
+        "choices": [
+            "A) Does not have a transponder.",
+            "B) Has a transponder mode S only.",
+            "C) Has a transponder mode A,C."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The predictive windshear function turns on when?",
+        "choices": [
+            "A) The airplane is on the ground with an engine at take off thrust.",
+            "B) When the crew selects this function on the weather control panel.",
+            "C) The GPWS (Ground Proximity Warning System) sends a discret to the weather radar."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Secondary Attitude Air Data Reference Unit (SAARU)?",
+        "choices": [
+            "A) Is the secondary source of inertial navigation and air data for the Primary Flight Display (PFD).",
+            "B) Supplies only information for the standby instruments.",
+            "C) Is the primary source for air data information."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Weather Radar System shows the weather conditions on the?",
+        "choices": [
+            "A) Primary Flight Display (PFD).",
+            "B) Control Display Unit (CDU).",
+            "C) Navigation Display (ND)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Ground Proximity Warning System alerts or warns the flight crew?",
+        "choices": [
+            "A) To possible collision with other airplanes.",
+            "B) Of unsafe terrain clearance.",
+            "C) In case of Auto Flight Director System default."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "In case of double FMCF failure?",
+        "choices": [
+            "A) The CDU back-up navigation mode is activated on the MCDU MENU page.",
+            "B) Both CDU go into back-up navigation mode and provide the flight plan on the on-side ND.",
+            "C) Normally the CDU having the highest priority will provide the flight plan to both NDs."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To display the FMC COMM page one may use?",
+        "choices": [
+            "A) The FMC COMM key on the MCDU.",
+            "B) The DSP COMM key and then the FMC COMM key that show on the DCMF display by means of the CCD.",
+            "C) The FMC COMM key on the INIT/REF INDEX page."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "With a double FMCF failure?",
+        "choices": [
+            "A) All autopilot NAV modes are lost, the autopilot will receive orders only from the MCP.",
+            "B) Alternate lateral guidance is given to the left CDU if available.",
+            "C) Back-up VNAV mode is controlled by left or center or right CDU."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Testing of CDUs is performed by selection of Ground Test?",
+        "choices": [
+            "A) ATA 31.",
+            "B) ATA 22.",
+            "C) ATA 34."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The manual selection of FMCF L or R is done on?",
+        "choices": [
+            "A) A CDU.",
+            "B) The MCP.",
+            "C) The F/O display switching panel."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The standby air data modules (SADM) get power from?",
+        "choices": [
+            "A) Hot battery bus.",
+            "B) Center power supply assembly.",
+            "C) Standby indicators."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+{
+        "question": "The Standby ADMs (Air Data Modules) transmit data on?",
+        "choices": [
+            "A) Flight control ARINC 629 bus.",
+            "B) Arinc 429 bus.",
+            "C) Analogue discrete output."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many heat levels have pitot probes?",
+        "choices": [
+            "A) 28 V low power level and 115 V full power level.",
+            "B) 115 V low power and 200 V full power level.",
+            "C) Only one 115 V power level."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Air Data Inertial Reference Unit (ADIRU) receive Total Air Temperature (TAT) data?",
+        "choices": [
+            "A) Directly from a Total Air Temperature (TAT) probe element.",
+            "B) From Static Air Data Module (SADM).",
+            "C) From AIMS cabinets."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ADIRU (Air Data Inertial Reference Unit) has these internal components?",
+        "choices": [
+            "A) Four laser gyros.",
+            "B) Six laser gyros.",
+            "C) Six fiber optic gyros."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "There are?",
+        "choices": [
+            "A) Two AOA (Angle Of Attack) sensor (left and right) on both sides of fuselage.",
+            "B) Only one AOA (Angle Of Attack) sensor on left side of fuselage.",
+            "C) Only one AOA (Angle Of Attack) sensor on the right side of the fuselage."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The purpose of the air supply distribution system in the total air temperature (TAT) probe is?",
+        "choices": [
+            "A) To permits accurate temperature measurement at airplane low speed.",
+            "B) To prevent icing condition.",
+            "C) To cool the electrical probe heater."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "On 777-300 ER: The integrated standby flight display receives attitude data from the?",
+        "choices": [
+            "A) Left AIMS.",
+            "B) Pitot standby air data module (SADM).",
+            "C) Internal inertial sensors."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The purpose of the Terrain Override Switch is to?",
+        "choices": [
+            "A) Inhibit terrain alerts.",
+            "B) Inhibit below glideslope alert.",
+            "C) Override flaps and gear position alerts."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "For the ADF system, the antennas are?",
+        "choices": [
+            "A) On the top.",
+            "B) On the bottom.",
+            "C) One on the top and one of the bottom."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which information is not given by the Global Positioning System?",
+        "choices": [
+            "A) Altitude.",
+            "B) Ground Speed.",
+            "C) Attitude."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The traffic Alert and Collision Avoidance System (TCAS) sends aural signal to?",
+        "choices": [
+            "A) A dedicated speaker.",
+            "B) The warning Electronic System.",
+            "C) The Flight Interphone System."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Concerning FMCS messages priorities?",
+        "choices": [
+            "A) \"Entry error advisory\" message such as \"INVALID ENTRY\" has the highest priority.",
+            "B) \"Alert message\" such as \"NO ACTIVE ROUTE\" has the highest priority.",
+            "C) There is no type priority, the oldest is the first to show."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The purpose of the field \"SET HDG\" in the CDU \"POS INIT\" page 1/3 is to align?",
+        "choices": [
+            "A) The magnetic compass to the value entered manually on the CDU.",
+            "B) The SAARU in case of ADIRU failure.",
+            "C) The ADIRU when true north is selected."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The aircraft position displayed on the navigation display is?",
+        "choices": [
+            "A) An ADIRU computed position.",
+            "B) A GPS computed position.",
+            "C) A synthesis position computed by the FM."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The aircraft is equipped with?",
+        "choices": [
+            "A) 1 FM function.",
+            "B) 2 FM functions.",
+            "C) 3 FM functions."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Concerning the FM selector?",
+        "choices": [
+            "A) It determines only the active FMCF.",
+            "B) It determines the active FMCF and TMCF.",
+            "C) It determines always the active FMCF; its effect on the TMCF is limited to the tests."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Both FMCFs and the left CDU have failed, consequently?",
+        "choices": [
+            "A) Alternate LNAV guidance is no more available.",
+            "B) The AFDS selects the center CDU lateral guidance.",
+            "C) The AFDS selects the right CDU lateral guidance."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The left CDU sends a discrete to the left and center MULTI-MODE-RECEIVERS to?",
+        "choices": [
+            "A) Select the tune input.",
+            "B) Inhibit ILS tune input.",
+            "C) Inhibit tests in the air."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "For the switching from capture antenna to the track antenna, the discrete is sent by?",
+        "choices": [
+            "A) The PSEU (Proximity Sensor Electronic Unit).",
+            "B) The AFDC onside.",
+            "C) Left or right AIMS when we select approach on the EFIS control panel."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The NAV RADIO page shows data for ILS systems, this page shows the frequency and PARK, for which condition?",
+        "choices": [
+            "A) The ILS frequency is not part of the active flight plan.",
+            "B) The airplane is more than 200 NM from top of descent.",
+            "C) The airplane is less than 200 NM from top of descent."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which component does not receive radio altitude data?",
+        "choices": [
+            "A) Traffic Alert and Collision Avoidance (TCAS) computer.",
+            "B) Weather RADAR receiver-transmitter.",
+            "C) Flight Management Function (CPM/Basic or ACMF)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Certain conditions cause the predictive wind shear (PWS) to turn on automatically. What is this condition?",
+        "choices": [
+            "A) On the weather radar control we must select \"WXR ON\".",
+            "B) The computer airspeed (CAS) greater than 80 knots and in approach mode.",
+            "C) The Warning Electronic Unit sends a discrete (60% of N1)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "With flight plan active, the VOR computer receives tune data from?",
+        "choices": [
+            "A) Radio tuning panel (RTP).",
+            "B) Center CDU through \"NAV RADIO\" page.",
+            "C) Left or right AIMS (FMCF)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+{
+        "question": "The SAARU is a backup source of?",
+        "choices": [
+            "A) Attitude only through the standby attitude indicator.",
+            "B) Attitude and navigation data.",
+            "C) Attitude and air data."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Air Data Inertial Reference System (ADIRS) has these components?",
+        "choices": [
+            "A) One ADIRU, one SAARU.",
+            "B) Three ADIRUs, one SAARU.",
+            "C) One ADIRU (which has three identical parts inside), one SAARU."
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The pitot system?",
+        "choices": [
+            "A) Uses pitot probes to sense total and static pressure air.",
+            "B) Has three pitot probes.",
+            "C) Has four pitot probes (three for left, center, right sides and one for alternate)."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU sends inertial reference and air data to user systems through?",
+        "choices": [
+            "A) Analog discretes.",
+            "B) The center flight control ARINC 629 bus.",
+            "C) ARINC 429 buses only."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "On B777-200, the Standby attitude indicator receives data from?",
+        "choices": [
+            "A) The ADIRU (primary source) or SAARU (alternate source).",
+            "B) No unit, it calculates the attitude data itself.",
+            "C) The SAARU through a 429 ARINC bus."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Standby Air Data Module (SADM)?",
+        "choices": [
+            "A) Is interchangeable with an ADM, but it is named so because it is used on the standby circuit.",
+            "B) Is software loadable through the flight control buses.",
+            "C) Sends ARINC 429 messages only."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which unit gives data to the pitot Air Data Module (ADM) to control the pitot heater?",
+        "choices": [
+            "A) The ADIRU.",
+            "B) The Air/Ground System (AGS).",
+            "C) The primary Flight Computer (PFC) or the Autopilot/Flight Director Computer (AFDC)."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "On the left instrument source select panel by selecting alternate mode for the AIR DATA/ATT, we are on the captain PFD/ND?",
+        "choices": [
+            "A) In voted AIR DATA from ADIRU.",
+            "B) In single channel AIR DATA (right) from SAARU.",
+            "C) In single channel AIR DATA (right) from ADIRU."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "In which case does the SAARU start to calculate backup navigation data independent of the ADIRU?",
+        "choices": [
+            "A) If we select alternate mode on either instrument source select panel.",
+            "B) If one or more inputs from ADIRU are invalid and the TAS (True airspeed) is more than 80 knots.",
+            "C) If we are in single AIR DATA mode."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When the ADIRU fails, which mode will be lost?",
+        "choices": [
+            "A) Approach mode.",
+            "B) Go Around mode.",
+            "C) VNAV mode."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The purpose of the flight management computing system is to?",
+        "choices": [
+            "A) Supply the synoptic pages to the flight crew and to the maintenance crew.",
+            "B) Supply flight plan control data and navigation calculations.",
+            "C) Control engine thrust in response to mode request from the EEC (Electronic Engine Control)."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Which modules are not software loadable?",
+        "choices": [
+            "A) Air data modules (ADM) and standby air data modules (SADM).",
+            "B) Air data modules only.",
+            "C) Standby air data modules only."
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+ {
+        "question": "Where is located the spare lamp box?",
+        "choices": [
+            "A) In left side of flight deck above coat storage area",
+            "B) In right side of flight deck above MAT",
+            "C) In main equipment center"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Captain and first officer instrument and panel lights intensity is controlled by",
+        "choices": [
+            "A) Brightness control unit",
+            "B) Dimmer control unit",
+            "C) Light control unit"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "How do you make dome and flood light come fully bright?",
+        "choices": [
+            "A) Push OVRD switch",
+            "B) Push STORM switch",
+            "C) Push BRIGHT switch"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Dome light has 4 modes of operation. Under which mode is light level adjustable?",
+        "choices": [
+            "A) Normal and backup",
+            "B) Backup and standby",
+            "C) Standby and storm"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which type is annunciator light in cockpit?",
+        "choices": [
+            "A) Lamp",
+            "B) LED",
+            "C) LCD"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which types of push button switch are used in cockpit?",
+        "choices": [
+            "A) Momentary action switches",
+            "B) Alternate action switches",
+            "C) Both momentary and alternate action switches"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Where is located the floor light control switch in cockpit?",
+        "choices": [
+            "A) P5 panel",
+            "B) P61 panel",
+            "C) P8 panel"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which position of master dim and test switch is momentary position?",
+        "choices": [
+            "A) BRT",
+            "B) DIM",
+            "C) TEST"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "What happens if you hold indicator light switch in test position for more than 10 seconds?",
+        "choices": [
+            "A) Most indicator lights are off",
+            "B) Most indicator lights are dim",
+            "C) Most indicator lights are bright"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Power for indirect ceiling lights and sidewall lights is from",
+        "choices": [
+            "A) Ground handling bus",
+            "B) Ground service bus",
+            "C) Standby bus"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Fasten seatbelt lights are controlled from",
+        "choices": [
+            "A) CSCP",
+            "B) CACP",
+            "C) Cockpit"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Where is located the lavatory call reset switch?",
+        "choices": [
+            "A) At flight attendant panel",
+            "B) Behind mirror inside lavatory",
+            "C) Above lavatory door on external wall of lavatory"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "When does lavatory light go to dim mode?",
+        "choices": [
+            "A) Airplane is on ground and lavatory door is locked",
+            "B) Airplane is in the air and lavatory door is locked",
+            "C) Airplane is in the air and lavatory door is not locked"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Where are located the emergency light power supplies?",
+        "choices": [
+            "A) Behind air grills",
+            "B) Beside passenger entry doors",
+            "C) Above passenger entry doors"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "What happens if you push emergency light test switch on attendant panel at door 1L?",
+        "choices": [
+            "A) All interior emergency lights will come on for 1 minute",
+            "B) All exterior emergency lights will come on for 1 minute",
+            "C) All interior and exterior emergency lights will come on for 1 minute"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Advisory message EMER LIGHTS is not shown if emergency light switch on P5 panel is set to",
+        "choices": [
+            "A) ON",
+            "B) OFF",
+            "C) ARM"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which color is navigation light on forward of left wing tip?",
+        "choices": [
+            "A) Red",
+            "B) Green",
+            "C) White"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which color is strobe anticollision lights?",
+        "choices": [
+            "A) Red",
+            "B) White",
+            "C) Green"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "About the dome light, There are?",
+        "choices": [
+            "A) One lamp in each dome light",
+            "B) Two lamps in each dome light",
+            "C) Two lamps in CPT dome light and one in F/O"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "In the air, the wheel well lights are?",
+        "choices": [
+            "A) Always off",
+            "B) Always on",
+            "C) Depending of the control switch position"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Which lights or system do you test with the indicator lights (IND LTS) switch on the anti-ice/lighting panel (P5)?",
+        "choices": [
+            "A) Operation of the engine fire warning lights",
+            "B) Operation of the standby lights",
+            "C) Operation of the master dim and test system"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "The two mode lights (Bright and Dim) are only for?",
+        "choices": [
+            "A) The wing landing lights",
+            "B) The nose landing lights",
+            "C) All landing lights"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 33"
+    },
+    {
+        "question": "With the Master Bright switch in the \"ON\" position?",
+        "choices": [
+            "A) You can use any panel control to adjust the amount of light for the related panel",
+            "B) You set the lighting level at 20 percent",
+            "C) You set the lighting level for all of the integral panel lights at the same time"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "The Master Dim and Test (MD&T) card file are?",
+        "choices": [
+            "A) In the left and right system card file (LSCF and RSCF)",
+            "B) In the main equipment center E1",
+            "C) In the coat storage area P29"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "On the B777-300, the ballasts are:",
+        "choices": [
+            "A) All identical",
+            "B) All software loadable",
+            "C) Only the indirect and sidewall ballasts are software loadable"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "The emergency lights get power from:",
+        "choices": [
+            "A) Batteries only",
+            "B) Batteries or DC buses",
+            "C) Emergency batteries or Main battery"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "The passenger information's lights are controlled by:",
+        "choices": [
+            "A) Cabin system control panel (CSCP)",
+            "B) PA/CI controller or ZMU",
+            "C) Cabin system management unit (CSMU) or PA/CI controller"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "On which system do we have a DIM/BRIGHT mode?",
+        "choices": [
+            "A) The right and left landing lights",
+            "B) All landing lights",
+            "C) Landing lights and Taxi lights"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 33"
+    },
+    {
+        "question": "For passenger cabin lights, you get access to the lamps test menu on?",
+        "choices": [
+            "A) The P5 overhead panel",
+            "B) The cabin system control panel (CSCP)",
+            "C) The maintenance access terminal (MAT)"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "When you do a test of the emergency lights, the lights stay on?",
+        "choices": [
+            "A) Until you make them go off",
+            "B) For five minutes",
+            "C) For 60 seconds"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },
+    {
+        "question": "Where are the emergency lights test switches?",
+        "choices": [
+            "A) On the MAT",
+            "B) On the P40 and at the door 2L and 4R attendant switch panels",
+            "C) On the CSCP (cabin system control panel)"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "A small amount of power goes to the wing landing lights to prevent thermal shock, when?",
+        "choices": [
+            "A) The airplane is on the ground with nose gear down and locked",
+            "B) Nose gear is down and landing light switches are \"OFF\"",
+            "C) Nose gear is down and landing light switches are \"ON\""
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 33"
+    },
+    {
+        "question": "There are?",
+        "choices": [
+            "A) One lamp in each dome light",
+            "B) Two lamps in each dome light",
+            "C) Two lamps in CPT dome light and one in F/O"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 33"
+    },	
 {
         "question": "The flight control ARINC 629 buses have digital interfaces with the airplane systems:",
         "choices": [
