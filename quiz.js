@@ -13144,7 +13144,7 @@ function sortCategories(categories) {
         const numB = parseInt(b.match(/\d+/)[0]);
         return numA - numB;
     });
-
+}
 function displayCategories() {
     console.log("Displaying categories...");
     let categories = [...new Set(allQuestions.map(question => question.category))];
