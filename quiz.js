@@ -3699,6 +3699,302 @@ const allQuestions = [
         "category": "ATA 38"
     },
 {
+    "question": "If a 'Fault' light illuminates on the P5 'Hyd/Rat Panel' that could mean:",
+    "choices": [
+      "A) Overpressure",
+      "B) Overheat",
+      "C) Low quantity"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "On ground during maintenance operations, which pumps are usually used to pressurize the three hydraulic systems?",
+    "choices": [
+      "A) The 4 ACMP(s)",
+      "B) The 2 EDP(s) and the 2 center ACMP(s) C1 + C2",
+      "C) The left and right ACMP(s) and the ADP(s) C1+C2"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Pressing the RAT manual switch on the P5 will:",
+    "choices": [
+      "A) Deploy the RAT by energizing one solenoid",
+      "B) Deploy the RAT by energizing the two solenoids",
+      "C) Make a request to the HYDIM cards to deploy the RAT"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The ELMS is able to deploy the RAT automatically:",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The ADP speed and pressure are controlled by:",
+    "choices": [
+      "A) A TGA",
+      "B) HYDIM cards",
+      "C) A LSCU"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "If the ADP VIGV cannot operate, the LSCU will:",
+    "choices": [
+      "A) Stop the ADP in emergency to avoid an overspeed",
+      "B) Use the MSOV in secondary air flow control",
+      "C) Make a request to the ASCP(s) to reduce the pneumatic pressure"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Caution message: 'Hyd Press L + R' means:",
+    "choices": [
+      "A) Hydraulic systems left and right are pressurized",
+      "B) Center hydraulic system isn't pressurized",
+      "C) Hydraulic systems left and right are not pressurized"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Concerning the hydraulic box on the status page: 'Lo' display means:",
+    "choices": [
+      "A) Hydraulic level is below 0.40",
+      "B) Hydraulic level is below 0.75",
+      "C) Hydraulic level is above 1.20"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "If one fire handle switch is pulled, the on side EDP will:",
+    "choices": [
+      "A) Be not supplied anymore and will also stop pressurizing the hydraulic system",
+      "B) Will only stop pressurizing the hydraulic system",
+      "C) Still operate normally"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Where are located the ACMP(s) C1 and C2?",
+    "choices": [
+      "A) In the left wheel well compartment",
+      "B) In the right wheel well compartment",
+      "C) In the right engine strut"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The RAT's hydraulic pump is partially connected to the:",
+    "choices": [
+      "A) Left system",
+      "B) Center system",
+      "C) Right system"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The center system has a total of five hydraulic pumps:",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "On ground if the three hydraulic systems fail, the RAT will extend:",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Which HYDIM card is the only able to 'turn on' the RAT switch on P5: for 'press' and/or 'unlkd' condition?",
+    "choices": [
+      "A) HYDIM card left",
+      "B) HYDIM card center left",
+      "C) HYDIM card center right",
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "In case of an ADP automatic shutdown due to an overspeed detection:",
+    "choices": [
+      "A) The pilot can cycle the control switch (off then on) to restart the ADP",
+      "B) The HYDIM cards will stop the pump and will try to restart it automatically",
+      "C) An operational ground test (passed) should be performed to restart the ADP"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Where can you check some hydraulic systems informations?",
+    "choices": [
+      "A) HYD synoptic page + HYD maint page + status page + HYD reservoirs",
+      "B) HYD synoptic page + HYD maint page",
+      "C) HYD synoptic page + status page"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "Select the case that can make both ADPs operating together at the same time:",
+    "choices": [
+      "A) Landing retraction",
+      "B) Flaps and slats operation",
+      "C) Autospeedbrake function"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "When both ADP switches are selected 'on', which pump(s) will operate?",
+    "choices": [
+      "A) C1 and C2 will operate continuously",
+      "B) C2 will operate continuously",
+      "C) C1 will operate continuously"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "If both ADP heaters (C1 and C2) fail to operate:",
+    "choices": [
+      "A) The 2 ADP will stop to operate",
+      "B) C1 will start until the end of the flight",
+      "C) Both ADP will start alternatively"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "C.H.I.S. permits to:",
+    "choices": [
+      "A) Save hydraulic power for autoslat operation",
+      "B) Save hydraulic quantity for RAT (PFCS) operation",
+      "C) Save hydraulic quantity to keep nose gear steering and alternate braking"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The normal braking system receives power from:",
+    "choices": [
+      "A) The left hydraulic system",
+      "B) The center hydraulic system",
+      "C) The right hydraulic system"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The alternate braking system is powered by:",
+    "choices": [
+      "A) The left hydraulic system",
+      "B) The center hydraulic system",
+      "C) The right hydraulic system"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "On one hydraulic reservoir, to ensure that the hydraulic level is correct, the sight glasses should show...",
+    "choices": [
+      "A) Top: black + bottom: red",
+      "B) Top: black + bottom: black",
+      "C) Top: red + bottom: black"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "On the right hydraulic system, there are:",
+    "choices": [
+      "A) 2 pressure transducers",
+      "B) 3 pressure transducers",
+      "C) 4 pressure transducers"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The HYDIM cards are mainly used to:",
+    "choices": [
+      "A) Receive and share data from the sensors and control the demand pumps",
+      "B) Only control the demand pumps",
+      "C) Only receive and share data from the sensors"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },
+  {
+    "question": "If the center hydraulic system has to be pressurized, you must check a minimum fuel inside the:",
+    "choices": [
+      "A) Left fuel tank",
+      "B) Center fuel tank",
+      "C) Right fuel tank"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The ACMPs who are 'primary pumps', are connected on the:",
+    "choices": [
+      "A) Left hydraulic system",
+      "B) Center hydraulic system",
+      "C) Right hydraulic system"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "What is the correct way to pressurize the three hydraulic systems together?",
+    "choices": [
+      "A) Left -> Center -> Right",
+      "B) Center -> Right -> Left",
+      "C) Right -> Center -> Left"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 29"
+  },
+  {
+    "question": "On the HYD/RAT Panel (P5), what position of switch gives control to the HYDIM cards?",
+    "choices": [
+      "A) Primary pumps to 'ON'",
+      "B) Demand pumps to 'AUTO'",
+      "C) Demand pumps to 'ON'"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 29"
+  },
+  {
+    "question": "The HYDIM cards are software loadable...",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 29"
+  },	
+{
         "question": "If you pressurize the hydraulic systems with the hydraulic pumps make sure,",
         "choices": [
             "A) there is sufficient fuel in the main fuel tanks to cool the heat exchangers.",
