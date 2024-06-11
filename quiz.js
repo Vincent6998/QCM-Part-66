@@ -2340,6 +2340,294 @@ const allQuestions = [
         "correctAnswer": "A",
         "category": "ATA 27"
     },
+{
+    "question": "The APU is driven and controlled by:",
+    "choices": [
+      "A) The APUC",
+      "B) The AIMS",
+      "C) The system card file"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APUC is located:",
+    "choices": [
+      "A) Below the aft galleys in the rack E.17",
+      "B) Above the aft galleys in the rack E.7",
+      "C) In the main equipment center"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "To start the APU, the minimum quantity of fuel is:",
+    "choices": [
+      "A) 230 KGS",
+      "B) 330 KGS",
+      "C) 430 KGS"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APU overspeed (auto shutdown) is:",
+    "choices": [
+      "A) 105%",
+      "B) 106%",
+      "C) 107%"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "Which system controls the APU door?",
+    "choices": [
+      "A) ELMS",
+      "B) APUC",
+      "C) AIMS"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APU door actuator is powered by:",
+    "choices": [
+      "A) Hot batt bus",
+      "B) Batt bus sec 2",
+      "C) Transfer bus 2"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APU can be started:",
+    "choices": [
+      "A) Below 22,000 fts",
+      "B) Only on ground",
+      "C) At any altitude"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "Above altitude of 22,000 fts, APU can provide:",
+    "choices": [
+      "A) Both (electrical power + pneumatic power)",
+      "B) Only electrical power (120 KVA)",
+      "C) Only pneumatic power"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "The APUC will not start the APU if the oil tank is almost empty...",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "How many clusters are installed on the APU?",
+    "choices": [
+      "A) 2 (fuel + lube)",
+      "B) 3 (fuel + lube + pneumatic)",
+      "C) 4 (fuel + lube + ignition + pneumatic)"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "To monitor the APU speed, the APUC uses by default:",
+    "choices": [
+      "A) Sensor 1 and sensor 2 in backup",
+      "B) The average of the two sensors",
+      "C) The highest sensor value"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "In case of high EGT, in attended mode, the APUC will:",
+    "choices": [
+      "A) Shutdown the APU",
+      "B) Display a caution message 'APU limit'",
+      "C) Display an 'APU fire' warning message"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APU air inlet door's position can be checked:",
+    "choices": [
+      "A) On the APU synoptic page",
+      "B) Only from outside by checking the door physically",
+      "C) On the APU maintenance pages"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "Tell-tale drains can help to detect leaks on:",
+    "choices": [
+      "A) The eductor/tailpipe fuel drain",
+      "B) IGV actuator seal drain",
+      "C) Combustion chamber fuel drain"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "In case of failure, it is recommended to replace the APUC and the DMM together at the same time...",
+    "choices": [
+      "A) Vrai",
+      "B) Faux"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "How many chip detectors are installed on the APU?",
+    "choices": [
+      "A) 3",
+      "B) 4",
+      "C) 5"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "When the APU is operating, the airplane pneumatic ducts are fed by:",
+    "choices": [
+      "A) The load compressor",
+      "B) The centrifugal compressors",
+      "C) The turbine stages"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },
+  {
+    "question": "To crank the APU for borescope inspection, you have to connect the wrench on:",
+    "choices": [
+      "A) The pneumatic starter",
+      "B) The electrical starter",
+      "C) On the accessory gearbox pad"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "APU has:",
+    "choices": [
+      "A) Two load compressor and one stage of centrifugal compressor",
+      "B) One load compressor and two stages of centrifugal compressor",
+      "C) One load compressor and one stage of centrifugal compressor"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "IGV(s) control the air flow to the:",
+    "choices": [
+      "A) Load compressor",
+      "B) The two-stages of centrifugal compressor",
+      "C) The APU discharge system via the surge control valve"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },
+ {
+    "question": "APU system data can be checked on:",
+    "choices": [
+      "A) The status page only.",
+      "B) The status page, the APU synoptic page, and the APU maintenance page.",
+      "C) The status page and the APU maintenance page."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "If the APU is getting old and the EGT must be limited in order to avoid a fire, the APUC will:",
+    "choices": [
+      "A) Limit the electrical power supply.",
+      "B) Limit the pneumatic power supply.",
+      "C) Limit both power supplies."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "If the surge control valve is fully open, it's because the APU bleed air valve is:",
+    "choices": [
+      "A) Regulating.",
+      "B) Open.",
+      "C) Closed."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 49"
+  },
+  {
+    "question": "During normal shutdown, it's possible to restart the APU (accelerate and return to 100%) if:",
+    "choices": [
+      "A) APU speed is less than 70%.",
+      "B) If shutdown period is less than 105 seconds.",
+      "C) APU speed is more than 15%."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "The 'APU remote shutdown' status message means:",
+    "choices": [
+      "A) APU has stopped normally.",
+      "B) APU has been stopped in emergency from the P40 panel.",
+      "C) APU has been stopped in emergency by the APU fire switch on the P5 panel."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "Which starter is considered as the primary one?",
+    "choices": [
+      "A) The air starter.",
+      "B) The electrical starter.",
+      "C) There is no priority."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },
+  {
+    "question": "During starting sequence the air turbine starter valve closes when:",
+    "choices": [
+      "A) APU speed is more than 49%.",
+      "B) APU speed is more than 55%.",
+      "C) APU speed is more than 95%."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "The secondary nozzles are supplied by fuel when:",
+    "choices": [
+      "A) The APU speed is less than 50% RPM.",
+      "B) The APU speed is more than 50% RPM.",
+      "C) For quick starting during flight."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 49"
+  },
+  {
+    "question": "Electrical power and pneumatic power are available from the APU when the APU speed is:",
+    "choices": [
+      "A) More than 95%.",
+      "B) 100%.",
+      "C) More than 7%."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 49"
+  },	
  {
         "question": "Where is APUC located?",
         "choices": [
