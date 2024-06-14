@@ -1660,6 +1660,37 @@ const allQuestions = [
         "correctAnswer": "B",
         "category": "ATA 27"
     },
+	  {
+    "question": "Slats 'Load relief' function is available in:",
+    "choices": [
+      "A) The Primary mode only.",
+      "B) The Secondary Mode only.",
+      "C) The Primary and Secondary modes."
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 27"
+  },
+  {
+    "question": "Digital interfaces with the PFCS goes to the:",
+    "choices": [
+      "A) Backdrive Actuators",
+      "B) ACEs",
+      "C) PCUs"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 27"
+  },
+  {
+    "question": "The Aileron PCU anti-cavitation check valves permits to:",
+    "choices": [
+      "A) Reduces oscillations due to flutter if actuator fails.",
+      "B) Measures the pressure difference between both sides of the actuator piston.",
+      "C) Rigs the power control unit (PCU) during PCU installation."
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 27"
+  },
+
     {
         "question": "The High Lift Control System (HLCS) controls the operation of the:",
         "choices": [
