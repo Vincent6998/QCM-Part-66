@@ -220,6 +220,379 @@ const allQuestions = [
         "correctAnswer": "A",
         "category": "ATA 22"
     },
+
+	{
+        "question": "The B777 has:",
+        "choices": [
+            "A) 1 AOA sensor on the right side of the fuselage",
+            "B) 1 AOA sensor on the left side of the fuselage",
+            "C) 2 AOA sensors: one on each side of the fuselage"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ADIRU has:",
+        "choices": [
+            "A) 4 ring laser gyros",
+            "B) 6 ring laser gyros",
+            "C) 4 Fiber Optic gyros"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "In the ADIRS there are:",
+        "choices": [
+            "A) 3 Inertial Reference Units and 3 Air Data Reference Functions",
+            "B) 2 Air Data and Inertial Reference Functions",
+            "C) 1 ADIRU and 1 SAARU"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The B777 has:",
+        "choices": [
+            "A) 3 pitot probes",
+            "B) 3 pairs of pitot probe",
+            "C) 2 pitot probes"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU:",
+        "choices": [
+            "A) is a backup to the ADIRU",
+            "B) supplies air data to the Integrated Standby Flight Display",
+            "C) isn't powered on ground"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+{
+    "question": "When the AIR DATA / ATT switch on the right ISSP is set to ALTN, F/O's EFIS air data comes from:",
+    "choices": [
+        "A) SAARU single channel (right)",
+        "B) ADIRU single channel (left)",
+        "C) SAARU Redundancy Management Function"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+    {
+        "question": "The communication protocole of the standby Air Data Modules is:",
+        "choices": [
+            "A) Arinc 429",
+            "B) Arinc 618",
+            "C) Arinc 629"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Air from the left air conditioning pack cross manifold creates a venturi effect inside the TAT probe to:",
+        "choices": [
+            "A) prevent icing of the probe",
+            "B) reduce the drag created by the probe",
+            "C) provide an accurate temperature measurement when the airplane is at low SPD"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU sends data to user systems on:",
+        "choices": [
+            "A) the center flight controls ARINC 629 bus",
+            "B) the left and right flight controls ARINC 629 buses",
+            "C) the 4 systems ARINC 629 buses"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Standby Air Data Modules:",
+        "choices": [
+            "A) aren't interchangeable with an ADMs",
+            "B) communicate in ARINC 629",
+            "C) communicate in ARINC 717"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Air Data Module Power Supply sends power to:",
+        "choices": [
+            "A) the Air Data Modules",
+            "B) the Integrated Standby Flight Display",
+            "C) the Standby Air Data Modules"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Air Data Modules send their data:",
+        "choices": [
+            "A) on ARINC 429 buses",
+            "B) on the flight controls ARINC 629 buses",
+            "C) on the systems ARINC 629 buses"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Air Data Modules are powered by:",
+        "choices": [
+            "A) the Hot Bat bus",
+            "B) their onside Flight Controls ARINC 629 buses",
+            "C) their onside FCDC-PSA"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Integrated Standby Flight Display receives data from:",
+        "choices": [
+            "A) the SAARU via ARINC 429",
+            "B) the Standby Air Data Modules via ARINC 629",
+            "C) the Standby Air Data Modules via ARINC 429"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Integrated Standby Flight Display receives ILS data from:",
+        "choices": [
+            "A) the left MMR",
+            "B) the center MMR",
+            "C) the right MMR"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The magnetic heading displayed on the ISFD comes from:",
+        "choices": [
+            "A) its internal sensors",
+            "B) the left AIMS cabinet",
+            "C) the center MMR"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To test the ADIRU:",
+        "choices": [
+            "A) there is a CMCF system test in ATA 34",
+            "B) put the ADIRU on/off switch to the ON position",
+            "C) connect a Test Bench to the ADIRU"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When the ADIRU has a failure of one gyro there is:",
+        "choices": [
+            "A) a caution message",
+            "B) a status message",
+            "C) a maintenance memo"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU provides:",
+        "choices": [
+            "A) Air data to the ISFD",
+            "B) Attitude to the ISFD",
+            "C) backup attitude and air data to the AIMS cabinets"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The SAARU computes the same parameters as the ADIRU except for:",
+        "choices": [
+            "A) the inertial altitude",
+            "B) the airplane position",
+            "C) the vertical speed"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Integrated Standby Flight Display gets its attitude data from:",
+        "choices": [
+            "A) its internal sensors",
+            "B) the ADIRU",
+            "C) the SAARU"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "For Air Data computation the ADIRU uses inputs from:",
+        "choices": [
+            "A) the Angle Of Attack Sensors",
+            "B) the six ring laser gyros",
+            "C) the SAARU"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Standby ADMs are powered by:",
+        "choices": [
+            "A) the ADM power supply",
+            "B) the right Power Supply Assembly",
+            "C) the Bat Bus Sec 2"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "It isn't possible to data load:",
+        "choices": [
+            "A) the SAARU",
+            "B) an ADM",
+            "C) A SADM"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ADIRU receives TAT data:",
+        "choices": [
+            "A) via a SADM",
+            "B) via an ADM",
+            "C) from the AIMS cabinets"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Electrical power to the pitot heaters is controlled by:",
+        "choices": [
+            "A) the ADIRU",
+            "B) the SAARU",
+            "C) the ADMs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The signal sent to the ADMs to control Pitot probe heaters comes from:",
+        "choices": [
+            "A) the SAARU",
+            "B) the Air/Ground System",
+            "C) the PFCs or the AFDCs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+{
+        "question": "When the ISFD displays \"INIT 90s\":",
+        "choices": [
+            "A) it is the time to complete the air data sensors calibration",
+            "B) it is the time to complete the SAARU initialization",
+            "C) it is the time to complete the attitude alignment"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "ADMs control probe heat for:",
+        "choices": [
+            "A) their onside pitot probe only",
+            "B) their onside pitot probe and TAT probe only",
+            "C) their onside pitot probe and AOA probe only"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To supply inertial reference data the ADIRU must have a minimum of:",
+        "choices": [
+            "A) 3 gyros",
+            "B) 2 processors",
+            "C) 3 accelerometers"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ADIRU can be switched off when:",
+        "choices": [
+            "A) the computed airspeed (CAS) is less than 30 kts.",
+            "B) the engines are shut down and a Pax door is open",
+            "C) the calibrated airspeed is less than 60kts"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When the left and right ADMs are failed:",
+        "choices": [
+            "A) the EFIS displays single channel air data from the SAARU",
+            "B) air data is displayed on the standby instruments",
+            "C) air data appears on the CDUs"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Dashes replace box prompts on the CDU ‘POSITION INIT’ page when:",
+        "choices": [
+            "A) the ADIRU alignment cannot finish",
+            "B) the GPS position is available",
+            "C) the ADIRU is in the Navigation Mode"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "If the ADIRU is failed and SAARU backup navigation function goes invalid:",
+        "choices": [
+            "A) the AFDS TO/GA mode stays engaged",
+            "B) the AFDS FPA mode stays engaged",
+            "C) Some AFDS modes do not operate"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "How many Fault Containment Areas does the ADIRU have?",
+        "choices": [
+            "A) 3",
+            "B) 5",
+            "C) 7"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The TAT probe heater is controlled by:",
+        "choices": [
+            "A) the center pitot ADM",
+            "B) the WOW card",
+            "C) the AIMS cabinets"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ADIRU drift rate on the inertial monitor page clears:",
+        "choices": [
+            "A) at the next ground-to-air transition",
+            "B) when the airplane is on the ground and the engines are shut down",
+            "C) at the next first engine start"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+
+	
  {
         "question": "What air pressure(s) used by ADIRU and SAARU to calculate airspeed?",
         "choices": [
