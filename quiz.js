@@ -2391,16 +2391,6 @@ const allQuestions = [
         "category": "ATA 34"
     },
     {
-        "question": "When both flight management computing functions (FMCFs) fail with the FMC selector in the AUTO position, or the selected FMCF fails, the control display units (CDUs) supply?",
-        "choices": [
-            "A) Map data only.",
-            "B) LNAV commands and map data.",
-            "C) Thrust commands and map data."
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 34"
-    },
-    {
         "question": "The secondary attitude air data reference unit (SAARU) provides a back-up navigation function, but it is limited to?",
         "choices": [
             "A) 3 minutes.",
