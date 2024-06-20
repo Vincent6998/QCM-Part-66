@@ -1,6 +1,446 @@
 const allQuestions = [
 
-{
+ {
+    "question": "How many BackDrive Actuators are active during a stabilized autoland ILS approach above 1500ft:",
+    "choices": [
+      "A) 2",
+      "B) 3",
+      "C) 4"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 22"
+  },
+  {
+    "question": "How many BackDrive Actuators are active during a stabilized autoland ILS approach below 1500ft:",
+    "choices": [
+      "A) 3",
+      "B) 4",
+      "C) 6"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "The AFDCs use MCP data sent:",
+    "choices": [
+      "A) by the MCP channel A",
+      "B) by the MCP channel B",
+      "C) to the master AFDC"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "How many microprocessors are there in a MCP?",
+    "choices": [
+      "A) 1",
+      "B) 2",
+      "C) 3"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 22"
+  },
+  {
+    "question": "When autopilot is engaged after power up, the MCP channel sending data to the AFDCs is:",
+    "choices": [
+      "A) Channel A",
+      "B) Channel B",
+      "C) a random selection of channel A or channel B"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 22"
+  },
+  {
+    "question": "TO 2 on the EICAS indicates that:",
+    "choices": [
+      "A) the autothrottle is available for the 2 engines",
+      "B) takeoff thrust is derated",
+      "C) the 2 TMCFs are available"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 22"
+  },
+  {
+    "question": "Engine trim equalization:",
+    "choices": [
+      "A) equalizes the thrust between the 2 engines without throttle lever movement",
+      "B) sends a command to the throttle lever servo motors",
+      "C) is active whatever the N1% difference between the 2 engines"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 22"
+  },
+  {
+    "question": "When the A/P disengage bar is pushed down:",
+    "choices": [
+      "A) the Bank Angle Protection through the control Wheel is still available",
+      "B) Flight Directors aren't available anymore",
+      "C) the Bank Angle Protection through the control Wheel is lost"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "When the A/P and Autothrottle are active on an airplane just after takeoff the speed is controlled by:",
+    "choices": [
+      "A) the autothrottle",
+      "B) the autopilot",
+      "C) the Flight Director"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 22"
+  },
+  {
+    "question": "When flying with the autopilot in cruise, how many BackDrive Actuators are engaged?",
+    "choices": [
+      "A) 2",
+      "B) 3",
+      "C) 4"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 22"
+  },
+  {
+    "question": "The MCP switch that doesn't have an annunciator bar is:",
+    "choices": [
+      "A) the A/T switch",
+      "B) the FLCH switch",
+      "C) the CLB/CON switch"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "The master AFDC data:",
+    "choices": [
+      "A) only control its onside Backdrive Actuators (BDA)",
+      "B) control all 6 BDAs during autoland",
+      "C) control its onside BDAs and the MCP channel writing to the MCP LCD displays"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "The autothrottle arm switches on the mode control panel (MCP):",
+    "choices": [
+      "A) Engage the autothrottle",
+      "B) Give power to thrust management function software partition",
+      "C) Give power to the A/T servomotors in the thrust CTL module"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "Thrust Limit modes are displayed on:",
+    "choices": [
+      "A) the EICAS",
+      "B) the ND",
+      "C) the PFD"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 22"
+  },
+  {
+    "question": "An airplane climbs above 400ft after an autopilot Go-Around:",
+    "choices": [
+      "A) above 400ft the bus isolation is not active anymore",
+      "B) the bus isolation stays active until 500ft",
+      "C) the bus isolation stays active until 1500ft"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 22"
+  },
+  {
+    "question": "In cruise the number of operating AFDCs is:",
+    "choices": [
+      "A) 1",
+      "B) 2",
+      "C) 3"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "The right Backdrive Actuators are connected to:",
+    "choices": [
+      "A) the left AFDC",
+      "B) the center AFDC",
+      "C) the right AFDC"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+    "question": "When the A/P is disengaged through the disengage bar:",
+    "choices": [
+      "A) both the A/P and FD are disengaged",
+      "B) the A/P engages when the disengage bar is set to the up position (Normal)",
+      "C) the FD is still available."
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 22"
+  },
+  {
+        "question": "The right Backdrive Actuators are connected to:",
+        "choices": [
+            "A) the left AFDC",
+            "B) the center AFDC",
+            "C) the right AFDC"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When the A/P is disengaged through the disengage bar:",
+        "choices": [
+            "A) both the A/P and FD are disengaged",
+            "B) the A/P engages when the disengage bar is set to the up position (Normal)",
+            "C) the FD is still available"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The Back Drive Actuator that can engage when the Autopilot isn't engaged is:",
+        "choices": [
+            "A) the rudder pedal BDA",
+            "B) the thrust lever Actuator",
+            "C) the control wheel BDA"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "If the Autothrottle mode on the FMA is SPD:",
+        "choices": [
+            "A) speed is managed by the TMCF",
+            "B) speed is managed by the AFDS",
+            "C) engine thrust is derated not to exceed the VMO"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When AP is engaged as the airplane is in cruise with the Flight Director ON, AP modes are:",
+        "choices": [
+            "A) LNAV and VNAV",
+            "B) FLCH and APP",
+            "C) same as FD modes"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "Autothrottle modes are displayed on:",
+        "choices": [
+            "A) the EFB",
+            "B) the ND",
+            "C) the PFD"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The normal way to disengage the AutoPilot is:",
+        "choices": [
+            "A) the A/P disengage bar on the MCP",
+            "B) the switch on the control wheel",
+            "C) the A/P switch on the MCP"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When a pilot overrides a Back Drive Actuator:",
+        "choices": [
+            "A) AP disengages and reengages when the override signal is gone",
+            "B) AP disengages and pilots must fly manually",
+            "C) AP stays engaged but the aircraft is manually controlled"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "Which AFDC is normally master after the airplane initial power up test?",
+        "choices": [
+            "A) The left AFDC",
+            "B) The center AFDC",
+            "C) The right AFDC"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "During autopilot operation, the PFCs use:",
+        "choices": [
+            "A) data from the master AFDC",
+            "B) data from an AFDC randomly selected",
+            "C) a mid-value selection of the 3 AFDCs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The active TMCF selection:",
+        "choices": [
+            "A) is a random selection",
+            "B) starts with the right TMCF and switches to the other side when reselected",
+            "C) is similar to the FMCF selection"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The A/T disconnect switches are located on:",
+        "choices": [
+            "A) the sides of the thrust levers",
+            "B) the control wheel",
+            "C) the Mode Control Panel (MCP)"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "During an autoland the rudder pedal BackDrive Actuators engage at a radio altitude of:",
+        "choices": [
+            "A) 400 Ft",
+            "B) 1500 Ft",
+            "C) 2500 Ft"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "In cruise with A/P and Autothrottle ON the altitude is kept by:",
+        "choices": [
+            "A) the autothrottle",
+            "B) the autopilot",
+            "C) the flight director"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 22"
+    },
+    {
+        "question": "If a mode control switch annunciator bar (green light) is illuminated:",
+        "choices": [
+            "A) the mode is active",
+            "B) the mode is armed",
+            "C) the mode can be either active or armed"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When in cruise without failure, the Autopilot configuration is:",
+        "choices": [
+            "A) 1 AFDC engaged",
+            "B) 2 AFDCs engaged with 1 as master",
+            "C) 3 AFDCs engaged with 1 as master"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "ILS antenna switching is controlled by:",
+        "choices": [
+            "A) the onside AFDC",
+            "B) the active TMCF",
+            "C) the onside Radio Altimeter"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When the left A/P switch is pushed:",
+        "choices": [
+            "A) one of the AFDCs is randomly selected as master",
+            "B) the Autopilot is either engaged or disengaged",
+            "C) all available AFDCs engage"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "In approach when the flight crew push either TO/GA switch once:",
+        "choices": [
+            "A) the autothrottle disconnects",
+            "B) the Thrust Limit Mode is TO",
+            "C) AFDS supplies a pitch up command, TMCS thrust maintains a 2000 ft/min climb"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "To reset the A/P disengage warning (wailer):",
+        "choices": [
+            "A) press the A/P switch on the MCP",
+            "B) push one of the Master Warning Lights",
+            "C) push on the A/P disengage switch on the control wheel"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "How many BackDrive Actuators are engaged at 700ft after an autopilot go-around?",
+        "choices": [
+            "A) 2",
+            "B) 4",
+            "C) 6"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When the autothrottle is active, the thrust reduction after takeoff:",
+        "choices": [
+            "A) must always be initiated by a pilot action on the CLB/CON switch",
+            "B) is automatic at a preset radio altitude whatever the autoflight pitch mode is",
+            "C) is automatic at a preset radio altitude or flap setting if VNAV is active"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "For Engine Trim Equalization:",
+        "choices": [
+            "A) EEC Lh and Rh exchange data to keep synchronized",
+            "B) the TMCF sends engine trim commands to the thrust lever servo motors",
+            "C) the TMCF sends engine trim commands to the EECs"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "When the Autopilot pitch mode is VNAV SPD the airspeed is controlled by:",
+        "choices": [
+            "A) the Autopilot through the elevator",
+            "B) the Autothrottle",
+            "C) a mix of Autothrottle and Autopilot"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },
+    {
+        "question": "The Bank Angle Protection triggers when the:",
+        "choices": [
+            "A) autopilot disengages",
+            "B) airplane is about to stall",
+            "C) PFCS is in the Normal mode and the airplane bank angle is more than 35 deg"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 22"
+    },
+    {
+        "question": "You engage the Autopilot for the 1st time with the Rh A/P switch on an MCP which microprocessor B is failed:",
+        "choices": [
+            "A) the Right AFDC is master",
+            "B) the Left AFDC is master",
+            "C) the A/P disengages"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 22"
+    },	
+  {
         "question": "With the autopilot engaged or disengaged, if the airplane bank angle exceeds 35 degrees, the bank angle protection (BAP) function operates. The backdrive actuators will move:",
         "choices": [
             "A) The control columns",
@@ -220,8 +660,847 @@ const allQuestions = [
         "correctAnswer": "A",
         "category": "ATA 22"
     },
-
+ {
+      "question": "The aircraft position displayed on the ND is:",
+      "choices": [
+        "A) a GPS position",
+        "B) a Radio Navigation position",
+        "C) a FMCF computed position"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The B777 has:",
+      "choices": [
+        "A) 1 Flight Management Computing Function",
+        "B) 2 Flight Management Computing Functions",
+        "C) 3 Flight Management Computing Functions"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "You can select the active Flight Management Computing Function with:",
+      "choices": [
+        "A) the F/O display switching panel FMC selector",
+        "B) the CAPT or F/O CDU",
+        "C) the Mode Control Panel"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The GPWS gives warnings:",
+      "choices": [
+        "A) related to unsafe air traffic separation",
+        "B) of unsafe flight conditions when the airplane is in cruise",
+        "C) of unsafe flight conditions below 2450 feet Radio Altitude"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "Flight Management Computing Functions are software in:",
+      "choices": [
+        "A) the 3 Autopilot Flight Director Computers",
+        "B) the 2 AIMS cabinets",
+        "C) the Mode Control Panel processors"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The ground test of the CDU is in the:",
+      "choices": [
+        "A) ATA 22",
+        "B) ATA 23",
+        "C) ATA 34"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The Flight Management Computing System:",
+      "choices": [
+        "A) supplies the Synoptic pages to the crews",
+        "B) sends orders to the EECs to control engine thrust",
+        "C) supplies flight plan control data and navigation calculations"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The pages that the flight crew uses to enter pre-flight data into the FMCS are accessible from:",
+      "choices": [
+        "A) the CDUs",
+        "B) the EFB Display Units",
+        "C) the MFDs"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "In case of simultaneous GPWS, TCAS and WXR warnings the priority is:",
+      "choices": [
+        "A) GPWS - TCAS - WXR",
+        "B) GPWS - WXR - TCAS",
+        "C) WXR - TCAS - GPWS"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "In case of simultaneous GPWS and WXR warnings priorities are managed by:",
+      "choices": [
+        "A) the Warning Electronic System",
+        "B) the Ground Proximity Warning System",
+        "C) the Weather Radar"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The GPWC sends its aural alerts and warnings:",
+      "choices": [
+        "A) directly to the aural warning speakers",
+        "B) to the Warning Electronic System",
+        "C) to the AIMS cabinets"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The 2 Flight Management Computing Functions:",
+      "choices": [
+        "A) operate simultaneously",
+        "B) operate one at a time",
+        "C) compute only the horizontal flight plan"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The FMC switch on the F/O Display Switching Panel:",
+      "choices": [
+        "A) makes sure that the FMCF and TMCF operate in different cabinets",
+        "B) selects the active FMCF and Autopilot",
+        "C) selects the active FMCF and TMCF"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "If the 2 FMCFs fail:",
+      "choices": [
+        "A) the CDUs can supply LNAV",
+        "B) the autopilot becomes inoperative",
+        "C) the CDUs can supply VNAV"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The FMC COMM page is displayed by:",
+      "choices": [
+        "A) the FMC COMM key on the CDU",
+        "B) the COMM key on the DSP",
+        "C) the COMM key on the EFIS Control Panel"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The SET HDG field of the CDU POS INIT page 1/3 is:",
+      "choices": [
+        "A) to provide heading to the SAARU in case of ADIRU failure",
+        "B) to align the ADIRU",
+        "C) to align the SAARU"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "CDUs are part of:",
+      "choices": [
+        "A) the Airplane Information Management System",
+        "B) the Primary Display System",
+        "C) the Flight Management System"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The Airline Policy page relates to:",
+      "choices": [
+        "A) FMCS operational flight program and data base identification Numbers",
+        "B) the reference airplane initial position",
+        "C) Airline Modifiable Information"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The Inertial Monitor page relates to:",
+      "choices": [
+        "A) FMCF computation errors",
+        "B) ADIRU drift",
+        "C) GPS position update from the ADIRU"
+      ],
+      "correctAnswer": "B",
+      "category": "ATA 34"
+    },
+    {
+      "question": "LNAV is:",
+      "choices": [
+        "A) INOP if the 2 FMCFs are failed",
+        "B) computed by the Autopilot Flight Director Computers",
+        "C) computed by a CDU in case of failure of the FMCFs"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "Dashes replace box prompts on the CDU 'POSITION INIT' page when:",
+      "choices": [
+        "A) the ADIRU alignment fails",
+        "B) the GPS position is available",
+        "C) the ADIRU alignment is in progress"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "Time Critical Warnings from the GPWS are:",
+      "choices": [
+        "A) Windshear and pull-up",
+        "B) Pull-up and terrain",
+        "C) Windshear ahead and terrain"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "The purpose of the TERRAIN OVERRIDE switch is:",
+      "choices": [
+        "A) to inhibit TERRAIN alerts",
+        "B) to prevent Controlled Flight Into Terrain from happening",
+        "C) to automatically go around a TERRAIN threat"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "When the FMCF has an active flight plan the VOR receiver is tuned by:",
+      "choices": [
+        "A) the Radio Tuning Panel",
+        "B) the center CDU 'Nav Radio' page",
+        "C) the left or right AIMS"
+      ],
+      "correctAnswer": "C",
+      "category": "ATA 34"
+    },
+    {
+      "question": "For mode 5 (below Glide Slope) alerts computation the GPWC gets data from:",
+      "choices": [
+        "A) the left MMR",
+        "B) the center MMR",
+        "C) the right MMR"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+    },
+    {
+      "question": "If the 2 Flight Management Computing Functions fail:",
+      "choices": [
+        "A) the on-side control display unit (CDU) supplies map data to the on-side ND",
+        "B) map and navigation data are lost",
+        "C) the center CDU supplies map data to the 2 NDs"
+      ],
+      "correctAnswer": "A",
+      "category": "ATA 34"
+},
+{
+  "question": "The purpose of VNAV is to:",
+  "choices": [
+    "A) compute the necessary thrust to perform a FL change in 120 seconds",
+    "B) provide MAP data to the PDS for display on the ND",
+    "C) control A/C vertical path and speed to comply with the FLT plan constraints"
+  ],
+  "correctAnswer": "C",
+  "category": "ATA 34"
+},
+{
+  "question": "If the GPWC determines that there is a terrain threat:",
+  "choices": [
+    "A) the terrain display shows on both NDs if not selected on either one",
+    "B) the Flight crew must display the terrain via the TERR switch on the EFIS CP",
+    "C) the WXR display has to be stopped to be replaced by the Terrain threat"
+  ],
+  "correctAnswer": "A",
+  "category": "ATA 34"
+},
+{
+  "question": "If the 2 Flight Management Computing Functions fail:",
+  "choices": [
+    "A) the on-side CDU supplies NAV data to the on-side Autopilot",
+    "B) LNAV and VNAV commands to the Autopilot are lost",
+    "C) L, CTR or R CDU (priority with all CDUs valid) supplies LNAV data to the AP"
+  ],
+  "correctAnswer": "C",
+  "category": "ATA 34"
+},
+{
+  "question": "In the Alternate LNAV function, to supply navigation outputs, the CDUs use data from:",
+  "choices": [
+    "A) the ADIRU only",
+    "B) the ADIRU updated by radio position",
+    "C) the ADIRU updated by GPS position"
+  ],
+  "correctAnswer": "A",
+  "category": "ATA 34"
+},
+{
+  "question": "The FMCF displays alerting messages when there is a degraded system condition. The highest message priority is:",
+  "choices": [
+    "A) Data entry error advisory messages. Ex: \"NOT IN DATA BASE\"",
+    "B) Operational messages. Ex: \"END OF ROUTE\"",
+    "C) Communication messages. Ex: \"PERF INIT UPLINK\""
+  ],
+  "correctAnswer": "A",
+  "category": "ATA 34"
+},
+{
+  "question": "When the 2 FMCFs and the left CDU are failed:",
+  "choices": [
+    "A) LNAV is INOP if the A/P is engaged from the left A/P switch on the MCP",
+    "B) LNAV and VNAV guidance commands are sent to the A/P by the center CDU",
+    "C) LNAV guidance commands are sent to the A/P by the center CDU"
+  ],
+  "correctAnswer": "C",
+  "category": "ATA 34"
+},
+{
+  "question": "Which function isn't an EGPWS function:",
+  "choices": [
+    "A) Runway Awareness and Advisory System",
+    "B) Windshear",
+    "C) Predictive windshear"
+  ],
+  "correctAnswer": "C",
+  "category": "ATA 34"
+},
+{
+  "question": "The GPWC makes these aurals come on when it receives a request from the AIMS cabinets:",
+  "choices": [
+    "A) \"Approaching minimums\" and \"Bank Angle\"",
+    "B) \"Engine Fail\" and \"V1\"",
+    "C) \"Too low gear\" and \"Too low flaps\""
+  ],
+  "correctAnswer": "B",
+  "category": "ATA 34"
+},
 	{
+    "question": "ADF antennas are located:",
+    "choices": [
+        "A) on the top of the vertical stabilizer",
+        "B) behind the radome",
+        "C) on the top of the fuselage"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The ADF tune mode can be:",
+    "choices": [
+        "A) M, P, R or A",
+        "B) M or A only",
+        "C) M only"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The TCAS sends aural alerts to:",
+    "choices": [
+        "A) the Ground Proximity Warning System",
+        "B) the Warning Electronic System",
+        "C) the 2 TCAS Directional Antennas"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "The part of the weather radar system that shouldn't be removed from the airplane is:",
+    "choices": [
+        "A) the waveguide",
+        "B) the waveguide switch",
+        "C) the antenna mount assembly"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "To switch on the Weather Radar you use:",
+    "choices": [
+        "A) Nothing, WXR is controlled by the Flight Management Function",
+        "B) a switch on the EFIS Control Panel",
+        "C) a switch on the Display Select Panel"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "A TCAS can track an airplane:",
+    "choices": [
+        "A) that is equipped with an ATC Radio Beacon System transponder",
+        "B) only if the airplane is equipped with an ATC Mode S transponder",
+        "C) even if the airplane doesn't have a transponder"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "The WXR control panel receives power from:",
+    "choices": [
+        "A) the P11 Overhead Circuit Breaker panel",
+        "B) the left and right WXR receiver/transmitters",
+        "C) the CAPT FLT INST bus"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "WXR data can be displayed on:",
+    "choices": [
+        "A) the Primary Flight Display",
+        "B) the Electronic Flight Bag",
+        "C) the ND in the Expanded APP, VOR, MAP and centered MAP modes"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The WXR predictive windshear function turns on when:",
+    "choices": [
+        "A) the FMCF sends an APP discrete to the WXR transceiver",
+        "B) the Flight Crew selects PWS on the control panel",
+        "C) an engine is set to the take-off thrust on the ground",
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The WXR Predictive Windshear function is armed via a discrete sent by:",
+    "choices": [
+        "A) the Mode Control Panel",
+        "B) the Warning Electronic System",
+        "C) the WXR Control Panel"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "The Predictive Windshear (PWS) function of the WXR uses Radio Altitude to:",
+    "choices": [
+        "A) prioritize the different alerts",
+        "B) turn PWS ON and OFF",
+        "C) compute Wind speeds"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "Predictive windshear symbol is displayed on:",
+    "choices": [
+        "A) the PFD",
+        "B) the ND",
+        "C) both the PFD and ND"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "During a windshear alert the WXR PWS card makes an inhibit discrete that:",
+    "choices": [
+        "A) changes TCAS Resolution Advisories to Traffic Advisories",
+        "B) disconnects the Autopilot",
+        "C) initiates an automatic Go-Around"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "On the WXR control panel the TFR switch is used to:",
+    "choices": [
+        "A) select the left or right WXR transceiver",
+        "B) cause the RT to use the same mode, tilt and gain as the other side",
+        "C) select the weather and turbulence mode"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "When you select the WXR switch on the EFIS CTL Panel:",
+    "choices": [
+        "A) the 2 WXR RTs are switched on",
+        "B) the WXR data shows on the 2 NDs",
+        "C) the WXR data shows on the onside ND"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The WXR system:",
+    "choices": [
+        "A) shouldn't be operated if there is an open fuel cell less than 50ft away",
+        "B) can be used if there is a fuel leakage less than 50ft away",
+        "C) can be used if personnel is working in the nose radome"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "The 2 switches of the WXR antenna pedestal:",
+    "choices": [
+        "A) prevent each WXR transceiver from emitting",
+        "B) are used to make a test of the WXR system",
+        "C) are elevation and scan disable switches"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "In case of simultaneous TCAS and WXR warnings an alert inhibit discrete is sent:",
+    "choices": [
+        "A) by the WEUs to the TCAS computer",
+        "B) by the WEUs to the WXR RT",
+        "C) by the WXR RT to the TCAS computer"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "If the right DME fails, the right DME distance on the first officer VOR mode display:",
+    "choices": [
+        "A) shows dashes",
+        "B) is replaced by the left DME distance",
+        "C) shows an amber DME flag"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "Radio Altitude is used by:",
+    "choices": [
+        "A) the autobrake system",
+        "B) the Flight Management Computing Functions",
+        "C) the Weather Radar"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "On the Captain's PFD and ND, if the left DME fails during an ILS approach:",
+    "choices": [
+        "A) the DME flag replaces the DME distance",
+        "B) the right DME distance is shown instead of the left DME distance",
+        "C) a flag replaces the left DME distance but the right DME is still shown"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "To listen to a DME station audio identifier When the ND Mode Selector on the EFIS Control Panel is set to APP:",
+    "choices": [
+        "A) set the ACP MKR/APP switch to the appropriate APP position + adjust volume",
+        "B) set the ACP VOR/ADF switch to the appropriate position + adjust volume",
+        "C) push the ACP center VHF receiver volume control to listen to DME DATA"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "Marker Beacon data appear on:",
+    "choices": [
+        "A) the Navigation Display",
+        "B) the Primary Flight Display",
+        "C) any Multi-Function Display"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+{
+    "question": "During a Marker Beacon test the indication on the PFD is:",
+    "choices": [
+        "A) FT",
+        "B) TEST",
+        "C) MBT"
+    ],
+    "correctAnswer": "A",
+    "category": "ATA 34"
+},
+{
+    "question": "The Left ATC/mode S transponder uses:",
+    "choices": [
+        "A) the bottom ATC antenna only",
+        "B) the top ATC antenna to transmit and the bottom ATC antenna to receive",
+        "C) the 2 antennas at the same time"
+    ],
+    "correctAnswer": "C",
+    "category": "ATA 34"
+},
+{
+    "question": "The DME/ATC/TCAS suppression splitter:",
+    "choices": [
+        "A) filters background noise from received signals",
+        "B) prevents the operation of the receiver circuits during signal transmissions",
+        "C) splits the transmitted signal in 2 to share it between 2 antennas"
+    ],
+    "correctAnswer": "B",
+    "category": "ATA 34"
+},
+	 {
+        "question": "Radio Altitude indication becomes blank when the RA is more than:",
+        "choices": [
+            "A) 500 ft",
+            "B) 1500 ft",
+            "C) 2500 ft"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The CDU ALTN NAV RADIO Page is available:",
+        "choices": [
+            "A) when the tuning buses of the AIMS cabinets have failed",
+            "B) when the left and right CDU auto-tune functions are failed",
+            "C) when the center CDU auto-tune function is failed"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "It isn't possible to data load:",
+        "choices": [
+            "A) the SAARU",
+            "B) an ADM",
+            "C) A SADM"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When only the left Radio Altimeter fails, the left PFD:",
+        "choices": [
+            "A) Doesn't show Radio Altitude",
+            "B) displays the right RA",
+            "C) displays the center RA"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The left CDU sends a frequency source select discrete to the left and center MMRs to:",
+        "choices": [
+            "A) inhibit tests in the air",
+            "B) inhibit ILS tuning when the airplane is near landing",
+            "C) select the tune input"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "ILS antenna switching occurs:",
+        "choices": [
+            "A) when the flight crew selects the APP mode on the MCP",
+            "B) when the autopilot flight director computers supply a request discrete",
+            "C) automatically below 1500 ft RA"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Radio Altimeter flag appears:",
+        "choices": [
+            "A) when the onside RA is failed",
+            "B) when the onside and center RAs are failed",
+            "C) when the left, center and right RAs are failed"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The Nav Radio page shows ILS frequency and PARK when:",
+        "choices": [
+            "A) the airplane is at more than 200 Nm from the top of descent",
+            "B) as long as the airplane is in the first half of its flight",
+            "C) the airplane is at less than 200 Nm from the top of descent"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "When the FMCS has an active flight plan the VOR receiver is tuned by:",
+        "choices": [
+            "A) the Radio Tuning Panel",
+            "B) the center CDU 'Nav Radio' page",
+            "C) the left or right AIMS"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The center Multi Mode Receiver (MMR) can get Alternate Tuning data from:",
+        "choices": [
+            "A) the left CDU",
+            "B) the left or right CDU",
+            "C) the left or center CDU"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The center CDU:",
+        "choices": [
+            "A) has an alternate tune function for the center MMR",
+            "B) has an alternate tune function for the right MMR",
+            "C) doesn't have an alternate tune function for any MMR"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To manually tune a VOR receiver you use:",
+        "choices": [
+            "A) the MFD Comm page",
+            "B) the CDU Nav Radio page",
+            "C) the Radio Tuning Panel"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "If the left VOR Marker Beacon receiver fails:",
+        "choices": [
+            "A) The letters FT are displayed on the PFD",
+            "B) The AIMS cabinets don't supply marker beacon display data to the PFDs",
+            "C) the right VOR Marker Beacon receiver data is used"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The ILS Antenna switching occurs:",
+        "choices": [
+            "A) at landing gear extension",
+            "B) when AFDCs supply ILS ANT request discretes to control switches position",
+            "C) at Localizer or GlideSlope signal capture"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Each ILS Receiver (MMR) supplies data to:",
+        "choices": [
+            "A) the Left, Center and Right AFDCs (Autopilot Flight Director Computer)",
+            "B) its onside AFDC",
+            "C) the Integrated Standby Flight Display (ISFD)"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To do the ILS test for the integrated standby flight display (ISFD), you test:",
+        "choices": [
+            "A) the Left Instrument Landing System",
+            "B) the Right Instrument Landing System",
+            "C) the Center Instrument Landing System"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "Why does the CDU Nav Radio Page allow only one ILS tuning frequency?",
+        "choices": [
+            "A) because each CDU tunes its onside ILS receiver",
+            "B) because the ILS receiver to tune has to be selected first from a RTP",
+            "C) because the 3 ILS receivers are tuned to the same frequency"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To inhibit a tune of the ILS receivers when G/S and LOC are active with the A/P engaged a tune inhibit discrete is sent:",
+        "choices": [
+            "A) by the onside AFDC",
+            "B) by the onside CDU",
+            "C) by the onside MMR"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The AIMS priority selection of ILS display data on the PFD is:",
+        "choices": [
+            "A) Right, Center, Left for the 2 PFDs",
+            "B) Left, Center, Right for the First Officer's PFD",
+            "C) Right, Center, Left for the First Officer's PFD"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "If the Left ILS receiver test sequence goes invalid and the LOC and G/S flags do not show on the left EFIS this is:",
+        "choices": [
+            "A) not normal and you do the test again",
+            "B) normal because there are no LOC and G/S flags",
+            "C) normal because the AIMS cabinets have changed the source of the ILS data"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The LOC and G/S flags show when:",
+        "choices": [
+            "A) the onside ILS receiver fails.",
+            "B) all three ILS receivers fail.",
+            "C) the onside ILS receiver and the GPS fail."
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The GPS can compute:",
+        "choices": [
+            "A) the attitude",
+            "B) the altitude",
+            "C) the airspeed"
+        ],
+        "correctAnswer": "B",
+        "category": "ATA 34"
+    },
+    {
+        "question": "To compute the airplane position the GPS receiver:",
+        "choices": [
+            "A) uses the time it takes for a radio signal to reach a SAT and come back",
+            "B) receives the A/C position measured by the satellite",
+            "C) uses the time it takes radio signals to go from the satellites to the A/C"
+        ],
+        "correctAnswer": "C",
+        "category": "ATA 34"
+    },
+    {
+        "question": "The EGPWS gets ILS deviations from:",
+        "choices": [
+            "A) the left MMR",
+            "B) the left and right MMR simultaneously",
+            "C) the left or right MMR depending on the active AFDC"
+        ],
+        "correctAnswer": "A",
+        "category": "ATA 34"
+    },
+{
         "question": "The B777 has:",
         "choices": [
             "A) 1 AOA sensor on the right side of the fuselage",
@@ -591,8 +1870,6 @@ const allQuestions = [
         "correctAnswer": "A",
         "category": "ATA 34"
     },
-
-	
  {
         "question": "What air pressure(s) used by ADIRU and SAARU to calculate airspeed?",
         "choices": [
