@@ -1,5 +1,776 @@
 const allQuestions = [
 
+
+{
+        "question": "How do you open nose landing gear door for ground maintenance?",
+        "choices": [
+            "a) Use gear door control switch on P40 panel",
+            "b) Use gear door control switch on P56 panel",
+            "c) Use gear door control switch on P28 panel"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Red light in landing gear compartment indicated that",
+        "choices": [
+            "a) Landing gear door is fully opened",
+            "b) Landing gear door is fully closed",
+            "c) It is unsafe condition"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What is the indication of landing gear position on upper EICAS display when airplane is in cruise with all landing gears up?",
+        "choices": [
+            "a) No indication",
+            "b) One UP white box",
+            "c) Three UP white box"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which page is used to check if gear doors are closed?",
+        "choices": [
+            "a) Door synoptic page",
+            "b) Gear synoptic page",
+            "c) Status page"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which condition caused Autobrake selector automatically move from RTO to OFF:",
+        "choices": [
+            "a) Aircraft lifted off",
+            "b) Aircraft touched down",
+            "c) Aircraft stopped"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What happen to steering tillers when you push rudder pedal to move the rudder?",
+        "choices": [
+            "a) Always move",
+            "b) Never move",
+            "c) Move if nose landing gear extended"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How many sensors do tail strike system have?",
+        "choices": [
+            "a) No sensor because it is open/short circuit",
+            "b) 1 sensor",
+            "c) 2 sensors"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How to make sure main gear steering is locked when you deactivated the main landing gear steering?",
+        "choices": [
+            "a) Silver indicator is in view",
+            "b) Silver indicator is out of view",
+            "c) Check on maintenance page"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "On EICAS, at landing gear position display area there is only one box with DOWN inside. It means",
+        "choices": [
+            "a) One main landing gear is extended and locked",
+            "b) Only nose landing gear is extended and locked",
+            "c) All landing gears are extended and locked"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Landing gear doors safety pins are installed in",
+        "choices": [
+            "a) Door release/safety valve module",
+            "b) Door sequence valve",
+            "c) Door uplock actuator"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The bypass valves in landing gear selector/bypass valves",
+        "choices": [
+            "a) Make sure the gear retraction lines connect to return to permit the alternate extension system to extend the gear",
+            "b) Move to Bypass position by normal extend pressure",
+            "c) Make sure the gear extension lines connect to return to permit the alternate extension system to extend the gear"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What holds nose gear in the UP position after retraction?",
+        "choices": [
+            "a) Nose gear door",
+            "b) Over-center locking mechanism",
+            "c) Uplock hook"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "After maintenance, to close landing gear doors we use",
+        "choices": [
+            "a) Right hydraulic pressure",
+            "b) Left hydraulic pressure",
+            "c) Center hydraulic pressure"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Main landing gear truck tilt proximity sensors signals is used to",
+        "choices": [
+            "a) Control air/ground logic",
+            "b) Control autobrake and autospeed brake",
+            "c) Control gear extension and retraction"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What sensors supply air or ground mode signal to airplane systems?",
+        "choices": [
+            "a) WOW load sensors",
+            "b) Truck tilt proximity sensors",
+            "c) Truck tilt pressure sensors"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Steering angle of main landing gear can be found in",
+        "choices": [
+            "a) Landing gear brake and steering maintenance page",
+            "b) Landing gear synoptic page",
+            "c) Status page"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Brake Source light on P1 illuminates when",
+        "choices": [
+            "a) Center hydraulic and brake accumulator pressure are low",
+            "b) Right hydraulic and brake accumulator pressure are low",
+            "c) Normal and alternate brake pressure are low"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Flight Dispatch Disconnect for antiskid shuttle valve is used to",
+        "choices": [
+            "a) Prevent normal brake pressure",
+            "b) Prevent alternate brake pressure",
+            "c) Antiskid fault indication on EICAS"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To activate autobrake system, it is necessary to have",
+        "choices": [
+            "a) Speedbrake lever in the ARM position",
+            "b) Normal brake pressure",
+            "c) Thrust reverser operation"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How do you know if the brake is hot while looking at the Gear Synoptic page?",
+        "choices": [
+            "a) Number and brake symbol change to magenta",
+            "b) Brake Temp message appears next to brake symbol",
+            "c) Number and brake symbol change to amber"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Main gear steering control unit (MGSCU) gets inputs from",
+        "choices": [
+            "a) Steering tiller position transducers",
+            "b) ADIRU",
+            "c) Nose gear position transducer"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Purpose of Tail strike system?",
+        "choices": [
+            "a) Protect airplane tail section if tail strike occurs",
+            "b) Help trouble shooting tail strike problem",
+            "c) Supply tail strike indication to flight deck"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Purpose of main gear door-operated sequence valve?",
+        "choices": [
+            "a) Control hydraulic flow to main gear door actuator",
+            "b) Control hydraulic flow to drag brace-operated sequence valve",
+            "c) Control hydraulic flow to main gear uplock and retract actuators"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What do you use bleed valves in alternate extension system for?",
+        "choices": [
+            "a) To bleed air after an alternate extension",
+            "b) To bleed air after a component of the alternate extension system was replaced",
+            "c) To bleed air after a period of time"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Brake metering valves get inputs from pilot pedals via",
+        "choices": [
+            "a) Cables",
+            "b) Pedal position transmitters",
+            "c) Pedal force transducers"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Nose wheel steering system operates by",
+        "choices": [
+            "a) Inputs from tiller position transducers",
+            "b) Cables",
+            "c) Pedals"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The weight-on-wheels (WOW) cards control air/ground relays in?",
+        "choices": [
+            "a) The proximity sensor electronics units (PSEUs)",
+            "b) The airplane information management system (AIMS)",
+            "c) The electrical load management system (ELMS)"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The airplane is on the ground. How do you simulate the air/ground system is in the air mode?",
+        "choices": [
+            "a) Use the air simulation function through the MAT",
+            "b) Adjust each of the four load sensors to the air condition",
+            "c) Use the air/ground simulation test switch on the P61 overhead maintenance panel"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which component(s) hold the MLG in the down and locked position?",
+        "choices": [
+            "a) The MLG shock strut",
+            "b) The MLG truck assembly",
+            "c) The MLG drag brace and MLG side brace"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To turn the nose landing gear more than 70 degrees, you need to?",
+        "choices": [
+            "a) Move the towing lever on the NLG steering metering valve module to the TOW position",
+            "b) Disconnect the NLG torsion links",
+            "c) Open the NLG forward doors"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "In the landing control lever module, the lever lock solenoid gets electrical power to unlock the lever?",
+        "choices": [
+            "a) When the airplane is in the air",
+            "b) When the airplane is on the ground and the 28v dc right main bus has power",
+            "c) Anytime the airplane is on the ground gear not tilted"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which system or component controls the auto-off relays for the landing gear selector/bypass valves?",
+        "choices": [
+            "a) The HYDIM cards",
+            "b) The ELCUs",
+            "c) The Door release and safety valve modules"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "After a gear retraction, what keeps the main landing gear in the up and lock position?",
+        "choices": [
+            "a) Hydraulic pressure on the retract actuator",
+            "b) Overcenter locking of the MLG uplock assembly",
+            "c) The gear resting on the MLG door"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The function of the alternate extend hydraulic pressure switch is to?",
+        "choices": [
+            "a) Permit the main landing gear to extend before the nose landing gear extends",
+            "b) Supply a pressure indication to AIMS",
+            "c) Turn off the alternate extend power pack after the completion of the alternate extend cycle"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which components make the hydraulic pressure source selection for the landing gear brakes?",
+        "choices": [
+            "a) The brake metering valves",
+            "b) The brake accumulator",
+            "c) The alternate source selection valve and the accumulator isolation valve"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The taxi brake release function?",
+        "choices": [
+            "a) Releases the brakes on a forward-aftward wheel pair on each MLG truck",
+            "b) Releases the brakes on the wheels of one axle of each MLG truck",
+            "c) Works only at speeds more than 50 knots"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The center hydraulic system is pressurized, the right hydraulic system is NOT pressurized and the brake accumulator is fully charged. You then set the parking brakes. Which will occur?",
+        "choices": [
+            "a) Brake accumulator pressure goes to the brakes",
+            "b) Center hydraulic system pressure goes to the brakes",
+            "c) The parking brake valve keeps center system pressure from leaking through the alternate antiskid valves"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The nose wheel spin brakes?",
+        "choices": [
+            "a) Stop nose wheel rotation by friction during landing gear retraction",
+            "b) Operate during landings to help slow the airplane",
+            "c) Use normal brake system pressure during landing gear retraction"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The brake temperature monitor system shows brake temperature?",
+        "choices": [
+            "a) In degrees C on the MFD",
+            "b) In degrees F on the MFD",
+            "c) As a two digit decimal number on the LG synoptic and the LG brakes steering maintenance page"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The inputs to operate the main gear steering are from?",
+        "choices": [
+            "a) Position transducers below the steering tillers",
+            "b) Position transducers in the rudder interconnect mechanism",
+            "c) A position transducer on the nose landing gear"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The proximity sensor electronics unit (PSEU) supply signals used to determine air/ground status based on?",
+        "choices": [
+            "a) Sensors that measure wing lift",
+            "b) Signal from the truck tilt sensors",
+            "c) Signal from the radio altimeters"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which components remove the pressure from the landing gear components when the gear is up?",
+        "choices": [
+            "a) Main Landing gear up lock operated sequence valve",
+            "b) Air ground relays",
+            "c) Auto-off relays in ELMS"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The landing gear alternate extension system permits?",
+        "choices": [
+            "a) To extend and retract landing gear when there is no center hydraulic system pressure",
+            "b) To extend landing gear when there is no center hydraulic system pressure and to open landing gear doors on the ground",
+            "c) To open the landing gear doors on the ground when the hydraulic system is inoperative"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The alternate extension system operates with?",
+        "choices": [
+            "a) An independent hydraulic pump operated by an electric motor and pressurizes fluid from the center hydraulic system",
+            "b) An independent hydraulic pump operated by an electric motor or the ACMP C1",
+            "c) The ACMP C1"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To open all the doors on the ground, you can use?",
+        "choices": [
+            "a) The P40 or P56 switches and pressurize the center hydraulic system",
+            "b) The P56 switches only to operate the alternate extend power pack",
+            "c) The P56 or P40 switches and pressurize the right hydraulic system"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To close all the doors on the ground, you must use?",
+        "choices": [
+            "a) The P40 switches only and pressurize the right hydraulic system",
+            "b) The P56 switches only to operate the alternate extend power pack",
+            "c) The P56 and P40 switches and pressurize the center hydraulic system"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "You can go into the wheel well if?",
+        "choices": [
+            "a) Unsafe light in each wheel well is off",
+            "b) Unsafe light in each wheel well is on and the test is OK",
+            "c) Unsafe light in each wheel well is off and the test is OK"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "When the parking brake is set, you have this brake status indication lights on the nose landing gear?",
+        "choices": [
+            "a) Red, blue and amber lights on",
+            "b) Red and amber lights on",
+            "c) Blue and amber lights on"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To deactivate a brake in the normal brake system?",
+        "choices": [
+            "a) You use the bypass lever on the normal antiskid module",
+            "b) You remove a end cover on the shuttle valve and install a flight dispatch disconnect",
+            "c) You remove the normal pressure line on the brake and install a flight dispatch disconnect"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "To disable the main gear steering and stop the hydraulic flow to the steering locking PCA, you operate?",
+        "choices": [
+            "a) A towing lever on the metering valve",
+            "b) A silver indicator in the lock indication window",
+            "c) A manual shutoff valve and install a ball-lock pin"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The brake system uses this brake hydraulic sources?",
+        "choices": [
+            "a) Normal right system, Alternate center system, Reserve left system",
+            "b) Normal center system, Alternate right system, Reserve brake accumulator",
+            "c) Normal right system, Alternate center system, Reserve center system, brake accumulator system"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The brake source light (on P1 panel) comes on when there is a?",
+        "choices": [
+            "a) Low right hydraulic system pressure and a low alternate brake pressure system",
+            "b) Low right hydraulic system pressure or a low alternate brake pressure system",
+            "c) Low brake accumulator pressure"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The landing gear retraction system?",
+        "choices": [
+            "a) Is automatic and controlled by the PSEU (Proximity Sensor Electronic System)",
+            "b) Operates with hydraulic center system",
+            "c) Operates with electrics actuators"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Select the true statement about alternate gear extension?",
+        "choices": [
+            "a) Alternate gear extension uses an alternate hydraulic pressure to extend the landing gear",
+            "b) After the landing gear is extended the main gear doors retract",
+            "c) The normal landing gear indications are displayed on the EICAS"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "On the B777-300 ER. What is the purpose of the semi-levered gear (SLG) strut?",
+        "choices": [
+            "a) To position the main landing gear truck to 17.6 degrees for retraction operation",
+            "b) To effectively make the main landing gear longer and give an increased angle of attack during take-off rotation",
+            "c) To absorb landing forces and transmit vertical loads"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "On the B777-300 ER. If the airplane over-rotates during takeoff or landing, the tail skid shoe touches the runway. What indication do we get if it was a high energy contact of the tail skid to the runway?",
+        "choices": [
+            "a) Paint is scraped from the tail skid shoe",
+            "b) One pin is extended on the indicator assembly",
+            "c) Two pins are extended on the indicator assembly"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How do you know the parking brake is set?",
+        "choices": [
+            "a) The EICAS message PARKING BRAKE SET is displayed",
+            "b) The BRAKE SOURCE light is extinguished",
+            "c) Normal and Alternate brake pressures are available"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which autobrake mode provides the highest deceleration rate for landing?",
+        "choices": [
+            "a) AUTOBRAKE",
+            "b) AUTOBRAKE MAX",
+            "c) AUTOBRAKE 4"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which hydraulic system supplies the steering system?",
+        "choices": [
+            "a) Left system",
+            "b) Center system",
+            "c) Right system"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "After emergency gear extension with hydraulic low quantity center?",
+        "choices": [
+            "a) Auto brake is not available",
+            "b) Auto brake and normal anti skid are not available",
+            "c) Main Landing Gear steering is not available"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The normal retraction sequence is?",
+        "choices": [
+            "a) Door open, gear up, door close, cancel gear up symbol after 10 seconds",
+            "b) Door open, gear up, door close, cancel door close symbol",
+            "c) All Doors open, All gears up, All doors close, All symbols green after sequence"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "During take off and landing with speed > 80 kts, nose wheel steering?",
+        "choices": [
+            "a) Is not possible",
+            "b) Is possible through rudder pedals and hand wheels",
+            "c) Is possible only through hand wheels"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "With the parking brake lever set, the return lines of the brakes are close?",
+        "choices": [
+            "a) By the parking brake valve",
+            "b) By the alternate brake metering valve",
+            "c) When the center hydraulic system pressure is lower than 1000 psi"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Landing gear door positions are sent to the PSEUs by?",
+        "choices": [
+            "a) Microswitches",
+            "b) Proximity sensors",
+            "c) Sequencing valves"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The Main Landing Gear Truck Positioner Actuator is pressurized by?",
+        "choices": [
+            "a) Center hydraulic system",
+            "b) Right and center hydraulic systems",
+            "c) Only left systems"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How is the Main Landing Gear Bogie Beam correctly position during retraction?",
+        "choices": [
+            "a) By the Truck Positioner Actuator",
+            "b) By the shortening mechanism",
+            "c) By both the Truck Positioner Actuator and the shortening mechanism"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What is the maximum rudder pedal input to the NLG steering mechanism?",
+        "choices": [
+            "a) 27° Left and Right",
+            "b) 7° Left and Right",
+            "c) 70° Left and Right"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "What is the function of the landing gear system Door Release/Safety Valve Modules?",
+        "choices": [
+            "a) To isolate the landing gear hydraulic system when Aircraft is on ground",
+            "b) To detect all landing gears extended before the gear is retracted",
+            "c) Stop the normal hydraulic system pressure to the close side of each landing gear door actuator"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Which hydraulic circuit supplies the alternate braking system?",
+        "choices": [
+            "a) Left",
+            "b) Center",
+            "c) Right"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Right system pressure is low?",
+        "choices": [
+            "a) Auto brakes is not available",
+            "b) Auto brake and Alternate AntiSkid are not available",
+            "c) Nose wheel steering is not available"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Landing gears position on the EICAS is given by?",
+        "choices": [
+            "a) PSEU (Proximity Sensor Electronic Unit)",
+            "b) LGICU number 1 only",
+            "c) BSCU (Brake System Control Unit)"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "The landing gear position is given to the EICAS by?",
+        "choices": [
+            "a) Both PSEU (Proximity Sensor Electronic Unit) simultaneously",
+            "b) PSEU 1 only",
+            "c) PSEU 2 only"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Landing gear door positions are sent to the PSEU (Proximity Sensor Electronic Unit)?",
+        "choices": [
+            "a) Microswitches",
+            "b) Proximity sensors",
+            "c) Sequencing valves"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "One indication light 'UP' or 'DOWN' are provided in the EICASS panel by?",
+        "choices": [
+            "a) The landing gear selector lever",
+            "b) The bogie tilt position switches",
+            "c) PSEU 1 and 2"
+        ],
+        "correctAnswer": "c",
+        "category": "ATA 32"
+    },
+    {
+        "question": "On the EICAS, during gear extension, the single symbol box 'White Hatched' show the gear condition?",
+        "choices": [
+            "a) All gear are down and locked",
+            "b) Gears are in transit",
+            "c) Indication is inoperative"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "Control of the Anti-skid operation during alternate braking is provided by?",
+        "choices": [
+            "a) Depressing the brake pedals",
+            "b) BSCU signal to the alternate Anti-Skid valves modules",
+            "c) Alternate brake metering valves"
+        ],
+        "correctAnswer": "b",
+        "category": "ATA 32"
+    },
+    {
+        "question": "How do you secure the landing gears on ground?",
+        "choices": [
+            "a) By safety pins on all the landing gears",
+            "b) No safety is necessary",
+            "c) By safety collar on all the landing gears"
+        ],
+        "correctAnswer": "a",
+        "category": "ATA 32"
+    },	
  {
     "question": "How many BackDrive Actuators are active during a stabilized autoland ILS approach above 1500ft:",
     "choices": [
