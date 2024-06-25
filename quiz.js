@@ -2576,7 +2576,7 @@ const allQuestions = [
             "B) Auto brake and normal anti skid are not available",
             "C) Main Landing Gear steering is not available"
         ],
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "category": "ATA 32"
     },
     {
@@ -2680,16 +2680,6 @@ const allQuestions = [
         "category": "ATA 32"
     },
     {
-        "question": "Landing gears position on the EICAS is given by?",
-        "choices": [
-            "A) PSEU (Proximity Sensor Electronic Unit)",
-            "B) LGICU number 1 only",
-            "C) BSCU (Brake System Control Unit)"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 32"
-    },
-    {
         "question": "The landing gear position is given to the EICAS by?",
         "choices": [
             "A) Both PSEU (Proximity Sensor Electronic Unit) simultaneously",
@@ -2697,16 +2687,6 @@ const allQuestions = [
             "C) PSEU 2 only"
         ],
         "correctAnswer": "A",
-        "category": "ATA 32"
-    },
-    {
-        "question": "Landing gear door positions are sent to the PSEU (Proximity Sensor Electronic Unit)?",
-        "choices": [
-            "A) Microswitches",
-            "B) Proximity sensors",
-            "C) Sequencing valves"
-        ],
-        "correctAnswer": "B",
         "category": "ATA 32"
     },
     {
