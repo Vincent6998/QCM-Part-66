@@ -131,16 +131,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "Which fluid is used to service PDOS pump/power pack?",
-        "choices": [
-            "A) Hydraulic oil",
-            "B) Engine oil",
-            "C) Shock strut oil"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
         "question": "To prevent severe HPC vibration during initial start due to bowed rotor, the idle time for ground run before shutdown should be",
         "choices": [
             "A) 10 min (N1<70%) and 20 min (N1>70%)",
@@ -918,16 +908,6 @@ const allQuestions = [
             "C) T3"
         ],
         "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "From main fuel pump, fuel flows thru these components before entering combustion chamber?",
-        "choices": [
-            "A) Main F/O HX – IDG F/O HX – Fuel pump – HMU – Fuel flow TX – HMU – Fuel nozzles",
-            "B) Main F/O HX – HMU – Fuel flow TX – Fuel nozzles",
-            "C) Main F/O HX – HMU – IDG F/O HX – Fuel flow TX – HMU – Fuel nozzles"
-        ],
-        "correctAnswer": "A",
         "category": "ATA 70's"
     },
     {
