@@ -2300,7 +2300,7 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "What is the purpose of the sump eductor on the GE90-115B?",
+        "question": "What is the purpose of the sump eductor on the GE90-115 ?",
         "choices": [
             "A) Reduces breather airflow during all power settings",
             "B) Scavenges oil out of the sumps",
