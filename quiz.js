@@ -71,36 +71,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "Number of twists of lockwire per inch are",
-        "choices": [
-            "A) 7-9",
-            "B) 12-15",
-            "C) 9-12"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "Maximum length of lockwire between points that are in tension is",
-        "choices": [
-            "A) 3 in",
-            "B) 6 in",
-            "C) 7 in"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "You are allowed to lockwire maximum",
-        "choices": [
-            "A) 4 parts in a series",
-            "B) 3 parts in a series",
-            "C) 5 parts in a series"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
         "question": "Where is T1.2 sensor located?",
         "choices": [
             "A) On inlet cowl",
@@ -108,46 +78,6 @@ const allQuestions = [
             "C) On fan cowl"
         ],
         "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "What power does PDOS system use to open engine cowls?",
-        "choices": [
-            "A) Hydraulic power",
-            "B) Electrical power",
-            "C) Pneumatic power"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "PDOS pump gets power from",
-        "choices": [
-            "A) Ground handling bus",
-            "B) Ground service bus",
-            "C) Standby bus"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "To prevent severe HPC vibration during initial start due to bowed rotor, the idle time for ground run before shutdown should be",
-        "choices": [
-            "A) 10 min (N1<70%) and 20 min (N1>70%)",
-            "B) 5 min (N1<70%) and 10 min (N1>70%)",
-            "C) 10 min (N1<70%) and 15 min (N1>70%)"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "Which engine mount transfers the thrust load to the strut?",
-        "choices": [
-            "A) Forward and aft mounts",
-            "B) Forward mount",
-            "C) Aft mounts"
-        ],
-        "correctAnswer": "C",
         "category": "ATA 70's"
     },
     {
@@ -238,16 +168,6 @@ const allQuestions = [
             "C) Aft mounts"
         ],
         "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "Inlet cowl can be separated to upper and lower halves. These halves are",
-        "choices": [
-            "A) Interchangeable with other inlet cowl halves",
-            "B) Matched set and not interchangeable with other inlet cowl halves",
-            "C) Interchangeable with each other"
-        ],
-        "correctAnswer": "B",
         "category": "ATA 70's"
     },
     {
@@ -391,41 +311,11 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "The Engine Monitoring is?",
-        "choices": [
-            "A) A solution to improve aircraft operation",
-            "B) A solution to replace Boeing Maintenance procedures",
-            "C) Mandatory by the Engine constructor"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
         "question": "The ground crew can get in the entry corridor during engine run?",
         "choices": [
-            "A) Only for a manual override start",
+            "A) For a manual override start",
             "B) For a visual leak check at the drain mast when the engine is above flight idle",
             "C) Anytime the parking brake is set"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "How do you access the PDOS powerpack for servicing / manual operation?",
-        "choices": [
-            "A) Under the left thrust reverser cowl",
-            "B) Under the right fan cowl",
-            "C) Under an access panel in the thumbnail fairing"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "What PDOS components do you operate to manually open a fan cowl?",
-        "choices": [
-            "A) Solenoid valve cap and a manual drive lug on the pump/power pack",
-            "B) Solenoid valve cap on the fan case and a switch on the pump/power pack",
-            "C) A lever and a manual drive lug on the pump/power pack"
         ],
         "correctAnswer": "A",
         "category": "ATA 70's"
@@ -436,16 +326,6 @@ const allQuestions = [
             "A) 90600 lb",
             "B) 80000 lb",
             "C) 110000 lb"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "The GE90 engine’s bypass ratio is",
-        "choices": [
-            "A) 8.4:1",
-            "B) 7.5:1",
-            "C) 9.6:1"
         ],
         "correctAnswer": "A",
         "category": "ATA 70's"
@@ -631,16 +511,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "Engine rating plug is attached to?",
-        "choices": [
-            "A) EEC",
-            "B) Fan case",
-            "C) Fan cowl"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
         "question": "EEC channel A connector is identified by?",
         "choices": [
             "A) A color outline around its base",
@@ -781,7 +651,7 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "How many fuel heat exchangers are installed on this engine for burning fuel?",
+        "question": "How many fuel heat exchangers are installed on this engine for fuel?",
         "choices": [
             "A) None",
             "B) 2",
@@ -841,26 +711,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "Which parameter is EEC used to calculate thrust?",
-        "choices": [
-            "A) N1",
-            "B) N2",
-            "C) EPR"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "In how many mode EEC can control engine thrust?",
-        "choices": [
-            "A) 2 modes: normal and alternate",
-            "B) 3 modes: normal, soft reversionary and hard reversionary",
-            "C) 2 modes: soft reversionary and hard reversionary"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
         "question": "When both engine are running with left control alternator failed, left EEC will have back up power from?",
         "choices": [
             "A) Left back up generator",
@@ -881,46 +731,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "EEC channel A connector is identified by?",
-        "choices": [
-            "A) A color outline around its base",
-            "B) A color outline with white strip on it",
-            "C) A color outline with red strip on it"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "When do EEC get power from control alternator?",
-        "choices": [
-            "A) N2 more than 7%",
-            "B) N2 more than 11%",
-            "C) At idle speed"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "Which sensor is thermo couple type?",
-        "choices": [
-            "A) T1.2",
-            "B) T2.5",
-            "C) T3"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "Each fuel nozzle has?",
-        "choices": [
-            "A) One spray tips with inner dual fuel line",
-            "B) One spray tips",
-            "C) Two spray tips"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
         "question": "Fuel flow to manifold 2 is controlled by?",
         "choices": [
             "A) Fuel flow divider",
@@ -931,16 +741,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "Which engine parameter EEC uses to calculate thrust?",
-        "choices": [
-            "A) EPR",
-            "B) N2",
-            "C) N1"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
         "question": "Servo fuel is controlled by EEC via?",
         "choices": [
             "A) EHSVs",
@@ -948,16 +748,6 @@ const allQuestions = [
             "C) Engine air components controllers"
         ],
         "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "EEC is power by?",
-        "choices": [
-            "A) ELMS or alternator",
-            "B) AIMS or alternator",
-            "C) Alternator or battery"
-        ],
-        "correctAnswer": "A",
         "category": "ATA 70's"
     },
     {
@@ -981,16 +771,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "The engine is running. The EEC is electricaly powered by?",
-        "choices": [
-            "A) The left transfer bus",
-            "B) The control alternator",
-            "C) The EDIU (Engine Data Interface Unit)"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
         "question": "To supply power to the EEC when the engine is shutdown, you move the?",
         "choices": [
             "A) EEC mode switch to ALTN",
@@ -998,26 +778,6 @@ const allQuestions = [
             "C) EEC maintenance switch to TEST"
         ],
         "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "The EEC ( Electronic Engine Control)  is located?",
-        "choices": [
-            "A) In the main equipment center ( MEC )",
-            "B) Under the engine right fan cowl",
-            "C) In the cockpit"
-        ],
-        "correctAnswer": "B",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "How many fuel heat exchangers are installed on this engine for burning fuel?",
-        "choices": [
-            "A) None",
-            "B) 2",
-            "C) 4"
-        ],
-        "correctAnswer": "B",
         "category": "ATA 70's"
     },
     {
@@ -1048,16 +808,6 @@ const allQuestions = [
             "C) EGT temperature"
         ],
         "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "The EEC ( Electronic Engine Control ) is powered?",
-        "choices": [
-            "A) By the ELMS in normal mode and by the standby bus in alternate mode",
-            "B) Only by the control alternator , installed on the accessory gearbox",
-            "C) By a control alternator or by the ELMS"
-        ],
-        "correctAnswer": "C",
         "category": "ATA 70's"
     },
     {
@@ -1811,16 +1561,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "The fan balance weights are on the?",
-        "choices": [
-            "A) Fan blade",
-            "B) Fan blade platform",
-            "C) Fan spinner"
-        ],
-        "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
         "question": "What is used to measure EGT on the GE90-115B?",
         "choices": [
             "A) Pyrometer",
@@ -1878,16 +1618,6 @@ const allQuestions = [
             "C) Cubic meter per second"
         ],
         "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "The primary power indication for the GE engine is?",
-        "choices": [
-            "A) N2 (Core Engine Speed)",
-            "B) EPR (Engine Pressure Ratio)",
-            "C) N1 (fan speed)"
-        ],
-        "correctAnswer": "C",
         "category": "ATA 70's"
     },
     {
@@ -1956,15 +1686,6 @@ const allQuestions = [
             "A) Both sleeves are extended more than 60%",
             "B) Both sleeves are extended more than 50%",
             "C) Both sleeves are extended more than 40%"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "When does REV on upper EICAS display change from amber to green",
-        "choices": [
-            "A) Both sleeves are extended more than 60%",
-            "B) Both sleeves are extended more than 80%"
         ],
         "correctAnswer": "A",
         "category": "ATA 70's"
@@ -2080,16 +1801,6 @@ const allQuestions = [
         "category": "ATA 70's"
     },
     {
-        "question": "What is the purpose of the reverse thrust lever interlock actuator?",
-        "choices": [
-            "A) It keeps the reverse thrust levers at the idle position until the T/R sleeves extend",
-            "B) It keeps the reverse thrust levers at the idle position until the T/R sleeves retract",
-            "C) It locks the sync shafts when the reverse thrust levers are down"
-        ],
-        "correctAnswer": "A",
-        "category": "ATA 70's"
-    },
-    {
         "question": "The thrust reverser actuation system?",
         "choices": [
             "A) Operates with hydraulic actuators",
@@ -2187,16 +1898,6 @@ const allQuestions = [
             "C) The 'syncro lock manual drive unit' has to be unlocked and the isolation valve has to be energized and the directional control valve has to be in the deploy position"
         ],
         "correctAnswer": "C",
-        "category": "ATA 70's"
-    },
-    {
-        "question": "To deploy the thrust reversers, which of these statements must be true?",
-        "choices": [
-            "A) The aircraft has to be in ground mode",
-            "B) Both engines have to be in idle for 10 seconds",
-            "C) Center hydraulic pressure has to be available"
-        ],
-        "correctAnswer": "A",
         "category": "ATA 70's"
     },
  {
